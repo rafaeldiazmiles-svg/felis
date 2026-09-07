@@ -63,6 +63,10 @@ var wallJumpAnim : PlayStillAnimation;
 var firstJump :boolean;
 var buttonLock : boolean;
 var jumpedThisFrame : boolean;
+var jumpedUntilLand : boolean;
+var airJumpsUsed : int;
+var maxAirJumps : int = 1;
+var minTimeBetweenJumps : float = .3;
 @Space(30)
 var isUnderwater : boolean;
 var swimTime : float = .3;
@@ -177,7 +181,13 @@ function Update(){
 	}
 
 	if(isGroundedScript.isGrounded && Mathf.Abs(isGroundedScript.slopeAngle) < maxSlopeAngle){
-		lastTouchGroundTime = Time.time;
+		if(jumpedUntilLand && Time.time > lastJumpTime + 0.1){
+			jumpedUntilLand = false;
+			airJumpsUsed = 0;
+		}
+		if(!jumpedUntilLand){
+			lastTouchGroundTime = Time.time;
+		}
 	}
 	if(Time.time > lastTouchGroundTime + extendGroundedTime){
 		isGrounded = false;
@@ -278,7 +288,9 @@ function FixedUpdate(){
 
 
 
-            if(groundedTime > requiredGroundTime || isUnderwater){
+            var canGroundJump : boolean = !jumpedUntilLand && groundedTime > requiredGroundTime;
+            var canAirJump : boolean = !isUnderwater && jumpedUntilLand && airJumpsUsed < maxAirJumps && Time.time >= lastJumpTime + minTimeBetweenJumps;
+            if(canGroundJump || canAirJump || isUnderwater){
                 if(input.inputButtonB.pressed){
                     if(!isUnderwater || Time.time > lastJumpTime + swimTime){
                     	//ApplyJump();
@@ -374,8 +386,13 @@ function FixedUpdate(){
 
 function ApplyJump(){
 	disableJumpUntil = Time.time + .1;
+	if(!isUnderwater && jumpedUntilLand){
+		airJumpsUsed++;
+	}
+	jumpedUntilLand = true;
 	groundedTime = 0;
 	isGrounded = false;
+	lastTouchGroundTime = Time.time - extendGroundedTime - 1.0;
 
 	var jumpMultiplier : float = 1.0 + (longJumpMultiplier-1) * (jumpButtonTime / maxJumpTime);
 
