@@ -120,6 +120,8 @@ function Start () {
 	if(input == null) input = transform.parent.gameObject.GetComponentInChildren(ControllerInput);
 	if(characterRigidbody == null) characterRigidbody = transform.parent.gameObject.GetComponentInChildren(Rigidbody);
 
+	if(maxSlopeAngle <= 61.0) maxSlopeAngle = 70.0;
+
 	feetPart = transform.parent.GetComponentInChildren.<FeetParticle>();
 
 }
@@ -329,7 +331,12 @@ function FixedUpdate(){
 		
 		var jumpVector : Vector3;
 		if(!wallJump){
-			jumpVector = Vector3.Lerp(Vector3.up, floorNormal, floorNormalBias) * jumpForce;
+			if(Mathf.Abs(slopeAngle) > 12.0){
+				jumpVector = Vector3.up * jumpForce;
+			}
+			else{
+				jumpVector = Vector3.Lerp(Vector3.up, floorNormal, floorNormalBias) * jumpForce;
+			}
 			if(useSpringVector){
 				jumpVector = springVector * jumpForce;
 			}
