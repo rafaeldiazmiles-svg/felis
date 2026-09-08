@@ -1,0 +1,126 @@
+fileFormatVersion: 2
+guid: e6775b3f17fbee9448f134df1eb1fe71
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: Rat
+    100002: Rat Bib
+    100004: Rat Head
+    100006: Rat Left Calf
+    100008: Rat Left Ear
+    100010: Rat Left Foot
+    100012: Rat Left Forearm
+    100014: Rat Left Hand
+    100016: Rat Left Thigh
+    100018: Rat Left Toe
+    100020: Rat Left Upper Arm
+    100022: Rat Nose
+    100024: Rat Right Calf
+    100026: Rat Right Ear
+    100028: Rat Right Foot
+    100030: Rat Right Forearm
+    100032: Rat Right Hand
+    100034: Rat Right Thigh
+    100036: Rat Right Toe
+    100038: Rat Right Upper Arm
+    100040: Rat Root
+    100042: Rat Spine 1
+    100044: Rat Spine 2
+    100046: Rat Tail 1
+    100048: Rat Tail 2
+    100050: Rat Tail 3
+    100052: Rat Tail 4
+    100054: Rat Tongue 1
+    100056: Rat Tongue 2
+    100058: Rat Yaw
+    100060: //RootNode
+    400000: Rat
+    400002: Rat Bib
+    400004: Rat Head
+    400006: Rat Left Calf
+    400008: Rat Left Ear
+    400010: Rat Left Foot
+    400012: Rat Left Forearm
+    400014: Rat Left Hand
+    400016: Rat Left Thigh
+    400018: Rat Left Toe
+    400020: Rat Left Upper Arm
+    400022: Rat Nose
+    400024: Rat Right Calf
+    400026: Rat Right Ear
+    400028: Rat Right Foot
+    400030: Rat Right Forearm
+    400032: Rat Right Hand
+    400034: Rat Right Thigh
+    400036: Rat Right Toe
+    400038: Rat Right Upper Arm
+    400040: Rat Root
+    400042: Rat Spine 1
+    400044: Rat Spine 2
+    400046: Rat Tail 1
+    400048: Rat Tail 2
+    400050: Rat Tail 3
+    400052: Rat Tail 4
+    400054: Rat Tongue 1
+    400056: Rat Tongue 2
+    400058: Rat Yaw
+    400060: //RootNode
+    4300000: Rat
+    7400000: Take 001
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: Rat
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  additionalBone: 0
+  userData: 

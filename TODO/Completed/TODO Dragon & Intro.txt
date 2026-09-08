@@ -1,0 +1,195 @@
+DRAGON
+
+--------Idle animation
+
+--------wings secondary motion
+
+------------arms secondary motion
+
+---------  tail animation
+
+
+
+------------configure feet frames in uvframegroups
+
+---------------Test a winged flight mode that controls angle with force and not with transform.
+
+----------------Feet touch ground frame
+
+-----------harden legs when grounded
+-----------belly maintain angle when grounded
+
+-----------tail secondary motion
+
+------------Head LookAt 2D use rigidbody.
+
+------------balance dragon when standing
+
+-------------------Help dragon reach target by adding force straight to the target in WingedFlightAi.js
+--------------------------^Only when flapping wings.
+-------------------------^Subtler constant force (?)
+
+
+
+---------------------------Flame
+
+-----------------------Find a way for dragon to change poses (for picking up jar, throwing fire)
+
+---------------------------Make Dragon shoot flame
+
+--------------------------------------------------------------
+--------------------------------------------------------------
+
+INTRO
+
+
+----------------Define how to work camera movement
+
+-------------------Apply the blend transition from normal to dark like in Dark Forest level.
+
+--------------------Add flowers & godreays
+
+--------------------make butterflies animations
+
+---------------------------Script: Cats to catch butterflies. Catch.js
+
+--------------------------Make Evil Jar and add to scene.
+
+--------------------------Add collision of Evil Jar
+---------------------^trigger jar and cat collision
+--------------^cat collision anim
+--------------^collision sound effect
+
+-------------Music transition to scary place
+----Add quake 
+
+----------Add pickRB script to cat.
+-------------^Pick animation.
+
+--------------- Add explamation baloon when colliding jar
+
+---------------- Camera has some animation (between trees) before getting to the cats. (?)
+
+------------------Animate Zoom
+
+-----------------Make lid a separate object, pickable
+
+--------------^Disable shake and configurable joint when picking
+
+----------------Cat moves towards jar and picks up lid
+
+--------------Enemy spawn flying particle
+-------------^Figure out movement
+-------------^Chage spark color
+------------^Add trails (take away smoke trail
+-------------^Add magic sparks on trail (figure out how they might move magically)
+
+
+
+----------Glow coming out of jar 
+
+-----------------make glow fade in slowly after lid is opened
+
+--------------------Have jar emit the enemy particles after lid is open
+-----------------^Zoom out
+
+--------------Make a particle so they can fall on ground and spawn enemies
+
+----------------Make spawn effect for particle
+
+----------------Destroy particles that are far away
+
+-------------Figure out how enemies would spawn (
+--------------^Forceload enemy spawn
+
+-----------------figure out how rats' behaviours
+
+-------------------on spawn scale up effect
+
+-----------------------Have intro control set some particles to spawn enemies
+
+-------------------Add cat scare zone after first enemy is on scene
+--------------------^Adapt cat scare so cat drops lid
+
+----------------------Disable cat away from screen baloon
+
+---------------------squash effect for big dragon particle
+
+------------------Ensure order of spawn ID.
+
+---------------------figure out how to make dragon spawn scale up
+
+-----------------------Make dragon so it lerps between physical and kinematic
+---------------------^Fix so belly and legs are physical, and animation is only torso and up
+
+-------------------------^Don't animate neck and head... always use look at target with physics.
+
+---------------------dragon pick up animation
+
+-----------------------------have dragon pick up jar
+
+---------------------------make bigger spawn smoke effect for dragon
+
+---------------------------make a bigger enemy spawn particle for dragon
+
+------------------apply scale spawn effect on dragon
+
+--------------------make dragon look up after picking up jar
+
+--------------------make dragon BL texture
+
+------------------------focus camera on dragon
+
+----------------------------Draw moon, clouds.
+
+-----------------------Hide blue butterfly after animation
+
+--------------Have dragon fly upwards with jar
+
+-----------------------Make camera follow dragon until moon is on BG
+
+---------------------------------create rat below and focus camera on rat below
+
+-------------------------have rat take jar lid and run away from scene.
+
+-------------------------End intro
+
+-----------------------Fade away volume
+
+--------Add "Tap screen to skip" Text
+
+-------Center Text
+
+-------------^Fade away
+
+------------------^Add functionality
+
+
+
+---------------------Make black mesh for landscape
+
+---------------------use global spawn for dragon
+
+-----------------------fix Vector3Spring (Update long term list)
+
+
+
+--------------------------------------------------------------
+--------------------------------------------------------------
+------------------------Last Level Schematics
+
+
+------------------------Wind gusts that suck you into death zones.
+Caves.
+----------------^Rocks that fall inside cave.
+(?)Make a hidden place reached by flying up a lot, up the mountain, passing a cave.
+------------------Falling Snow Avalanche Balls + Wing gust that throw you back.
+----------------*Try flying around spikes
+
+-----------------------Keep Griffin from flying upwards forever.
+
+-------------------------On Ride: automount at start level
+
+---------------------------Level starts with character mounted and griffin flying from left.
+
+------------If griffin dies and you're unmounted, level ends.

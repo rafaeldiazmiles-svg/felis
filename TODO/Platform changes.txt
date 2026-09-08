@@ -1,0 +1,16 @@
+Input question button gui
+
+tips button gui
+
+tips in start button and select
+
+disable bloom for mobile
+
+mouse button disabled for mobile
+
+touch controls disabled for desktop
+
+For steam:
+move steamworks folder
+add steamworks prefab
+

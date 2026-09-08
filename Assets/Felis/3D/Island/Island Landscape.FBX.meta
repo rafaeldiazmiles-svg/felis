@@ -1,0 +1,257 @@
+fileFormatVersion: 2
+guid: f50f90103645ebc418dadcbce529673c
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Island
+    100004: sky
+    100006: UnderWater Sand
+    100008: Water
+    100010: Sea Waves
+    100012: Sea Waves 1
+    100014: Sea Waves 2
+    100016: Sea Waves 3
+    100018: Sea Waves A
+    100020: Sea Waves B
+    100022: Sea Waves C
+    100024: Island Elements
+    100026: Volcano Smoke
+    100028: Line001
+    100030: Island Elements Back
+    100032: Flag 1
+    100034: Flag 2
+    100036: Flag Root
+    100038: Island Elements Animated
+    100040: Object001
+    100042: Cloud A
+    100044: Cloud B
+    100046: Cloud C
+    100048: Cloud D
+    100050: Island Lake
+    100052: Island Reflection Mask
+    100054: Reflection
+    100056: Waterfall
+    100058: Plane001
+    100060: Bird
+    100062: Bird Wing
+    100064: Bird Wing003
+    100066: Bird Wing004
+    100068: Bird Wing005
+    100070: Bird Wing006
+    100072: Bird Wing007
+    100074: Bird Wing008
+    100076: Bird Wing009
+    100078: Bird Wing010
+    100080: Bird Wing2
+    100082: Bird001
+    100084: Bird002
+    100086: Bird003
+    100088: Bird004
+    100090: Birds
+    100092: CPlant
+    100094: CPlant Head
+    100096: CPlant Left
+    100098: CPlant Neck 1
+    100100: CPlant Neck 2
+    100102: CPlant Right
+    100104: IK Chain001
+    100106: Cat Flag Mesh
+    100108: Flag 3
+    100110: Flag 4
+    100112: Particle View 001
+    400000: //RootNode
+    400002: Island
+    400004: sky
+    400006: UnderWater Sand
+    400008: Water
+    400010: Sea Waves
+    400012: Sea Waves 1
+    400014: Sea Waves 2
+    400016: Sea Waves 3
+    400018: Sea Waves A
+    400020: Sea Waves B
+    400022: Sea Waves C
+    400024: Island Elements
+    400026: Volcano Smoke
+    400028: Line001
+    400030: Island Elements Back
+    400032: Flag 1
+    400034: Flag 2
+    400036: Flag Root
+    400038: Island Elements Animated
+    400040: Object001
+    400042: Cloud A
+    400044: Cloud B
+    400046: Cloud C
+    400048: Cloud D
+    400050: Island Lake
+    400052: Island Reflection Mask
+    400054: Reflection
+    400056: Waterfall
+    400058: Plane001
+    400060: Bird
+    400062: Bird Wing
+    400064: Bird Wing003
+    400066: Bird Wing004
+    400068: Bird Wing005
+    400070: Bird Wing006
+    400072: Bird Wing007
+    400074: Bird Wing008
+    400076: Bird Wing009
+    400078: Bird Wing010
+    400080: Bird Wing2
+    400082: Bird001
+    400084: Bird002
+    400086: Bird003
+    400088: Bird004
+    400090: Birds
+    400092: CPlant
+    400094: CPlant Head
+    400096: CPlant Left
+    400098: CPlant Neck 1
+    400100: CPlant Neck 2
+    400102: CPlant Right
+    400104: IK Chain001
+    400106: Cat Flag Mesh
+    400108: Flag 3
+    400110: Flag 4
+    400112: Particle View 001
+    2300000: //RootNode
+    2300002: Island
+    2300004: sky
+    2300006: UnderWater Sand
+    2300008: Water
+    2300010: Sea Waves
+    2300012: Sea Waves 1
+    2300014: Sea Waves 2
+    2300016: Sea Waves 3
+    2300018: Sea Waves A
+    2300020: Sea Waves B
+    2300022: Sea Waves C
+    2300024: Island Elements
+    2300026: Volcano Smoke
+    2300028: Island Elements Back
+    2300030: Object001
+    2300032: Cloud A
+    2300034: Cloud B
+    2300036: Cloud C
+    2300038: Cloud D
+    2300040: Island Lake
+    2300042: Island Reflection Mask
+    2300044: Reflection
+    2300046: Waterfall
+    2300048: Plane001
+    3300000: //RootNode
+    3300002: Island
+    3300004: sky
+    3300006: UnderWater Sand
+    3300008: Water
+    3300010: Sea Waves
+    3300012: Sea Waves 1
+    3300014: Sea Waves 2
+    3300016: Sea Waves 3
+    3300018: Sea Waves A
+    3300020: Sea Waves B
+    3300022: Sea Waves C
+    3300024: Island Elements
+    3300026: Volcano Smoke
+    3300028: Island Elements Back
+    3300030: Object001
+    3300032: Cloud A
+    3300034: Cloud B
+    3300036: Cloud C
+    3300038: Cloud D
+    3300040: Island Lake
+    3300042: Island Reflection Mask
+    3300044: Reflection
+    3300046: Waterfall
+    3300048: Plane001
+    4300000: Island
+    4300002: Water
+    4300004: sky
+    4300006: UnderWater Sand
+    4300008: Sea Waves
+    4300010: Sea Waves 1
+    4300012: Sea Waves 2
+    4300014: Sea Waves 3
+    4300016: Sea Waves A
+    4300018: Sea Waves B
+    4300020: Sea Waves C
+    4300022: Island Elements
+    4300024: Volcano Smoke
+    4300026: Island Elements Back
+    4300028: Island Elements Animated
+    4300030: Object001
+    4300032: Cloud A
+    4300034: Cloud C
+    4300036: Cloud D
+    4300038: Cloud B
+    4300040: Island Lake
+    4300042: Island Reflection Mask
+    4300044: Reflection
+    4300046: Waterfall
+    4300048: Plane001
+    4300050: Cat Flag Mesh
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: Island Elements Animated
+    13700002: Cat Flag Mesh
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

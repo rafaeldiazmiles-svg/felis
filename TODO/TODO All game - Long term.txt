@@ -1,0 +1,454 @@
+
+cat Wait hint, clarify it's down arrow while holding cat
+
+-------------------------------lvl 2, checkpoint rays on floor 2
+
+cat rays, jitter when holding cat.
+
+
+*Steam Achievements
+
+*Enemies drop more potions.
+
+************************************UPDATE*******************************************
+
+*Display cats saved count on island <<<< cat counter
+
+
+
+*Make Keys unique.
+
+************************************UPDATE*******************************************
+
+*Mushroom jump counter
+
+*when griffin key not required - put something else on griffin key pedestal
+
+*FIX - Glow - when changes glow amount in scene they flicker.
+
+*Sounds effect when cats are being kidnapped. (search for 'alarm' in sounds) <
+
+
+
+
+*Hole w Hands throw bones
+^Eating cats throw bones
+*Punching throws fangs (rats, wolves, bears)
+
+*Rip Tomb Stone where good characters die <
+^Also angel?
+
+*Enemy Droppables: 
+^Bees throw honeybee panels 1/4 chance
+^Zombies throw bone with chunk of meat 1/2 chance
+^Enemies throw coins for money system
+
+^Add tip to grab vase on griffin level, on wood crush part.
+*Etc.
+
+*Add info- when not having a required item. Add info about going back to island with start.
+^Go back by returning from where you came from?
+
+*Prospero Animation - Death anim while not on ground. <
+^FIX: when player dies underwater shouldn't fall like a rock. <<
+
+*non saved cats show in end scene as angels but they give you sad faces.
+
+*Underwater - Make it more obvious when running out of air.
+
+*populate with blue birds
+
+end scene, let know going off the hill ends game
+
+*INTRO - Populate everything with mushrooms (even intro)
+
+* Bombs & Fireball - Radial Damage
+ ^Add radial effect
+ ^Destroy delay based on distance
+
+*Message letting player know which power up was absorbed. <<<
+  ^Moth Wings text(use catsaved font) has wings, antennas, moth texture.
+  ^Fireball text has a wizard hat on top. 
+  ^Add info, e.g. fireball shoots with A, shoots up with A + up dpad - Moth wings tap tap tap B to fly.
+
+^New attack: on air, press down, strick what's on bottom. Step with both legs.
+^New attack: Attack upwards on air. Spin kick?
+
+increase level baloon names' resolution
+
+*Count hits. (Enemy hit within two seconds adds to count)
+^make upperCut based on count hits. (3 in a row)
+^make hard punch based on count hits as well. (4 in a row) 
+
+*DECORATION: LVL 12 - Hatch that leads to deck must show exterior's moonlight from below deck
+
+*Avoid thaks & thumbs up
+
+*Populate with more obstacles
+
+*^"DODGED" text for arrows dodged
+^Adjust attack duration to make more dynamic
+
+^Use wind visual on top of Griffin Tower.
+
+*ISLAND: Offset flag animation time by x pos.
+
+*Dragon Flying around mountain every now and then. (Maybe after designing dragon for final level). <<<
+
+* MAKE DANDELIONS <<<<
+
+*LEVEL DECORATION: Wooden Fences (mostly for FG and BG)
+
+*Cat sleep if wait too long.  <<<<
+
+*Make cats say meow on touch <
+
+*Spinning log should be in sequence <<<
+
+*INTRO - (?) Fill the sky with something (when leaving forest)
+^Add white birds at distance, also add at begining. <--- populate rest of game with white birds.
+*INTRO - (?) More Clouds (long term list)
+*INTRO - (?) Moon Needs Far away Horizon
+*INTRO - (?) Make dragon do an evil laugh before picking up jar
+
+*LVL 11 - Tree Village - Tweak: bouncing root only collides from above. <<
+*LVL 11 - Add something better in cave chest.
+
+*Add vegetation on rock among all levels
+						
+*LVL 13 - Dragon sucking energy effect (?)  
+*LVL 13 - place lid anim (?) 
+*LVL 13 - Block first cave path, make it less obvious (?) 
+
+
+
+*Think more underwater items.
+^Plants
+^Anchors
+
+
+*when going back to island 'press button to start' shows briefly for some reason.
+
+*Message letting player know when he took an important item.
+
+*END LEVEL - Summarize accomplishments. Enemies killed, cats saved. <<
+* Victory when beating a level, it needs a victory text to go with the 'press button to continue' <<
+*End Level - Black Bg - Change with something a bit more cheerful, especially when hitting button.
+
+*Tweak. Griffin Tower. Subtle clouds around when Griffin is flying.
+*Tweak: Castle Level. BG windows, doors, columns, curtains, tiled floors.
+
+*Decoration: Make levels more distinct right from the start. <<
+- Eg. Mine Level, add much more mine karts laying around and mining elememnts
+scattered, right from the start.
+^Add signs such as "To the mines" or "Beware"
+
+*screaming enemies throw spit when screaming
+
+*Lvl9- lava surfaces - some indictator that they will move in one direction.
+
+*Sailboat.js - when carrying, translate horizontally and vertically as well.
+
+*Add money system - you can buy potions and such
+
+*Griffin - let it have a ouside screen locator (like cats)
+
+*Dragon Level - check final dragon msg
+*Dragon Level - dragon takes too long to be absorbed
+
+*Ground hit effect (for rat boss) (maybe for player jump+down attack)
+
+*More clues that boat moves forward when standing on the front part.
+
+*breathing sound when coming out of water and stamina less than 50%
+
+*fix - disable sounds that are too far away.
+
+*tweak - lose less stamina when attacking underwater.
+
+
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx PASS Nº 4 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+*lvl 2- when boss health is less than 50, bats come to get cats.
+
+*when cats are on waiting mode, and you bring more cats to the other side, bring thumbs up baloon
+
+
+*change rat that picks jar lid from into
+
+* LVL 10 - Throw rock on button to open gate door.
+
+*Fade Mesh Areas - Disable Mesh when alpha < .1
+
+(pause and inv help (add a simple black gradint behind, and "help:" text)
+
+*Level 10 - Ruins - Change ruins bg?
+*Level 10 - Ruins - Fill where it's black with dark stone surface.
+
+*Tweak. Splash (also underwater)
+
+Change cave texture
+*LVL 9 - 
+*LVL 11 - 
+
+*More rat & other chars textures?
+
+*Obstacle: Lava Ball jumps from lava (see how fireball looks)
+*Obstacle: Spinning Saw
+^Set chars on fire
+*Obstacle:Rotating Blades
+*Obstacle: Underwater currents.
+^Moving and static
+*Obstacle: USE FLAME THROWERS AS OBSTACLES 
+
+*Enemy : Carnivorous plant
+*Enemy : Spiders that come down on webs
+*Enemy : charging boar/rhino boss (hits rocks and gets dizzy)
+^Some are sleeping and you can avoid
+*Enemy : A monster with temporary protection (?)
+*Enemy : A monster with temporary spikes (?)
+*Enemy : If throwed fire is done, enemy that throws fire?
+*Enemy : *Monster Chest (?)
+*Enemy : Enemy that creates enemy particles (Evil old wizard rat?)
+*Enemy : Something that explodes with delay after one hit.
+*Enemy throws lances in jungle level (maybe tree level as well)
+*Enemy : Archer Rat
+*Enemy : Swarm of small enemies that attack you at the same time. Flee scared when they're few.
+
+*Obstacle: Metal balls with chains.
+^Maybe put chest below ball.
+
+*Add different cages
+^Lvl 6
+^Etc
+
+*Weapon: sword & arrow (lose them when hit, but can pick up again)
+^ Figure how to use weapon and also be able to drop it.
+^ can store in inventory, same system as keys
+
+*Add a small intro with cats that explain about the controls (still deciding on this)
+
+*poison? <- can be combined?
+
+* DECORATION:See about adding more interactive environment. Plants etc.
+^Make trees, plants swing subtly with wind?
+
+*LVL 13 -  Mouth door has drool  
+
+*More underwater bombs (pirate ship)
+
+*Moth wings can simply hold down be (no need to tap tap tap)
+
+*SAVE HIM & SAVE HER arrow pointing at cats.
+
+--------------*LVL 11 - Tree Village - Rats use tribal masks? (or circular unpained masks with 3 holes?)
+
+*Tapping on top right inventory absorbs item.
+
+*LVL 11 - Tree Village - Decoration.
+^Throrns in cave, have different shades
+^Make new cave texture (So it doesn't look like 3 layers)
+
+*FIX: Check if 'enter this level' is on fixed update (it doesn't respond) (?)
+^Try to replicate
+
+*Grab from edges
+^Add physics to free hand when grabbing.
+^For half a seconds grab tight.
+
+*Be able to pick (some) enemies somehow(?)
+^They get dizzy when receive damage.
+
+*Decoration: Stalagmites that match color with rock
+
+
+*IDEA - There's a password on Ruins, to open a door and get griffin's key. Password is in tree village.
+
+*Each level displays a title when it begins.
+
+*Character feature: Can slide when moving and pressing down.
+*Character feature: +Wall Grab
+^Slow down more on wall grab, add feedback sound when grabbing on wall.
+^Grab only when using arrow keys towards wall
+^When grabbing wall and jumping, jump towards the top of there's a top surface.
+
+*Character feature: Archer.
+
+*Add more birds
+  ^Fly patterns something more complex than a straight diagonal line
+
+*Obstacle: Hinge joint on platform, slowly moves down when with weigth. You have to move fast to
+get on upper platform.
+^Spring platform, moves down with weight. With all cats you can slide under a lower platform.
+*Obstacle: Wall platform coming in and out.
+*Obstacle: Plafrorm that sink when on top. (Put on top of spikes)
+
+*SURFACE MSG (a glove and some icon representing surface) so player knows where to get air
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx LOWER PRIORITY xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+Use ActiveManager: <<<
+^Don't destroy enemies by bounds. Set Active Manager handles it (deletes if inactive for too long)
+^Don't let Active Manager destroy cats. Disable from loadbybounds.
+^ActiveManager do not destroy water or important items.
+*ActiveManager hides level parts.
+  ^LVL 1 
+  ^LVL 2 
+  ^LVL 3 
+  ^LVL 4 
+  ^LVL 5 
+  ^LVL 6
+  ^LVL 7 
+  ^LVL 8 
+  ^LVL 9 
+  ^LVL 10 
+  ^LVL 11 
+  ^LVL 12
+  ^LVL 13
+
+
+*Obstacle: Spinning Tube, with entry inside. (Can work for castle, temple, big tree)
+^Can have harming items inside.
+
+*Fireball don't work underater (they turn off in a white smoke)
+
+*Character feature: Can make cats wait on command
+
+*Fix camera height.
+
+*Bird at start screen.
+
+*If you have wings you can jump on top of end level machine. And from there jump even higher.
+^Put something interesting 'hidden' up there?
+
+*TWO PLAYERS - FIX - OpenDoor.js - OpenDoor is on every door, but uses player's triggerAnimation.
+^If player 2 opens door it would trigger player 1's animation.
+
+*Game Store(?) - Buy things with coins enemies drop 
+
+*FontMeshArrange.js - Can change text in run time? 
+
+*Have combinable Items?
+  ^In inventory, instead of swapping, give option of combine.
+    e.g.: arros & poision, sword & poison, sword & fire potion, etc.
+
+*FEATURE: Coins - Figure out things to be bought with coins.
+
+ Dragon -Tweak: Wings fold when grounded. 
+
+*change evil jar's magic spiral effect name (it's plane003)
+
+*When losing health with zero stamina, face turns blue?                      
+
+*Characters names on GUI(?)
+
+*Bombs live fuses work even when being picked    <<           
+
+*OBSTACLE: Fire object. (fire that sticks to characters) <<
+
+*Tweak: Fruits magnet toward player? (easier to get) (same for coins?)
+
+Game Feature: Ice damage (things get inside ice shapes, and receive damage)
+^Possible powerup
+
+Game Feature: Electric zap damage.
+^ENEMY: Some rat or monster flying on a cloud
+
+*Game feature: PORTALS?? using stencil?... having time to add this, it would be awesome. You gotta add portals.
+
+*Gameplay situation - Large platform carrying you while enemies jump on you
+
+*Use boss script to have more enemies that get 'angry'
+
+*Decoration: Snow makes snow particles for feet particles.
+
+*More "crashing" situations (sideways crashing)
+
+*Catapult cats to other side
+
+*Level Puzzle: Stone code opens door, or gives key.
+
+*"Griffin died!" message (for last level)
+^Cat died message as well.
+
+--------------*Griffin fly fix - is grounded when flying and angle too steep.
+--------------Griffin can't mount from front (?)
+--------------^Mount griffin by jumping on top instead of hitting A (?)
+
+------------*Rats throw rocks at you
+
+---------*USE ITEMS AGAIN: Use stone hole object for something else (curretnly used only in Griffin Level, for wood crush) (?)
+
+*USE ITEMS AGAIN: More things that gives you poison.
+^Green potions.
+^Poisonous jungle plant. (touch and explode in green puff)
+
+*MINIGAME IDEA: On some level rememeber tunes from bells and replicate them.
+
+---------------*Spikes (Modify thorns)
+
+*Enemies drop potion(?)attack enemy
+
+*Down arrow to make cats stay put.
+
+-------------*Arrow shooting things.
+
+--------------*Fix Fade by bounds glitch, set current alpha to the correct starting value.
+--------------^Maybe give each element its own alpha value, instead of using group's current alpha
+
+*Fake rescuable cats that attack you. (?)
+
+*Add more to Level 11-
+^Make stair slab harder to access
+^Use parachute down (?)
+
+*LEVEL MECHANIC: Feed a monster to be able to go past him
+
+*Smoke puff when falling weight hits the ground
+
+--------------*Dust Particles on god rays
+-------------^Make dust particles prefab
+^Implement dust on all god rays
+^God rays are part of level (no prefab)
+
+*STUDY: IOS Game Center.
+
+*Wave hands and legs if distance to ground is too high
+
+*Add wind sound when moving fast
+
+*Make big enemies shake screen when land on ground
+
+*Make all cats use "Cat Generic 2" prefab
+    
+--------------*Make player attack faster. Enable next attack sooner.
+
+*Tweak: Make gameplay gui flowers a bit bigger (?)
+
+*Take away cats' props by picking them up, pushing select, putting prop into inventory, exiting inventory, 
+
+*When jumping, if there's a character at the bottom, apply squash effect.
+
+*MovementAI - If disabled movement cats auto come back if prospero is farther than certain distance.
+^After certain distance if auto enable movement is set to true
+^If auto enable is true, and prospero gets closer than a few units, enable movement
+^disable auto enable when placing cat down in sitting wait mode
+
+***configure joystick (click and drag from a generic playstation or xbox to the actions)
+At start show how keys are mapped.
+
+
+USER SUGGESTIONS:
+***Control cats (????)
+***Name cats (????)
+***Cat stack up
+^Cats below have hold cat up anim
+*Cat interact with environment (run away from mouse) 
+*Several cats hang from vine (???)
+
+CREDITS:
+Kevin MacLeod - (Make a list of all his music)
+Andrew Polhill - Comic Andy Font		

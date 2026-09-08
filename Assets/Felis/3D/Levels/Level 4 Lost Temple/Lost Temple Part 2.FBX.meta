@@ -1,0 +1,273 @@
+fileFormatVersion: 2
+guid: 84acba422439edf4d874ed4ed3972765
+timeCreated: 1440166138
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Temple Entrance
+    100004: Temple Entrance Hide
+    100006: Collision Part 2
+    100008: Temple Interior
+    100010: Temple Back Wall
+    100012: Temple Entrance Interior Hide
+    100014: Temple 1
+    100016: Object007
+    100018: Black Part 2
+    100020: Temple 2
+    100022: Temple 1 Cat Room
+    100024: Temple 2 Cat Room
+    100026: Black Cat Room
+    100028: Black Cat Room 2
+    100030: Temple 1 Cat Room 2
+    100032: Temple 1 Cat Room 2 Door Exterior
+    100034: Temple 1 Cat Room 2 Door Interior
+    100036: Temple 2 Cat Room001
+    100038: Door Hide Left
+    100040: Door Hide Righ
+    100042: Door Hide Left Room 2
+    100044: Door Hide Righ Room 2
+    100046: Door Hide Exterior Room 2
+    100048: Door Hide Interior Room 2
+    100050: Temple 2 Cat Room 2
+    100052: Object014
+    100054: Temple Exit
+    100056: Temple Exit Interior
+    100058: Temple Exit Interior Hide
+    100060: Temple Black Exterior
+    100062: Black 2 Part 2
+    100064: Collision 2 Part 2
+    100066: Temple 1 _ 2
+    100068: Temple 1 _1
+    100070: Temple 1 _3
+    100072: Temple 2 _!
+    100074: Temple 2 _3
+    100076: Temple 2_2
+    100078: Temple Back Wall 1
+    100080: Temple Back Wall 2
+    400000: //RootNode
+    400002: Temple Entrance
+    400004: Temple Entrance Hide
+    400006: Collision Part 2
+    400008: Temple Interior
+    400010: Temple Back Wall
+    400012: Temple Entrance Interior Hide
+    400014: Temple 1
+    400016: Object007
+    400018: Black Part 2
+    400020: Temple 2
+    400022: Temple 1 Cat Room
+    400024: Temple 2 Cat Room
+    400026: Black Cat Room
+    400028: Black Cat Room 2
+    400030: Temple 1 Cat Room 2
+    400032: Temple 1 Cat Room 2 Door Exterior
+    400034: Temple 1 Cat Room 2 Door Interior
+    400036: Temple 2 Cat Room001
+    400038: Door Hide Left
+    400040: Door Hide Righ
+    400042: Door Hide Left Room 2
+    400044: Door Hide Righ Room 2
+    400046: Door Hide Exterior Room 2
+    400048: Door Hide Interior Room 2
+    400050: Temple 2 Cat Room 2
+    400052: Object014
+    400054: Temple Exit
+    400056: Temple Exit Interior
+    400058: Temple Exit Interior Hide
+    400060: Temple Black Exterior
+    400062: Black 2 Part 2
+    400064: Collision 2 Part 2
+    400066: Temple 1 _ 2
+    400068: Temple 1 _1
+    400070: Temple 1 _3
+    400072: Temple 2 _!
+    400074: Temple 2 _3
+    400076: Temple 2_2
+    400078: Temple Back Wall 1
+    400080: Temple Back Wall 2
+    2300000: Temple Entrance
+    2300002: Temple Entrance Hide
+    2300004: Collision Part 2
+    2300006: Temple Interior
+    2300008: Temple Back Wall
+    2300010: Temple Entrance Interior Hide
+    2300012: Temple 1
+    2300014: Object007
+    2300016: Black Part 2
+    2300018: Temple 2
+    2300020: Temple 1 Cat Room
+    2300022: Temple 2 Cat Room
+    2300024: Black Cat Room
+    2300026: Black Cat Room 2
+    2300028: Temple 1 Cat Room 2
+    2300030: Temple 1 Cat Room 2 Door Exterior
+    2300032: Temple 1 Cat Room 2 Door Interior
+    2300034: Temple 2 Cat Room001
+    2300036: Door Hide Left
+    2300038: Door Hide Righ
+    2300040: Door Hide Left Room 2
+    2300042: Door Hide Righ Room 2
+    2300044: Door Hide Exterior Room 2
+    2300046: Door Hide Interior Room 2
+    2300048: Temple 2 Cat Room 2
+    2300050: Object014
+    2300052: Temple Exit
+    2300054: Temple Exit Interior
+    2300056: Temple Exit Interior Hide
+    2300058: Temple Black Exterior
+    2300060: Black 2 Part 2
+    2300062: Collision 2 Part 2
+    2300064: Temple 1 _ 2
+    2300066: Temple 1 _1
+    2300068: Temple 1 _3
+    2300070: Temple 2 _!
+    2300072: Temple 2 _3
+    2300074: Temple 2_2
+    2300076: Temple Back Wall 1
+    2300078: Temple Back Wall 2
+    3300000: Temple Entrance
+    3300002: Temple Entrance Hide
+    3300004: Collision Part 2
+    3300006: Temple Interior
+    3300008: Temple Back Wall
+    3300010: Temple Entrance Interior Hide
+    3300012: Temple 1
+    3300014: Object007
+    3300016: Black Part 2
+    3300018: Temple 2
+    3300020: Temple 1 Cat Room
+    3300022: Temple 2 Cat Room
+    3300024: Black Cat Room
+    3300026: Black Cat Room 2
+    3300028: Temple 1 Cat Room 2
+    3300030: Temple 1 Cat Room 2 Door Exterior
+    3300032: Temple 1 Cat Room 2 Door Interior
+    3300034: Temple 2 Cat Room001
+    3300036: Door Hide Left
+    3300038: Door Hide Righ
+    3300040: Door Hide Left Room 2
+    3300042: Door Hide Righ Room 2
+    3300044: Door Hide Exterior Room 2
+    3300046: Door Hide Interior Room 2
+    3300048: Temple 2 Cat Room 2
+    3300050: Object014
+    3300052: Temple Exit
+    3300054: Temple Exit Interior
+    3300056: Temple Exit Interior Hide
+    3300058: Temple Black Exterior
+    3300060: Black 2 Part 2
+    3300062: Collision 2 Part 2
+    3300064: Temple 1 _ 2
+    3300066: Temple 1 _1
+    3300068: Temple 1 _3
+    3300070: Temple 2 _!
+    3300072: Temple 2 _3
+    3300074: Temple 2_2
+    3300076: Temple Back Wall 1
+    3300078: Temple Back Wall 2
+    4300000: Temple Entrance
+    4300002: Temple Entrance Hide
+    4300004: Collision Part 2
+    4300006: Temple Interior
+    4300008: Temple Back Wall
+    4300010: Temple Entrance Interior Hide
+    4300012: Temple 1
+    4300014: Object007
+    4300016: Black Part 2
+    4300018: Temple 2
+    4300020: Temple 1 Cat Room
+    4300022: Temple 2 Cat Room
+    4300024: Black Cat Room
+    4300026: Black Cat Room 2
+    4300028: Temple 1 Cat Room 2
+    4300030: Temple 2 Cat Room001
+    4300032: Temple 1 Cat Room 2 Door Exterior
+    4300034: Temple 1 Cat Room 2 Door Interior
+    4300036: Door Hide Righ
+    4300038: Door Hide Left
+    4300040: Door Hide Righ Room 2
+    4300042: Door Hide Left Room 2
+    4300044: Door Hide Exterior Room 2
+    4300046: Door Hide Interior Room 2
+    4300048: Temple 2 Cat Room 2
+    4300050: Object014
+    4300052: Temple Exit
+    4300054: Temple Exit Interior
+    4300056: Temple Exit Interior Hide
+    4300058: Temple Black Exterior
+    4300060: Black 2 Part 2
+    4300062: Temple Back Wall 1
+    4300064: Temple Back Wall 2
+    4300066: Collision 2 Part 2
+    4300068: Temple 1 _1
+    4300070: Temple 1 _ 2
+    4300072: Temple 1 _3
+    4300074: Temple 2 _!
+    4300076: Temple 2_2
+    4300078: Temple 2 _3
+    9500000: //RootNode
+    11100000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

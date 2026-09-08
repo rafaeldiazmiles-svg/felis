@@ -1,0 +1,145 @@
+fileFormatVersion: 2
+guid: 5dcdcb62a7b1cfc4a822f6977bc2f2be
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Fruit A
+    100002: Fruit B
+    100004: Fruit C
+    100006: Fruit D
+    100008: Fruit E
+    100010: Fruit F
+    100012: Fruit G
+    100014: Fruit H
+    100016: Fruit I
+    100018: Fruit J
+    100020: Fruit K
+    100022: Fruit L
+    100024: Fruit M
+    100026: Fruit N
+    100028: Fruit O
+    100030: //RootNode
+    400000: Fruit A
+    400002: Fruit B
+    400004: Fruit C
+    400006: Fruit D
+    400008: Fruit E
+    400010: Fruit F
+    400012: Fruit G
+    400014: Fruit H
+    400016: Fruit I
+    400018: Fruit J
+    400020: Fruit K
+    400022: Fruit L
+    400024: Fruit M
+    400026: Fruit N
+    400028: Fruit O
+    400030: //RootNode
+    2300000: Fruit A
+    2300002: Fruit B
+    2300004: Fruit C
+    2300006: Fruit D
+    2300008: Fruit E
+    2300010: Fruit F
+    2300012: Fruit G
+    2300014: Fruit H
+    2300016: Fruit I
+    2300018: Fruit J
+    2300020: Fruit K
+    2300022: Fruit L
+    2300024: Fruit M
+    2300026: Fruit N
+    2300028: Fruit O
+    3300000: Fruit A
+    3300002: Fruit B
+    3300004: Fruit C
+    3300006: Fruit D
+    3300008: Fruit E
+    3300010: Fruit F
+    3300012: Fruit G
+    3300014: Fruit H
+    3300016: Fruit I
+    3300018: Fruit J
+    3300020: Fruit K
+    3300022: Fruit L
+    3300024: Fruit M
+    3300026: Fruit N
+    3300028: Fruit O
+    4300000: Fruit M
+    4300002: Fruit C
+    4300004: Fruit D
+    4300006: Fruit B
+    4300008: Fruit A
+    4300010: Fruit N
+    4300012: Fruit O
+    4300014: Fruit F
+    4300016: Fruit G
+    4300018: Fruit H
+    4300020: Fruit I
+    4300022: Fruit E
+    4300024: Fruit J
+    4300026: Fruit K
+    4300028: Fruit L
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

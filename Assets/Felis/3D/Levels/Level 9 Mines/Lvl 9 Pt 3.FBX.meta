@@ -1,0 +1,279 @@
+fileFormatVersion: 2
+guid: b9710430f8ade2c4db4348aa46c7aeba
+timeCreated: 1454336245
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Lvl 9 Col Pt 3
+    100002: //RootNode
+    100004: Rock Pt 3_1
+    100006: Rock Pt 3_2
+    100008: Rock Pt 3_3
+    100010: Rock Pt 3_4
+    100012: Rock Pt 3_5
+    100014: Rock Pt 3_6
+    100016: Mine Rails Pt 3_1
+    100018: Rock Pt 3_007
+    100020: Rock Pt 3_008
+    100022: Rock Pt 3_009
+    100024: Rock Pt 3_010
+    100026: Rock Pt 3_011
+    100028: Rock Pt 3_012
+    100030: Rock Pt 3_013
+    100032: Rock Pt 3_014
+    100034: Rock Pt 3_015
+    100036: Rock Pt 3_016
+    100038: Rock Pt 3_017
+    100040: Rock Pt 3_018
+    100042: Rock Pt 3_007 FG
+    100044: Rock Pt 3_008FG
+    100046: Rock Pt 3_009FG
+    100048: Rock Pt 3_010FG
+    100050: Rock Pt 3_011 FG
+    100052: Rock Pt 3_012FG
+    100054: Rock Pt 3_013 BG
+    100056: Rock Pt 3_014 BG
+    100058: Rock Pt 3_015 BG
+    100060: Rock Pt 3_016 BG
+    100062: Rock Pt 3_017 BG
+    100064: Rock Pt 3_018 BG
+    100066: Black LVL pt 3_1
+    100068: Black LVL pt 3_2
+    100070: Black LVL pt 3_3
+    100072: Black LVL pt 3_4
+    100074: Black LVL pt 3_5
+    100076: Black LVL pt 3_6
+    100078: BG Lvl 9 Mines Pt 3_1
+    100080: BG Lvl 9 Mines Pt 3_2
+    100082: Stalagmites Pt 3
+    400000: Lvl 9 Col Pt 3
+    400002: //RootNode
+    400004: Rock Pt 3_1
+    400006: Rock Pt 3_2
+    400008: Rock Pt 3_3
+    400010: Rock Pt 3_4
+    400012: Rock Pt 3_5
+    400014: Rock Pt 3_6
+    400016: Mine Rails Pt 3_1
+    400018: Rock Pt 3_007
+    400020: Rock Pt 3_008
+    400022: Rock Pt 3_009
+    400024: Rock Pt 3_010
+    400026: Rock Pt 3_011
+    400028: Rock Pt 3_012
+    400030: Rock Pt 3_013
+    400032: Rock Pt 3_014
+    400034: Rock Pt 3_015
+    400036: Rock Pt 3_016
+    400038: Rock Pt 3_017
+    400040: Rock Pt 3_018
+    400042: Rock Pt 3_007 FG
+    400044: Rock Pt 3_008FG
+    400046: Rock Pt 3_009FG
+    400048: Rock Pt 3_010FG
+    400050: Rock Pt 3_011 FG
+    400052: Rock Pt 3_012FG
+    400054: Rock Pt 3_013 BG
+    400056: Rock Pt 3_014 BG
+    400058: Rock Pt 3_015 BG
+    400060: Rock Pt 3_016 BG
+    400062: Rock Pt 3_017 BG
+    400064: Rock Pt 3_018 BG
+    400066: Black LVL pt 3_1
+    400068: Black LVL pt 3_2
+    400070: Black LVL pt 3_3
+    400072: Black LVL pt 3_4
+    400074: Black LVL pt 3_5
+    400076: Black LVL pt 3_6
+    400078: BG Lvl 9 Mines Pt 3_1
+    400080: BG Lvl 9 Mines Pt 3_2
+    400082: Stalagmites Pt 3
+    2300000: Lvl 9 Col Pt 3
+    2300002: Rock Pt 3_1
+    2300004: Rock Pt 3_2
+    2300006: Rock Pt 3_3
+    2300008: Rock Pt 3_4
+    2300010: Rock Pt 3_5
+    2300012: Rock Pt 3_6
+    2300014: Mine Rails Pt 3_1
+    2300016: Rock Pt 3_007
+    2300018: Rock Pt 3_008
+    2300020: Rock Pt 3_009
+    2300022: Rock Pt 3_010
+    2300024: Rock Pt 3_011
+    2300026: Rock Pt 3_012
+    2300028: Rock Pt 3_013
+    2300030: Rock Pt 3_014
+    2300032: Rock Pt 3_015
+    2300034: Rock Pt 3_016
+    2300036: Rock Pt 3_017
+    2300038: Rock Pt 3_018
+    2300040: Rock Pt 3_007 FG
+    2300042: Rock Pt 3_008FG
+    2300044: Rock Pt 3_009FG
+    2300046: Rock Pt 3_010FG
+    2300048: Rock Pt 3_011 FG
+    2300050: Rock Pt 3_012FG
+    2300052: Rock Pt 3_013 BG
+    2300054: Rock Pt 3_014 BG
+    2300056: Rock Pt 3_015 BG
+    2300058: Rock Pt 3_016 BG
+    2300060: Rock Pt 3_017 BG
+    2300062: Rock Pt 3_018 BG
+    2300064: Black LVL pt 3_1
+    2300066: Black LVL pt 3_2
+    2300068: Black LVL pt 3_3
+    2300070: Black LVL pt 3_4
+    2300072: Black LVL pt 3_5
+    2300074: Black LVL pt 3_6
+    2300076: BG Lvl 9 Mines Pt 3_1
+    2300078: BG Lvl 9 Mines Pt 3_2
+    2300080: Stalagmites Pt 3
+    3300000: Lvl 9 Col Pt 3
+    3300002: Rock Pt 3_1
+    3300004: Rock Pt 3_2
+    3300006: Rock Pt 3_3
+    3300008: Rock Pt 3_4
+    3300010: Rock Pt 3_5
+    3300012: Rock Pt 3_6
+    3300014: Mine Rails Pt 3_1
+    3300016: Rock Pt 3_007
+    3300018: Rock Pt 3_008
+    3300020: Rock Pt 3_009
+    3300022: Rock Pt 3_010
+    3300024: Rock Pt 3_011
+    3300026: Rock Pt 3_012
+    3300028: Rock Pt 3_013
+    3300030: Rock Pt 3_014
+    3300032: Rock Pt 3_015
+    3300034: Rock Pt 3_016
+    3300036: Rock Pt 3_017
+    3300038: Rock Pt 3_018
+    3300040: Rock Pt 3_007 FG
+    3300042: Rock Pt 3_008FG
+    3300044: Rock Pt 3_009FG
+    3300046: Rock Pt 3_010FG
+    3300048: Rock Pt 3_011 FG
+    3300050: Rock Pt 3_012FG
+    3300052: Rock Pt 3_013 BG
+    3300054: Rock Pt 3_014 BG
+    3300056: Rock Pt 3_015 BG
+    3300058: Rock Pt 3_016 BG
+    3300060: Rock Pt 3_017 BG
+    3300062: Rock Pt 3_018 BG
+    3300064: Black LVL pt 3_1
+    3300066: Black LVL pt 3_2
+    3300068: Black LVL pt 3_3
+    3300070: Black LVL pt 3_4
+    3300072: Black LVL pt 3_5
+    3300074: Black LVL pt 3_6
+    3300076: BG Lvl 9 Mines Pt 3_1
+    3300078: BG Lvl 9 Mines Pt 3_2
+    3300080: Stalagmites Pt 3
+    4300000: Rock Pt 3_1
+    4300002: Rock Pt 3_2
+    4300004: Rock Pt 3_3
+    4300006: Rock Pt 3_4
+    4300008: Rock Pt 3_5
+    4300010: Rock Pt 3_6
+    4300012: Lvl 9 Col Pt 3
+    4300014: Mine Rails Pt 3_1
+    4300016: Rock Pt 3_007
+    4300018: Rock Pt 3_008
+    4300020: Rock Pt 3_009
+    4300022: Rock Pt 3_010
+    4300024: Rock Pt 3_011
+    4300026: Rock Pt 3_012
+    4300028: Rock Pt 3_013
+    4300030: Rock Pt 3_014
+    4300032: Rock Pt 3_015
+    4300034: Rock Pt 3_016
+    4300036: Rock Pt 3_017
+    4300038: Rock Pt 3_018
+    4300040: Rock Pt 3_007 FG
+    4300042: Rock Pt 3_008FG
+    4300044: Rock Pt 3_009FG
+    4300046: Rock Pt 3_010FG
+    4300048: Rock Pt 3_011 FG
+    4300050: Rock Pt 3_012FG
+    4300052: Rock Pt 3_013 BG
+    4300054: Rock Pt 3_014 BG
+    4300056: Rock Pt 3_015 BG
+    4300058: Rock Pt 3_016 BG
+    4300060: Rock Pt 3_017 BG
+    4300062: Rock Pt 3_018 BG
+    4300064: Black LVL pt 3_1
+    4300066: Black LVL pt 3_2
+    4300068: Black LVL pt 3_3
+    4300070: Black LVL pt 3_4
+    4300072: Black LVL pt 3_5
+    4300074: Black LVL pt 3_6
+    4300076: BG Lvl 9 Mines Pt 3_2
+    4300078: BG Lvl 9 Mines Pt 3_1
+    4300080: Stalagmites Pt 3
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

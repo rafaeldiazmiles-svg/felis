@@ -1,0 +1,107 @@
+fileFormatVersion: 2
+guid: f138404a0d0ff2e4ea0d7859324955e4
+timeCreated: 1438282906
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Castle Tower Collision001
+    100002: //RootNode
+    100004: Grass BG2
+    100006: Grass Landscape BG001
+    100008: Grass Landscape FG001
+    100010: Grass Landscape001
+    100012: Horizon Forest
+    100014: Tower Right Side
+    400000: Castle Tower Collision001
+    400002: //RootNode
+    400004: Grass BG2
+    400006: Grass Landscape BG001
+    400008: Grass Landscape FG001
+    400010: Grass Landscape001
+    400012: Horizon Forest
+    400014: Tower Right Side
+    2300000: Castle Tower Collision001
+    2300002: Grass BG2
+    2300004: Grass Landscape BG001
+    2300006: Grass Landscape FG001
+    2300008: Grass Landscape001
+    2300010: Horizon Forest
+    2300012: Tower Right Side
+    3300000: Castle Tower Collision001
+    3300002: Grass BG2
+    3300004: Grass Landscape BG001
+    3300006: Grass Landscape FG001
+    3300008: Grass Landscape001
+    3300010: Horizon Forest
+    3300012: Tower Right Side
+    4300000: Grass BG2
+    4300002: Tower Right Side
+    4300004: Horizon Forest
+    4300006: Grass Landscape FG001
+    4300008: Grass Landscape001
+    4300010: Grass Landscape BG001
+    4300012: Castle Tower Collision001
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

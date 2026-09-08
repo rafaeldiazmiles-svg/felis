@@ -1,0 +1,50 @@
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx PASS Nº 4 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+-------------------------------*Destroying Haning cage - cat not saved
+
+-------------------------------*Island Prospero Hair Fix
+
+-------------------------------*Fix Castle chan swing back
+
+-------------------------------*Make spikes destructible
+
+-------------------------------*Investigate double potion drop
+
+---------------x---------------*Investigate wrong level entering on game start  (Couldn't replicate)
+
+-------------------------------*Make thorns smaller throughout the game
+
+-------------------------------*Prospero turns white permanently
+
+************************************UPDATE*******************************************
+
+*Tips:
+-------------------------------How to Open Chest
+-------------------------------How to Punch
+-------------------------------How to make cat wait
+-------------------------------Inventory
+-------------------------------Potion tutorial
+
+
+
+*BUG, when choosing game with wizard hat, going back, choosing a new game, wizard hat wont dissapear.
+
+-------------------------------*Save system.
+-------------------------------^Remember to delete checkpoints when clearing a game slot.
+-------------------------------^Remember to setup for griffin levels.
+-------------------------------^When saving, set other checkpoints to unsaved
+-------------------------------^Add zerky rays
+-------------------------------(check if it works in level 7)
+-------------------------------(load missing cat in mushroom level and village tree level)
+-------------------------------check if it works on dark forest
+
+-------------------------------*BUG, Island, can still move when asking if enter level.
+
+-------------------------------*BUG, Cats fall on hand w holes.
+
+-------------------------------*Castle level fix kill zones
+-------------------------------*Castle level add inventory tip for key
+-------------------------------*Fix key 2d lock
+-------------------------------*Wait for all cats to be nearby at end of levelº

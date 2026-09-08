@@ -1,0 +1,276 @@
+fileFormatVersion: 2
+guid: c4fcd4a89427c2b47b5763725ad09c3d
+timeCreated: 1438798023
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Collision
+    100002: Floor
+    100004: Floor BG
+    100006: Floor FG
+    100008: Forest Fog
+    100010: //RootNode
+    100012: Horizon
+    100014: Jungle Rock BG
+    100016: Jungle Trees
+    100018: Forest Fog BG
+    100020: Forest Fog bg
+    100022: Forest Fog 1
+    100024: Floor Fall
+    100026: Floor Fall FG
+    100028: Board 1
+    100030: Board 2
+    100032: Board 3
+    100034: Board 4
+    100036: Board 5
+    100038: Board 6
+    100040: Board 7
+    100042: Board 8
+    100044: Hanging Bridge
+    100046: Hanging Bridge End
+    100048: Hanging Bridge Start
+    100050: Root
+    100052: Fall
+    100054: Tall Rocks
+    100056: Trees Far
+    100058: Jungle Trees BG
+    100060: Water FG
+    100062: Water Surface
+    100064: Water Edge BG
+    100066: Water Edge FG
+    100068: Water Root
+    100070: Water Wave 001
+    100072: Water Wave 002
+    100074: Water Wave 003
+    100076: Water Wave 004
+    100078: Water Wave 005
+    100080: Water Wave 006
+    100082: Black
+    100084: Mushrooms
+    100086: Fall 1
+    100088: Fall 2
+    100090: Floor 1
+    100092: Floor BG 1
+    100094: Floor Fall 1
+    100096: Floor Fall 2
+    100098: Floor FG 1
+    100100: Jungle Trees 1
+    100102: LVL 4 Black_Cover Key Cave
+    400000: Collision
+    400002: Floor
+    400004: Floor BG
+    400006: Floor FG
+    400008: Forest Fog
+    400010: //RootNode
+    400012: Horizon
+    400014: Jungle Rock BG
+    400016: Jungle Trees
+    400018: Forest Fog BG
+    400020: Forest Fog bg
+    400022: Forest Fog 1
+    400024: Floor Fall
+    400026: Floor Fall FG
+    400028: Board 1
+    400030: Board 2
+    400032: Board 3
+    400034: Board 4
+    400036: Board 5
+    400038: Board 6
+    400040: Board 7
+    400042: Board 8
+    400044: Hanging Bridge
+    400046: Hanging Bridge End
+    400048: Hanging Bridge Start
+    400050: Root
+    400052: Fall
+    400054: Tall Rocks
+    400056: Trees Far
+    400058: Jungle Trees BG
+    400060: Water FG
+    400062: Water Surface
+    400064: Water Edge BG
+    400066: Water Edge FG
+    400068: Water Root
+    400070: Water Wave 001
+    400072: Water Wave 002
+    400074: Water Wave 003
+    400076: Water Wave 004
+    400078: Water Wave 005
+    400080: Water Wave 006
+    400082: Black
+    400084: Mushrooms
+    400086: Fall 1
+    400088: Fall 2
+    400090: Floor 1
+    400092: Floor BG 1
+    400094: Floor Fall 1
+    400096: Floor Fall 2
+    400098: Floor FG 1
+    400100: Jungle Trees 1
+    400102: LVL 4 Black_Cover Key Cave
+    2300000: Collision
+    2300002: Floor
+    2300004: Floor BG
+    2300006: Floor FG
+    2300008: Forest Fog
+    2300010: Horizon
+    2300012: Jungle Rock BG
+    2300014: Jungle Trees
+    2300016: Forest Fog BG
+    2300018: Forest Fog bg
+    2300020: Forest Fog 1
+    2300022: Floor Fall
+    2300024: Floor Fall FG
+    2300026: Hanging Bridge
+    2300028: Fall
+    2300030: Tall Rocks
+    2300032: Trees Far
+    2300034: Jungle Trees BG
+    2300036: Water FG
+    2300038: Water Surface
+    2300040: Water Edge BG
+    2300042: Water Edge FG
+    2300044: Black
+    2300046: Mushrooms
+    2300048: Fall 1
+    2300050: Fall 2
+    2300052: Floor 1
+    2300054: Floor BG 1
+    2300056: Floor Fall 1
+    2300058: Floor Fall 2
+    2300060: Floor FG 1
+    2300062: Jungle Trees 1
+    2300064: LVL 4 Black_Cover Key Cave
+    3300000: Collision
+    3300002: Floor
+    3300004: Floor BG
+    3300006: Floor FG
+    3300008: Forest Fog
+    3300010: Horizon
+    3300012: Jungle Rock BG
+    3300014: Jungle Trees
+    3300016: Forest Fog BG
+    3300018: Forest Fog bg
+    3300020: Forest Fog 1
+    3300022: Floor Fall
+    3300024: Floor Fall FG
+    3300026: Hanging Bridge
+    3300028: Fall
+    3300030: Tall Rocks
+    3300032: Trees Far
+    3300034: Jungle Trees BG
+    3300036: Water FG
+    3300038: Water Surface
+    3300040: Water Edge BG
+    3300042: Water Edge FG
+    3300044: Black
+    3300046: Mushrooms
+    3300048: Fall 1
+    3300050: Fall 2
+    3300052: Floor 1
+    3300054: Floor BG 1
+    3300056: Floor Fall 1
+    3300058: Floor Fall 2
+    3300060: Floor FG 1
+    3300062: Jungle Trees 1
+    3300064: LVL 4 Black_Cover Key Cave
+    4300000: Floor
+    4300002: Collision
+    4300004: Floor BG
+    4300006: Floor FG
+    4300008: Forest Fog
+    4300010: Horizon
+    4300012: Jungle Rock BG
+    4300014: Jungle Trees
+    4300016: Forest Fog bg
+    4300018: Forest Fog BG
+    4300020: Forest Fog
+    4300022: Floor Fall
+    4300024: Floor Fall FG
+    4300026: Hanging Bridge
+    4300028: Fall
+    4300030: Tall Rocks
+    4300032: Trees Far
+    4300034: Jungle Trees BG
+    4300036: Water FG
+    4300038: Water Surface
+    4300040: Water Edge FG
+    4300042: Water Edge BG
+    4300044: Black
+    4300046: Mushrooms
+    4300048: Floor FG 1
+    4300050: Floor 1
+    4300052: Floor Fall 1
+    4300054: Floor Fall 2
+    4300056: Floor BG 1
+    4300058: Jungle Trees 1
+    4300060: Forest Fog 1
+    4300062: Fall 1
+    4300064: Fall 2
+    4300066: LVL 4 Black_Cover Key Cave
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

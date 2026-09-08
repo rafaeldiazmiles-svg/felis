@@ -1,0 +1,10 @@
+LEVEL 1: Race
+^Obstacle race.
+
+LEVEL 2: Cats on boars lance fight. OR Arrow shooting.
+
+LEVEL 12: Pirate cannon, Set Angle and Force to defeat other canon.
+^Enemy rat with pirate hat.
+
+
+Minigame about hitting bells and remembering tunes.

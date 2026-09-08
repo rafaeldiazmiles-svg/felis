@@ -1,0 +1,159 @@
+fileFormatVersion: 2
+guid: a367144e01a8edf43a84e5defb8215ec
+timeCreated: 1437425844
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Castle Tower Collision
+    100002: //RootNode
+    100004: Grass BG2
+    100006: Grass Landscape
+    100008: Grass Landscape BG
+    100010: Grass Landscape FG
+    100012: Horizon Forest
+    100014: Tree Group
+    100016: Trees
+    100018: Trees BG
+    100020: Bridge
+    100022: Bridge BG
+    100024: Bridge FG
+    100026: Water Edge BG
+    100028: Water Edge FG
+    100030: Water BG
+    100032: Water FG
+    100034: lvl 2 cliff
+    400000: Castle Tower Collision
+    400002: //RootNode
+    400004: Grass BG2
+    400006: Grass Landscape
+    400008: Grass Landscape BG
+    400010: Grass Landscape FG
+    400012: Horizon Forest
+    400014: Tree Group
+    400016: Trees
+    400018: Trees BG
+    400020: Bridge
+    400022: Bridge BG
+    400024: Bridge FG
+    400026: Water Edge BG
+    400028: Water Edge FG
+    400030: Water BG
+    400032: Water FG
+    400034: lvl 2 cliff
+    2300000: Castle Tower Collision
+    2300002: Grass BG2
+    2300004: Grass Landscape
+    2300006: Grass Landscape BG
+    2300008: Grass Landscape FG
+    2300010: Horizon Forest
+    2300012: Tree Group
+    2300014: Trees
+    2300016: Trees BG
+    2300018: Bridge
+    2300020: Bridge BG
+    2300022: Bridge FG
+    2300024: Water Edge BG
+    2300026: Water Edge FG
+    2300028: Water BG
+    2300030: Water FG
+    2300032: lvl 2 cliff
+    3300000: Castle Tower Collision
+    3300002: Grass BG2
+    3300004: Grass Landscape
+    3300006: Grass Landscape BG
+    3300008: Grass Landscape FG
+    3300010: Horizon Forest
+    3300012: Tree Group
+    3300014: Trees
+    3300016: Trees BG
+    3300018: Bridge
+    3300020: Bridge BG
+    3300022: Bridge FG
+    3300024: Water Edge BG
+    3300026: Water Edge FG
+    3300028: Water BG
+    3300030: Water FG
+    3300032: lvl 2 cliff
+    4300000: Trees
+    4300002: Trees BG
+    4300004: Tree Group
+    4300006: Horizon Forest
+    4300008: Grass Landscape
+    4300010: Castle Tower Collision
+    4300012: Grass Landscape FG
+    4300014: Grass Landscape BG
+    4300016: Grass BG2
+    4300018: Bridge
+    4300020: Bridge BG
+    4300022: Bridge FG
+    4300024: Water Edge FG
+    4300026: Water Edge BG
+    4300028: Water BG
+    4300030: Water FG
+    4300032: lvl 2 cliff
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

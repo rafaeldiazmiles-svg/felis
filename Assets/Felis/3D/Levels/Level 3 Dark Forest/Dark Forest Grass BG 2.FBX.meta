@@ -1,0 +1,100 @@
+fileFormatVersion: 2
+guid: ce049d54f30bebb46b6b3cb480389056
+timeCreated: 1426174355
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Grass BG 2
+    100004: Grass BG2 Part 4
+    100006: Grass BG2 Part 5
+    100008: Volcano BG
+    100010: Volcano Smoke
+    400000: //RootNode
+    400002: Grass BG 2
+    400004: Grass BG2 Part 4
+    400006: Grass BG2 Part 5
+    400008: Volcano BG
+    400010: Volcano Smoke
+    2300000: //RootNode
+    2300002: Grass BG 2
+    2300004: Grass BG2 Part 4
+    2300006: Grass BG2 Part 5
+    2300008: Volcano BG
+    2300010: Volcano Smoke
+    3300000: //RootNode
+    3300002: Grass BG 2
+    3300004: Grass BG2 Part 4
+    3300006: Grass BG2 Part 5
+    3300008: Volcano BG
+    3300010: Volcano Smoke
+    4300000: Grass BG
+    4300002: Grass BG 2
+    4300004: Grass BG2 Part 4
+    4300006: Grass BG2 Part 5
+    4300008: Volcano Smoke
+    4300010: Volcano BG
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

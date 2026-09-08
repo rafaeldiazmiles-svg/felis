@@ -1,0 +1,292 @@
+fileFormatVersion: 2
+guid: 6c6d0640b5b2f2a409089a94579bd713
+timeCreated: 1460562243
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Broken Bridge Mask
+    100002: LVL 12 Black Pt 1_4
+    100004: LVL 12 Dirt BG Pt 1_2
+    100006: LVL 7 Cliff
+    100008: //RootNode
+    100010: LVL7 Broken Bridge
+    100012: LVL7 GrassToRock Pt1_1
+    100014: LVL7 GrassToRock Pt1_2
+    100016: LVL7 GrassToRock Pt1_3
+    100018: LVL7 GrassToRock Pt1_4
+    100020: LVL7 GrassToRock Pt2
+    100022: LVL 7 Black
+    100024: LVL 7 Dirt BG
+    100026: LVL7 GrassToRock Pt003
+    100028: LVL7 GrassToRock Pt1 BG_1
+    100030: LVL7 GrassToRock Pt1 BG_2
+    100032: LVL7 GrassToRock Pt1 BG_3
+    100034: LVL7 GrassToRock Pt1 FG_1
+    100036: LVL7 GrassToRock Pt1 FG_2
+    100038: LVL7 GrassToRock Pt1 FG_3
+    100040: LVL7 GrassToRock Pt1 FG_4
+    100042: LVL 7 Black_1
+    100044: LVL 7 Black_2
+    100046: LVL 7 Black_3
+    100048: LVL 7 Black_4
+    100050: LVL 7 Black_5
+    100052: LVL 7 Dirt BG Pt1_1
+    100054: LVL 7 Dirt BG Pt1_2
+    100056: LVL 7 Dirt BG Pt1_3
+    100058: LVL7 GrassToRock Pt2 FG
+    100060: LVL7 Trees BG_1
+    100062: LVL7 Trees BG_2
+    100064: LVL7 Trees BG_3
+    100066: LVL7 Trees FG_1
+    100068: LVL7 Trees FG_2
+    100070: LVL7 Trees FG_3
+    100072: LVL7 Trees FG_4
+    100074: LVL7 Trees_1
+    100076: LVL7 Trees_2
+    100078: LVL7 Trees_3
+    100080: LVL7 Trees_4
+    100082: LVL7 Trees_5
+    100084: LVL7 Black Cave
+    100086: LVL7 Trees_6
+    400000: Broken Bridge Mask
+    400002: LVL 12 Black Pt 1_4
+    400004: LVL 12 Dirt BG Pt 1_2
+    400006: LVL 7 Cliff
+    400008: //RootNode
+    400010: LVL7 Broken Bridge
+    400012: LVL7 GrassToRock Pt1_1
+    400014: LVL7 GrassToRock Pt1_2
+    400016: LVL7 GrassToRock Pt1_3
+    400018: LVL7 GrassToRock Pt1_4
+    400020: LVL7 GrassToRock Pt2
+    400022: LVL 7 Black
+    400024: LVL 7 Dirt BG
+    400026: LVL7 GrassToRock Pt003
+    400028: LVL7 GrassToRock Pt1 BG_1
+    400030: LVL7 GrassToRock Pt1 BG_2
+    400032: LVL7 GrassToRock Pt1 BG_3
+    400034: LVL7 GrassToRock Pt1 FG_1
+    400036: LVL7 GrassToRock Pt1 FG_2
+    400038: LVL7 GrassToRock Pt1 FG_3
+    400040: LVL7 GrassToRock Pt1 FG_4
+    400042: LVL 7 Black_1
+    400044: LVL 7 Black_2
+    400046: LVL 7 Black_3
+    400048: LVL 7 Black_4
+    400050: LVL 7 Black_5
+    400052: LVL 7 Dirt BG Pt1_1
+    400054: LVL 7 Dirt BG Pt1_2
+    400056: LVL 7 Dirt BG Pt1_3
+    400058: LVL7 GrassToRock Pt2 FG
+    400060: LVL7 Trees BG_1
+    400062: LVL7 Trees BG_2
+    400064: LVL7 Trees BG_3
+    400066: LVL7 Trees FG_1
+    400068: LVL7 Trees FG_2
+    400070: LVL7 Trees FG_3
+    400072: LVL7 Trees FG_4
+    400074: LVL7 Trees_1
+    400076: LVL7 Trees_2
+    400078: LVL7 Trees_3
+    400080: LVL7 Trees_4
+    400082: LVL7 Trees_5
+    400084: LVL7 Black Cave
+    400086: LVL7 Trees_6
+    2300000: Broken Bridge Mask
+    2300002: LVL 12 Black Pt 1_4
+    2300004: LVL 12 Dirt BG Pt 1_2
+    2300006: LVL 7 Cliff
+    2300008: LVL7 Broken Bridge
+    2300010: LVL7 GrassToRock Pt1_1
+    2300012: LVL7 GrassToRock Pt1_2
+    2300014: LVL7 GrassToRock Pt1_3
+    2300016: LVL7 GrassToRock Pt1_4
+    2300018: LVL7 GrassToRock Pt2
+    2300020: //RootNode
+    2300022: LVL 7 Black
+    2300024: LVL 7 Dirt BG
+    2300026: LVL7 GrassToRock Pt003
+    2300028: LVL7 GrassToRock Pt1 BG_1
+    2300030: LVL7 GrassToRock Pt1 BG_2
+    2300032: LVL7 GrassToRock Pt1 BG_3
+    2300034: LVL7 GrassToRock Pt1 FG_1
+    2300036: LVL7 GrassToRock Pt1 FG_2
+    2300038: LVL7 GrassToRock Pt1 FG_3
+    2300040: LVL7 GrassToRock Pt1 FG_4
+    2300042: LVL 7 Black_1
+    2300044: LVL 7 Black_2
+    2300046: LVL 7 Black_3
+    2300048: LVL 7 Black_4
+    2300050: LVL 7 Black_5
+    2300052: LVL 7 Dirt BG Pt1_1
+    2300054: LVL 7 Dirt BG Pt1_2
+    2300056: LVL 7 Dirt BG Pt1_3
+    2300058: LVL7 GrassToRock Pt2 FG
+    2300060: LVL7 Trees BG_1
+    2300062: LVL7 Trees BG_2
+    2300064: LVL7 Trees BG_3
+    2300066: LVL7 Trees FG_1
+    2300068: LVL7 Trees FG_2
+    2300070: LVL7 Trees FG_3
+    2300072: LVL7 Trees FG_4
+    2300074: LVL7 Trees_1
+    2300076: LVL7 Trees_2
+    2300078: LVL7 Trees_3
+    2300080: LVL7 Trees_4
+    2300082: LVL7 Trees_5
+    2300084: LVL7 Black Cave
+    2300086: LVL7 Trees_6
+    3300000: Broken Bridge Mask
+    3300002: LVL 12 Black Pt 1_4
+    3300004: LVL 12 Dirt BG Pt 1_2
+    3300006: LVL 7 Cliff
+    3300008: LVL7 Broken Bridge
+    3300010: LVL7 GrassToRock Pt1_1
+    3300012: LVL7 GrassToRock Pt1_2
+    3300014: LVL7 GrassToRock Pt1_3
+    3300016: LVL7 GrassToRock Pt1_4
+    3300018: LVL7 GrassToRock Pt2
+    3300020: //RootNode
+    3300022: LVL 7 Black
+    3300024: LVL 7 Dirt BG
+    3300026: LVL7 GrassToRock Pt003
+    3300028: LVL7 GrassToRock Pt1 BG_1
+    3300030: LVL7 GrassToRock Pt1 BG_2
+    3300032: LVL7 GrassToRock Pt1 BG_3
+    3300034: LVL7 GrassToRock Pt1 FG_1
+    3300036: LVL7 GrassToRock Pt1 FG_2
+    3300038: LVL7 GrassToRock Pt1 FG_3
+    3300040: LVL7 GrassToRock Pt1 FG_4
+    3300042: LVL 7 Black_1
+    3300044: LVL 7 Black_2
+    3300046: LVL 7 Black_3
+    3300048: LVL 7 Black_4
+    3300050: LVL 7 Black_5
+    3300052: LVL 7 Dirt BG Pt1_1
+    3300054: LVL 7 Dirt BG Pt1_2
+    3300056: LVL 7 Dirt BG Pt1_3
+    3300058: LVL7 GrassToRock Pt2 FG
+    3300060: LVL7 Trees BG_1
+    3300062: LVL7 Trees BG_2
+    3300064: LVL7 Trees BG_3
+    3300066: LVL7 Trees FG_1
+    3300068: LVL7 Trees FG_2
+    3300070: LVL7 Trees FG_3
+    3300072: LVL7 Trees FG_4
+    3300074: LVL7 Trees_1
+    3300076: LVL7 Trees_2
+    3300078: LVL7 Trees_3
+    3300080: LVL7 Trees_4
+    3300082: LVL7 Trees_5
+    3300084: LVL7 Black Cave
+    3300086: LVL7 Trees_6
+    4300000: LVL7 GrassToRock Pt1_1
+    4300002: LVL 12 Black Pt 1_4
+    4300004: LVL 12 Dirt BG Pt 1_2
+    4300006: LVL 7 Cliff
+    4300008: LVL7 Broken Bridge
+    4300010: Broken Bridge Mask
+    4300012: LVL7 GrassToRock Pt1_2
+    4300014: LVL7 GrassToRock Pt1_3
+    4300016: LVL7 GrassToRock Pt1_4
+    4300018: LVL7 GrassToRock Pt2
+    4300020: LVL 7 Col
+    4300022: LVL 7 Black
+    4300024: LVL 7 Dirt BG
+    4300026: LVL7 GrassToRock Pt1 FG_4
+    4300028: LVL7 GrassToRock Pt1 BG_2
+    4300030: LVL7 GrassToRock Pt1 BG_1
+    4300032: LVL7 GrassToRock Pt1 FG_1
+    4300034: LVL7 GrassToRock Pt1 BG_3
+    4300036: LVL7 GrassToRock Pt1 FG_2
+    4300038: LVL7 GrassToRock Pt1 FG_3
+    4300040: LVL7 GrassToRock Pt003
+    4300042: LVL 7 Black_1
+    4300044: LVL 7 Black_2
+    4300046: LVL 7 Black_3
+    4300048: LVL 7 Black_4
+    4300050: LVL 7 Black_5
+    4300052: LVL 7 Dirt BG Pt1_1
+    4300054: LVL 7 Dirt BG Pt1_2
+    4300056: LVL 7 Dirt BG Pt1_3
+    4300058: LVL7 GrassToRock Pt2 FG
+    4300060: LVL7 Trees_1
+    4300062: LVL7 Trees BG_3
+    4300064: LVL7 Trees FG_1
+    4300066: LVL7 Trees_2
+    4300068: LVL7 Trees_3
+    4300070: LVL7 Trees_4
+    4300072: LVL7 Trees_5
+    4300074: LVL7 Trees BG_1
+    4300076: LVL7 Trees BG_2
+    4300078: LVL7 Trees FG_2
+    4300080: LVL7 Trees FG_3
+    4300082: LVL7 Trees FG_4
+    4300084: LVL7 Black Cave
+    4300086: LVL7 Trees_6
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

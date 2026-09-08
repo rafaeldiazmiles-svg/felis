@@ -1,0 +1,106 @@
+fileFormatVersion: 2
+guid: 88dd46b603810244cb4a212b74e7c309
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Cat Icon
+    100004: Cross
+    100006: Exclamation
+    100008: Losing Cat Mesh
+    100010: Losing Cat Root
+    100012: Tiimer
+    100014: Warning Baloon
+    100016: Losing Cat Danger Direction Bone
+    100018: Losing Cat Direction
+    100020: Losing Cat Direction Bone
+    100022: Losing Cat Items
+    100024: Timer
+    400000: //RootNode
+    400002: Cat Icon
+    400004: Cross
+    400006: Exclamation
+    400008: Losing Cat Mesh
+    400010: Losing Cat Root
+    400012: Tiimer
+    400014: Warning Baloon
+    400016: Losing Cat Danger Direction Bone
+    400018: Losing Cat Direction
+    400020: Losing Cat Direction Bone
+    400022: Losing Cat Items
+    400024: Timer
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: Losing Cat002
+    4300002: Losing Cat Mesh
+    4300004: Losing Cat Items
+    4300006: Losing Cat Direction
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: Losing Cat Mesh
+    13700002: Losing Cat Direction
+    13700004: Losing Cat Items
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.01
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 4
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

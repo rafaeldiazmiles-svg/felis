@@ -1,0 +1,154 @@
+fileFormatVersion: 2
+guid: 9449ab177097bea45bf635d60c358396
+timeCreated: 1444248507
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Collision Pt 3
+    100002: Ground Pt 3 _1
+    100004: Ground Pt 3 _2
+    100006: Ground Pt 3 _3
+    100008: //RootNode
+    100010: Water Edge FG
+    100012: Dock
+    100014: Underwater Rocks
+    100016: Underwater Plants
+    100018: Black Cave Pt 3 Level 6
+    100020: Dirt BG Pt 3 Level 6
+    100022: Ground Pt 3 _1 BG
+    100024: Ground Pt 3 _1 FG
+    100026: Ground Pt 3 _2 BG
+    100028: Ground Pt 3 _2 FG
+    100030: Underwater BG Pt 3
+    100032: LVL 6 Black Pt 3
+    400000: Collision Pt 3
+    400002: Ground Pt 3 _1
+    400004: Ground Pt 3 _2
+    400006: Ground Pt 3 _3
+    400008: //RootNode
+    400010: Water Edge FG
+    400012: Dock
+    400014: Underwater Rocks
+    400016: Underwater Plants
+    400018: Black Cave Pt 3 Level 6
+    400020: Dirt BG Pt 3 Level 6
+    400022: Ground Pt 3 _1 BG
+    400024: Ground Pt 3 _1 FG
+    400026: Ground Pt 3 _2 BG
+    400028: Ground Pt 3 _2 FG
+    400030: Underwater BG Pt 3
+    400032: LVL 6 Black Pt 3
+    2300000: Collision Pt 3
+    2300002: Ground Pt 3 _1
+    2300004: Ground Pt 3 _2
+    2300006: Ground Pt 3 _3
+    2300008: Water Edge FG
+    2300010: Dock
+    2300012: Underwater Rocks
+    2300014: Underwater Plants
+    2300016: Black Cave Pt 3 Level 6
+    2300018: Dirt BG Pt 3 Level 6
+    2300020: Ground Pt 3 _1 BG
+    2300022: Ground Pt 3 _1 FG
+    2300024: Ground Pt 3 _2 BG
+    2300026: Ground Pt 3 _2 FG
+    2300028: Underwater BG Pt 3
+    2300030: LVL 6 Black Pt 3
+    3300000: Collision Pt 3
+    3300002: Ground Pt 3 _1
+    3300004: Ground Pt 3 _2
+    3300006: Ground Pt 3 _3
+    3300008: Water Edge FG
+    3300010: Dock
+    3300012: Underwater Rocks
+    3300014: Underwater Plants
+    3300016: Black Cave Pt 3 Level 6
+    3300018: Dirt BG Pt 3 Level 6
+    3300020: Ground Pt 3 _1 BG
+    3300022: Ground Pt 3 _1 FG
+    3300024: Ground Pt 3 _2 BG
+    3300026: Ground Pt 3 _2 FG
+    3300028: Underwater BG Pt 3
+    3300030: LVL 6 Black Pt 3
+    4300000: Ground Pt 3 _1
+    4300002: Ground Pt 3 _2
+    4300004: Ground Pt 3 _3
+    4300006: Collision Pt 3
+    4300008: Water Edge FG
+    4300010: Dock
+    4300012: Underwater Rocks
+    4300014: Underwater Plants
+    4300016: Dirt BG Pt 3 Level 6
+    4300018: Ground Pt 3 _1 BG
+    4300020: Ground Pt 3 _1 FG
+    4300022: Ground Pt 3 _2 FG
+    4300024: Ground Pt 3 _2 BG
+    4300026: Black Cave Pt 3 Level 6
+    4300028: Underwater BG Pt 3
+    4300030: LVL 6 Black Pt 3
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

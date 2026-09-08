@@ -1,0 +1,244 @@
+fileFormatVersion: 2
+guid: 80d893b5b3cc27c449b026a6d433a141
+timeCreated: 1441889751
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Collision Pt 1
+    100004: Ground Pt 1
+    100006: Ground Pt 1 _1
+    100008: Ground Pt 1 _2
+    100010: Collision Pt 1 _2
+    100012: Ground Pt 1 _02
+    100014: Falling Edge Pt 1
+    100016: Ground Pt 1 _3
+    100018: Ground Pt 1 _4
+    100020: Cave Exterior
+    100022: Cave Interior
+    100024: Cave Exterior Mask
+    100026: Cave Interior Mask
+    100028: Ground Pt 1 _1 BG
+    100030: Ground Pt 1 _1 FG
+    100032: Ground Pt 1 _2 BG
+    100034: Ground Pt 1 _2 FG
+    100036: Ground Pt 1 _3 BG
+    100038: Ground Pt 1 _3 FG
+    100040: Dirt BG Pt 1 _1
+    100042: Ground Pt 1 _4 BG
+    100044: Black Pt 1 _1
+    100046: Black Pt 1 _2
+    100048: Black Cave Pt 1 _1
+    100050: Black Big Cave Pt 1
+    100052: Black Cave Ext Pt 1 _2
+    100054: Fog Pt 1
+    100056: Fog Pt 2
+    100058: Trees pt 1
+    100060: Trees pt 1 FG
+    100062: Pine Tree Group
+    100064: Mushrooms Pt 1
+    100066: Pine Tree Group Pt 1
+    100068: Stalagmites Pt 1
+    400000: //RootNode
+    400002: Collision Pt 1
+    400004: Ground Pt 1
+    400006: Ground Pt 1 _1
+    400008: Ground Pt 1 _2
+    400010: Collision Pt 1 _2
+    400012: Ground Pt 1 _02
+    400014: Falling Edge Pt 1
+    400016: Ground Pt 1 _3
+    400018: Ground Pt 1 _4
+    400020: Cave Exterior
+    400022: Cave Interior
+    400024: Cave Exterior Mask
+    400026: Cave Interior Mask
+    400028: Ground Pt 1 _1 BG
+    400030: Ground Pt 1 _1 FG
+    400032: Ground Pt 1 _2 BG
+    400034: Ground Pt 1 _2 FG
+    400036: Ground Pt 1 _3 BG
+    400038: Ground Pt 1 _3 FG
+    400040: Dirt BG Pt 1 _1
+    400042: Ground Pt 1 _4 BG
+    400044: Black Pt 1 _1
+    400046: Black Pt 1 _2
+    400048: Black Cave Pt 1 _1
+    400050: Black Big Cave Pt 1
+    400052: Black Cave Ext Pt 1 _2
+    400054: Fog Pt 1
+    400056: Fog Pt 2
+    400058: Trees pt 1
+    400060: Trees pt 1 FG
+    400062: Pine Tree Group
+    400064: Mushrooms Pt 1
+    400066: Pine Tree Group Pt 1
+    400068: Stalagmites Pt 1
+    2300000: //RootNode
+    2300002: Collision Pt 1
+    2300004: Ground Pt 1
+    2300006: Ground Pt 1 _1
+    2300008: Ground Pt 1 _2
+    2300010: Collision Pt 1 _2
+    2300012: Ground Pt 1 _02
+    2300014: Falling Edge Pt 1
+    2300016: Ground Pt 1 _3
+    2300018: Ground Pt 1 _4
+    2300020: Cave Exterior
+    2300022: Cave Interior
+    2300024: Cave Exterior Mask
+    2300026: Cave Interior Mask
+    2300028: Ground Pt 1 _1 BG
+    2300030: Ground Pt 1 _1 FG
+    2300032: Ground Pt 1 _2 BG
+    2300034: Ground Pt 1 _2 FG
+    2300036: Ground Pt 1 _3 BG
+    2300038: Ground Pt 1 _3 FG
+    2300040: Dirt BG Pt 1 _1
+    2300042: Ground Pt 1 _4 BG
+    2300044: Black Pt 1 _1
+    2300046: Black Pt 1 _2
+    2300048: Black Cave Pt 1 _1
+    2300050: Black Big Cave Pt 1
+    2300052: Black Cave Ext Pt 1 _2
+    2300054: Fog Pt 1
+    2300056: Fog Pt 2
+    2300058: Trees pt 1
+    2300060: Trees pt 1 FG
+    2300062: Pine Tree Group
+    2300064: Mushrooms Pt 1
+    2300066: Pine Tree Group Pt 1
+    2300068: Stalagmites Pt 1
+    3300000: //RootNode
+    3300002: Collision Pt 1
+    3300004: Ground Pt 1
+    3300006: Ground Pt 1 _1
+    3300008: Ground Pt 1 _2
+    3300010: Collision Pt 1 _2
+    3300012: Ground Pt 1 _02
+    3300014: Falling Edge Pt 1
+    3300016: Ground Pt 1 _3
+    3300018: Ground Pt 1 _4
+    3300020: Cave Exterior
+    3300022: Cave Interior
+    3300024: Cave Exterior Mask
+    3300026: Cave Interior Mask
+    3300028: Ground Pt 1 _1 BG
+    3300030: Ground Pt 1 _1 FG
+    3300032: Ground Pt 1 _2 BG
+    3300034: Ground Pt 1 _2 FG
+    3300036: Ground Pt 1 _3 BG
+    3300038: Ground Pt 1 _3 FG
+    3300040: Dirt BG Pt 1 _1
+    3300042: Ground Pt 1 _4 BG
+    3300044: Black Pt 1 _1
+    3300046: Black Pt 1 _2
+    3300048: Black Cave Pt 1 _1
+    3300050: Black Big Cave Pt 1
+    3300052: Black Cave Ext Pt 1 _2
+    3300054: Fog Pt 1
+    3300056: Fog Pt 2
+    3300058: Trees pt 1
+    3300060: Trees pt 1 FG
+    3300062: Pine Tree Group
+    3300064: Mushrooms Pt 1
+    3300066: Pine Tree Group Pt 1
+    3300068: Stalagmites Pt 1
+    4300000: Ground Pt 1
+    4300002: Collision Pt 1
+    4300004: Ground Pt 1 _1
+    4300006: Ground Pt 1 _2
+    4300008: Ground Pt 1 _02
+    4300010: Collision Pt 1 _2
+    4300012: Falling Edge Pt 1
+    4300014: Ground Pt 1 _3
+    4300016: Ground Pt 1 _4
+    4300018: Cave Exterior
+    4300020: Cave Interior
+    4300022: Cave Interior Mask
+    4300024: Cave Exterior Mask
+    4300026: Ground Pt 1 _1 BG
+    4300028: Ground Pt 1 _2 BG
+    4300030: Ground Pt 1 _3 BG
+    4300032: Ground Pt 1 _3 FG
+    4300034: Ground Pt 1 _1 FG
+    4300036: Ground Pt 1 _2 FG
+    4300038: Dirt BG Pt 1 _1
+    4300040: Ground Pt 1 _4 BG
+    4300042: Black Pt 1 _1
+    4300044: Black Pt 1 _2
+    4300046: Black Cave Pt 1 _1
+    4300048: Black Big Cave Pt 1
+    4300050: Black Cave Ext Pt 1 _2
+    4300052: Fog Pt 1
+    4300054: Fog Pt 2
+    4300056: Trees pt 1
+    4300058: Trees pt 1 FG
+    4300060: Pine Tree Group
+    4300062: Pine Tree Group Pt 1
+    4300064: Mushrooms Pt 1
+    4300066: Stalagmites Pt 1
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

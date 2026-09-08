@@ -1,0 +1,156 @@
+fileFormatVersion: 2
+guid: 8c9337a6ea9393a4cadc6bf40947f7d1
+timeCreated: 1459884584
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Cliff Pt 2
+    100002: LVL 12 Black Pt 1_4
+    100004: LVL 12 Dirt BG Pt 1_2
+    100006: //RootNode
+    100008: LVL17 GrassToRock Pt1
+    100010: Pirate Ship Interior Pt3
+    100012: LVL 7 Col
+    100014: LVL 7 Cliff
+    100016: LVL7 GrassToRock
+    100018: LVL7 Broken Bridge
+    100020: Broken Bridge Mask
+    100022: Griffin Tower Entrance
+    100024: LVL7 Castle Entrance Mask
+    100026: Griffin Tower
+    100028: Griffin Tower Entrance 1
+    100030: Griffin Tower Stairs
+    100032: Griffin Tower Stairs Broken
+    100034: Griffin Tower Stairs001
+    400000: Cliff Pt 2
+    400002: LVL 12 Black Pt 1_4
+    400004: LVL 12 Dirt BG Pt 1_2
+    400006: //RootNode
+    400008: LVL17 GrassToRock Pt1
+    400010: Pirate Ship Interior Pt3
+    400012: LVL 7 Col
+    400014: LVL 7 Cliff
+    400016: LVL7 GrassToRock
+    400018: LVL7 Broken Bridge
+    400020: Broken Bridge Mask
+    400022: Griffin Tower Entrance
+    400024: LVL7 Castle Entrance Mask
+    400026: Griffin Tower
+    400028: Griffin Tower Entrance 1
+    400030: Griffin Tower Stairs
+    400032: Griffin Tower Stairs Broken
+    400034: Griffin Tower Stairs001
+    2300000: Cliff Pt 2
+    2300002: LVL 12 Black Pt 1_4
+    2300004: LVL 12 Dirt BG Pt 1_2
+    2300006: LVL17 GrassToRock Pt1
+    2300008: LVL 7 Col
+    2300010: LVL 7 Cliff
+    2300012: LVL7 GrassToRock
+    2300014: LVL7 Broken Bridge
+    2300016: Broken Bridge Mask
+    2300018: Griffin Tower Entrance
+    2300020: LVL7 Castle Entrance Mask
+    2300022: Griffin Tower
+    2300024: Griffin Tower Entrance 1
+    2300026: Griffin Tower Stairs
+    2300028: Griffin Tower Stairs Broken
+    2300030: Griffin Tower Stairs001
+    3300000: Cliff Pt 2
+    3300002: LVL 12 Black Pt 1_4
+    3300004: LVL 12 Dirt BG Pt 1_2
+    3300006: LVL17 GrassToRock Pt1
+    3300008: LVL 7 Col
+    3300010: LVL 7 Cliff
+    3300012: LVL7 GrassToRock
+    3300014: LVL7 Broken Bridge
+    3300016: Broken Bridge Mask
+    3300018: Griffin Tower Entrance
+    3300020: LVL7 Castle Entrance Mask
+    3300022: Griffin Tower
+    3300024: Griffin Tower Entrance 1
+    3300026: Griffin Tower Stairs
+    3300028: Griffin Tower Stairs Broken
+    3300030: Griffin Tower Stairs001
+    4300000: LVL17 GrassToRock Pt1
+    4300002: LVL 12 Black Pt 1_4
+    4300004: LVL 12 Dirt BG Pt 1_2
+    4300006: Cliff Pt 2
+    4300008: LVL 7 Col
+    4300010: LVL7 GrassToRock
+    4300012: LVL 7 Cliff
+    4300014: LVL7 Broken Bridge
+    4300016: Broken Bridge Mask
+    4300018: Griffin Tower Entrance
+    4300020: LVL7 Castle Entrance Mask
+    4300022: Griffin Tower Entrance
+    4300024: Griffin Tower
+    4300026: Griffin Tower Stairs
+    4300028: Griffin Tower Stairs001
+    4300030: Griffin Tower Stairs Broken
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,190 @@
+fileFormatVersion: 2
+guid: 895ba94c6bd61734eb4187d72d9ae806
+timeCreated: 1477693036
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Body
+    100002: Bone03
+    100004: Bone06
+    100006: Cat Mesh
+    100008: //RootNode
+    100010: Ear Left
+    100012: Ear Right
+    100014: Head
+    100016: Left Calf
+    100018: Left Forearm
+    100020: Left Thigh
+    100022: Left Upper Arm
+    100024: Right Calf
+    100026: Right Forearm
+    100028: Right Thigh
+    100030: Right Upper Arm
+    100032: Tail 1
+    100034: Tail 2
+    100036: Tail 3
+    100038: Tail 4
+    100040: Halo
+    100042: LWing
+    100044: RWing
+    400000: Body
+    400002: Bone03
+    400004: Bone06
+    400006: Cat Mesh
+    400008: //RootNode
+    400010: Ear Left
+    400012: Ear Right
+    400014: Head
+    400016: Left Calf
+    400018: Left Forearm
+    400020: Left Thigh
+    400022: Left Upper Arm
+    400024: Right Calf
+    400026: Right Forearm
+    400028: Right Thigh
+    400030: Right Upper Arm
+    400032: Tail 1
+    400034: Tail 2
+    400036: Tail 3
+    400038: Tail 4
+    400040: Halo
+    400042: LWing
+    400044: RWing
+    4300000: Cat Mesh
+    7400000: Cat_AngelCat
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: Cat Mesh
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Cat_AngelCat
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Body
+        weight: 1
+      - path: Body/Head
+        weight: 1
+      - path: Body/Head/Ear Left
+        weight: 1
+      - path: Body/Head/Ear Right
+        weight: 1
+      - path: Body/Left Thigh
+        weight: 1
+      - path: Body/Left Thigh/Left Calf
+        weight: 1
+      - path: Body/Left Thigh/Left Calf/Bone03
+        weight: 1
+      - path: Body/Left Upper Arm
+        weight: 1
+      - path: Body/Left Upper Arm/Left Forearm
+        weight: 1
+      - path: Body/Right Thigh
+        weight: 1
+      - path: Body/Right Thigh/Right Calf
+        weight: 1
+      - path: Body/Right Thigh/Right Calf/Bone06
+        weight: 1
+      - path: Body/Right Upper Arm
+        weight: 1
+      - path: Body/Right Upper Arm/Right Forearm
+        weight: 1
+      - path: Body/Tail 1
+        weight: 1
+      - path: Body/Tail 1/Tail 2
+        weight: 1
+      - path: Body/Tail 1/Tail 2/Tail 3
+        weight: 1
+      - path: Body/Tail 1/Tail 2/Tail 3/Tail 4
+        weight: 1
+      - path: Cat Mesh
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

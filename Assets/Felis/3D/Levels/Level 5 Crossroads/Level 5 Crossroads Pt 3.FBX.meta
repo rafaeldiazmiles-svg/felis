@@ -1,0 +1,172 @@
+fileFormatVersion: 2
+guid: 71be3d71748d2ea4bb3bdc540094faf9
+timeCreated: 1442347755
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Collision Pt 3 _1
+    100002: Ground Pt 3 _1
+    100004: //RootNode
+    100006: Collision Pt 3 _2
+    100008: Collision Pt 3 _3
+    100010: Ground Pt 3 _2
+    100012: Ground Pt 3 _3
+    100014: Ground Pt 3 _1 FG
+    100016: Ground Pt 3 _2 FG
+    100018: Ground Pt 3 _3 FG
+    100020: Ground Pt 3 _1 BG
+    100022: Ground Pt 3 _2 BG
+    100024: Ground Pt 3 _3 BG
+    100026: Dirt BG Pt 3_1
+    100028: Black Pt 3 _1
+    100030: Black Cave Pt 3
+    100032: Pine Tree Group Pt 3
+    100034: Trees pt 3
+    100036: Trees pt 3 FG
+    100038: Mushrooms Pt 3
+    100040: Stalagmites Pt 3
+    400000: Collision Pt 3 _1
+    400002: Ground Pt 3 _1
+    400004: //RootNode
+    400006: Collision Pt 3 _2
+    400008: Collision Pt 3 _3
+    400010: Ground Pt 3 _2
+    400012: Ground Pt 3 _3
+    400014: Ground Pt 3 _1 FG
+    400016: Ground Pt 3 _2 FG
+    400018: Ground Pt 3 _3 FG
+    400020: Ground Pt 3 _1 BG
+    400022: Ground Pt 3 _2 BG
+    400024: Ground Pt 3 _3 BG
+    400026: Dirt BG Pt 3_1
+    400028: Black Pt 3 _1
+    400030: Black Cave Pt 3
+    400032: Pine Tree Group Pt 3
+    400034: Trees pt 3
+    400036: Trees pt 3 FG
+    400038: Mushrooms Pt 3
+    400040: Stalagmites Pt 3
+    2300000: Collision Pt 3 _1
+    2300002: Ground Pt 3 _1
+    2300004: Collision Pt 3 _2
+    2300006: Collision Pt 3 _3
+    2300008: Ground Pt 3 _2
+    2300010: Ground Pt 3 _3
+    2300012: Ground Pt 3 _1 FG
+    2300014: Ground Pt 3 _2 FG
+    2300016: Ground Pt 3 _3 FG
+    2300018: Ground Pt 3 _1 BG
+    2300020: Ground Pt 3 _2 BG
+    2300022: Ground Pt 3 _3 BG
+    2300024: Dirt BG Pt 3_1
+    2300026: Black Pt 3 _1
+    2300028: Black Cave Pt 3
+    2300030: Pine Tree Group Pt 3
+    2300032: Trees pt 3
+    2300034: Trees pt 3 FG
+    2300036: Mushrooms Pt 3
+    2300038: Stalagmites Pt 3
+    3300000: Collision Pt 3 _1
+    3300002: Ground Pt 3 _1
+    3300004: Collision Pt 3 _2
+    3300006: Collision Pt 3 _3
+    3300008: Ground Pt 3 _2
+    3300010: Ground Pt 3 _3
+    3300012: Ground Pt 3 _1 FG
+    3300014: Ground Pt 3 _2 FG
+    3300016: Ground Pt 3 _3 FG
+    3300018: Ground Pt 3 _1 BG
+    3300020: Ground Pt 3 _2 BG
+    3300022: Ground Pt 3 _3 BG
+    3300024: Dirt BG Pt 3_1
+    3300026: Black Pt 3 _1
+    3300028: Black Cave Pt 3
+    3300030: Pine Tree Group Pt 3
+    3300032: Trees pt 3
+    3300034: Trees pt 3 FG
+    3300036: Mushrooms Pt 3
+    3300038: Stalagmites Pt 3
+    4300000: Ground Pt 3 _1
+    4300002: Collision Pt 3 _1
+    4300004: Ground Pt 3 _2
+    4300006: Ground Pt 3 _3
+    4300008: Collision Pt 3 _2
+    4300010: Collision Pt 3 _3
+    4300012: Ground Pt 3 _2 FG
+    4300014: Ground Pt 3 _1 FG
+    4300016: Ground Pt 3 _3 FG
+    4300018: Ground Pt 3 _1 BG
+    4300020: Ground Pt 3 _3 BG
+    4300022: Ground Pt 3 _2 BG
+    4300024: Dirt BG Pt 3_1
+    4300026: Black Pt 3 _1
+    4300028: Black Cave Pt 3
+    4300030: Pine Tree Group Pt 3
+    4300032: Trees pt 3
+    4300034: Trees pt 3 FG
+    4300036: Mushrooms Pt 3
+    4300038: Stalagmites Pt 3
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,454 @@
+------------------Finish shematics.
+
+---------------------Start with level mesh from grass to mid snow.
+^Draw grass to mid snow texture.
+
+----------------------Keep Griffin From Screeching
+
+----------------------Propsero starts on Griffin
+
+--------------------Prospero gets on griffin by jumping on him (Update Long Term List)
+
+----------------------Cave Texture
+
+----------------------Cave Mesh
+
+-----------------------Cave Entrance/Exit Texture
+
+------------------------Fix fade rooms script (Update Long Term List)
+
+
+-------------------------Make mesh of big cave until big gate
+
+---------------------------Make Big cave entrance(dragon shaped?)
+
+---------------------------Big Gate Texture (Teeth gate)
+
+------------------Improved stalagmites
+-------------------^make them fall
+------------------^make shake before fall script (update long term list)
+--------------------^make debris fall behind
+
+
+------------------------Wind (update long term list)
+
+-----------------------Wings need to flap at the same time (update long term list)
+-------------------------^Change controls, use arrows to move. Jump button to get out. 
+-----------------------^Max angle(?)
+
+--------------------Make lever
+---------------------^Lever Animation
+--------------------^Make lever open big gate (update slab script)
+
+-------------------Make jumping out of griffin a higher jump
+-----------------------Going backwards too long changes side
+
+--------------------Fix cave 1 so you can jump to other side using vine
+
+-------------------Vines move faster (update long term list)
+
+......
+
+-----------------------Griffin (winged flight) flaps both wings when on max angle
+
+--------------Finish cave until exit
+------------------^Make ending closed
+----------------------separate bg and ground
+
+-------------------Dragon standing rock
+
+-------------------Make Room zoom work with griffin zoom
+
+----------------------place dragon
+
+----------------------Dragon Sleep
+------------------------^Target head
+--------------^Zs WORK ON PART 2 Object
+-----------------^eyes closed
+---------------------^Tail sleeping
+------------------------^Dragon snoring
+
+---------------------Place gate before dragon
+
+---------------Dragon on top of mountain of skulls (draw texture)
+
+
+------------------------add stalacmites
+
+--------------------------dragon wake up
+---------------------^dragon scream animation
+-------------------	^Configure dragon lerp pose
+
+   --------------^Fix dragon flight (add more strength, fix wings)
+------------------- ^improve winged flight (update long term list)
+
+---------------------Trigger dragon waking up
+
+---------------------dragon start following player
+
+-----------------------camera follows dragon mode
+
+------------------make flames (update long term list)
+-------------- single flame
+------------------flame thrower
+---------^add projectile motion to created frame
+-------------------^make flames in sequence
+-------------------^randomize flame texture
+----------------------^size multiplier curve
+
+
+--------------------------------^add fire audio
+
+-------------------------continous flame script
+
+------------------------dragon spits flames when following player
+
+---------------flame causes damage
+
+
+
+-------------------------------Make falling rocks texture
+------------------------------^Make severak so it works for the end of the tunnel.
+----------------------^Make them fall, possibly in sequence (top doesn't fall before bottom)
+
+----------------------------ROCK CRUCH
+--------------------------put in place
+
+--------------------------Exit
+
+------------------------Dragon target upper limit inside cave
+
+----------------------------Make Snow Texture
+
+-----------------------------Turn griffin
+
+------------------------------Make exit cave snow texture
+
+---------------------------------Rock Cliff Snow Texture
+
+-------------------------Snow Avalanche Texture
+---------------------------^Add snow particle emission
+--------------------------^Place them in level
+
+------------------------add wind and spikes
+
+-------------------Make snowy rocks texture. (Based on cave Ground Crumbling Rocks)
+--------------------------Make rocks explode
+
+---------------------------Add dragon coming out from a pile of rocks in an explosion.
+
+-------------------------script dragon target to be on certain positions depending on player bounds.
+
+-----------------------------script dragon throwing flames
+
+--------------make new jar prefab to be used in level 13
+
+
+----------------finish snowy rocks textures
+
+------------------make lid prefab to be used in level 13
+
+-----------------override attack when dropping lid
+
+
+
+--------------------------be able to put lid on jar
+
+------------------make black hole effect
+--------------------^creates enemy particles randomely and sucks
+------------------^add spinning shape inside
+------------------------------^dragon gets sucked by black hole while shrinks
+-------------------------^Fix Camera
+--------------------^music maybe music from intro when dragon shows
+-----------------------------^screen shakes
+-----------------------------^Dragon screams
+
+-----------------------when dragon is absorbed, jar flies away.
+----------------------------play victory music when jar flies away.
+
+--------------------------add sparkle effect for flying away jar.
+
+-----------------------limit player x position
+
+
+------------------Control Griffin Target Pos
+--------------------^griffin flies to the side of the screen
+
+--------------------prospero also stands in front of jar.
+--------------------looks up when jar flies away.
+
+-------------------------fix bee
+
+--------------------bees attack player before griffin
+
+
+--------------------Make throable rock texture
+---------------------Make throable rocks that do damage
+----------------------^Avoid thrower to receive damage
+--------------------------^Add throw rock functionality
+-----------------------Make rocks being "dropped" from first cliff as if it were the rats who do it.
+
+------------------------figure a way for rocks to start out with throwing velocity
+
+------------------------bee nest adds bees to active manager
+-----------------------^see a way that bee nest counts inactive bees
+
+--------------------------griffen looks back after level push
+
+-----------------------------Wood crush
+
+-----------------swinging blade
+
+----------------------evil eyes
+----------------^fix evil eyes' eye
+-----------------^fix evil eye flight
+
+------------------Add cliffs
+
+-----------------Find way so griffin doesn't fly too high (wind, collision)
+--------------winged flight lose strength area
+------------------^use area mesh, dont check char, skip frame = 10
+
+------------------------camera don't go past cliffs on the right
+
+
+--------------Control Griffin Target Pos throughout the whole level
+----------------^Make it so pos is master obj's pos
+-----------------^Make it so it can take only master obj's pos if it's grounded.
+
+Improve attack multiple targets   (UPDATE LONG TERM LIST)
+---------------------^Set maximum (eg no more than two)
+---------------------^Dont make it simulataneous, add some delay, reduce damage.
+
+
+
+
+
+----------------^Pines
+----------------^Mountain BG
+----------------^Clouds
+----------------^Snow version of pines & bg
+
+-----------------Griffin BL texture
+
+
+--------------------^Vertex shade for inside cave
+
+-----------------------^Add all masks
+-------------------cave1 int
+---------------------cave1 ext
+---------------------cave 2 int
+-----------------------cave 2 ext
+-----------------------cave 2 exit int
+--------------------cave 2 exit ext
+
+--------------------^Fix caves so it hides char correctly
+
+-----------------------^Make lever more distinguishable
+
+-----------------------^Add godrays to cave 1
+-------------------------^Improve god rays with particles <----- Update Long term list
+
+----------------------------^Hide Sky in caves
+--------------------------^Extend rock
+---------------------------^Add Black cover
+
+-------------------------^Add more skulls inside the cave
+-----------------------------^Make some shrine for the jar
+---------------------------------^Make gate before dragon a little more integrated to level
+
+------------------------------------Separate in parts
+----------------------------------------Spawn Levels
+
+---Setup SetActive Manager for Misc objs not set in misc spawn
+----------------^Be able to add environment objects based on a different pivot to test distance
+-----------------Set active manage deletes inactive objects asfer some time 
+------------------------Set up:
+--------------falling talagmites
+-------------wind
+---------------falling rocks
+-----------------avalanches
+
+------------Fix 2nd falling avalanche
+
+---------------------Add cracking sound to shaking stalagmites
+
+---------------------------camera room for wood crush
+
+---------------------------Try to remove flute from final level's song?
+-----------------------------^Use flute as loop for something else?
+
+--------------------------------assentuate room camera for dragon coming from ground
+
+-----------------------------Collision Damage creates prefab eg. impact?
+
+--------------------------hide cave 2 dragon when exiting cave
+----------------------------------cave 2 dragon no collide when outside of screen
+
+-------------------Destroy rocks under wood crush
+----------------------Give Stencil material to rocks
+
+--------------------Add reverb
+
+---------------------------Camera location camera fade in fade out                          
+----------------------Camera fade in fade out functionality 	
+
+-----------------------------------Bats Coming out
+			
+
+
+---------------Make new GUI for health,cats and stamina (wooden bg) (UPDATE LONG TERM LIST)
+------------^Wood with vines.
+^Replace cat's gui with griffin's gui on level 7 and 13
+
+Draw Art:
+^Player Face
+----------wood
+---------------vines
+
+^Player health & stamina
+---------------wood
+---------------vines w flowers
+
+
+^Ride Face
+-----------------wood
+-----------------vines w flowers
+
+
+^Ride health
+------------------wood
+-------------------vines w flowers
+
+
+^Cats <--- 3 smallers circles with central icon
+--------------wood
+--------------vines w flowers
+
+
+Inventory <---- 3 slots round square
+----------------------wood
+----------------------vines w flowers
+---------------------little Backpack icon
+
+--------------------New hearts
+
+---------------------New stamina bubbles
+
+Make texture files
+------------Player <-- vines merged. circle and health gauge separate 
+----------------Cats <--- exclamation mark cats merged with the rest
+----------------Ride <-- vines merged. circle and health gauge separate 
+------------------Inventory <-- all merged
+------------------Health 2x2 frames
+----------------Stamina  2x2 frames
+
+
+Make GUI 3d mesh
+--------------Player
+----------------Cats
+--------------Ride
+------------------Inventory
+---------------------Gauge 3icons 4frames for Health and Stamina
+
+
+----------------Make head for Player GUI
+------------------Make head for Griffin
+
+Make new Cat texture. Update Cat from LVL 1 Texture (the rest later)
+----------------------Cat 1
+--------------------Cat 2
+-----------------------Cat 3
+
+Put GUI 3d mesh in camera's prefab
+----------player
+----------griffin
+-------------cats
+
+----------------------Make Script to position gameplay gui parts on screen
+
+----------------------UV frame mimic script (use same script)
+
+------------------------Adapt health and stamina to work on new GUI meshes
+
+Place head meshes, make it functional
+----------------->Player
+------------------>Griffin
+
+-------------Make cat heads work with cat head meshes
+-------------------Make cat head aquire target cat's texture
+
+Update Cats' funcitonality 
+----------------^To save cat must not be uncaged
+--------------^Stay on radar when saved
+-------------------^Cats (have ? when not found)
+-----------------------^Cat skull when dead
+
+
+Change Stamina functionality. Stamina used for air. Reduce stamina usage, and stamina recovery.
+--------------------------Stamina doesn't recover underwater (slowly decreases)
+--------------^Add come icon when underwater to show it's not recovering (a water drop maybe)
+-----------------^No stamina for too long will decrease health
+
+Make cat "compass", use cat getting away scripts.
+--------------^Change functionality, when cat is rescued, always show compass when cat gets away
+
+--------------^Draw normal arrow into texture
+----------^Make normal arrow mesh
+---------------^Change between normal and danger arrow functionality
+---------------------^Cat head in losing cat has same texture as the cat it points at
+
+Update level flags with a system that uses head meshes instead of texture
+^Give flag more resolution?
+^New cat mesh  (save & load anim from old flags) <<<
+----------   ^full
+----------    ^full@idle
+----------    ^full@drop
+----------   ^no cats
+----------    ^no cats@idle
+----------    ^no cats@drop
+----------   ^one cat
+----------    ^one cat@idle
+----------    ^one cat@drop
+----------   ^two cats
+----------    ^two cats@idle
+----------    ^two cats@drop
+-------------------^Export the fbx (replace?)
+
+------------------------------^Change flag UV setting with material for each cat head.
+
+Griffin Balloon with sweat drop when flying too high            
+----------------^Create baloon sweat drop
+------------------^Solve parenting from both sides
+------------------^Create from winged flight  			
+        
+----------------------Griffin unmount direction                    
+     
+
+-------------------make pick up anim 		 
+-------------------throw anim		
+
+----------------------FIX: Griffin screams even when dead.
+
+---------------------------------Design & Make "GO" hand.
+Place throughout lvl 13.
+^Going back inside cave two indicates go back out
+----------------^After cave two show way up
+----------------^After cave two if going right, show to go back
+----------------^After cave one lever pull, going up
+----------------FIX: GO shows when loaded
+
+
+---------------------Design "Danger" or "Watch out!" icon for falling objects
+---------------------^Use for wood crush
+---------------------^Use for avalanche 
+
+--------------------------------Fix evil eye look at (issue with winged flight?)
+
+--------------------------Set Griffin Gauge for griffin levels (13 and 7)
+----------------------------^Griffin has an empty gauge in level 7 until griffin is hatched
+
+----------------------------Make LVL 13 on island
+---------------------------^Make it so player flies on griffin
+------------------^Make animation for island griffin (flying) and prospero (riding) <-- Same duration
+-----------------^Sync flying anim to riding anim

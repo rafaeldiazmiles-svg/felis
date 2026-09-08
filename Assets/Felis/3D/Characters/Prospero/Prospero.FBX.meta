@@ -1,0 +1,171 @@
+fileFormatVersion: 2
+guid: 179b072b522ed7f49a80ccb5d6daacfa
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: Body
+    100002: Eyes
+    100004: Face
+    100006: Hair
+    100008: Hair Lock Back
+    100010: Hair Lock Front
+    100012: Hair Lock Front 2
+    100014: Hair Lock Left
+    100016: Hair Lock Right
+    100018: Hair Lock Top Left
+    100020: Hair Lock Top Right
+    100022: Hair Root
+    100024: Left Arm
+    100026: Left Calf
+    100028: Left Clavicle
+    100030: Left Coat
+    100032: Left Foot
+    100034: Left Forearm
+    100036: Left Leg
+    100038: Left Thigh
+    100040: Left Toe
+    100042: Left Upper Arm
+    100044: Neck
+    100046: //RootNode
+    100048: Right Arm
+    100050: Right Calf
+    100052: Right Clavicle
+    100054: Right Coat
+    100056: Right Foot
+    100058: Right Forearm
+    100060: Right Leg
+    100062: Right Leg Front
+    100064: Right Leg Side
+    100066: Right Thigh
+    100068: Right Toe
+    100070: Right Upper Arm
+    100072: Scarf
+    100074: Spine 1
+    100076: Spine 2
+    100078: Head
+    100080: Left Hand
+    100082: Prospero
+    100084: Right Hand
+    100086: Root
+    400000: Body
+    400002: Eyes
+    400004: Face
+    400006: Hair
+    400008: Hair Lock Back
+    400010: Hair Lock Front
+    400012: Hair Lock Front 2
+    400014: Hair Lock Left
+    400016: Hair Lock Right
+    400018: Hair Lock Top Left
+    400020: Hair Lock Top Right
+    400022: Hair Root
+    400024: Left Arm
+    400026: Left Calf
+    400028: Left Clavicle
+    400030: Left Coat
+    400032: Left Foot
+    400034: Left Forearm
+    400036: Left Leg
+    400038: Left Thigh
+    400040: Left Toe
+    400042: Left Upper Arm
+    400044: Neck
+    400046: //RootNode
+    400048: Right Arm
+    400050: Right Calf
+    400052: Right Clavicle
+    400054: Right Coat
+    400056: Right Foot
+    400058: Right Forearm
+    400060: Right Leg
+    400062: Right Leg Front
+    400064: Right Leg Side
+    400066: Right Thigh
+    400068: Right Toe
+    400070: Right Upper Arm
+    400072: Scarf
+    400074: Spine 1
+    400076: Spine 2
+    400078: Head
+    400080: Left Hand
+    400082: Prospero
+    400084: Right Hand
+    400086: Root
+    2300000: Eyes
+    2300002: Face
+    3300000: Eyes
+    3300002: Face
+    4300000: Right Arm
+    4300002: Left Arm
+    4300004: Face
+    4300006: Hair
+    4300008: Eyes
+    4300010: Body
+    4300012: Right Leg
+    4300014: Right Leg Side
+    4300016: Left Leg
+    4300018: Prospero
+    7400000: Take 001
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: Body
+    13700002: Hair
+    13700004: Left Arm
+    13700006: Left Leg
+    13700008: Right Arm
+    13700010: Right Leg
+    13700012: Right Leg Side
+    13700014: Prospero
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  additionalBone: 0
+  userData: 

@@ -1,0 +1,40 @@
+***Fight one enemy on a platform that's very out of balance using physics, fight while keeping balance.
+
+LEVEL 1
+Big boar- charges and collides with stone
+
+LEVEL 2
+King rat- Add bats with bombs, use bombs to kill
+
+LEVEL 3
+(???) ghost bats follow you at the end (extend a bit of dark forest)
+
+LEVEL 4
+Another boss that must be killed with bombs (?)
+
+LEVEL 5
+
+
+LEVEL 6
+Make underwater monster more relevant.
+
+LEVEL 7
+Later on: Griffin Mom ??? Some monster follows you up the last bit of the tower?
+
+LEVEL 8
+Mushroom monster
+
+LEVEL 9
+Mines monster (big mole)?? kill with dynamite? (throw to lava?)
+
+LEVEL 10
+Another charging boss?
+
+LEVEL 11
+Tree monster? Fight branches?
+
+LEVEL 12
+Big ol pirate? Shoot with cannon?
+
+LEVEL 13
+Dragon - throws fire

@@ -1,0 +1,110 @@
+fileFormatVersion: 2
+guid: 4bd870753e200224eb026451752b17e2
+timeCreated: 1430351832
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Grass Landscape Dark Part 1
+    100004: Grass Landscape Dark Part 2
+    100006: Grass Landscape Dark Part 3
+    100008: Grass Landscape Dark Part
+    100010: Grass Landscape Dark Part 4
+    100012: Grass Landscape Dark Part 5
+    100014: Grass Landscape End
+    400000: //RootNode
+    400002: Grass Landscape Dark Part 1
+    400004: Grass Landscape Dark Part 2
+    400006: Grass Landscape Dark Part 3
+    400008: Grass Landscape Dark Part
+    400010: Grass Landscape Dark Part 4
+    400012: Grass Landscape Dark Part 5
+    400014: Grass Landscape End
+    2300000: //RootNode
+    2300002: Grass Landscape Dark Part 1
+    2300004: Grass Landscape Dark Part 2
+    2300006: Grass Landscape Dark Part 3
+    2300008: Grass Landscape Dark Part
+    2300010: Grass Landscape Dark Part 4
+    2300012: Grass Landscape Dark Part 5
+    2300014: Grass Landscape End
+    3300000: //RootNode
+    3300002: Grass Landscape Dark Part 1
+    3300004: Grass Landscape Dark Part 2
+    3300006: Grass Landscape Dark Part 3
+    3300008: Grass Landscape Dark Part
+    3300010: Grass Landscape Dark Part 4
+    3300012: Grass Landscape Dark Part 5
+    3300014: Grass Landscape End
+    4300000: Grass Landscape Dark
+    4300002: Grass Landscape Dark Part 1
+    4300004: Grass Landscape Dark Part 2
+    4300006: Grass Landscape Dark Part 3
+    4300008: Grass Landscape Dark Part
+    4300010: Grass Landscape Dark Part 4
+    4300012: Grass Landscape Dark Part 5
+    4300014: Grass Landscape End
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

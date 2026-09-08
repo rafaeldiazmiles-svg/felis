@@ -1,0 +1,221 @@
+fileFormatVersion: 2
+guid: 04986a168fbebad4c9500cac1ff0c72e
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: Head
+    100002: Left Calf
+    100004: Left Clavicle
+    100006: Left Coat
+    100008: Left Foot
+    100010: Left Foot End
+    100012: Left Forearm
+    100014: Left Hand
+    100016: Left Leg IK
+    100018: Left Thigh
+    100020: Left Toe
+    100022: Left Upper Arm
+    100024: Neck
+    100026: //RootNode
+    100028: Right Calf
+    100030: Right Clavicle
+    100032: Right Coat
+    100034: Right Foot
+    100036: Right Foot End
+    100038: Right Forearm
+    100040: Right Hand
+    100042: Right Leg IK
+    100044: Right Thigh
+    100046: Right Toe
+    100048: Right Upper Arm
+    100050: Root
+    100052: Spine 1
+    100054: Spine 2
+    100056: Hair Lock Back
+    100058: Hair Lock Front
+    100060: Hair Lock Front 2
+    100062: Hair Lock Left
+    100064: Hair Lock Right
+    100066: Hair Lock Top Left
+    100068: Hair Lock Top Right
+    100070: Prospero
+    100072: Scarf
+    400000: Head
+    400002: Left Calf
+    400004: Left Clavicle
+    400006: Left Coat
+    400008: Left Foot
+    400010: Left Foot End
+    400012: Left Forearm
+    400014: Left Hand
+    400016: Left Leg IK
+    400018: Left Thigh
+    400020: Left Toe
+    400022: Left Upper Arm
+    400024: Neck
+    400026: //RootNode
+    400028: Right Calf
+    400030: Right Clavicle
+    400032: Right Coat
+    400034: Right Foot
+    400036: Right Foot End
+    400038: Right Forearm
+    400040: Right Hand
+    400042: Right Leg IK
+    400044: Right Thigh
+    400046: Right Toe
+    400048: Right Upper Arm
+    400050: Root
+    400052: Spine 1
+    400054: Spine 2
+    400056: Hair Lock Back
+    400058: Hair Lock Front
+    400060: Hair Lock Front 2
+    400062: Hair Lock Left
+    400064: Hair Lock Right
+    400066: Hair Lock Top Left
+    400068: Hair Lock Top Right
+    400070: Prospero
+    400072: Scarf
+    4300000: Prospero
+    7400000: Skid
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: Prospero
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    animationCompression: 1
+    animationRotationError: .100000001
+    animationPositionError: .100000001
+    animationScaleError: .100000001
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Skid
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 20
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Left Leg IK
+        weight: 1
+      - path: Right Leg IK
+        weight: 1
+      - path: Root
+        weight: 1
+      - path: Root/Left Coat
+        weight: 1
+      - path: Root/Left Thigh
+        weight: 1
+      - path: Root/Left Thigh/Left Calf
+        weight: 1
+      - path: Root/Left Thigh/Left Calf/Left Foot
+        weight: 1
+      - path: Root/Left Thigh/Left Calf/Left Foot/Left Foot End
+        weight: 1
+      - path: Root/Left Thigh/Left Calf/Left Foot/Left Toe
+        weight: 1
+      - path: Root/Right Coat
+        weight: 1
+      - path: Root/Right Thigh
+        weight: 1
+      - path: Root/Right Thigh/Right Calf
+        weight: 1
+      - path: Root/Right Thigh/Right Calf/Right Foot
+        weight: 1
+      - path: Root/Right Thigh/Right Calf/Right Foot/Right Foot End
+        weight: 1
+      - path: Root/Right Thigh/Right Calf/Right Foot/Right Toe
+        weight: 1
+      - path: Root/Spine 1
+        weight: 1
+      - path: Root/Spine 1/Spine 2
+        weight: 1
+      - path: Root/Spine 1/Spine 2/Left Clavicle
+        weight: 1
+      - path: Root/Spine 1/Spine 2/Left Clavicle/Left Upper Arm
+        weight: 1
+      - path: Root/Spine 1/Spine 2/Left Clavicle/Left Upper Arm/Left Forearm
+        weight: 1
+      - path: Root/Spine 1/Spine 2/Left Clavicle/Left Upper Arm/Left Forearm/Left
+          Hand
+        weight: 1
+      - path: Root/Spine 1/Spine 2/Neck
+        weight: 1
+      - path: Root/Spine 1/Spine 2/Neck/Head
+        weight: 1
+      - path: Root/Spine 1/Spine 2/Right Clavicle
+        weight: 1
+      - path: Root/Spine 1/Spine 2/Right Clavicle/Right Upper Arm
+        weight: 1
+      - path: Root/Spine 1/Spine 2/Right Clavicle/Right Upper Arm/Right Forearm
+        weight: 1
+      - path: Root/Spine 1/Spine 2/Right Clavicle/Right Upper Arm/Right Forearm/Right
+          Hand
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  additionalBone: 0
+  userData: 

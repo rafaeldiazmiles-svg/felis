@@ -1,0 +1,139 @@
+fileFormatVersion: 2
+guid: ba24144437186d84687290c9e6c0c000
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Water Splash Big
+    100004: Water Splash Center
+    100006: Water Splash Drops Left
+    100008: Water Splash Drops Right
+    100010: Water Splash Left
+    100012: Water Splash Right
+    100014: Water Splash Tiny Drops Center
+    100016: Water Splash Tiny Drops Left
+    100018: Water Splash Tiny Drops Right
+    100020: Delete
+    100022: Water Splash Root
+    100024: Water Splash Mesh
+    400000: //RootNode
+    400002: Water Splash Big
+    400004: Water Splash Center
+    400006: Water Splash Drops Left
+    400008: Water Splash Drops Right
+    400010: Water Splash Left
+    400012: Water Splash Right
+    400014: Water Splash Tiny Drops Center
+    400016: Water Splash Tiny Drops Left
+    400018: Water Splash Tiny Drops Right
+    400020: Delete
+    400022: Water Splash Root
+    400024: Water Splash Mesh
+    2300000: Water Splash Big
+    3300000: Water Splash Big
+    4300000: Water Splash Big
+    4300002: Water Splash Mesh
+    7400000: Splash
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: Water Splash Big
+    13700002: Water Splash Mesh
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Splash
+      takeName: Take 001
+      firstFrame: 2.79999995
+      lastFrame: 50
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Water Splash Big
+        weight: 1
+      - path: Water Splash Center
+        weight: 1
+      - path: Water Splash Drops Left
+        weight: 1
+      - path: Water Splash Drops Right
+        weight: 1
+      - path: Water Splash Left
+        weight: 1
+      - path: Water Splash Right
+        weight: 1
+      - path: Water Splash Tiny Drops Center
+        weight: 1
+      - path: Water Splash Tiny Drops Left
+        weight: 1
+      - path: Water Splash Tiny Drops Right
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  additionalBone: 0
+  userData: 

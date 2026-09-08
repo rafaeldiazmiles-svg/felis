@@ -1,0 +1,164 @@
+fileFormatVersion: 2
+guid: fd21cfcc0c3109b48a9f83bbbd8d8739
+timeCreated: 1446142533
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Body
+    100002: Crab
+    100004: //RootNode
+    100006: Jaw
+    100008: Left Arm 1
+    100010: Left Arm 2
+    100012: Left Claw
+    100014: Left Eye
+    100016: Left Leg Back
+    100018: Left Leg Front
+    100020: Right Arm 1
+    100022: Right Arm 2
+    100024: Right Claw
+    100026: Right Eye
+    100028: Right Leg Back
+    100030: Right Leg Front
+    400000: Body
+    400002: Crab
+    400004: //RootNode
+    400006: Jaw
+    400008: Left Arm 1
+    400010: Left Arm 2
+    400012: Left Claw
+    400014: Left Eye
+    400016: Left Leg Back
+    400018: Left Leg Front
+    400020: Right Arm 1
+    400022: Right Arm 2
+    400024: Right Claw
+    400026: Right Eye
+    400028: Right Leg Back
+    400030: Right Leg Front
+    4300000: Crab
+    7400000: Crab Idle
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: Crab
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Crab Idle
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 30
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Body
+        weight: 1
+      - path: Body/Jaw
+        weight: 1
+      - path: Body/Left Arm 1
+        weight: 1
+      - path: Body/Left Arm 1/Left Arm 2
+        weight: 1
+      - path: Body/Left Arm 1/Left Arm 2/Left Claw
+        weight: 1
+      - path: Body/Left Eye
+        weight: 1
+      - path: Body/Right Arm 1
+        weight: 1
+      - path: Body/Right Arm 1/Right Arm 2
+        weight: 1
+      - path: Body/Right Arm 1/Right Arm 2/Right Claw
+        weight: 1
+      - path: Body/Right Eye
+        weight: 1
+      - path: Crab
+        weight: 1
+      - path: Left Leg Back
+        weight: 1
+      - path: Left Leg Front
+        weight: 1
+      - path: Right Leg Back
+        weight: 1
+      - path: Right Leg Front
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

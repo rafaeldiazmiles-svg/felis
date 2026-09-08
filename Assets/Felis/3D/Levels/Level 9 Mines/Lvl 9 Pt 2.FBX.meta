@@ -1,0 +1,224 @@
+fileFormatVersion: 2
+guid: beea6b510cc9f7e46af24a199eee2b5d
+timeCreated: 1454336245
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Lvl 9 Col Pt 2
+    100002: //RootNode
+    100004: Rock Pt 2_1
+    100006: Rock Pt 2_2
+    100008: Rock Pt 2_3
+    100010: Rock Pt 2_4
+    100012: Rock Pt 2_5
+    100014: Rock Pt 2_6
+    100016: Mine Rails Pt 2
+    100018: Mine Rails Pt 2_2
+    100020: Land Pt 2 Cave Ext FG
+    100022: Rock Pt 2_1 BG
+    100024: Rock Pt 2_1 FG
+    100026: Rock Pt 2_2 BG
+    100028: Rock Pt 2_2 FG
+    100030: Rock Pt 2_3 BG
+    100032: Rock Pt 2_3 FG
+    100034: Rock Pt 2_4 BG
+    100036: Rock Pt 2_4 FG
+    100038: Rock Pt 2_5 BG
+    100040: Rock Pt 2_5 FG
+    100042: Rock Pt 2_6 BG
+    100044: Rock Pt 2_6 FG
+    100046: Black LVL pt 2_1
+    100048: Black LVL pt 2_2
+    100050: Black LVL pt 2 Mines Ext
+    100052: BG Lvl 9 Mines Pt 2_1
+    100054: BG Lvl 9 Mines Pt 2_2
+    100056: LVL 9 Mushrooms Pt 2_1
+    100058: LVL 9 Mushrooms Pt 2_2
+    100060: Stalagmites Pt 2
+    400000: Lvl 9 Col Pt 2
+    400002: //RootNode
+    400004: Rock Pt 2_1
+    400006: Rock Pt 2_2
+    400008: Rock Pt 2_3
+    400010: Rock Pt 2_4
+    400012: Rock Pt 2_5
+    400014: Rock Pt 2_6
+    400016: Mine Rails Pt 2
+    400018: Mine Rails Pt 2_2
+    400020: Land Pt 2 Cave Ext FG
+    400022: Rock Pt 2_1 BG
+    400024: Rock Pt 2_1 FG
+    400026: Rock Pt 2_2 BG
+    400028: Rock Pt 2_2 FG
+    400030: Rock Pt 2_3 BG
+    400032: Rock Pt 2_3 FG
+    400034: Rock Pt 2_4 BG
+    400036: Rock Pt 2_4 FG
+    400038: Rock Pt 2_5 BG
+    400040: Rock Pt 2_5 FG
+    400042: Rock Pt 2_6 BG
+    400044: Rock Pt 2_6 FG
+    400046: Black LVL pt 2_1
+    400048: Black LVL pt 2_2
+    400050: Black LVL pt 2 Mines Ext
+    400052: BG Lvl 9 Mines Pt 2_1
+    400054: BG Lvl 9 Mines Pt 2_2
+    400056: LVL 9 Mushrooms Pt 2_1
+    400058: LVL 9 Mushrooms Pt 2_2
+    400060: Stalagmites Pt 2
+    2300000: Lvl 9 Col Pt 2
+    2300002: Rock Pt 2_1
+    2300004: Rock Pt 2_2
+    2300006: Rock Pt 2_3
+    2300008: Rock Pt 2_4
+    2300010: Rock Pt 2_5
+    2300012: Rock Pt 2_6
+    2300014: Mine Rails Pt 2
+    2300016: Mine Rails Pt 2_2
+    2300018: Land Pt 2 Cave Ext FG
+    2300020: Rock Pt 2_1 BG
+    2300022: Rock Pt 2_1 FG
+    2300024: Rock Pt 2_2 BG
+    2300026: Rock Pt 2_2 FG
+    2300028: Rock Pt 2_3 BG
+    2300030: Rock Pt 2_3 FG
+    2300032: Rock Pt 2_4 BG
+    2300034: Rock Pt 2_4 FG
+    2300036: Rock Pt 2_5 BG
+    2300038: Rock Pt 2_5 FG
+    2300040: Rock Pt 2_6 BG
+    2300042: Rock Pt 2_6 FG
+    2300044: Black LVL pt 2_1
+    2300046: Black LVL pt 2_2
+    2300048: Black LVL pt 2 Mines Ext
+    2300050: BG Lvl 9 Mines Pt 2_1
+    2300052: BG Lvl 9 Mines Pt 2_2
+    2300054: LVL 9 Mushrooms Pt 2_1
+    2300056: LVL 9 Mushrooms Pt 2_2
+    2300058: Stalagmites Pt 2
+    3300000: Lvl 9 Col Pt 2
+    3300002: Rock Pt 2_1
+    3300004: Rock Pt 2_2
+    3300006: Rock Pt 2_3
+    3300008: Rock Pt 2_4
+    3300010: Rock Pt 2_5
+    3300012: Rock Pt 2_6
+    3300014: Mine Rails Pt 2
+    3300016: Mine Rails Pt 2_2
+    3300018: Land Pt 2 Cave Ext FG
+    3300020: Rock Pt 2_1 BG
+    3300022: Rock Pt 2_1 FG
+    3300024: Rock Pt 2_2 BG
+    3300026: Rock Pt 2_2 FG
+    3300028: Rock Pt 2_3 BG
+    3300030: Rock Pt 2_3 FG
+    3300032: Rock Pt 2_4 BG
+    3300034: Rock Pt 2_4 FG
+    3300036: Rock Pt 2_5 BG
+    3300038: Rock Pt 2_5 FG
+    3300040: Rock Pt 2_6 BG
+    3300042: Rock Pt 2_6 FG
+    3300044: Black LVL pt 2_1
+    3300046: Black LVL pt 2_2
+    3300048: Black LVL pt 2 Mines Ext
+    3300050: BG Lvl 9 Mines Pt 2_1
+    3300052: BG Lvl 9 Mines Pt 2_2
+    3300054: LVL 9 Mushrooms Pt 2_1
+    3300056: LVL 9 Mushrooms Pt 2_2
+    3300058: Stalagmites Pt 2
+    4300000: Rock Pt 2_1
+    4300002: Rock Pt 2_2
+    4300004: Rock Pt 2_3
+    4300006: Rock Pt 2_4
+    4300008: Rock Pt 2_5
+    4300010: Rock Pt 2_6
+    4300012: Lvl 9 Col Pt 2
+    4300014: Mine Rails Pt 2
+    4300016: Mine Rails Pt 2_2
+    4300018: Land Pt 2 Cave Ext FG
+    4300020: Rock Pt 2_6 FG
+    4300022: Rock Pt 2_6 BG
+    4300024: Rock Pt 2_1 FG
+    4300026: Rock Pt 2_3 FG
+    4300028: Rock Pt 2_2 FG
+    4300030: Rock Pt 2_4 FG
+    4300032: Rock Pt 2_3 BG
+    4300034: Rock Pt 2_2 BG
+    4300036: Rock Pt 2_4 BG
+    4300038: Rock Pt 2_1 BG
+    4300040: Rock Pt 2_5 FG
+    4300042: Rock Pt 2_5 BG
+    4300044: Black LVL pt 2_1
+    4300046: Black LVL pt 2_2
+    4300048: Black LVL pt 2 Mines Ext
+    4300050: BG Lvl 9 Mines Pt 2_2
+    4300052: BG Lvl 9 Mines Pt 2_1
+    4300054: Stalagmites Pt 2
+    4300056: LVL 9 Mushrooms Pt 2_1
+    4300058: LVL 9 Mushrooms Pt 2_2
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

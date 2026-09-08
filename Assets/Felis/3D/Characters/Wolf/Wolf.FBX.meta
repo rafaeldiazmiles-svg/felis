@@ -1,0 +1,134 @@
+fileFormatVersion: 2
+guid: 717863384aa83414a809eb53471c1dca
+timeCreated: 1435356504
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Head
+    100002: Left Calf
+    100004: Left Foot
+    100006: Left Forearm
+    100008: Left Hand
+    100010: Left Thigh
+    100012: Left Thumb
+    100014: Left Toe
+    100016: Left Toe Tip
+    100018: Left Upper Arm
+    100020: Lower Lip
+    100022: Nose
+    100024: Rat Body
+    100026: Rat Neck
+    100028: Rat Pelvis
+    100030: Right Calf
+    100032: Right Foot
+    100034: Right Forearm
+    100036: Right Hand
+    100038: Right Thigh
+    100040: Right Thumb
+    100042: Right Toe
+    100044: Right Toe Tip
+    100046: Right Upper Arm
+    100048: Tail 1
+    100050: Tail 2
+    100052: Tail 3
+    100054: Tail 4
+    100056: //RootNode
+    100058: Wolf
+    400000: Head
+    400002: Left Calf
+    400004: Left Foot
+    400006: Left Forearm
+    400008: Left Hand
+    400010: Left Thigh
+    400012: Left Thumb
+    400014: Left Toe
+    400016: Left Toe Tip
+    400018: Left Upper Arm
+    400020: Lower Lip
+    400022: Nose
+    400024: Rat Body
+    400026: Rat Neck
+    400028: Rat Pelvis
+    400030: Right Calf
+    400032: Right Foot
+    400034: Right Forearm
+    400036: Right Hand
+    400038: Right Thigh
+    400040: Right Thumb
+    400042: Right Toe
+    400044: Right Toe Tip
+    400046: Right Upper Arm
+    400048: Tail 1
+    400050: Tail 2
+    400052: Tail 3
+    400054: Tail 4
+    400056: Wolf
+    400058: //RootNode
+    4300000: Wolf
+    7400000: Take 001
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: Wolf
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

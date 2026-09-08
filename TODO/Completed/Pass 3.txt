@@ -1,0 +1,194 @@
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx PASS Nº 3 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+Implement Steamworks.net
+
+-----*On build- hand curser wont dissapear (shows when camera moves)
+
+------*underwater bombs, disable collider after explosion
+
+------*Zombie rats, remove ground hide after above ground.
+
+--------*LVL 6 - Add decoration to underwater sand
+
+------*LVL 3 - can see thorn plants from outside tomb
+
+--------*LVL 3 - can see tomb 3 inside room (from outside)
+
+-----*LVL 4 - black covers 2 before cat 3's room
+------*LVL 4 - cat 3's room back wall wrong
+------*LVL 4 - replace big boulder's material with blended material
+
+-------*Pirate Level - outside ship wreck black covers (extend)
+
+--------toches (temple castle & mines)
+
+-------*potion no handles - fix uv
+
+--------*unparent and delete mask for zombies after 4 seconds
+
+-------------*baloons have stencil (?)
+
+-----------*mushrooms lvl - after cat 2 - check covers (zoom out shoes sky)
+
+----------------*mushroom lvl - cat 1, add wood surface or something for character to jump back up, add rock after mushroom to jump over bouncy mushroom.
+
+------*mushroom lvl make final part easier.
+
+------- Burning Ashes falling in lava area
+-----*Decoration: Falling leaves.
+-----*Decoration: Snow
+
+--------*Dragon Spawn Smoke (offset to the ground)
+
+------*fix - quit & restart (hide restart).
+
+-------*fix - cat still can get stuck in help.
+
+----*fix - lvl 8 check cover before rats with bomb
+-------*fix - lvl 8 can see sky before cat 3 cave
+
+-------*lvl6 - tentacle monster not there (can't replicate)
+ 
+---------*lvl6 -cats decide to come out boat?? (can't replicate)
+
+-----------*fix - popup question baloon.. no stencil.
+
+------------*lvl8 - add go down, after cat 2
+-----------*lvl8 - move rock after 2 jumps after cat 2.
+
+--------*island - griffin - required item doesn't work.
+----------^probably delete game doesn't restore value
+
+-------------*bear trap - stencil (can see bear trap after 1st bear in lvl 6)
+
+-----------------------*lvl 6 - remove lightbulb when entering cave 2
+
+--------------*lvl 6 after cave 2- check covers
+
+--------*beach decoration (starfish, sea shells)
+
+-----------*restore breath from underwater (make faster)
+
+-------------*crossroads - entering cave 2 - check covers.
+
+-------*Ruins Before entering cave that leads to cat 2, check covers.
+-----------^also check grass (can see sky)
+
+-----------------*Ruins - Add ai for stairs
+
+>>>>>>>>>> BACKUP : Felis 2 Dec.rar
+
+-----------*fix - still loses stamina when camera location is underwater
+
+-----------*pirate level - make it more difficult to climb to boat other than going through wreck.
+-----------*pirate level - fish acting weird (couldn't replicate)
+------------*pirate level - background in water hole 1 is wrong
+------------------*pirate level - when entering wreck, you can see cannon ball. (hide with stencil?)
+-------------*pirate level - boxes at end of ship wrong render queue
+
+------------*fix - again, wizard hat wont dissapear with camera location
+
+>>>>>>>>> BACKUP : Felis 2 Dec_2.rar
+
+-----------------*restart + quit doesn't quit
+
+>>>>>>>>>> BACKUP : Felis 2 Dec_3.rar
+
+--------*griffin level - move 3nd vase to the right
+---------*move 2nd fw to the right
+
+--------------*griffin lvl - end of first floor - jumping too high after arrows brings black cover
+
+---------------*Village Tree - Lower End level (can see sky below) (or scale up black thing)
+
+-------------*make wake up anim higher layer than punch anim
+--------------------*make being picked anim layer higher than asking help anim
+
+>>>>>>>>>> BACKUP : Felis 4 Dec.rar
+
+-----------------*Dizzy stars need stencil
+
+-------------------*Increase bomb's range a bit.
+-------------------*Decrease fuse time half a second.
+
+-------------------*lvl 2 - make fall after cat 3 a bit wider.
+
+---------------------lvl 3 - barricade still wrong (maybe change spawn type)
+------------------------lvl 3 - after last crypt, more thorns in fg. Forest on back. Can see sky(check covers)
+
+-------------------*deep lake - cave 1, randomize layer effect.
+
+------*deep lake - cave 1 - cave 2 - discovery sound.
+------*deep lake - rock before beach (too high) (or collision too low)
+-------*deep lake - msg in a bottle dissapeared
+----------*crossroads - cave 1 and trunk cave - discovery sound.
+
+>>>>>>>>>> BACKUP : Felis 6 Dec.rar 
+
+--------*crossroads - cave 2 - too much row effect
+----------*crossroads - tree bridge at the end - have ai help cats cross to the other side
+
+--------------*tree villag - cave 2nd vine higher
+-------------*tree village - right side of big tree - fix render queue of tree at bottom
+--------------*tree village cat stuck before stair that lifts
+---------------*tree village - something wrong with last tree tunnel mask
+
+>>>>>>>>>> BACKUP : Felis 7 Dec.rar 
+
+------------*pirate level, fog on cat 1's cave
+
+-----------------------------*fix - pirate lvl - fish keeps going to the right (fish was on fly limit)
+-----------------------------*fix- pirate lvl - weird mask at ship entrance underwater.
+----------------------------*fix - very weird bg water effect when on top of ship
+-----------------------*fix - ship hatches have no masks (removed water)
+
+-------------x---------*fix - show camera location - can see dizzy stars (couldn't replicate)
+
+---------------------------*black cover looks weird on slope after picking up key for cat 2, before dropping to cat 2's cave.
+
+-----------------------------------*ruins - fix ai that avoids big rock.
+
+-------------------------*mines - bats dissapear
+
+----------------------------*check dragon final msg (puff too small)
+
+------------------------------------------*tweak - unsync cats' jumps.
+
+------------x-------------------------*still can get stuck on light when flashing heatlh (couldn't replicate)
+
+-----------------*boulders hurt you when pushing
+
+---------------*saved cat smaller?
+
+----------------*cats only ask help if prospero is close
+
+---------------*improve zombie rat side detection (can't jump tomb stump)
+
+>>>>>>>>>> BACKUP : Felis 10 Dec.rar 
+
+-------------*do something with isgrounded rays so you don't slide slowly though steep slopes.
+
+------------------*mines - need another safety net before first big rock
+
+-----------------------*lightbulb doesn't destroy on cat's death
+
+-----------*mines - see if can keep 2nd big rock from bouncing on air
+
+-------------*monster fish may need stencil
+
+-----------------*change pirate boss position?
+
+------------------*underwater attack takes less stamina?
+
+>>>>>>>>>> BACKUP : Felis 12 Dec.rar 
+
+-------------------*potion liquid fix (probably fixed)
+
+-------------------*When dying (wizard hat doesn't destroy) (couldn't replicate)
+
+-------------------*Island - press button to continue on logo not showing up (and also showing up for no reason after each level)
+
+-------------------*REQUIRED GRIFFIN ITEM STILL DOESN'T WORKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK
+-------------------^Island griffin door state is loaded before choosing current game

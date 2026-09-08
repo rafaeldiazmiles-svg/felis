@@ -1,0 +1,129 @@
+fileFormatVersion: 2
+guid: fba835ef941f2a341acf8e410dee88c1
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Felis Title
+    100004: Object001
+    100006: Object008
+    100008: BindWeed A 1
+    100010: BindWeed A 2
+    100012: BindWeed B 1
+    100014: BindWeed B 2
+    100016: BindWeed C 1
+    100018: BindWeed C 2
+    100020: E
+    100022: Eye
+    100024: Eye Pupil
+    100026: Eye Pupil Shine
+    100028: Eye Shine
+    100030: F
+    100032: Felis Title Mesh
+    100034: Felis Title Root
+    100036: I
+    100038: L
+    100040: S
+    100042: Tail00
+    100044: Tail01
+    100046: Tail02
+    100048: Tail03
+    100050: Tail04
+    100052: Tail05
+    100054: Tail06
+    100056: Wood Back
+    400000: //RootNode
+    400002: Felis Title
+    400004: Object001
+    400006: Object008
+    400008: BindWeed A 1
+    400010: BindWeed A 2
+    400012: BindWeed B 1
+    400014: BindWeed B 2
+    400016: BindWeed C 1
+    400018: BindWeed C 2
+    400020: E
+    400022: Eye
+    400024: Eye Pupil
+    400026: Eye Pupil Shine
+    400028: Eye Shine
+    400030: F
+    400032: Felis Title Mesh
+    400034: Felis Title Root
+    400036: I
+    400038: L
+    400040: S
+    400042: Tail00
+    400044: Tail01
+    400046: Tail02
+    400048: Tail03
+    400050: Tail04
+    400052: Tail05
+    400054: Tail06
+    400056: Wood Back
+    2300000: //RootNode
+    2300002: Felis Title
+    2300004: Object001
+    3300000: //RootNode
+    3300002: Felis Title
+    3300004: Object001
+    4300000: Object001
+    4300002: Felis Title
+    4300004: Felis Title Mesh
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: Felis Title Mesh
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  additionalBone: 0
+  userData: 

@@ -1,0 +1,171 @@
+fileFormatVersion: 2
+guid: 6bfb47f191e9fab4e9c6e0b53b109274
+timeCreated: 1468444929
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: LVL 13 Cave 2 BG pt 2
+    100004: LVL 13 Cave 2 Ground pt 2
+    100006: LVL 13 Cliff Rocks Pt 2
+    100008: LVL 13 Skulls
+    100010: LVL 13 Falling Stalagmite Bases Part 2
+    100012: LVL 13 Cave 2 Crumbling pt 2
+    100014: LVL13 Crumble Rock 1
+    100016: LVL13 Crumble Rock 2
+    100018: LVL13 Crumble Rock 3
+    100020: LVL13 Crumble Rock 4
+    100022: LVL13 Crumble Rock 5
+    100024: LVL13 Crumble Rock 6
+    100026: LVL13 Crumble Rock 7
+    100028: 'Dragon Cave 2 Int '
+    100030: Dragon Cave 2 Int FG
+    100032: Dragon Cave 2 Int
+    100034: LVL 13 Black_Pt2  Cave 2
+    100036: LVL 13 Black_Pt2  Cave 2 _2
+    100038: LVL 13 Cave 2 Ground pt 2 _2
+    400000: //RootNode
+    400002: LVL 13 Cave 2 BG pt 2
+    400004: LVL 13 Cave 2 Ground pt 2
+    400006: LVL 13 Cliff Rocks Pt 2
+    400008: LVL 13 Skulls
+    400010: LVL 13 Falling Stalagmite Bases Part 2
+    400012: LVL 13 Cave 2 Crumbling pt 2
+    400014: LVL13 Crumble Rock 1
+    400016: LVL13 Crumble Rock 2
+    400018: LVL13 Crumble Rock 3
+    400020: LVL13 Crumble Rock 4
+    400022: LVL13 Crumble Rock 5
+    400024: LVL13 Crumble Rock 6
+    400026: LVL13 Crumble Rock 7
+    400028: 'Dragon Cave 2 Int '
+    400030: Dragon Cave 2 Int FG
+    400032: Dragon Cave 2 Int
+    400034: LVL 13 Black_Pt2  Cave 2
+    400036: LVL 13 Black_Pt2  Cave 2 _2
+    400038: LVL 13 Cave 2 Ground pt 2 _2
+    2300000: //RootNode
+    2300002: LVL 13 Cave 2 BG pt 2
+    2300004: LVL 13 Cave 2 Ground pt 2
+    2300006: LVL 13 Cliff Rocks Pt 2
+    2300008: LVL 13 Skulls
+    2300010: LVL 13 Falling Stalagmite Bases Part 2
+    2300012: LVL 13 Cave 2 Crumbling pt 2
+    2300014: LVL13 Crumble Rock 1
+    2300016: LVL13 Crumble Rock 2
+    2300018: LVL13 Crumble Rock 3
+    2300020: LVL13 Crumble Rock 4
+    2300022: LVL13 Crumble Rock 5
+    2300024: LVL13 Crumble Rock 6
+    2300026: LVL13 Crumble Rock 7
+    2300028: 'Dragon Cave 2 Int '
+    2300030: Dragon Cave 2 Int FG
+    2300032: Dragon Cave 2 Int
+    2300034: LVL 13 Black_Pt2  Cave 2
+    2300036: LVL 13 Black_Pt2  Cave 2 _2
+    2300038: LVL 13 Cave 2 Ground pt 2 _2
+    3300000: //RootNode
+    3300002: LVL 13 Cave 2 BG pt 2
+    3300004: LVL 13 Cave 2 Ground pt 2
+    3300006: LVL 13 Cliff Rocks Pt 2
+    3300008: LVL 13 Skulls
+    3300010: LVL 13 Falling Stalagmite Bases Part 2
+    3300012: LVL 13 Cave 2 Crumbling pt 2
+    3300014: LVL13 Crumble Rock 1
+    3300016: LVL13 Crumble Rock 2
+    3300018: LVL13 Crumble Rock 3
+    3300020: LVL13 Crumble Rock 4
+    3300022: LVL13 Crumble Rock 5
+    3300024: LVL13 Crumble Rock 6
+    3300026: LVL13 Crumble Rock 7
+    3300028: 'Dragon Cave 2 Int '
+    3300030: Dragon Cave 2 Int FG
+    3300032: Dragon Cave 2 Int
+    3300034: LVL 13 Black_Pt2  Cave 2
+    3300036: LVL 13 Black_Pt2  Cave 2 _2
+    3300038: LVL 13 Cave 2 Ground pt 2 _2
+    4300000: LVL 13 Cave 2 Ground pt 2
+    4300002: LVL 13 Cave 2 BG pt 2
+    4300004: LVL 13 Cliff Rocks Pt 2
+    4300006: LVL 13 Skulls
+    4300008: LVL 13 Falling Stalagmite Bases Part 2
+    4300010: LVL 13 Cave 2 Crumbling pt 2
+    4300012: LVL13 Crumble Rock 1
+    4300014: LVL13 Crumble Rock 2
+    4300016: LVL13 Crumble Rock 3
+    4300018: LVL13 Crumble Rock 4
+    4300020: LVL13 Crumble Rock 5
+    4300022: LVL13 Crumble Rock 6
+    4300024: LVL13 Crumble Rock 7
+    4300026: 'Dragon Cave 2 Int '
+    4300028: Dragon Cave 2 Int FG
+    4300030: Dragon Cave 2 Int
+    4300032: LVL 13 Black_Pt2  Cave 2
+    4300034: LVL 13 Black_Pt2  Cave 2 _2
+    4300036: LVL 13 Cave 2 Ground pt 2 _2
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

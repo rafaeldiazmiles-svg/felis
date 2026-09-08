@@ -1,0 +1,242 @@
+fileFormatVersion: 2
+guid: a4441f36a73e0c7458f28219185a4b5f
+timeCreated: 1458064177
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Btree Branch BG Pt4
+    100002: Btree Branch FG Pt4
+    100004: Btree Branch Pt4
+    100006: LVL 11 Col Pt4
+    100008: LVL 11 Wood Platform Pt4
+    100010: LVL11 Big Tree Bark Pt4
+    100012: LVL11 Big Tree Entrance Pt4
+    100014: LVL11 Big Tree Exit P4
+    100016: LVL11 Big Tree Interior Pt4
+    100018: LVL11 Hut Ext BG Pt4
+    100020: LVL11 Hut Ext Pt4
+    100022: //RootNode
+    100024: LVL11 Hut Ext Mask Pt4
+    100026: Btree Branch FG Pt4_1
+    100028: Btree Branch Pt4_1
+    100030: LVL 11 Wood Platform Pt4_1
+    100032: LVL11 Big Tree Entrance Pt4_1
+    100034: LVL11 Big Tree Interior Pt4_003
+    100036: LVL11 Big Tree Interior Pt4_004
+    100038: LVL11 Big Tree Interior Pt4_005
+    100040: LVL11 Big Tree Interior Pt4_006
+    100042: LVL11 Big Tree Interior Pt4_007
+    100044: LVL11 Big Tree Interior Pt4_008
+    100046: LVL11 Big Tree Interior Pt4_1
+    100048: LVL11 Big Tree Interior Pt4_2
+    100050: LVL11 Big Tree Interior Pt4_3
+    100052: Btree Branch FG Pt4_2
+    100054: Btree Branch Pt4_2
+    100056: LVL 11 Wood Platform Pt4_2
+    100058: LVL 11 Wood Platform Pt4_3
+    100060: LVL11 Big Tree Entrance Pt4_2
+    100062: LVL11 Big Tree Entrance Pt4_3
+    100064: LVL 11 Tree Int Mask Pt4
+    100066: LVL11 BTree Mask Ext Pt4
+    400000: Btree Branch BG Pt4
+    400002: Btree Branch FG Pt4
+    400004: Btree Branch Pt4
+    400006: LVL 11 Col Pt4
+    400008: LVL 11 Wood Platform Pt4
+    400010: LVL11 Big Tree Bark Pt4
+    400012: LVL11 Big Tree Entrance Pt4
+    400014: LVL11 Big Tree Exit P4
+    400016: LVL11 Big Tree Interior Pt4
+    400018: LVL11 Hut Ext BG Pt4
+    400020: LVL11 Hut Ext Pt4
+    400022: //RootNode
+    400024: LVL11 Hut Ext Mask Pt4
+    400026: Btree Branch FG Pt4_1
+    400028: Btree Branch Pt4_1
+    400030: LVL 11 Wood Platform Pt4_1
+    400032: LVL11 Big Tree Entrance Pt4_1
+    400034: LVL11 Big Tree Interior Pt4_003
+    400036: LVL11 Big Tree Interior Pt4_004
+    400038: LVL11 Big Tree Interior Pt4_005
+    400040: LVL11 Big Tree Interior Pt4_006
+    400042: LVL11 Big Tree Interior Pt4_007
+    400044: LVL11 Big Tree Interior Pt4_008
+    400046: LVL11 Big Tree Interior Pt4_1
+    400048: LVL11 Big Tree Interior Pt4_2
+    400050: LVL11 Big Tree Interior Pt4_3
+    400052: Btree Branch FG Pt4_2
+    400054: Btree Branch Pt4_2
+    400056: LVL 11 Wood Platform Pt4_2
+    400058: LVL 11 Wood Platform Pt4_3
+    400060: LVL11 Big Tree Entrance Pt4_2
+    400062: LVL11 Big Tree Entrance Pt4_3
+    400064: LVL 11 Tree Int Mask Pt4
+    400066: LVL11 BTree Mask Ext Pt4
+    2300000: Btree Branch BG Pt4
+    2300002: Btree Branch FG Pt4
+    2300004: Btree Branch Pt4
+    2300006: LVL 11 Col Pt4
+    2300008: LVL 11 Wood Platform Pt4
+    2300010: LVL11 Big Tree Bark Pt4
+    2300012: LVL11 Big Tree Entrance Pt4
+    2300014: LVL11 Big Tree Exit P4
+    2300016: LVL11 Big Tree Interior Pt4
+    2300018: LVL11 Hut Ext BG Pt4
+    2300020: LVL11 Hut Ext Pt4
+    2300022: LVL11 Hut Ext Mask Pt4
+    2300024: Btree Branch FG Pt4_1
+    2300026: Btree Branch Pt4_1
+    2300028: LVL 11 Wood Platform Pt4_1
+    2300030: LVL11 Big Tree Entrance Pt4_1
+    2300032: LVL11 Big Tree Interior Pt4_003
+    2300034: LVL11 Big Tree Interior Pt4_004
+    2300036: LVL11 Big Tree Interior Pt4_005
+    2300038: LVL11 Big Tree Interior Pt4_006
+    2300040: LVL11 Big Tree Interior Pt4_007
+    2300042: LVL11 Big Tree Interior Pt4_008
+    2300044: LVL11 Big Tree Interior Pt4_1
+    2300046: LVL11 Big Tree Interior Pt4_2
+    2300048: LVL11 Big Tree Interior Pt4_3
+    2300050: Btree Branch FG Pt4_2
+    2300052: Btree Branch Pt4_2
+    2300054: LVL 11 Wood Platform Pt4_2
+    2300056: LVL 11 Wood Platform Pt4_3
+    2300058: LVL11 Big Tree Entrance Pt4_2
+    2300060: LVL11 Big Tree Entrance Pt4_3
+    2300062: LVL 11 Tree Int Mask Pt4
+    2300064: LVL11 BTree Mask Ext Pt4
+    2300066: //RootNode
+    3300000: Btree Branch BG Pt4
+    3300002: Btree Branch FG Pt4
+    3300004: Btree Branch Pt4
+    3300006: LVL 11 Col Pt4
+    3300008: LVL 11 Wood Platform Pt4
+    3300010: LVL11 Big Tree Bark Pt4
+    3300012: LVL11 Big Tree Entrance Pt4
+    3300014: LVL11 Big Tree Exit P4
+    3300016: LVL11 Big Tree Interior Pt4
+    3300018: LVL11 Hut Ext BG Pt4
+    3300020: LVL11 Hut Ext Pt4
+    3300022: LVL11 Hut Ext Mask Pt4
+    3300024: Btree Branch FG Pt4_1
+    3300026: Btree Branch Pt4_1
+    3300028: LVL 11 Wood Platform Pt4_1
+    3300030: LVL11 Big Tree Entrance Pt4_1
+    3300032: LVL11 Big Tree Interior Pt4_003
+    3300034: LVL11 Big Tree Interior Pt4_004
+    3300036: LVL11 Big Tree Interior Pt4_005
+    3300038: LVL11 Big Tree Interior Pt4_006
+    3300040: LVL11 Big Tree Interior Pt4_007
+    3300042: LVL11 Big Tree Interior Pt4_008
+    3300044: LVL11 Big Tree Interior Pt4_1
+    3300046: LVL11 Big Tree Interior Pt4_2
+    3300048: LVL11 Big Tree Interior Pt4_3
+    3300050: Btree Branch FG Pt4_2
+    3300052: Btree Branch Pt4_2
+    3300054: LVL 11 Wood Platform Pt4_2
+    3300056: LVL 11 Wood Platform Pt4_3
+    3300058: LVL11 Big Tree Entrance Pt4_2
+    3300060: LVL11 Big Tree Entrance Pt4_3
+    3300062: LVL 11 Tree Int Mask Pt4
+    3300064: LVL11 BTree Mask Ext Pt4
+    3300066: //RootNode
+    4300000: LVL 11 Col Pt4
+    4300002: LVL11 Big Tree Bark Pt4
+    4300004: LVL 11 Wood Platform Pt4
+    4300006: LVL11 Hut Ext Pt4
+    4300008: Btree Branch Pt4
+    4300010: LVL11 Big Tree Entrance Pt4
+    4300012: LVL11 Big Tree Exit P4
+    4300014: LVL11 Big Tree Interior Pt4
+    4300016: Btree Branch FG Pt4
+    4300018: Btree Branch BG Pt4
+    4300020: LVL11 Hut Ext BG Pt4
+    4300022: LVL11 Hut Ext Mask Pt4
+    4300024: LVL 11 Wood Platform Pt4_1
+    4300026: Btree Branch Pt4_1
+    4300028: LVL11 Big Tree Entrance Pt4_1
+    4300030: LVL11 Big Tree Interior Pt4_1
+    4300032: Btree Branch FG Pt4_1
+    4300034: LVL11 Big Tree Interior Pt4_2
+    4300036: LVL11 Big Tree Interior Pt4_003
+    4300038: LVL11 Big Tree Interior Pt4_004
+    4300040: LVL11 Big Tree Interior Pt4_3
+    4300042: LVL11 Big Tree Interior Pt4_005
+    4300044: LVL11 Big Tree Interior Pt4_006
+    4300046: LVL11 Big Tree Interior Pt4_007
+    4300048: LVL11 Big Tree Interior Pt4_008
+    4300050: Btree Branch Pt4_2
+    4300052: Btree Branch FG Pt4_2
+    4300054: LVL 11 Wood Platform Pt4_2
+    4300056: LVL 11 Wood Platform Pt4_3
+    4300058: LVL11 Big Tree Entrance Pt4_3
+    4300060: LVL11 Big Tree Entrance Pt4_2
+    4300062: LVL 11 Tree Int Mask Pt4
+    4300064: LVL11 BTree Mask Ext Pt4
+    4300066: BTree Branch Pt4
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

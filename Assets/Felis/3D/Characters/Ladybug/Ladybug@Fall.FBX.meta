@@ -1,0 +1,129 @@
+fileFormatVersion: 2
+guid: 9dd0d5edca1541d44bc287cc1e950824
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: Body
+    100002: Delete
+    100004: Head
+    100006: LadyBug
+    100008: LadyBug Mesh
+    100010: //RootNode
+    100012: Left Wing
+    100014: Left Wing Top
+    100016: Right Wing
+    100018: Right Wing Top
+    400000: Body
+    400002: Delete
+    400004: Head
+    400006: LadyBug
+    400008: LadyBug Mesh
+    400010: //RootNode
+    400012: Left Wing
+    400014: Left Wing Top
+    400016: Right Wing
+    400018: Right Wing Top
+    4300000: LadyBug Mesh
+    7400000: Fall
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: LadyBug Mesh
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Fall
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 15
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Delete
+        weight: 1
+      - path: LadyBug
+        weight: 1
+      - path: LadyBug/Body
+        weight: 1
+      - path: LadyBug/Body/Head
+        weight: 1
+      - path: LadyBug/Body/Left Wing
+        weight: 1
+      - path: LadyBug/Body/Left Wing Top
+        weight: 1
+      - path: LadyBug/Body/Right Wing
+        weight: 1
+      - path: LadyBug/Body/Right Wing Top
+        weight: 1
+      - path: LadyBug/LadyBug Mesh
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  additionalBone: 0
+  userData: 

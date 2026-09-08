@@ -1,0 +1,130 @@
+fileFormatVersion: 2
+guid: f294cd1e48392414a803af2f6858274f
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: Flag 1
+    100002: Flag 1 Wave
+    100004: Flag 2
+    100006: Flag 2 Wave
+    100008: Flag 3
+    100010: Flag 3 Wave
+    100012: Flag 4
+    100014: Flag 4 Wave
+    100016: //RootNode
+    100018: Flags
+    400000: Flag 1
+    400002: Flag 1 Wave
+    400004: Flag 2
+    400006: Flag 2 Wave
+    400008: Flag 3
+    400010: Flag 3 Wave
+    400012: Flag 4
+    400014: Flag 4 Wave
+    400016: //RootNode
+    400018: Flags
+    4300000: Flags
+    7400000: Flags Come Out
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: Flags
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Flags Come Out
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 45
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Flag 1
+        weight: 1
+      - path: Flag 1/Flag 1 Wave
+        weight: 1
+      - path: Flag 2
+        weight: 1
+      - path: Flag 2/Flag 2 Wave
+        weight: 1
+      - path: Flag 3
+        weight: 1
+      - path: Flag 3/Flag 3 Wave
+        weight: 1
+      - path: Flag 4
+        weight: 1
+      - path: Flag 4/Flag 4 Wave
+        weight: 1
+      - path: Flags
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  additionalBone: 0
+  userData: 

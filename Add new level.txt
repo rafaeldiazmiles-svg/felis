@@ -1,0 +1,61 @@
+1) Agregar poste para el nuevo nivel, cada poste con un color RGB distinto.
+
+2)En escena de la Isla, CatFlags(gameObject), hay un objecto emparentado por cada nivel, agregar un objeto para el nivel
+*En cada bandera, Custom Bone debe tener el mismo color RGB que el 
+poste.
+*Posicionar el gameObject en la posiciónd el poste correspondiente.
+
+3) En Objeto CatFlags, el componente CatFlags, por cada bandera agregar una
+instancia de la clase "Cat Flags"
+En cada instancia, fijar los parametros:
+*Anim Comp
+*3 cats' textures
+*Level ID
+
+4) En StartScreen y ProsperoIsland:
+*Agregar un static var que corresponda al nuevo nivel
+
+5) En Start Screen, actualizar:
+*IsLevelAvailable()
+*//Switch Levels (no olvidarse de usar IsLevelAvailable) (actualizar x ida y vuelta)
+*Desde el EDITOR: Agregar un Level, con posición de camara y nombre de la escena del Nivel
+
+6)Island Animation Path - Crear animacion trayectoria "path" para nuevos niveles, duplicar uno existente si contiene la posición de un nivel ya establecido.
+Agregar cada animacion al componente de animación del objeto Island Animation Path
+
+7) En ProsperoIsland (Componente), actualizar:
+*Agregar un AnimationClip por cada "path" de animación.
+*Fijar el parámetro de AnimationClip
+*//Path Animation play (actualizar x ida y vuelta)
+*PathSetLevelPos()
+
+8)Crear los Level Baloons en el FBX
+*Agregar y posicionar el Baloon sobre el nivel
+*En BaloonLVLs (Componente) agregar el index correspondiente, parámetro Baloon Level. 
+(Element es nº de nivel. Int es la hubicación del Baloon, en el orden que está en el editor)
+
+
+9)Agregar/Actualizar Touch Points
+*En componente Touch Point Levels (objeto Level Island, baja de la jerarquía del Touch Point)
+"On Levels" - son los niveles donde el touch point se hace visible.
+"Go To Level" - el nivel bajo el touch point
+^Actualizar touchpoint previos
+
+10)Agregar en el object Trails, un nuevo objeto como los que ya están emparentados.
+^Crear el trayecto con gameObjects (Point1, Point2, etc)
+*Actualizar el componente Trails en el objeto Trails:
+Agregar el Level Branch, y acutalizar los ya existentes afectados por el nuevo nivel.
+"Level" es el nivel donde estaría el personaje.
+"Branches" son los paths que se harían visibles cuando el personaje está en el nivel "Level".
+Definir si el path es animado normalmente o en reversa.
+"Target Level" es el indicador hacia qué nivel dirige el path, se usa IsLevelAvailable() para determinar
+si el path es visible.
+
+11)Actualizar el objeto Compass:
+*Agregar el baloon del nivel al array Lvl Baloon en el ID correspondiente.(el nivel sería el Elemento +1)
+*Agregar el compass set. Determina qué nivel hay en cada dirección (actualizar x ida y vuelta)
+(0 si no hay ningún nivel en una dirección) Recordar actualizar para niveles anteriores si corresponde.
+
+12)Actualizar objeto Rescue More Cats: Definir "Minimum cats per level" usando el ID correspondiente
+(el nivel sería el Elemento +1)
+*También en Rescue More Cats, agregar un elemento a Offset Pos (0=topleft , 1=bottomright)

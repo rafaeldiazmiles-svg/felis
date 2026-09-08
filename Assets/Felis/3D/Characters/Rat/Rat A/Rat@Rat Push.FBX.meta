@@ -1,0 +1,217 @@
+fileFormatVersion: 2
+guid: 8744ae45c955e844cb2d28f77b4e115a
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: Rat
+    100002: Rat Bib
+    100004: Rat Head
+    100006: Rat Left Calf
+    100008: Rat Left Ear
+    100010: Rat Left Foot
+    100012: Rat Left Forearm
+    100014: Rat Left Hand
+    100016: Rat Left Thigh
+    100018: Rat Left Toe
+    100020: Rat Left Upper Arm
+    100022: Rat Nose
+    100024: Rat Right Calf
+    100026: Rat Right Ear
+    100028: Rat Right Foot
+    100030: Rat Right Forearm
+    100032: Rat Right Hand
+    100034: Rat Right Thigh
+    100036: Rat Right Toe
+    100038: Rat Right Upper Arm
+    100040: Rat Root
+    100042: Rat Spine 1
+    100044: Rat Spine 2
+    100046: Rat Tail 1
+    100048: Rat Tail 2
+    100050: Rat Tail 3
+    100052: Rat Tail 4
+    100054: Rat Tongue 1
+    100056: Rat Tongue 2
+    100058: Rat Yaw
+    100060: //RootNode
+    400000: Rat
+    400002: Rat Bib
+    400004: Rat Head
+    400006: Rat Left Calf
+    400008: Rat Left Ear
+    400010: Rat Left Foot
+    400012: Rat Left Forearm
+    400014: Rat Left Hand
+    400016: Rat Left Thigh
+    400018: Rat Left Toe
+    400020: Rat Left Upper Arm
+    400022: Rat Nose
+    400024: Rat Right Calf
+    400026: Rat Right Ear
+    400028: Rat Right Foot
+    400030: Rat Right Forearm
+    400032: Rat Right Hand
+    400034: Rat Right Thigh
+    400036: Rat Right Toe
+    400038: Rat Right Upper Arm
+    400040: Rat Root
+    400042: Rat Spine 1
+    400044: Rat Spine 2
+    400046: Rat Tail 1
+    400048: Rat Tail 2
+    400050: Rat Tail 3
+    400052: Rat Tail 4
+    400054: Rat Tongue 1
+    400056: Rat Tongue 2
+    400058: Rat Yaw
+    400060: //RootNode
+    4300000: Rat
+    7400000: Rat Push
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: Rat
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Rat Push
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 20
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Rat
+        weight: 1
+      - path: Rat Root
+        weight: 1
+      - path: Rat Root/Rat Left Thigh
+        weight: 1
+      - path: Rat Root/Rat Left Thigh/Rat Left Calf
+        weight: 1
+      - path: Rat Root/Rat Left Thigh/Rat Left Calf/Rat Left Foot
+        weight: 1
+      - path: Rat Root/Rat Left Thigh/Rat Left Calf/Rat Left Foot/Rat Left Toe
+        weight: 1
+      - path: Rat Root/Rat Right Thigh
+        weight: 1
+      - path: Rat Root/Rat Right Thigh/Rat Right Calf
+        weight: 1
+      - path: Rat Root/Rat Right Thigh/Rat Right Calf/Rat Right Foot
+        weight: 1
+      - path: Rat Root/Rat Right Thigh/Rat Right Calf/Rat Right Foot/Rat Right Toe
+        weight: 1
+      - path: Rat Root/Rat Spine 1
+        weight: 1
+      - path: Rat Root/Rat Spine 1/Rat Spine 2
+        weight: 1
+      - path: Rat Root/Rat Spine 1/Rat Spine 2/Rat Bib
+        weight: 1
+      - path: Rat Root/Rat Spine 1/Rat Spine 2/Rat Head
+        weight: 1
+      - path: Rat Root/Rat Spine 1/Rat Spine 2/Rat Head/Rat Left Ear
+        weight: 1
+      - path: Rat Root/Rat Spine 1/Rat Spine 2/Rat Head/Rat Nose
+        weight: 1
+      - path: Rat Root/Rat Spine 1/Rat Spine 2/Rat Head/Rat Right Ear
+        weight: 1
+      - path: Rat Root/Rat Spine 1/Rat Spine 2/Rat Head/Rat Yaw
+        weight: 1
+      - path: Rat Root/Rat Spine 1/Rat Spine 2/Rat Head/Rat Yaw/Rat Tongue 1
+        weight: 1
+      - path: Rat Root/Rat Spine 1/Rat Spine 2/Rat Head/Rat Yaw/Rat Tongue 1/Rat Tongue
+          2
+        weight: 1
+      - path: Rat Root/Rat Spine 1/Rat Spine 2/Rat Left Upper Arm
+        weight: 1
+      - path: Rat Root/Rat Spine 1/Rat Spine 2/Rat Left Upper Arm/Rat Left Forearm
+        weight: 1
+      - path: Rat Root/Rat Spine 1/Rat Spine 2/Rat Left Upper Arm/Rat Left Forearm/Rat
+          Left Hand
+        weight: 1
+      - path: Rat Root/Rat Spine 1/Rat Spine 2/Rat Right Upper Arm
+        weight: 1
+      - path: Rat Root/Rat Spine 1/Rat Spine 2/Rat Right Upper Arm/Rat Right Forearm
+        weight: 1
+      - path: Rat Root/Rat Spine 1/Rat Spine 2/Rat Right Upper Arm/Rat Right Forearm/Rat
+          Right Hand
+        weight: 1
+      - path: Rat Root/Rat Tail 1
+        weight: 1
+      - path: Rat Root/Rat Tail 1/Rat Tail 2
+        weight: 1
+      - path: Rat Root/Rat Tail 1/Rat Tail 2/Rat Tail 3
+        weight: 1
+      - path: Rat Root/Rat Tail 1/Rat Tail 2/Rat Tail 3/Rat Tail 4
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  additionalBone: 0
+  userData: 

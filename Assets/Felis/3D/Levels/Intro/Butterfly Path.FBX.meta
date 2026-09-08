@@ -1,0 +1,269 @@
+fileFormatVersion: 2
+guid: f8252b4a987e0f6448ebdb7660298215
+timeCreated: 1464787474
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Dark Forest Fog Part 1
+    100004: Dark Forest Fog Part 2
+    100006: Intro Collision
+    100008: INTRO Dark
+    100010: INTRO Grass
+    100012: INTRO Grass To Dark BG
+    100014: INTRO Grass To Dark FG
+    100016: INTRO Horizon
+    100018: INTRO Tree Group
+    100020: INTRO Trees
+    100022: INTRO Trees BG
+    100024: INTRO Trees FG
+    100026: Scary Tree Group Part 2
+    100028: Scary Trees
+    100030: Scary Trees BG Part 2
+    100032: Scary Trees FG Part 1
+    100034: Single Tree A
+    100036: Single Tree A001
+    100038: Single Tree A002
+    100040: Single Tree B
+    100042: Single Tree B001
+    100044: Single Tree B003
+    100046: Single Tree B004
+    100048: Tree Group BG A
+    100050: Tree Group BG A001
+    100052: Tree Group BG A002
+    100054: Tree Group BG B
+    100056: Tree Group BG B001
+    100058: Tree Group BG B002
+    100060: Tree Group BG B003
+    100062: Tree Group BG C
+    100064: Tree Group BG C001
+    400000: //RootNode
+    400002: Dark Forest Fog Part 1
+    400004: Dark Forest Fog Part 2
+    400006: Intro Collision
+    400008: INTRO Dark
+    400010: INTRO Grass
+    400012: INTRO Grass To Dark BG
+    400014: INTRO Grass To Dark FG
+    400016: INTRO Horizon
+    400018: INTRO Tree Group
+    400020: INTRO Trees
+    400022: INTRO Trees BG
+    400024: INTRO Trees FG
+    400026: Scary Tree Group Part 2
+    400028: Scary Trees
+    400030: Scary Trees BG Part 2
+    400032: Scary Trees FG Part 1
+    400034: Single Tree A
+    400036: Single Tree A001
+    400038: Single Tree A002
+    400040: Single Tree B
+    400042: Single Tree B001
+    400044: Single Tree B003
+    400046: Single Tree B004
+    400048: Tree Group BG A
+    400050: Tree Group BG A001
+    400052: Tree Group BG A002
+    400054: Tree Group BG B
+    400056: Tree Group BG B001
+    400058: Tree Group BG B002
+    400060: Tree Group BG B003
+    400062: Tree Group BG C
+    400064: Tree Group BG C001
+    2300000: //RootNode
+    2300002: Dark Forest Fog Part 1
+    2300004: Dark Forest Fog Part 2
+    2300006: Intro Collision
+    2300008: INTRO Dark
+    2300010: INTRO Grass
+    2300012: INTRO Grass To Dark BG
+    2300014: INTRO Grass To Dark FG
+    2300016: INTRO Horizon
+    2300018: INTRO Tree Group
+    2300020: INTRO Trees
+    2300022: INTRO Trees BG
+    2300024: INTRO Trees FG
+    2300026: Scary Tree Group Part 2
+    2300028: Scary Trees
+    2300030: Scary Trees BG Part 2
+    2300032: Scary Trees FG Part 1
+    2300034: Single Tree A
+    2300036: Single Tree A001
+    2300038: Single Tree A002
+    2300040: Single Tree B
+    2300042: Single Tree B001
+    2300044: Single Tree B003
+    2300046: Single Tree B004
+    2300048: Tree Group BG A
+    2300050: Tree Group BG A001
+    2300052: Tree Group BG A002
+    2300054: Tree Group BG B
+    2300056: Tree Group BG B001
+    2300058: Tree Group BG B002
+    2300060: Tree Group BG B003
+    2300062: Tree Group BG C
+    2300064: Tree Group BG C001
+    3300000: //RootNode
+    3300002: Dark Forest Fog Part 1
+    3300004: Dark Forest Fog Part 2
+    3300006: Intro Collision
+    3300008: INTRO Dark
+    3300010: INTRO Grass
+    3300012: INTRO Grass To Dark BG
+    3300014: INTRO Grass To Dark FG
+    3300016: INTRO Horizon
+    3300018: INTRO Tree Group
+    3300020: INTRO Trees
+    3300022: INTRO Trees BG
+    3300024: INTRO Trees FG
+    3300026: Scary Tree Group Part 2
+    3300028: Scary Trees
+    3300030: Scary Trees BG Part 2
+    3300032: Scary Trees FG Part 1
+    3300034: Single Tree A
+    3300036: Single Tree A001
+    3300038: Single Tree A002
+    3300040: Single Tree B
+    3300042: Single Tree B001
+    3300044: Single Tree B003
+    3300046: Single Tree B004
+    3300048: Tree Group BG A
+    3300050: Tree Group BG A001
+    3300052: Tree Group BG A002
+    3300054: Tree Group BG B
+    3300056: Tree Group BG B001
+    3300058: Tree Group BG B002
+    3300060: Tree Group BG B003
+    3300062: Tree Group BG C
+    3300064: Tree Group BG C001
+    4300000: Butterfly Target
+    4300002: INTRO Trees
+    4300004: INTRO Trees BG
+    4300006: INTRO Tree Group
+    4300008: INTRO Horizon
+    4300010: Tree Group BG C
+    4300012: Single Tree B
+    4300014: Tree Group BG B
+    4300016: Tree Group BG A
+    4300018: Single Tree A
+    4300020: Tree Group BG B001
+    4300022: Single Tree A001
+    4300024: Tree Group BG A001
+    4300026: Single Tree B001
+    4300028: Tree Group BG C001
+    4300030: Tree Group BG B002
+    4300032: Single Tree B003
+    4300034: Tree Group BG B003
+    4300036: Single Tree A002
+    4300038: Single Tree B004
+    4300040: Tree Group BG A002
+    4300042: INTRO Grass
+    4300044: INTRO Grass To Dark FG
+    4300046: INTRO Grass To Dark BG
+    4300048: INTRO Dark
+    4300050: Dark Forest Fog Part 2
+    4300052: Scary Trees
+    4300054: Scary Trees BG Part 2
+    4300056: Scary Tree Group Part 2
+    4300058: Dark Forest Fog Part 1
+    4300060: Scary Trees FG Part 1
+    4300062: Intro Collision
+    4300064: INTRO Trees FG
+    7400000: Intro Butterfly Path
+    9500000: //RootNode
+    11100000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Intro Butterfly Path
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 1200
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

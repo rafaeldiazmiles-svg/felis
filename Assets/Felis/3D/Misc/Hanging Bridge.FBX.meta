@@ -1,0 +1,107 @@
+fileFormatVersion: 2
+guid: 0b1d2458a2384a1449be713fbee09697
+timeCreated: 1439235622
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Board 1
+    100002: Board 2
+    100004: Board 3
+    100006: Board 4
+    100008: Board 5
+    100010: Bridge End
+    100012: Bridge Start
+    100014: //RootNode
+    100016: Hanging Bridge
+    100018: Hanging Bridge Root
+    100020: Board 6
+    100022: Board 7
+    100024: Board 8
+    100026: Hanging Bridge End
+    100028: Hanging Bridge Start
+    100030: Root
+    400000: Board 1
+    400002: Board 2
+    400004: Board 3
+    400006: Board 4
+    400008: Board 5
+    400010: Bridge End
+    400012: Bridge Start
+    400014: //RootNode
+    400016: Hanging Bridge
+    400018: Hanging Bridge Root
+    400020: Board 6
+    400022: Board 7
+    400024: Board 8
+    400026: Hanging Bridge End
+    400028: Hanging Bridge Start
+    400030: Root
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: Hanging Bridge
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: Hanging Bridge
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,157 @@
+fileFormatVersion: 2
+guid: 29507636abb74474cbf56848995ea191
+timeCreated: 1442401335
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Collision Pt 3 _1
+    100002: Collision Pt 3 _2
+    100004: Ground Pt 4 _1
+    100006: Ground Pt 4 _2
+    100008: //RootNode
+    100010: Falling Edge Pt 4
+    100012: Black Pt 4 _1
+    100014: Black Pt 4 _2
+    100016: Dirt BG Pt 4_1
+    100018: Ground Pt 4 _1 BG
+    100020: Ground Pt 4 _1 FG
+    100022: Ground Pt 4 _2 BG
+    100024: Ground Pt 4 _2 FG
+    100026: Fog Pt 4
+    100028: Pine Tree Group Pt 4
+    100030: Trees pt 4
+    100032: Trees pt 4 FG
+    100034: Mushrooms Pt 4
+    400000: Collision Pt 3 _1
+    400002: Collision Pt 3 _2
+    400004: Ground Pt 4 _1
+    400006: Ground Pt 4 _2
+    400008: //RootNode
+    400010: Falling Edge Pt 4
+    400012: Black Pt 4 _1
+    400014: Black Pt 4 _2
+    400016: Dirt BG Pt 4_1
+    400018: Ground Pt 4 _1 BG
+    400020: Ground Pt 4 _1 FG
+    400022: Ground Pt 4 _2 BG
+    400024: Ground Pt 4 _2 FG
+    400026: Fog Pt 4
+    400028: Pine Tree Group Pt 4
+    400030: Trees pt 4
+    400032: Trees pt 4 FG
+    400034: Mushrooms Pt 4
+    2300000: Collision Pt 3 _1
+    2300002: Collision Pt 3 _2
+    2300004: Ground Pt 4 _1
+    2300006: Ground Pt 4 _2
+    2300008: Falling Edge Pt 4
+    2300010: Black Pt 4 _1
+    2300012: Black Pt 4 _2
+    2300014: Dirt BG Pt 4_1
+    2300016: Ground Pt 4 _1 BG
+    2300018: Ground Pt 4 _1 FG
+    2300020: Ground Pt 4 _2 BG
+    2300022: Ground Pt 4 _2 FG
+    2300024: Fog Pt 4
+    2300026: Pine Tree Group Pt 4
+    2300028: Trees pt 4
+    2300030: Trees pt 4 FG
+    2300032: Mushrooms Pt 4
+    3300000: Collision Pt 3 _1
+    3300002: Collision Pt 3 _2
+    3300004: Ground Pt 4 _1
+    3300006: Ground Pt 4 _2
+    3300008: Falling Edge Pt 4
+    3300010: Black Pt 4 _1
+    3300012: Black Pt 4 _2
+    3300014: Dirt BG Pt 4_1
+    3300016: Ground Pt 4 _1 BG
+    3300018: Ground Pt 4 _1 FG
+    3300020: Ground Pt 4 _2 BG
+    3300022: Ground Pt 4 _2 FG
+    3300024: Fog Pt 4
+    3300026: Pine Tree Group Pt 4
+    3300028: Trees pt 4
+    3300030: Trees pt 4 FG
+    3300032: Mushrooms Pt 4
+    4300000: Ground Pt 4 _1
+    4300002: Ground Pt 4 _2
+    4300004: Collision Pt 3 _1
+    4300006: Collision Pt 3 _2
+    4300008: Falling Edge Pt 4
+    4300010: Dirt BG Pt 4_1
+    4300012: Ground Pt 4 _1 FG
+    4300014: Ground Pt 4 _2 FG
+    4300016: Ground Pt 4 _1 BG
+    4300018: Ground Pt 4 _2 BG
+    4300020: Black Pt 4 _1
+    4300022: Black Pt 4 _2
+    4300024: Fog Pt 4
+    4300026: Pine Tree Group Pt 4
+    4300028: Trees pt 4
+    4300030: Trees pt 4 FG
+    4300032: Mushrooms Pt 4
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

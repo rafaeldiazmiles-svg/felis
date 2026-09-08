@@ -1,0 +1,142 @@
+fileFormatVersion: 2
+guid: e3d2518706845ca4bb5f4ef144f7c012
+timeCreated: 1444248507
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Collision Pt 1
+    100002: Ground Pt 4_1
+    100004: Ground Pt 4_2
+    100006: //RootNode
+    100008: Collision Pt 4
+    100010: Water Edge Pt 4
+    100012: Ground Pt 4 _1 BG
+    100014: Ground Pt 4 BG
+    100016: Ground Pt 4_1 FG
+    100018: Ground Pt 4_2 FG
+    100020: Black Cave Pt 4 Level 6
+    100022: Underwater BG Pt 4
+    100024: Pine Tree Group Pt 4 Level 6
+    100026: Trees pt 4 FG_Level 6
+    100028: Trees pt 4_Level 6
+    400000: Collision Pt 1
+    400002: Ground Pt 4_1
+    400004: Ground Pt 4_2
+    400006: //RootNode
+    400008: Collision Pt 4
+    400010: Water Edge Pt 4
+    400012: Ground Pt 4 _1 BG
+    400014: Ground Pt 4 BG
+    400016: Ground Pt 4_1 FG
+    400018: Ground Pt 4_2 FG
+    400020: Black Cave Pt 4 Level 6
+    400022: Underwater BG Pt 4
+    400024: Pine Tree Group Pt 4 Level 6
+    400026: Trees pt 4 FG_Level 6
+    400028: Trees pt 4_Level 6
+    2300000: Collision Pt 1
+    2300002: Ground Pt 4_1
+    2300004: Ground Pt 4_2
+    2300006: Collision Pt 4
+    2300008: Water Edge Pt 4
+    2300010: Ground Pt 4 _1 BG
+    2300012: Ground Pt 4 BG
+    2300014: Ground Pt 4_1 FG
+    2300016: Ground Pt 4_2 FG
+    2300018: Black Cave Pt 4 Level 6
+    2300020: Underwater BG Pt 4
+    2300022: Pine Tree Group Pt 4 Level 6
+    2300024: Trees pt 4 FG_Level 6
+    2300026: Trees pt 4_Level 6
+    3300000: Collision Pt 1
+    3300002: Ground Pt 4_1
+    3300004: Ground Pt 4_2
+    3300006: Collision Pt 4
+    3300008: Water Edge Pt 4
+    3300010: Ground Pt 4 _1 BG
+    3300012: Ground Pt 4 BG
+    3300014: Ground Pt 4_1 FG
+    3300016: Ground Pt 4_2 FG
+    3300018: Black Cave Pt 4 Level 6
+    3300020: Underwater BG Pt 4
+    3300022: Pine Tree Group Pt 4 Level 6
+    3300024: Trees pt 4 FG_Level 6
+    3300026: Trees pt 4_Level 6
+    4300000: Ground Pt 4_1
+    4300002: Ground Pt 4_2
+    4300004: Collision Pt 1
+    4300006: Collision Pt 4
+    4300008: Water Edge Pt 4
+    4300010: Ground Pt 4 BG
+    4300012: Ground Pt 4_1 FG
+    4300014: Ground Pt 4_2 FG
+    4300016: Ground Pt 4 _1 BG
+    4300018: Black Cave Pt 4 Level 6
+    4300020: Underwater BG Pt 4
+    4300022: Trees pt 4 FG_Level 6
+    4300024: Trees pt 4_Level 6
+    4300026: Pine Tree Group Pt 4 Level 6
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,204 @@
+fileFormatVersion: 2
+guid: a8251ce10b281bf49831c055592769b8
+timeCreated: 1458064177
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: LVL 11 Col Pt2
+    100002: LVL11_Land Fall Pt2_1
+    100004: LVL11_Land Fall Pt2_2
+    100006: LVL11_Land Fall Pt2_3
+    100008: LVL11_Land Pt2_1
+    100010: LVL11_Land Pt2_2
+    100012: LVL11_Tall Rocks Pt2
+    100014: //RootNode
+    100016: LVL Fall Pt2_1
+    100018: LVL Fall Pt2_2
+    100020: LVL Fall Pt2_3
+    100022: LVL11 Tree BG Pt2
+    100024: LVL11 Trees Pt2_1
+    100026: LVL11 Trees Pt2_2
+    100028: LVL11_Land Fall Pt2 FG
+    100030: LVL11_Land Fall Pt2_2 BG
+    100032: LVL11_Land Fall Pt2_2 FG
+    100034: LVL11_Land Pt2 BG
+    100036: LVL11_Land Pt2 FG_1
+    100038: LVL11_Land Pt2 FG_2
+    100040: Stalagmites Pt2_1
+    100042: Stalagmites Pt2_2
+    100044: LVL11_Land Fall Pt2_1 BG
+    100046: LVL 11 Black Pt2_1
+    100048: LVL 11 Black Pt2_2
+    100050: LVL 11 Black Pt2_3
+    100052: LVL11_Land Fall Pt2_1 FG
+    400000: LVL 11 Col Pt2
+    400002: LVL11_Land Fall Pt2_1
+    400004: LVL11_Land Fall Pt2_2
+    400006: LVL11_Land Fall Pt2_3
+    400008: LVL11_Land Pt2_1
+    400010: LVL11_Land Pt2_2
+    400012: LVL11_Tall Rocks Pt2
+    400014: //RootNode
+    400016: LVL Fall Pt2_1
+    400018: LVL Fall Pt2_2
+    400020: LVL Fall Pt2_3
+    400022: LVL11 Tree BG Pt2
+    400024: LVL11 Trees Pt2_1
+    400026: LVL11 Trees Pt2_2
+    400028: LVL11_Land Fall Pt2 FG
+    400030: LVL11_Land Fall Pt2_2 BG
+    400032: LVL11_Land Fall Pt2_2 FG
+    400034: LVL11_Land Pt2 BG
+    400036: LVL11_Land Pt2 FG_1
+    400038: LVL11_Land Pt2 FG_2
+    400040: Stalagmites Pt2_1
+    400042: Stalagmites Pt2_2
+    400044: LVL11_Land Fall Pt2_1 BG
+    400046: LVL 11 Black Pt2_1
+    400048: LVL 11 Black Pt2_2
+    400050: LVL 11 Black Pt2_3
+    400052: LVL11_Land Fall Pt2_1 FG
+    2300000: LVL 11 Col Pt2
+    2300002: LVL11_Land Fall Pt2_1
+    2300004: LVL11_Land Fall Pt2_2
+    2300006: LVL11_Land Fall Pt2_3
+    2300008: LVL11_Land Pt2_1
+    2300010: LVL11_Land Pt2_2
+    2300012: LVL11_Tall Rocks Pt2
+    2300014: LVL Fall Pt2_1
+    2300016: LVL Fall Pt2_2
+    2300018: LVL Fall Pt2_3
+    2300020: LVL11 Tree BG Pt2
+    2300022: LVL11 Trees Pt2_1
+    2300024: LVL11 Trees Pt2_2
+    2300026: LVL11_Land Fall Pt2 FG
+    2300028: LVL11_Land Fall Pt2_2 BG
+    2300030: LVL11_Land Fall Pt2_2 FG
+    2300032: LVL11_Land Pt2 BG
+    2300034: LVL11_Land Pt2 FG_1
+    2300036: LVL11_Land Pt2 FG_2
+    2300038: Stalagmites Pt2_1
+    2300040: Stalagmites Pt2_2
+    2300042: LVL11_Land Fall Pt2_1 BG
+    2300044: LVL 11 Black Pt2_1
+    2300046: LVL 11 Black Pt2_2
+    2300048: LVL 11 Black Pt2_3
+    2300050: LVL11_Land Fall Pt2_1 FG
+    3300000: LVL 11 Col Pt2
+    3300002: LVL11_Land Fall Pt2_1
+    3300004: LVL11_Land Fall Pt2_2
+    3300006: LVL11_Land Fall Pt2_3
+    3300008: LVL11_Land Pt2_1
+    3300010: LVL11_Land Pt2_2
+    3300012: LVL11_Tall Rocks Pt2
+    3300014: LVL Fall Pt2_1
+    3300016: LVL Fall Pt2_2
+    3300018: LVL Fall Pt2_3
+    3300020: LVL11 Tree BG Pt2
+    3300022: LVL11 Trees Pt2_1
+    3300024: LVL11 Trees Pt2_2
+    3300026: LVL11_Land Fall Pt2 FG
+    3300028: LVL11_Land Fall Pt2_2 BG
+    3300030: LVL11_Land Fall Pt2_2 FG
+    3300032: LVL11_Land Pt2 BG
+    3300034: LVL11_Land Pt2 FG_1
+    3300036: LVL11_Land Pt2 FG_2
+    3300038: Stalagmites Pt2_1
+    3300040: Stalagmites Pt2_2
+    3300042: LVL11_Land Fall Pt2_1 BG
+    3300044: LVL 11 Black Pt2_1
+    3300046: LVL 11 Black Pt2_2
+    3300048: LVL 11 Black Pt2_3
+    3300050: LVL11_Land Fall Pt2_1 FG
+    4300000: LVL11_Land Pt2_1
+    4300002: LVL11_Land Fall Pt2_1
+    4300004: LVL11_Tall Rocks Pt2
+    4300006: LVL 11 Col Pt2
+    4300008: LVL11_Land Pt2_2
+    4300010: LVL11_Land Fall Pt2_2
+    4300012: LVL11_Land Fall Pt2_3
+    4300014: LVL11_Land Fall Pt2_2 FG
+    4300016: LVL11_Land Fall Pt2_2 BG
+    4300018: LVL Fall Pt2_1
+    4300020: LVL Fall Pt2_2
+    4300022: LVL11_Land Fall Pt2 FG
+    4300024: LVL11_Land Pt2 FG_2
+    4300026: LVL11_Land Pt2 BG
+    4300028: LVL Fall Pt2_3
+    4300030: Stalagmites Pt2_1
+    4300032: LVL11_Land Pt2 FG_1
+    4300034: Stalagmites Pt2_2
+    4300036: LVL11 Trees Pt2_1
+    4300038: LVL11 Tree BG Pt2
+    4300040: LVL11 Trees Pt2_2
+    4300042: LVL11_Land Fall Pt2_1 BG
+    4300044: LVL 11 Black Pt2_1
+    4300046: LVL 11 Black Pt2_2
+    4300048: LVL 11 Black Pt2_3
+    4300050: LVL11_Land Fall Pt2_1 FG
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

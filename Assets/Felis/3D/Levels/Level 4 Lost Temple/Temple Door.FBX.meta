@@ -1,0 +1,339 @@
+fileFormatVersion: 2
+guid: 9f4013e8a9436f344b618c6e313df6ac
+timeCreated: 1440859874
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Black
+    100004: Black Part 2
+    100006: Collision
+    100008: Collision Part 2
+    100010: Door
+    100012: Door Root
+    100014: Fall
+    100016: Floor
+    100018: Floor BG
+    100020: Floor Fall
+    100022: Floor Fall FG
+    100024: Floor FG
+    100026: Forest Fog
+    100028: Forest Fog BG
+    100030: Horizon
+    100032: Jungle Rock BG
+    100034: Jungle Trees
+    100036: Line001
+    100038: Mushrooms
+    100040: Object001
+    100042: Object003
+    100044: Object005
+    100046: Object008
+    100048: Object010
+    100050: Perspective
+    100052: Plane001
+    100054: Tall Rocks
+    100056: Temple 1
+    100058: Temple 1 Cat Room
+    100060: Temple 2
+    100062: Temple 2 Cat Room
+    100064: Temple Back Wall
+    100066: Temple Door
+    100068: Temple Entrance
+    100070: Temple Entrance Hide
+    100072: Temple Entrance Interior Hide
+    100074: Temple Interior
+    100076: Trees Far
+    100078: Water Edge FG
+    100080: Temple Door Left
+    100082: Temple Door Right
+    100084: Temple Door Frame Left BG
+    100086: Temple Door Frame Left FG
+    100088: Temple Door Frame Right BG
+    100090: Temple Door Frame Right FG
+    100092: Door Hide Left
+    100094: Door Hide Right
+    400000: //RootNode
+    400002: Black
+    400004: Black Part 2
+    400006: Collision
+    400008: Collision Part 2
+    400010: Door
+    400012: Door Root
+    400014: Fall
+    400016: Floor
+    400018: Floor BG
+    400020: Floor Fall
+    400022: Floor Fall FG
+    400024: Floor FG
+    400026: Forest Fog
+    400028: Forest Fog BG
+    400030: Horizon
+    400032: Jungle Rock BG
+    400034: Jungle Trees
+    400036: Line001
+    400038: Mushrooms
+    400040: Object001
+    400042: Object003
+    400044: Object005
+    400046: Object008
+    400048: Object010
+    400050: Perspective
+    400052: Plane001
+    400054: Tall Rocks
+    400056: Temple 1
+    400058: Temple 1 Cat Room
+    400060: Temple 2
+    400062: Temple 2 Cat Room
+    400064: Temple Back Wall
+    400066: Temple Door
+    400068: Temple Entrance
+    400070: Temple Entrance Hide
+    400072: Temple Entrance Interior Hide
+    400074: Temple Interior
+    400076: Trees Far
+    400078: Water Edge FG
+    400080: Temple Door Left
+    400082: Temple Door Right
+    400084: Temple Door Frame Left BG
+    400086: Temple Door Frame Left FG
+    400088: Temple Door Frame Right BG
+    400090: Temple Door Frame Right FG
+    400092: Door Hide Left
+    400094: Door Hide Right
+    2300000: //RootNode
+    2300002: Black
+    2300004: Black Part 2
+    2300006: Collision
+    2300008: Collision Part 2
+    2300010: Fall
+    2300012: Floor
+    2300014: Floor BG
+    2300016: Floor Fall
+    2300018: Floor Fall FG
+    2300020: Floor FG
+    2300022: Forest Fog
+    2300024: Forest Fog BG
+    2300026: Horizon
+    2300028: Jungle Rock BG
+    2300030: Jungle Trees
+    2300032: Mushrooms
+    2300034: Object001
+    2300036: Object003
+    2300038: Object005
+    2300040: Object008
+    2300042: Object010
+    2300044: Plane001
+    2300046: Tall Rocks
+    2300048: Temple 1
+    2300050: Temple 1 Cat Room
+    2300052: Temple 2
+    2300054: Temple 2 Cat Room
+    2300056: Temple Back Wall
+    2300058: Temple Entrance
+    2300060: Temple Entrance Hide
+    2300062: Temple Entrance Interior Hide
+    2300064: Temple Interior
+    2300066: Trees Far
+    2300068: Water Edge FG
+    2300070: Temple Door Left
+    2300072: Temple Door Right
+    2300074: Temple Door Frame Left BG
+    2300076: Temple Door Frame Left FG
+    2300078: Temple Door Frame Right BG
+    2300080: Temple Door Frame Right FG
+    2300082: Door Hide Left
+    2300084: Door Hide Right
+    3300000: //RootNode
+    3300002: Black
+    3300004: Black Part 2
+    3300006: Collision
+    3300008: Collision Part 2
+    3300010: Fall
+    3300012: Floor
+    3300014: Floor BG
+    3300016: Floor Fall
+    3300018: Floor Fall FG
+    3300020: Floor FG
+    3300022: Forest Fog
+    3300024: Forest Fog BG
+    3300026: Horizon
+    3300028: Jungle Rock BG
+    3300030: Jungle Trees
+    3300032: Mushrooms
+    3300034: Object001
+    3300036: Object003
+    3300038: Object005
+    3300040: Object008
+    3300042: Object010
+    3300044: Plane001
+    3300046: Tall Rocks
+    3300048: Temple 1
+    3300050: Temple 1 Cat Room
+    3300052: Temple 2
+    3300054: Temple 2 Cat Room
+    3300056: Temple Back Wall
+    3300058: Temple Entrance
+    3300060: Temple Entrance Hide
+    3300062: Temple Entrance Interior Hide
+    3300064: Temple Interior
+    3300066: Trees Far
+    3300068: Water Edge FG
+    3300070: Temple Door Left
+    3300072: Temple Door Right
+    3300074: Temple Door Frame Left BG
+    3300076: Temple Door Frame Left FG
+    3300078: Temple Door Frame Right BG
+    3300080: Temple Door Frame Right FG
+    3300082: Door Hide Left
+    3300084: Door Hide Right
+    4300000: Door
+    4300002: Temple Door
+    4300004: Floor
+    4300006: Collision
+    4300008: Floor BG
+    4300010: Floor FG
+    4300012: Horizon
+    4300014: Jungle Rock BG
+    4300016: Jungle Trees
+    4300018: Forest Fog
+    4300020: Forest Fog BG
+    4300022: Floor Fall
+    4300024: Floor Fall FG
+    4300026: Fall
+    4300028: Tall Rocks
+    4300030: Trees Far
+    4300032: Water Edge FG
+    4300034: Temple Entrance
+    4300036: Temple Entrance Hide
+    4300038: Collision Part 2
+    4300040: Mushrooms
+    4300042: Temple Interior
+    4300044: Temple Entrance Interior Hide
+    4300046: Temple Back Wall
+    4300048: Temple 1
+    4300050: Object001
+    4300052: Object003
+    4300054: Object005
+    4300056: Temple 2
+    4300058: Object008
+    4300060: Object010
+    4300062: Black Part 2
+    4300064: Black
+    4300066: Plane001
+    4300068: Temple 1 Cat Room
+    4300070: Temple 2 Cat Room
+    4300072: Temple Door Left
+    4300074: Temple Door Right
+    4300076: Temple Door Frame Left BG
+    4300078: Temple Door Frame Right BG
+    4300080: Temple Door Frame Right FG
+    4300082: Temple Door Frame Left FG
+    4300084: Door Hide Left
+    4300086: Door Hide Right
+    7400000: Temple Door Open
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: Temple Door
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Temple Door Open
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 100
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Temple Door Frame Left BG
+        weight: 1
+      - path: Temple Door Frame Left FG
+        weight: 1
+      - path: Temple Door Frame Right BG
+        weight: 1
+      - path: Temple Door Frame Right FG
+        weight: 1
+      - path: Temple Door Left
+        weight: 1
+      - path: Temple Door Right
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

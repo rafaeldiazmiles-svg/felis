@@ -1,0 +1,174 @@
+fileFormatVersion: 2
+guid: 8b957a5571b6e194e8615b36537d7dc5
+timeCreated: 1438115884
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Back Wall 3
+    100002: Back Wall 4
+    100004: Boss Door
+    100006: Boss Door Shadow
+    100008: Castle Tower Collision
+    100010: Castle Tower Collision 1
+    100012: Castle Tower Collision 2
+    100014: Castle Tower Collision 3
+    100016: //RootNode
+    100018: Object003
+    100020: Object004
+    100022: Side Walls
+    100024: Spinning Log
+    100026: Stone Floor 4
+    100028: Stone Floor 5
+    100030: Stone Floor 6
+    100032: Stone Floor 7
+    100034: Stone Window
+    100036: Castle Tower Collision 4
+    100038: LVL 2 Black Castle 2ND Floor
+    100040: Castle Tower Collision Boss 2
+    400000: Back Wall 3
+    400002: Back Wall 4
+    400004: Boss Door
+    400006: Boss Door Shadow
+    400008: Castle Tower Collision
+    400010: Castle Tower Collision 1
+    400012: Castle Tower Collision 2
+    400014: Castle Tower Collision 3
+    400016: //RootNode
+    400018: Object003
+    400020: Object004
+    400022: Side Walls
+    400024: Spinning Log
+    400026: Stone Floor 4
+    400028: Stone Floor 5
+    400030: Stone Floor 6
+    400032: Stone Floor 7
+    400034: Stone Window
+    400036: Castle Tower Collision 4
+    400038: LVL 2 Black Castle 2ND Floor
+    400040: Castle Tower Collision Boss 2
+    2300000: Back Wall 3
+    2300002: Back Wall 4
+    2300004: Boss Door
+    2300006: Boss Door Shadow
+    2300008: Castle Tower Collision
+    2300010: Castle Tower Collision 1
+    2300012: Castle Tower Collision 2
+    2300014: Castle Tower Collision 3
+    2300016: Object003
+    2300018: Object004
+    2300020: Side Walls
+    2300022: Spinning Log
+    2300024: Stone Floor 4
+    2300026: Stone Floor 5
+    2300028: Stone Floor 6
+    2300030: Stone Floor 7
+    2300032: Stone Window
+    2300034: Castle Tower Collision 4
+    2300036: LVL 2 Black Castle 2ND Floor
+    2300038: Castle Tower Collision Boss 2
+    3300000: Back Wall 3
+    3300002: Back Wall 4
+    3300004: Boss Door
+    3300006: Boss Door Shadow
+    3300008: Castle Tower Collision
+    3300010: Castle Tower Collision 1
+    3300012: Castle Tower Collision 2
+    3300014: Castle Tower Collision 3
+    3300016: Object003
+    3300018: Object004
+    3300020: Side Walls
+    3300022: Spinning Log
+    3300024: Stone Floor 4
+    3300026: Stone Floor 5
+    3300028: Stone Floor 6
+    3300030: Stone Floor 7
+    3300032: Stone Window
+    3300034: Castle Tower Collision 4
+    3300036: LVL 2 Black Castle 2ND Floor
+    3300038: Castle Tower Collision Boss 2
+    4300000: Side Walls
+    4300002: Object003
+    4300004: Object004
+    4300006: Stone Window
+    4300008: Spinning Log
+    4300010: Boss Door
+    4300012: Boss Door Shadow
+    4300014: Back Wall 3
+    4300016: Back Wall 4
+    4300018: Stone Floor 6
+    4300020: Stone Floor 7
+    4300022: Stone Floor 5
+    4300024: Stone Floor 4
+    4300026: Castle Tower Collision
+    4300028: Castle Tower Collision
+    4300030: Castle Tower Collision
+    4300032: Castle Tower Collision
+    4300034: Castle Tower Collision
+    4300036: LVL 2 Black Castle 2ND Floor
+    4300038: Castle Tower Collision Boss 2
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

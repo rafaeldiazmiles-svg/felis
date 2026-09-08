@@ -1,0 +1,240 @@
+fileFormatVersion: 2
+guid: 6ed32538484af5447bd08419f7725f85
+timeCreated: 1460037945
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Chain B 1
+    100002: Chain B 2
+    100004: Chain B 3
+    100006: Chain B 4
+    100008: Chain B 5
+    100010: Chain F 1
+    100012: Chain F 2
+    100014: Chain F 3
+    100016: Chain F 4
+    100018: Chain F 5
+    100020: Gate Down
+    100022: Gate Down Twist
+    100024: Gate Root
+    100026: Gate Up
+    100028: Griffin Castle Gate
+    100030: //RootNode
+    100032: Broken Bridge Mask
+    100034: Griffin Tower
+    100036: Griffin Tower Entrance
+    100038: Griffin Tower Entrance 1
+    100040: Griffin Tower Stairs
+    100042: Griffin Tower Stairs Broken
+    100044: Griffin Tower Stairs001
+    100046: LVL 12 Black Pt 1_4
+    100048: LVL 12 Dirt BG Pt 1_2
+    100050: LVL 7 Cliff
+    100052: LVL 7 Col
+    100054: LVL7 Broken Bridge
+    100056: LVL7 Castle Entrance Mask
+    100058: LVL7 GrassToRock
+    400000: Chain B 1
+    400002: Chain B 2
+    400004: Chain B 3
+    400006: Chain B 4
+    400008: Chain B 5
+    400010: Chain F 1
+    400012: Chain F 2
+    400014: Chain F 3
+    400016: Chain F 4
+    400018: Chain F 5
+    400020: Gate Down
+    400022: Gate Down Twist
+    400024: Gate Root
+    400026: Gate Up
+    400028: Griffin Castle Gate
+    400030: //RootNode
+    400032: Broken Bridge Mask
+    400034: Griffin Tower
+    400036: Griffin Tower Entrance
+    400038: Griffin Tower Entrance 1
+    400040: Griffin Tower Stairs
+    400042: Griffin Tower Stairs Broken
+    400044: Griffin Tower Stairs001
+    400046: LVL 12 Black Pt 1_4
+    400048: LVL 12 Dirt BG Pt 1_2
+    400050: LVL 7 Cliff
+    400052: LVL 7 Col
+    400054: LVL7 Broken Bridge
+    400056: LVL7 Castle Entrance Mask
+    400058: LVL7 GrassToRock
+    2300000: Broken Bridge Mask
+    2300002: Griffin Tower
+    2300004: Griffin Tower Entrance
+    2300006: Griffin Tower Entrance 1
+    2300008: Griffin Tower Stairs
+    2300010: Griffin Tower Stairs Broken
+    2300012: Griffin Tower Stairs001
+    2300014: LVL 12 Black Pt 1_4
+    2300016: LVL 12 Dirt BG Pt 1_2
+    2300018: LVL 7 Cliff
+    2300020: LVL 7 Col
+    2300022: LVL7 Broken Bridge
+    2300024: LVL7 Castle Entrance Mask
+    2300026: LVL7 GrassToRock
+    2300028: Griffin Castle Gate
+    3300000: Broken Bridge Mask
+    3300002: Griffin Tower
+    3300004: Griffin Tower Entrance
+    3300006: Griffin Tower Entrance 1
+    3300008: Griffin Tower Stairs
+    3300010: Griffin Tower Stairs Broken
+    3300012: Griffin Tower Stairs001
+    3300014: LVL 12 Black Pt 1_4
+    3300016: LVL 12 Dirt BG Pt 1_2
+    3300018: LVL 7 Cliff
+    3300020: LVL 7 Col
+    3300022: LVL7 Broken Bridge
+    3300024: LVL7 Castle Entrance Mask
+    3300026: LVL7 GrassToRock
+    3300028: Griffin Castle Gate
+    4300000: Griffin Castle Gate
+    4300002: LVL7 GrassToRock
+    4300004: LVL 12 Black Pt 1_4
+    4300006: LVL 12 Dirt BG Pt 1_2
+    4300008: LVL 7 Cliff
+    4300010: LVL 7 Col
+    4300012: LVL7 Broken Bridge
+    4300014: Broken Bridge Mask
+    4300016: Griffin Tower Entrance
+    4300018: LVL7 Castle Entrance Mask
+    4300020: Griffin Tower Entrance
+    4300022: Griffin Tower
+    4300024: Griffin Tower Stairs
+    4300026: Griffin Tower Stairs001
+    4300028: Griffin Tower Stairs Broken
+    7400000: LVL 7 Gate Open
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: Griffin Castle Gate
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: LVL 7 Gate Open
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 60
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Gate Root
+        weight: 1
+      - path: Gate Root/Chain B 2
+        weight: 1
+      - path: Gate Root/Chain B 3
+        weight: 1
+      - path: Gate Root/Chain B 4
+        weight: 1
+      - path: Gate Root/Chain B 5
+        weight: 1
+      - path: Gate Root/Chain F 2
+        weight: 1
+      - path: Gate Root/Chain F 3
+        weight: 1
+      - path: Gate Root/Chain F 4
+        weight: 1
+      - path: Gate Root/Chain F 5
+        weight: 1
+      - path: Gate Root/Gate Down
+        weight: 1
+      - path: Gate Root/Gate Down/Chain B 1
+        weight: 1
+      - path: Gate Root/Gate Down/Chain F 1
+        weight: 1
+      - path: Gate Root/Gate Down/Gate Down Twist
+        weight: 1
+      - path: Gate Root/Gate Down/Gate Up
+        weight: 1
+      - path: Griffin Castle Gate
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

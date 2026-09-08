@@ -1,0 +1,137 @@
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx PASS Nº 2 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+-----bug - game freezes when picking (maybe fixed)
+
+----lvl 5 take away barricade that decides to change place
+
+----lvl 5 check blac cover (before first 2 rats)
+
+---lvl 5 make big jump a little easier
+
+----lvl 4 boulder might have disable on bounds script or active manager
+
+-----lvl 4 add constant go sign on boulder chase
+
+-----lvl 4 cat goes over door in room 1 (probably room 2 has same problem)
+
+----lvl 4 add black cover for key cave when above ground
+
+------Remove option to use key to open doors on builds
+
+---lvl 7 - save griffin door state
+---save on OpenDoor
+---holdglobalvalues loads and store it in a parameter at start
+---load on OpenDoor if door open at start
+
+----*ISLAND: Message showing if a level requires special item to complete. "REQUIRED + inv GUI item"
+----lvl 7 - make it easier to climb on broken stairs after chain jump
+----lvl 7 - remove 2nd falling weight
+
+------last level - weird noises at start (fixed)
+
+-------add required item for last level
+
+-----add hand cursor for PC
+
+------dont allow controller's touch input on PC (it's hidden but still taking input)
+
+-----lvl 7 - mystery tune when discovering secret room
+
+-----offer to restart level on death
+
+-----lvl 11 - bee nest can bee seen from inside tree
+
+------Esc - Ask before quitting.
+
+------camera loc doesn't hide wizard hat
+
+-------jellyfish - needs more swim power
+-----jellyfish - tentacles giggle
+
+-----pirate level - jump on level cave - must be easier
+
+----zoom out.
+
+----- reduce losing cat icon size.
+
+------*hand cursor shouldn't be seen over screen spiral
+
+-----*fix - popup question - yes no text missing on island
+
+****Change controls GUI ****
+----modify:
+---PC Arrow Keys.png
+---Shift Key.png
+---Ctrl Key.png
+---Space Key.png
+
+*Change input question anim
+----^gameplay - go back to island
+----^popup quesiton (prefab)
+----^restart question (prefab)
+-----^island - delete game
+------^island - enter this level
+-----^island - go back
+
+------------*ISLAND: New game select gui? (Wood, vines, etc) <<<
+-----------*Use input question prefab for every question
+
+-----lvl 8 - cave two entrance, check covers
+
+-----cats stuck making meow noises when picked up when saying thanks (partying)
+
+----------lvl 6 - cats suck on shore, force them to follow player
+---------^cats wont come out of boat
+
+-----mushroom level, before big jump, sky can be seen though grass.
+---------mushroom level, on jump before cat 1, a lot of sky covers screen mid air- put some birds, give a bird exclamation mark
+
+----------lvl 6 tentacle moster cave - reduce rows effect
+
+--------lvl 6 - make cave 2 entrance less tight
+
+-------lvl 6 - after cave 2 check cover
+
+------lvl 3 can see where ground ends outside from outside crypts
+
+-----lvl 2 - black covers
+------lvl 2 safetynet when falling from tower just in case
+
+-------lvl 1 - rolling boulder (rolls on its own)
+
+-----lvl 1 - lvl 2 - fix hills uv
+
+-------lvl 1 - house 1 stencil (can see outside flowers)
+
+-------* Boulder : Blend texture based on angle for lighting. <
+--------^Make better boulder texture while at it.
+
+-----*LVL13 - Add cinematic bands when placing lid. <
+
+------dragon may a little long to get into jar, after a time limit incrase range
+
+------lvl9 - moving lava surfaces - get stuck at the ends
+
+------*FIX - Cat dont use stairs anymore?
+
+------*INTRO - Change back forest with mesh (with nice z order and more depth effect)
+------*INTRO - Skip intro brings dialog
+--------*INTRO - magic effect on jar when dragon particle is emmited.
+
+--------*Tweak. Griffin Tower. Keep griffin going from right side
+
+------------FIX: Camera doesn't zoom in when entering level
+
+----FIX: Click not working in build
+
+-----FIX : Up fireball has too little speed
+
+-----FIX : Bear & Rats don't show up in LVL 2
+
+------FIX : LVL 2 after log all is darg
+
+------FIX: Game Select:  8% shows as 8a%
+
+------FIX : Game Select: Mouse doesn't work after going back.

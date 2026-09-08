@@ -1,0 +1,208 @@
+fileFormatVersion: 2
+guid: 8c3aba41b398d4a4d987a6782ca9e5dd
+timeCreated: 1460562243
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Griffin Tower Pt3_1
+    100002: Griffin Tower Pt3_2
+    100004: Griffin Tower Pt3_3
+    100006: //RootNode
+    100008: Griffin Tower Pt3_4
+    100010: LVL 7 Stone Hole
+    100012: LVL 7 Stone Hole Mask
+    100014: Griffin Tower External Wall BG_1
+    100016: Griffin Tower External Wall BG_2
+    100018: Griffin Tower External Wall End BG
+    100020: Griffin Tower External Wall End FG
+    100022: Griffin Tower External Wall FG_1
+    100024: Griffin Tower External Wall FG_2
+    100026: Griffin Tower External Wall End BG001
+    100028: Griffin Tower External Wall End FG001
+    100030: Griffin Tower External Wall End BG_2
+    100032: Griffin Tower External Wall End FG_2
+    100034: Griffin Tower External Wall FG_003
+    100036: Griffin Tower External Wall FG_1 1
+    100038: Griffin Tower BG Ext
+    100040: Griffin Tower External Wall FG_2 Edge
+    100042: Griffin Tower BG Pt3_1
+    100044: Griffin Tower BG Pt3_2
+    100046: Griffin Tower BG Pt3_3
+    100048: LVL 7 Black Pt 3_1
+    100050: LVL 7 Black Pt 3_2
+    100052: LVL 7 Black Pt 3_3
+    100054: LVL 7 Black Key Room
+    400000: Griffin Tower Pt3_1
+    400002: Griffin Tower Pt3_2
+    400004: Griffin Tower Pt3_3
+    400006: //RootNode
+    400008: Griffin Tower Pt3_4
+    400010: LVL 7 Stone Hole
+    400012: LVL 7 Stone Hole Mask
+    400014: Griffin Tower External Wall BG_1
+    400016: Griffin Tower External Wall BG_2
+    400018: Griffin Tower External Wall End BG
+    400020: Griffin Tower External Wall End FG
+    400022: Griffin Tower External Wall FG_1
+    400024: Griffin Tower External Wall FG_2
+    400026: Griffin Tower External Wall End BG001
+    400028: Griffin Tower External Wall End FG001
+    400030: Griffin Tower External Wall End BG_2
+    400032: Griffin Tower External Wall End FG_2
+    400034: Griffin Tower External Wall FG_003
+    400036: Griffin Tower External Wall FG_1 1
+    400038: Griffin Tower BG Ext
+    400040: Griffin Tower External Wall FG_2 Edge
+    400042: Griffin Tower BG Pt3_1
+    400044: Griffin Tower BG Pt3_2
+    400046: Griffin Tower BG Pt3_3
+    400048: LVL 7 Black Pt 3_1
+    400050: LVL 7 Black Pt 3_2
+    400052: LVL 7 Black Pt 3_3
+    400054: LVL 7 Black Key Room
+    2300000: Griffin Tower Pt3_1
+    2300002: Griffin Tower Pt3_2
+    2300004: Griffin Tower Pt3_3
+    2300006: Griffin Tower Pt3_4
+    2300008: LVL 7 Stone Hole
+    2300010: LVL 7 Stone Hole Mask
+    2300012: Griffin Tower External Wall BG_1
+    2300014: Griffin Tower External Wall BG_2
+    2300016: Griffin Tower External Wall End BG
+    2300018: Griffin Tower External Wall End FG
+    2300020: Griffin Tower External Wall FG_1
+    2300022: Griffin Tower External Wall FG_2
+    2300024: Griffin Tower External Wall End BG001
+    2300026: Griffin Tower External Wall End FG001
+    2300028: Griffin Tower External Wall End BG_2
+    2300030: Griffin Tower External Wall End FG_2
+    2300032: Griffin Tower External Wall FG_003
+    2300034: Griffin Tower External Wall FG_1 1
+    2300036: Griffin Tower BG Ext
+    2300038: Griffin Tower External Wall FG_2 Edge
+    2300040: Griffin Tower BG Pt3_1
+    2300042: Griffin Tower BG Pt3_2
+    2300044: Griffin Tower BG Pt3_3
+    2300046: LVL 7 Black Pt 3_1
+    2300048: LVL 7 Black Pt 3_2
+    2300050: LVL 7 Black Pt 3_3
+    2300052: LVL 7 Black Key Room
+    3300000: Griffin Tower Pt3_1
+    3300002: Griffin Tower Pt3_2
+    3300004: Griffin Tower Pt3_3
+    3300006: Griffin Tower Pt3_4
+    3300008: LVL 7 Stone Hole
+    3300010: LVL 7 Stone Hole Mask
+    3300012: Griffin Tower External Wall BG_1
+    3300014: Griffin Tower External Wall BG_2
+    3300016: Griffin Tower External Wall End BG
+    3300018: Griffin Tower External Wall End FG
+    3300020: Griffin Tower External Wall FG_1
+    3300022: Griffin Tower External Wall FG_2
+    3300024: Griffin Tower External Wall End BG001
+    3300026: Griffin Tower External Wall End FG001
+    3300028: Griffin Tower External Wall End BG_2
+    3300030: Griffin Tower External Wall End FG_2
+    3300032: Griffin Tower External Wall FG_003
+    3300034: Griffin Tower External Wall FG_1 1
+    3300036: Griffin Tower BG Ext
+    3300038: Griffin Tower External Wall FG_2 Edge
+    3300040: Griffin Tower BG Pt3_1
+    3300042: Griffin Tower BG Pt3_2
+    3300044: Griffin Tower BG Pt3_3
+    3300046: LVL 7 Black Pt 3_1
+    3300048: LVL 7 Black Pt 3_2
+    3300050: LVL 7 Black Pt 3_3
+    3300052: LVL 7 Black Key Room
+    4300000: Griffin Tower Pt3_1
+    4300002: Griffin Tower Pt3_2
+    4300004: Griffin Tower Pt3_3
+    4300006: Griffin Tower Pt3_4
+    4300008: LVL 7 Stone Hole
+    4300010: LVL 7 Stone Hole Mask
+    4300012: Griffin Tower External Wall BG_2
+    4300014: Griffin Tower External Wall End BG
+    4300016: Griffin Tower External Wall FG_1
+    4300018: Griffin Tower External Wall End FG
+    4300020: Griffin Tower External Wall FG_2
+    4300022: Griffin Tower External Wall BG_1
+    4300024: Griffin Tower External Wall End FG001
+    4300026: Griffin Tower External Wall End BG001
+    4300028: Griffin Tower External Wall End FG_2
+    4300030: Griffin Tower External Wall End BG_2
+    4300032: Griffin Tower External Wall FG_003
+    4300034: Griffin Tower BG Ext
+    4300036: Griffin Tower External Wall FG_2 Edge
+    4300038: Griffin Tower BG Pt3_1
+    4300040: Griffin Tower BG Pt3_2
+    4300042: Griffin Tower BG Pt3_3
+    4300044: LVL 7 Black Pt 3_1
+    4300046: LVL 7 Black Pt 3_2
+    4300048: LVL 7 Black Pt 3_3
+    4300050: LVL 7 Black Key Room
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

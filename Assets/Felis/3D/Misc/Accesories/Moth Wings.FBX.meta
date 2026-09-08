@@ -1,0 +1,104 @@
+fileFormatVersion: 2
+guid: 71258c1c28d0bfb429b21ba46e8a4256
+timeCreated: 1447081163
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Bone003
+    100004: Moth Wings
+    100006: Antennas
+    100008: Big Wing 1
+    100010: Big Wing 2
+    100012: Left Antenna
+    100014: Right Antenn
+    100016: Small Wing
+    100018: Right Antenna
+    100020: Wings
+    100022: Big Wing Back 1
+    100024: Big Wing Back 2
+    400000: //RootNode
+    400002: Bone003
+    400004: Moth Wings
+    400006: Antennas
+    400008: Big Wing 1
+    400010: Big Wing 2
+    400012: Left Antenna
+    400014: Right Antenn
+    400016: Small Wing
+    400018: Right Antenna
+    400020: Wings
+    400022: Big Wing Back 1
+    400024: Big Wing Back 2
+    2300000: //RootNode
+    2300002: Moth Wings
+    3300000: //RootNode
+    3300002: Moth Wings
+    4300000: Moth Wings
+    7400000: Take 001
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: Moth Wings
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

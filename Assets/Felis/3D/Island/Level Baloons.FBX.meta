@@ -1,0 +1,145 @@
+fileFormatVersion: 2
+guid: 9e8ee670d115b07468668f035d02eea9
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: SB Catle Tower
+    100004: SB Prologue
+    100006: SB Carnivorous Plant
+    100008: SB Dark Forest
+    100010: SB Lost Temple
+    100012: SB Crossroads
+    100014: SB Deep Lake
+    100016: SB Griffin Tower
+    100018: SB Mushrooms
+    100020: SB Mines
+    100022: SB Ruins
+    100024: SB Tree Village
+    100026: SB Pirate Ship
+    100028: SB Dragon
+    400000: //RootNode
+    400002: SB Catle Tower
+    400004: SB Prologue
+    400006: SB Carnivorous Plant
+    400008: SB Dark Forest
+    400010: SB Lost Temple
+    400012: SB Crossroads
+    400014: SB Deep Lake
+    400016: SB Griffin Tower
+    400018: SB Mushrooms
+    400020: SB Mines
+    400022: SB Ruins
+    400024: SB Tree Village
+    400026: SB Pirate Ship
+    400028: SB Dragon
+    2300000: //RootNode
+    2300002: SB Catle Tower
+    2300004: SB Prologue
+    2300006: SB Carnivorous Plant
+    2300008: SB Dark Forest
+    2300010: SB Lost Temple
+    2300012: SB Crossroads
+    2300014: SB Deep Lake
+    2300016: SB Griffin Tower
+    2300018: SB Mushrooms
+    2300020: SB Mines
+    2300022: SB Ruins
+    2300024: SB Tree Village
+    2300026: SB Pirate Ship
+    2300028: SB Dragon
+    3300000: //RootNode
+    3300002: SB Catle Tower
+    3300004: SB Prologue
+    3300006: SB Carnivorous Plant
+    3300008: SB Dark Forest
+    3300010: SB Lost Temple
+    3300012: SB Crossroads
+    3300014: SB Deep Lake
+    3300016: SB Griffin Tower
+    3300018: SB Mushrooms
+    3300020: SB Mines
+    3300022: SB Ruins
+    3300024: SB Tree Village
+    3300026: SB Pirate Ship
+    3300028: SB Dragon
+    4300000: SB Prologue
+    4300002: SB Catle Tower
+    4300004: SB Dark Forest
+    4300006: SB Lost Temple
+    4300008: SB Carnivorous Plant
+    4300010: SB Crossroads
+    4300012: SB Deep Lake
+    4300014: SB Griffin Tower
+    4300016: SB Mushrooms
+    4300018: SB Mines
+    4300020: SB Ruins
+    4300022: SB Tree Village
+    4300024: SB Pirate Ship
+    4300026: SB Dragon
+    9500000: //RootNode
+    11100000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.01
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 4
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

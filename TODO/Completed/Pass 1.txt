@@ -1,0 +1,457 @@
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx PASS Nº 1 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+
+--------*FEATURE: When rescuing cats have some sort of "Cat saved!" sign and victory music.
+-----------------------^Make Texture
+---------------------  ^Make Mesh (Use Skinned Mesh for banner bend)
+---------------------  ^Make show anim (fade out to end)
+---------------------  ^Make Cat GUI Anim saying thanks
+---------------------  ^Rig animation to cat rescue. Fade out. Set Inactive.
+---------------------  ^Each cat has a different rescue audio
+---------------------------------------  ^Pass cat's texture before playing
+
+--------*FEATURE: When cats die have "Cat Died!" message and defeat tune.
+-------------------^Make Texture
+-------------------  ^Make Mesh
+---------------------  ^Make show anim (fade out to end)
+--------------------  ^Dissapear cat's head with white puff, show cat skull in its place.
+-------------------------  ^Rig animation to cat dying. Fade out. Set Inactive.
+-------------------------  ^Pass cat's texture before playing
+
+------------------*LVL7 - Make "Mount" Icon for griffin 
+-------------------^GO left icon after mounted 
+
+--------*Inventory System
+--------------^Potions don't auto absorb.
+--------------^Potions absorb with down dpad
+--------------  ^Texture of inventory open (3 slots drop, 1 slot for hand, backpack drops)
+---------------  ^Convert Inventory PSD into texture
+-------------------     ^Make Inventory Mesh, Show & Hide Anim
+----------------   ^Add instructions to the inventory GUI
+------------------------- ^DPad Anim Texture
+--------------------      ^Select & Start Anim Texture
+------------------         ^Add icons on GUI, include in Alpha Control
+------------------       ^Text (Select, Switch, Close)
+--------------           ^Same text have several lines. (Be able to choose line height)
+----------------                !!!!Update FontMeshArrange in Intro scene's text.   
+-------------           ^Figure way to add Renderer to Alpha Control
+                 
+-------------  ^Make show & hide inventory functionality
+-------------^Anim Trigger Show & Hide
+-------------^Alpha Control + Add Overlay
+	      
+----------------  ^Rig to select button, brings inventory, and sends it back up.
+------------- ^Add Sfx
+-----------------    ^Switch item (drop?)
+----------------    ^Move Hand
+---------------    ^Show & Hide
+-----------------------  ^Inventory pauses everything that's not the inventory
+-----------------------    ^Pause.js - Make functions o pause, without pause text and overlay, etc.
+ -----------------------   ^Pause.js - When paysing do not pause inventory items.
+-----------------------  ^Dpad changes hand position. Use Inventory.js.
+----------------------  ^Think of way of turning picked items into inventory items.
+----------------  ^when entering inventory, load items on slots and put item on hand if being picked.
+-----------------  ^When pressing A Button, item on hands swaps with current inventory slot.
+-----------------  ^Create Representation for each Item Type, place in corresponding slot/hand.
+    ----Fireball
+    ----Wings
+    ----Key
+    ----Evil Jar Lid  
+--------------    ^Add Corret Render Queue
+------------      ^Add tilt effect when moving sideways
+-------  ^Remove Representation when exiting inventory
+------------  ^Move items when swapped.
+-----------------  ^when exiting inventory, set the item on prospero's picked up script.(or nothing if there's nothing)
+-----------------  ^HoldGlobalValues.js - save items when dying, or finishing level.
+------------------  ^HoldGlobalValues.js -load items on level start 
+-----------------  ^When picking a pickable object, Add an exclamation mark on Inv GUI on top left(black on white circle?)
+-----------------  ^Make it function with touch points
+---------------  ^make instructions for start button (A = Go back To Island)
+-----------------  ^go back to island is now pressing start, then pressing A button.
+-----------------   Disable Inventory rends when not showing.
+
+---------------------^Make the inventory GUI on top right screen show current items.
+
+------------------* Set a pick up & Attack priority / order :	<<<<
+----------1) attack enemy
+----------2) pick up other objects
+-----------3) Open Door / Chest (make chest open animation first)
+-----------  ^Chest open animation (no attack).
+ --------   ^Make Animation
+ --------------   ^Make chest open with anim
+
+--------------*Cage - Make it use pickable object <<<
+-----------------^Tweak: Cages self destroy when empty and ungrabbed. (1 or 2 seconds) <<<
+----------------^Cats saved test for being picked instead of being caged.
+
+--------Make textures & props for all cats.<<<< 
+---------  ^Figure way to set flag using mesh, because swapping texture wont work. (Combination of flags?)
+-----------^LVL 1 
+-----------^LVL 2 
+-----------^LVL 3 
+-----------^LVL 4 
+-----------^LVL 5 
+-----------^LVL 6 
+-----------^LVL 8 
+-----------^LVL 9 
+-----------^LVL 10 
+-----------^LVL 11 
+-----------^LVL 12
+
+
+--------------------*FIX underwater bombs do not dissapear after explode, if it's the instanced version,
+
+----------------------*FIX - Cat flags positions.
+
+
+--------*FIX - LVL 3 
+--------*FIX - LVL 3 - Can't push tombs <<<<
+--------*FIX - LVL 3 - Fix picking up cats
+--------*FIX - Some tombs too heavy
+--------*FIX - Add drag sound
+--------*FIX - Make stepping on slabs more precise
+--------*FIX - LvL 3 - Make heads work with LVL 3 characters
+--------^Losing cat
+--------^Cat saved
+--------^Cat dead
+--------*Set not resuced inside tomb.
+
+*Whole level collision always stays. Do not destroy. <<<
+--------^LVL 1 
+--------^LVL 2 
+--------^LVL 3 
+--------^LVL 4 
+--------^LVL 5 
+--------^LVL 6
+--------^LVL 7 
+--------^LVL 8 
+--------^LVL 9 
+--------^LVL 10 
+--------^LVL 11
+--------^LVL 12
+--------^LVL 13
+
+*Room Fade Area Mesh (--) . MASK on all level's doors (----).
+----^LVL 1 
+----^LVL 2 
+----^LVL 3 
+----^LVL 4 
+----^LVL 5 
+----^LVL 6
+----^LVL 7 
+----^LVL 9 
+----^LVL 10 
+----^LVL 11 
+----^LVL 12
+----^LVL 13
+
+--------------------*Make areas for which ForceFriction.js uses a higher friction for stairs
+
+-------*Can change render queue for spawned objects.
+
+----*FIX - LVL 12 - For cannon balls . Put double mask Stencil 1 and 2, so cannon balls do not show inside Cannon, nor in other rooms.
+
+-------------------*rat shield anim clip replace script.
+-------------------*Spinning log fix.
+
+-------------------*FIX: LVL 6 - Cats don't follow prospero underwater. (Don't swim up)
+
+---------------------*FIX: Missing Kill Zones
+
+---------------------*Make keys pickable
+
+-------*Cages that take several hits to open.
+
+-------------*ISLAND: Swap Mushroom level with Crossroads level? (Makes more sense)
+
+------------------*Make owls less squishy. Less owls?
+
+----------*Cats recharge health slowly <<
+----------^Instantly when picked up
+
+-------------*Add Griffin Key <<<<
+------------*Add Griffin Wall <<<<
+----------------*Add Evil Jar Lid 
+----------------^Make spedestal for tree village
+
+^Populate game with danger and go signs.
+--^LVL 1 
+--^LVL 2 
+--^LVL 3 
+--^LVL 4 
+--^LVL 5 
+--^LVL 6
+--^LVL 7 
+--^LVL 8 
+--^LVL 9 
+--^LVL 10 
+--^LVL 11 
+--^LVL 12
+--^LVL 13
+
+
+-----*Crossroads - Tree tunnel too slow.
+
+---------------*FIX: Picking objects shouldn't make friction drag sounds if there's any.
+--------------*FIX: Wolf keeps screaming. Disable screaming for several seconds.
+
+------*Enemy flashes when hit.
+--------*Text with the minus health.
+--------*^Put a "DODGED" text for every dodged attack.
+--------*stars around head when health is low
+
+------^Add sfx to cages.
+
+*Change Baloon system <<<
+----^Create object that parents baloons to tags such as cat
+---- ^Add only once feature
+---- ^Add every seconds
+---- ^Add possibility rate?
+---- ^Add more than one baloon (eg thanks or thubs up) If possibility rate succeeds, choose one at random.
+^New Help  <------------- ****** I USED WaitForProspero.js to make ask help baloon O_O *********
+------  ^NPC 1
+------     ^Before prospero reaches cat
+-----^Follow for NPC 1
+-----  ^Wait For Prospero ask help
+----     ^When caged
+-----  ^Keep Distance? (chance .3)
+^Thumbs up
+----  ^Hitting cage(chance .5)
+-----  ^Picking Key (chance .3)
+------  ^Opening Door (chance .3)
+----^Thanks
+----  ^Killing enemy (chance.5)
+----  ^Getting Unaged
+----  ^End Level
+-----^Prospero need key
+-----  ^Change texture for different key numebers
+------^Lightbulb
+------  ^When being controlled by AI
+------^Sandclock
+------  ^When movementAI.enableMovement is false.
+------^Angry Symbol (chance .3)
+------  ^When health less than half
+-----^Apply to Dark forest cats.
+
+
+*Water Levels. See: http://i11b.3djuegos.com/juegos/8769/rayman_legends/fotos/set/rayman_legends-2469652.jpg
+------^Bubbles under Lake
+------^Delete water bubbles when outside water.
+
+------*DECORATION: cooking pot in jungle level 1st cat.
+------*DECORATION: boxes and bags in 3rd cat level 1.
+------*DECORATION: Use Griffin texture free space to make loose hay from next to scatter around the floor.
+------*DECORATION: Inside tree village, hanging moons and stars that shine of different colors.
+-----*DECORATION: LVL 12 - Water in room1's hatch
+-------*DECORATION: LVL 12 - Water colors in rooms that lead to sea.
+-----*DECORATION: LVL 2 - Castle entrance needs to be higher
+
+----------*FIX - CameraLocation.js - must hide anything being picked. And powerups.
+---------^Maintain stamina
+
+--------*DECORATION: LVL 5 - Vary art from tree that you kick down. Use rotten pine tree.
+
+-------*DECORATION: Add decorative thorns on thorn plants that are alone.
+------^LVL 10
+------^LVL 3
+
+--------------*New Bear: Black. Change on LVL 5 and LVL 11
+
+---------*FIX - Island - Lake shows over baloons
+
+-----------*FIX - LVL 6 - up wind in cave two makes you stuck
+
+------*Tweak: Ruin Level. Change huge rocks with something more feasible to push.
+
+--------*DECORATION: LVL 12 - Stuff floating inside boat. Stuff on boat's cabin.
+----------^Table
+----------^Chair
+
+---------*Character feature: Underwater Bubbles that restore Stamina. (e.g. Sonic Hedgehog) 
+
+----------*DECORATION: Mines - Bomb is all alone. Put explosives around. Props.
+-------------^just add some dinamite boxes (allow them to explode, just so player knows it can do that even below)
+
+
+----lvl9 mines - trunk on 1st cat cave shows behind
+----lvl9 mines - 1st cat Cave 1 white bg??
+
+
+------*MAKE END SCENE <<<<
+------^Grass lands with all rescued cats partying.	<<<<
+
+*Populate Levels with Potions:
+----^Wings on Temple, first totem, top piece.
+-----*More health around levels.
+
+
+-------*Add missing reverb zones. Replace currents with LVL13's same parameters. (including underwater) <<<
+
+------*dizzy stars dont self-destroy?-
+
+-----*Make key, chests, not use gravity. (disable after 1 second from stop friction drag, enable again if stop friction drag is broken)
+
+----*LVL 11 - Fix bees, too many
+
+----*LVL 11 - butterfly glow (leave only one butterfly) increase butterfly range.
+
+-----*LvL 11 - make root spring force always vertical
+
+------lvl 11 - cat falls (check mushroom lvl as well)
+
+
+-----LVL 13 - falling rocks do less max damage.
+----Flame - do less damage
+-----crushing rocks - give more time
+
+---------*Wrong loading of items, loads items from game 0
+
+
+------*Intro sky wrong
+
+------*Dragon spawns on ground
+
+*LVL 12 doesn't load (mobile) 
+*LVL 2 doesn't load (mobile)
+
+--*lvl 1 butterflies do not aniamte
+
+--*Compass doesn't load correctly after finishing level
+
+--*press start button to continue shows briefly after level
+
+--*bear shows looking the other way
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx PC CHANGES xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+----*tap to continue = press button to continue
+
+-------*change joystick buttons
+
+------*add select & start
+
+---------*add quit
+
+------*hide controller
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+-----*lvl 2 fish shows green
+
+-----*safety net doesn't work
+
+----*add zoom for PC
+
+-----*lvl 2 water under bridge looks wrong
+
+-------*lvl 2 bridge looks behind character
+
+------*add reverb
+
+----*lvl 3 - cats drop from crypt 2
+
+------*lvl 3 - change the half stone or take away
+
+-----*add mountain
+
+------*add clouds to lvl 11 at the very end
+
+----*add tree village masks
+
+------*add pirate hats on pirate levl (please)
+
+-----*add miner hat as well possible
+
+------lvl 4 first rat falls from bridge
+
+-----font uv offset for game select
+-----^fix number 3
+
+-------Mushroom lvl: Cat 1 not there...
+------Mushroom lvl: Cat 3 no props
+
+-------Island: Touch point shows behind lake
+
+------lvl 6 : add message in a bottle 
+------lvl 6 water bg behind horizon
+------lvl 6 get out of boat doesn't work (use priority?)
+
+-----inventory on island?
+
+-------crossroads - last fall needs danger msg
+
+------lvl 11 - inside tree first entrance there's no stencil to hide cat
+
+------*Hang from vine.. character dissapears? <-- try to figure out why character snaps ****FIND BUG AND SOLVE******
+(Potentially fixed)
+
+-----lvl 11 black cover
+----lvl 11 stencil mask at first's door hides outside
+
+-----lvl 9 - first kart falls besides cat (use destroy if outside bounds?)
+---lvl 9 - bomb behind dinamite
+---lvl 9 - wings chest behind boxes
+----lvl 9 - cats fall from ground (make script that teleports cats on bounds)
+
+----lvl9 first cave log doesn't stick inside cave
+-----lvl9 kart 2 dissapears
+---lvl9 second lava no vertex colo
+-----lvl9 first rock a bit too fast
+
+chain/vine weird when sliding down
+(can't break it again)
+
+-------lvl 9 - cats run even if not inside kart
+------lvl 9 - cats wont get inside kart
+-------lvl 9 - cats need to wait on first fall after kart
+------lvl 9 - on last part of cave, 2nd boulder, check black cover.
+
+-----*bombs in inventory
+
+-----*drowning makes bubbles
+
+-----*underwater fireball
+
+----*lvl 12 - cat one's cave needs to be easier to get on land
+
+----*lvl 12 - zoom out in large underwater areas?
+
+----*lvl 12 room 1 AI lightbulb set max duration
+
+----*lvl 12 extend black cover for rooms
+
+----*lvl 12 rats shows behind wooden board
+
+---------*FIX - inv intems can be seen above overlay. (change render queue when changing camera loc?)
+
+------*pirate rat destroy.
+
+------*bubbles do not animate?
+
+-----*lvl 12 - black cover at end
+
+---*lvl ruins - exiting cat 1 room, extend black cover
+
+----*lvl ruins lower thorn plants
+
+------*lvl ruins cave under stairs show over floor
+
+-----*lvl ruins last thron plants, add other decorative thron plants around.
+
+---lvl ruins - noise when key appears. weird. it's the griffin key.
+
+----griffin lvl - do something about spikes
+
+---griffin lvl - on underground cave add decorative thorns around throrn
+
+----griffin lvl - add base to lever?
+
+-----lvl 13 - heatlh chest shows up mid air.
+
+-----After end scene, go back to game select (maybe reset whole game)
+
+-----check if inventory shows on end scene.
+
+-------* LVL 13 - Island cleared message after killing dragon. <<

@@ -1,0 +1,168 @@
+fileFormatVersion: 2
+guid: 2f755afb2e353bc4bac847b5f3b3fe31
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: Flag 1
+    100002: Flag 2
+    100004: Flag Root
+    100006: //RootNode
+    100008: Island Elements Animated
+    100010: Bird
+    100012: Bird Wing
+    100014: Bird Wing003
+    100016: Bird Wing004
+    100018: Bird Wing005
+    100020: Bird Wing006
+    100022: Bird Wing007
+    100024: Bird Wing008
+    100026: Bird Wing009
+    100028: Bird Wing010
+    100030: Bird Wing2
+    100032: Bird001
+    100034: Bird002
+    100036: Bird003
+    100038: Bird004
+    100040: Birds
+    100042: CPlant
+    100044: CPlant Head
+    100046: CPlant Left
+    100048: CPlant Neck 1
+    100050: CPlant Neck 2
+    100052: CPlant Right
+    100054: IK Chain001
+    100056: Island
+    100058: Island Elements Back
+    100060: CPlant Root
+    400000: Flag 1
+    400002: Flag 2
+    400004: Flag Root
+    400006: //RootNode
+    400008: Island Elements Animated
+    400010: Bird
+    400012: Bird Wing
+    400014: Bird Wing003
+    400016: Bird Wing004
+    400018: Bird Wing005
+    400020: Bird Wing006
+    400022: Bird Wing007
+    400024: Bird Wing008
+    400026: Bird Wing009
+    400028: Bird Wing010
+    400030: Bird Wing2
+    400032: Bird001
+    400034: Bird002
+    400036: Bird003
+    400038: Bird004
+    400040: Birds
+    400042: CPlant
+    400044: CPlant Head
+    400046: CPlant Left
+    400048: CPlant Neck 1
+    400050: CPlant Neck 2
+    400052: CPlant Right
+    400054: IK Chain001
+    400056: Island
+    400058: Island Elements Back
+    400060: CPlant Root
+    2300000: Island
+    2300002: Island Elements Back
+    3300000: Island
+    3300002: Island Elements Back
+    4300000: Island Elements Animated
+    4300002: Island
+    4300004: Island Elements Back
+    7400000: Island Flag Aniamtion
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: Island Elements Animated
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Island Flag Aniamtion
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Flag Root
+        weight: 1
+      - path: Flag Root/Flag 1
+        weight: 1
+      - path: Flag Root/Flag 2
+        weight: 1
+      - path: Island Elements Animated
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  additionalBone: 0
+  userData: 

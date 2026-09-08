@@ -1,0 +1,154 @@
+fileFormatVersion: 2
+guid: f30b063d805d2384a86a99c3950a5c55
+timeCreated: 1470336504
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Dragon Cave 2 Int FG001
+    100002: Dragon Cave 2 Int001
+    100004: LVL 13 Land Pt 3
+    100006: //RootNode
+    100008: LVL 13 Land Pt 3 Hole
+    100010: LVL 13 Land Pt 3 Hole Mask
+    100012: LVL 13 Cliff Rocks Pt 3
+    100014: Lvl 13 Clouds Pt 3
+    100016: LVL 13 Mountain BG Pt 3
+    100018: LVL 13 Trees pt 3
+    100020: LVL 13 Black_Pt3
+    100022: LVL 13 Dragon Shrine
+    100024: LVL 13 Black_Pt3 _2
+    100026: Lvl 13 Clouds Pt 3 _2
+    100028: LVL 13 Land Pt 3 _2
+    100030: LVL 13 Mountain BG Pt 3_2
+    100032: LVL 13 Trees pt 3_2
+    400000: Dragon Cave 2 Int FG001
+    400002: Dragon Cave 2 Int001
+    400004: LVL 13 Land Pt 3
+    400006: //RootNode
+    400008: LVL 13 Land Pt 3 Hole
+    400010: LVL 13 Land Pt 3 Hole Mask
+    400012: LVL 13 Cliff Rocks Pt 3
+    400014: Lvl 13 Clouds Pt 3
+    400016: LVL 13 Mountain BG Pt 3
+    400018: LVL 13 Trees pt 3
+    400020: LVL 13 Black_Pt3
+    400022: LVL 13 Dragon Shrine
+    400024: LVL 13 Black_Pt3 _2
+    400026: Lvl 13 Clouds Pt 3 _2
+    400028: LVL 13 Land Pt 3 _2
+    400030: LVL 13 Mountain BG Pt 3_2
+    400032: LVL 13 Trees pt 3_2
+    2300000: Dragon Cave 2 Int FG001
+    2300002: Dragon Cave 2 Int001
+    2300004: LVL 13 Land Pt 3
+    2300006: LVL 13 Land Pt 3 Hole
+    2300008: LVL 13 Land Pt 3 Hole Mask
+    2300010: LVL 13 Cliff Rocks Pt 3
+    2300012: Lvl 13 Clouds Pt 3
+    2300014: LVL 13 Mountain BG Pt 3
+    2300016: LVL 13 Trees pt 3
+    2300018: LVL 13 Black_Pt3
+    2300020: LVL 13 Dragon Shrine
+    2300022: LVL 13 Black_Pt3 _2
+    2300024: Lvl 13 Clouds Pt 3 _2
+    2300026: LVL 13 Land Pt 3 _2
+    2300028: LVL 13 Mountain BG Pt 3_2
+    2300030: LVL 13 Trees pt 3_2
+    3300000: Dragon Cave 2 Int FG001
+    3300002: Dragon Cave 2 Int001
+    3300004: LVL 13 Land Pt 3
+    3300006: LVL 13 Land Pt 3 Hole
+    3300008: LVL 13 Land Pt 3 Hole Mask
+    3300010: LVL 13 Cliff Rocks Pt 3
+    3300012: Lvl 13 Clouds Pt 3
+    3300014: LVL 13 Mountain BG Pt 3
+    3300016: LVL 13 Trees pt 3
+    3300018: LVL 13 Black_Pt3
+    3300020: LVL 13 Dragon Shrine
+    3300022: LVL 13 Black_Pt3 _2
+    3300024: Lvl 13 Clouds Pt 3 _2
+    3300026: LVL 13 Land Pt 3 _2
+    3300028: LVL 13 Mountain BG Pt 3_2
+    3300030: LVL 13 Trees pt 3_2
+    4300000: LVL 13 Land Pt 3
+    4300002: Dragon Cave 2 Int001
+    4300004: Dragon Cave 2 Int FG001
+    4300006: LVL 13 Land Pt 3 Hole
+    4300008: LVL 13 Land Pt 3 Hole Mask
+    4300010: LVL 13 Cliff Rocks Pt 3
+    4300012: Lvl 13 Clouds Pt 3
+    4300014: LVL 13 Trees pt 3
+    4300016: LVL 13 Mountain BG Pt 3
+    4300018: LVL 13 Black_Pt3
+    4300020: LVL 13 Dragon Shrine
+    4300022: LVL 13 Black_Pt3 _2
+    4300024: LVL 13 Land Pt 3 _2
+    4300026: LVL 13 Trees pt 3_2
+    4300028: Lvl 13 Clouds Pt 3 _2
+    4300030: LVL 13 Mountain BG Pt 3_2
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

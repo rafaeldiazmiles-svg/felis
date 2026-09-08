@@ -1,0 +1,249 @@
+fileFormatVersion: 2
+guid: df15023e0cbf5d749abce8a7b35b5b9e
+timeCreated: 1459187507
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Bowstrip Pt3
+    100002: LVL12 GrassToRock Pt3
+    100004: //RootNode
+    100006: Pirate Ship Deck 2 Pt3_1
+    100008: Pirate Ship Deck 2 Pt3_2
+    100010: Pirate Ship Deck Pt3
+    100012: Pirate Ship Interior Pt3_1
+    100014: Pirate Ship Interior Pt3_2
+    100016: Pirate Ship Interior Pt3_3
+    100018: Pirate Ship Interior Pt3_4
+    100020: Pirate Ship Interior Pt3_5
+    100022: Pirate Ship Interior Pt3_6
+    100024: Pirate Ship Mast
+    100026: VL12 RockToSand Pt3_1
+    100028: VL12 RockToSand Pt3_2
+    100030: Pirate Ship Ext
+    100032: Pirate Ship Wood Cover_1
+    100034: Pirate Ship Wood Cover_2
+    100036: Ship Mask
+    100038: Pirate Ship Mast Mask
+    100040: LVL 12 Black Pt 3_1
+    100042: LVL 12 Black Pt 3_2
+    100044: LVL 12 Black Room_1
+    100046: LVL 12 Black Room_2
+    100048: LVL 12 Black Room_3
+    100050: LVL 12 Black Room_4
+    100052: LVL 12 Black Room_5
+    100054: LVL 12 Black Room_6
+    100056: LVL 12 Black Room_CaptainsCabin
+    100058: LVL 12 Dirt BG Pt 3
+    100060: LVL12 GrassToRock Pt3 BG
+    100062: LVL12 GrassToRock Pt3 FG
+    100064: VL12 RockToSand Pt3_1 BG
+    100066: VL12 RockToSand Pt3_1 FG
+    100068: VL12 RockToSand Pt3_2 BG
+    100070: VL12 RockToSand Pt3_2 FG
+    400000: Bowstrip Pt3
+    400002: LVL12 GrassToRock Pt3
+    400004: //RootNode
+    400006: Pirate Ship Deck 2 Pt3_1
+    400008: Pirate Ship Deck 2 Pt3_2
+    400010: Pirate Ship Deck Pt3
+    400012: Pirate Ship Interior Pt3_1
+    400014: Pirate Ship Interior Pt3_2
+    400016: Pirate Ship Interior Pt3_3
+    400018: Pirate Ship Interior Pt3_4
+    400020: Pirate Ship Interior Pt3_5
+    400022: Pirate Ship Interior Pt3_6
+    400024: Pirate Ship Mast
+    400026: VL12 RockToSand Pt3_1
+    400028: VL12 RockToSand Pt3_2
+    400030: Pirate Ship Ext
+    400032: Pirate Ship Wood Cover_1
+    400034: Pirate Ship Wood Cover_2
+    400036: Ship Mask
+    400038: Pirate Ship Mast Mask
+    400040: LVL 12 Black Pt 3_1
+    400042: LVL 12 Black Pt 3_2
+    400044: LVL 12 Black Room_1
+    400046: LVL 12 Black Room_2
+    400048: LVL 12 Black Room_3
+    400050: LVL 12 Black Room_4
+    400052: LVL 12 Black Room_5
+    400054: LVL 12 Black Room_6
+    400056: LVL 12 Black Room_CaptainsCabin
+    400058: LVL 12 Dirt BG Pt 3
+    400060: LVL12 GrassToRock Pt3 BG
+    400062: LVL12 GrassToRock Pt3 FG
+    400064: VL12 RockToSand Pt3_1 BG
+    400066: VL12 RockToSand Pt3_1 FG
+    400068: VL12 RockToSand Pt3_2 BG
+    400070: VL12 RockToSand Pt3_2 FG
+    2300000: Bowstrip Pt3
+    2300002: LVL12 GrassToRock Pt3
+    2300004: Pirate Ship Deck 2 Pt3_1
+    2300006: Pirate Ship Deck 2 Pt3_2
+    2300008: Pirate Ship Deck Pt3
+    2300010: Pirate Ship Interior Pt3_1
+    2300012: Pirate Ship Interior Pt3_2
+    2300014: Pirate Ship Interior Pt3_3
+    2300016: Pirate Ship Interior Pt3_4
+    2300018: Pirate Ship Interior Pt3_5
+    2300020: Pirate Ship Interior Pt3_6
+    2300022: Pirate Ship Mast
+    2300024: VL12 RockToSand Pt3_1
+    2300026: VL12 RockToSand Pt3_2
+    2300028: Pirate Ship Ext
+    2300030: Pirate Ship Wood Cover_1
+    2300032: Pirate Ship Wood Cover_2
+    2300034: Ship Mask
+    2300036: Pirate Ship Mast Mask
+    2300038: LVL 12 Black Pt 3_1
+    2300040: LVL 12 Black Pt 3_2
+    2300042: LVL 12 Black Room_1
+    2300044: LVL 12 Black Room_2
+    2300046: LVL 12 Black Room_3
+    2300048: LVL 12 Black Room_4
+    2300050: LVL 12 Black Room_5
+    2300052: LVL 12 Black Room_6
+    2300054: LVL 12 Black Room_CaptainsCabin
+    2300056: LVL 12 Dirt BG Pt 3
+    2300058: LVL12 GrassToRock Pt3 BG
+    2300060: LVL12 GrassToRock Pt3 FG
+    2300062: VL12 RockToSand Pt3_1 BG
+    2300064: VL12 RockToSand Pt3_1 FG
+    2300066: VL12 RockToSand Pt3_2 BG
+    2300068: VL12 RockToSand Pt3_2 FG
+    3300000: Bowstrip Pt3
+    3300002: LVL12 GrassToRock Pt3
+    3300004: Pirate Ship Deck 2 Pt3_1
+    3300006: Pirate Ship Deck 2 Pt3_2
+    3300008: Pirate Ship Deck Pt3
+    3300010: Pirate Ship Interior Pt3_1
+    3300012: Pirate Ship Interior Pt3_2
+    3300014: Pirate Ship Interior Pt3_3
+    3300016: Pirate Ship Interior Pt3_4
+    3300018: Pirate Ship Interior Pt3_5
+    3300020: Pirate Ship Interior Pt3_6
+    3300022: Pirate Ship Mast
+    3300024: VL12 RockToSand Pt3_1
+    3300026: VL12 RockToSand Pt3_2
+    3300028: Pirate Ship Ext
+    3300030: Pirate Ship Wood Cover_1
+    3300032: Pirate Ship Wood Cover_2
+    3300034: Ship Mask
+    3300036: Pirate Ship Mast Mask
+    3300038: LVL 12 Black Pt 3_1
+    3300040: LVL 12 Black Pt 3_2
+    3300042: LVL 12 Black Room_1
+    3300044: LVL 12 Black Room_2
+    3300046: LVL 12 Black Room_3
+    3300048: LVL 12 Black Room_4
+    3300050: LVL 12 Black Room_5
+    3300052: LVL 12 Black Room_6
+    3300054: LVL 12 Black Room_CaptainsCabin
+    3300056: LVL 12 Dirt BG Pt 3
+    3300058: LVL12 GrassToRock Pt3 BG
+    3300060: LVL12 GrassToRock Pt3 FG
+    3300062: VL12 RockToSand Pt3_1 BG
+    3300064: VL12 RockToSand Pt3_1 FG
+    3300066: VL12 RockToSand Pt3_2 BG
+    3300068: VL12 RockToSand Pt3_2 FG
+    4300000: Pirate Ship Deck Pt3
+    4300002: Pirate Ship Deck 2 Pt3_2
+    4300004: Bowstrip Pt3
+    4300006: Pirate Ship Mast
+    4300008: VL12 RockToSand Pt3_1
+    4300010: LVL12 GrassToRock Pt3
+    4300012: VL12 RockToSand Pt3_2
+    4300014: Pirate Ship Interior Pt3_1
+    4300016: Pirate Ship Interior Pt3_2
+    4300018: Pirate Ship Interior Pt3_3
+    4300020: Pirate Ship Interior Pt3_4
+    4300022: Pirate Ship Interior Pt3_5
+    4300024: Pirate Ship Interior Pt3_6
+    4300026: Pirate Ship Deck 2 Pt3_1
+    4300028: Pirate Ship Ext
+    4300030: Pirate Ship Wood Cover_1
+    4300032: Pirate Ship Wood Cover_2
+    4300034: Ship Mask
+    4300036: Pirate Ship Mast Mask
+    4300038: LVL12 GrassToRock Pt3 FG
+    4300040: LVL12 GrassToRock Pt3 BG
+    4300042: VL12 RockToSand Pt3_2 FG
+    4300044: VL12 RockToSand Pt3_1 FG
+    4300046: VL12 RockToSand Pt3_2 BG
+    4300048: VL12 RockToSand Pt3_1 BG
+    4300050: LVL 12 Black Pt 3_2
+    4300052: LVL 12 Black Pt 3_1
+    4300054: LVL 12 Black Room_6
+    4300056: LVL 12 Black Room_2
+    4300058: LVL 12 Black Room_1
+    4300060: LVL 12 Black Room_4
+    4300062: LVL 12 Black Room_3
+    4300064: LVL 12 Black Room_5
+    4300066: LVL 12 Black Room_CaptainsCabin
+    4300068: LVL 12 Dirt BG Pt 3
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

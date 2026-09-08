@@ -1,0 +1,246 @@
+fileFormatVersion: 2
+guid: 42e8307f40ad4fe46a1c052ba7212b51
+timeCreated: 1461188835
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: LVL7 Horizon
+    100004: LVL7 Horizon_2
+    100006: Chest
+    100008: Griffin
+    100010: Head
+    100012: L Ear
+    100014: L Wing 1
+    100016: L Wing 2
+    100018: LB Leg 1
+    100020: LB Leg 2
+    100022: LF Leg 1
+    100024: LF Leg 2
+    100026: Pelvis
+    100028: R Ear
+    100030: R Wing 1
+    100032: R Wing 2
+    100034: RB Leg 1
+    100036: RB Leg 2
+    100038: RF Leg 1
+    100040: RF Leg 2
+    100042: Root
+    100044: Tail 1
+    100046: Tail 2
+    100048: Tail 3
+    100050: Griffin Tower BG Pt3_1
+    100052: Griffin Tower BG Pt3_2
+    100054: Griffin Tower BG Pt3_3
+    100056: Griffin Tower External Wall BG_1
+    100058: Griffin Tower External Wall BG_2
+    100060: Griffin Tower External Wall End BG
+    100062: Griffin Tower External Wall End BG_2
+    100064: Griffin Tower External Wall End FG
+    100066: Griffin Tower External Wall End FG_2
+    100068: Griffin Tower External Wall FG_1
+    100070: Griffin Tower External Wall FG_1 1
+    100072: Griffin Tower External Wall FG_2
+    100074: Griffin Tower External Wall FG_2 Edge
+    100076: Griffin Tower Pt3_1
+    100078: Griffin Tower Pt3_2
+    100080: Griffin Tower Pt3_3
+    100082: Griffin Tower Pt3_4
+    100084: LVL 7 Black Key Room
+    100086: LVL 7 Black Pt 3_1
+    100088: LVL 7 Black Pt 3_2
+    100090: LVL 7 Black Pt 3_3
+    100092: LVL 7 Stone Hole
+    100094: LVL 7 Stone Hole Mask
+    400000: //RootNode
+    400002: LVL7 Horizon
+    400004: LVL7 Horizon_2
+    400006: Chest
+    400008: Griffin
+    400010: Head
+    400012: L Ear
+    400014: L Wing 1
+    400016: L Wing 2
+    400018: LB Leg 1
+    400020: LB Leg 2
+    400022: LF Leg 1
+    400024: LF Leg 2
+    400026: Pelvis
+    400028: R Ear
+    400030: R Wing 1
+    400032: R Wing 2
+    400034: RB Leg 1
+    400036: RB Leg 2
+    400038: RF Leg 1
+    400040: RF Leg 2
+    400042: Root
+    400044: Tail 1
+    400046: Tail 2
+    400048: Tail 3
+    400050: Griffin Tower BG Pt3_1
+    400052: Griffin Tower BG Pt3_2
+    400054: Griffin Tower BG Pt3_3
+    400056: Griffin Tower External Wall BG_1
+    400058: Griffin Tower External Wall BG_2
+    400060: Griffin Tower External Wall End BG
+    400062: Griffin Tower External Wall End BG_2
+    400064: Griffin Tower External Wall End FG
+    400066: Griffin Tower External Wall End FG_2
+    400068: Griffin Tower External Wall FG_1
+    400070: Griffin Tower External Wall FG_1 1
+    400072: Griffin Tower External Wall FG_2
+    400074: Griffin Tower External Wall FG_2 Edge
+    400076: Griffin Tower Pt3_1
+    400078: Griffin Tower Pt3_2
+    400080: Griffin Tower Pt3_3
+    400082: Griffin Tower Pt3_4
+    400084: LVL 7 Black Key Room
+    400086: LVL 7 Black Pt 3_1
+    400088: LVL 7 Black Pt 3_2
+    400090: LVL 7 Black Pt 3_3
+    400092: LVL 7 Stone Hole
+    400094: LVL 7 Stone Hole Mask
+    2300000: //RootNode
+    2300002: LVL7 Horizon
+    2300004: LVL7 Horizon_2
+    2300006: Griffin Tower BG Pt3_1
+    2300008: Griffin Tower BG Pt3_2
+    2300010: Griffin Tower BG Pt3_3
+    2300012: Griffin Tower External Wall BG_1
+    2300014: Griffin Tower External Wall BG_2
+    2300016: Griffin Tower External Wall End BG
+    2300018: Griffin Tower External Wall End BG_2
+    2300020: Griffin Tower External Wall End FG
+    2300022: Griffin Tower External Wall End FG_2
+    2300024: Griffin Tower External Wall FG_1 1
+    2300026: Griffin Tower External Wall FG_2
+    2300028: Griffin Tower External Wall FG_2 Edge
+    2300030: Griffin Tower Pt3_1
+    2300032: Griffin Tower Pt3_2
+    2300034: Griffin Tower Pt3_3
+    2300036: Griffin Tower Pt3_4
+    2300038: LVL 7 Black Key Room
+    2300040: LVL 7 Black Pt 3_1
+    2300042: LVL 7 Black Pt 3_2
+    2300044: LVL 7 Black Pt 3_3
+    2300046: LVL 7 Stone Hole
+    2300048: LVL 7 Stone Hole Mask
+    3300000: //RootNode
+    3300002: LVL7 Horizon
+    3300004: LVL7 Horizon_2
+    3300006: Griffin Tower BG Pt3_1
+    3300008: Griffin Tower BG Pt3_2
+    3300010: Griffin Tower BG Pt3_3
+    3300012: Griffin Tower External Wall BG_1
+    3300014: Griffin Tower External Wall BG_2
+    3300016: Griffin Tower External Wall End BG
+    3300018: Griffin Tower External Wall End BG_2
+    3300020: Griffin Tower External Wall End FG
+    3300022: Griffin Tower External Wall End FG_2
+    3300024: Griffin Tower External Wall FG_1 1
+    3300026: Griffin Tower External Wall FG_2
+    3300028: Griffin Tower External Wall FG_2 Edge
+    3300030: Griffin Tower Pt3_1
+    3300032: Griffin Tower Pt3_2
+    3300034: Griffin Tower Pt3_3
+    3300036: Griffin Tower Pt3_4
+    3300038: LVL 7 Black Key Room
+    3300040: LVL 7 Black Pt 3_1
+    3300042: LVL 7 Black Pt 3_2
+    3300044: LVL 7 Black Pt 3_3
+    3300046: LVL 7 Stone Hole
+    3300048: LVL 7 Stone Hole Mask
+    4300000: Griffin
+    4300002: LVL7 Horizon
+    4300004: LVL7 Horizon_2
+    4300006: Griffin Tower Pt3_1
+    4300008: Griffin Tower Pt3_2
+    4300010: Griffin Tower Pt3_3
+    4300012: Griffin Tower Pt3_4
+    4300014: LVL 7 Stone Hole
+    4300016: LVL 7 Stone Hole Mask
+    4300018: Griffin Tower External Wall BG_2
+    4300020: Griffin Tower External Wall End BG
+    4300022: Griffin Tower External Wall End FG
+    4300024: Griffin Tower External Wall BG_1
+    4300026: Griffin Tower External Wall End FG_2
+    4300028: Griffin Tower External Wall End BG_2
+    4300030: Griffin Tower External Wall FG_1
+    4300032: Griffin Tower External Wall FG_2
+    4300034: Griffin Tower External Wall FG_2 Edge
+    4300036: Griffin Tower BG Pt3_1
+    4300038: Griffin Tower BG Pt3_2
+    4300040: Griffin Tower BG Pt3_3
+    4300042: LVL 7 Black Pt 3_1
+    4300044: LVL 7 Black Pt 3_2
+    4300046: LVL 7 Black Pt 3_3
+    4300048: LVL 7 Black Key Room
+    7400000: Take 001
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: Griffin
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

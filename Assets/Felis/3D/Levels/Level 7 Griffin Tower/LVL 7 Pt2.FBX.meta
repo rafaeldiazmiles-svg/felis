@@ -1,0 +1,209 @@
+fileFormatVersion: 2
+guid: 356a7471ec2e60048a1fb152318c9876
+timeCreated: 1460562243
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Griffin Tower Entrance Ext
+    100002: Griffin Tower Entrance Int
+    100004: Griffin Tower Entrance Int Mask
+    100006: Griffin Tower Pt2_1
+    100008: Griffin Tower Pt2_2
+    100010: Griffin Tower Pt2_3
+    100012: Griffin Tower Pt2_4
+    100014: Griffin Tower Pt2_5
+    100016: Griffin Tower Pt2_6
+    100018: Griffin Tower Pt2_7
+    100020: Griffin Tower Pt2_8
+    100022: Griffin Tower Stairs Broken
+    100024: //RootNode
+    100026: LVL7 Castle Entrance Mask Ext Mask
+    100028: Griffin Tower Stairs_1
+    100030: Griffin Tower Stairs_2
+    100032: Floor Hole
+    100034: Griffin Tower BG Pt2_1
+    100036: Griffin Tower BG Pt2_2
+    100038: Griffin Tower BG Pt2_3
+    100040: Griffin Tower BG Pt2_4
+    100042: Griffin Tower Pt2_009
+    100044: Griffin Tower Pt2_8 1
+    100046: Griffin Tower Pt2_9
+    100048: LVL 7 Black Pt 2_1
+    100050: LVL 7 Black Pt 2_2
+    100052: LVL 7 Black Pt 2_3
+    100054: LVL 7 Black Castle Entrance
+    400000: Griffin Tower Entrance Ext
+    400002: Griffin Tower Entrance Int
+    400004: Griffin Tower Entrance Int Mask
+    400006: Griffin Tower Pt2_1
+    400008: Griffin Tower Pt2_2
+    400010: Griffin Tower Pt2_3
+    400012: Griffin Tower Pt2_4
+    400014: Griffin Tower Pt2_5
+    400016: Griffin Tower Pt2_6
+    400018: Griffin Tower Pt2_7
+    400020: Griffin Tower Pt2_8
+    400022: Griffin Tower Stairs Broken
+    400024: //RootNode
+    400026: LVL7 Castle Entrance Mask Ext Mask
+    400028: Griffin Tower Stairs_1
+    400030: Griffin Tower Stairs_2
+    400032: Floor Hole
+    400034: Griffin Tower BG Pt2_1
+    400036: Griffin Tower BG Pt2_2
+    400038: Griffin Tower BG Pt2_3
+    400040: Griffin Tower BG Pt2_4
+    400042: Griffin Tower Pt2_009
+    400044: Griffin Tower Pt2_8 1
+    400046: Griffin Tower Pt2_9
+    400048: LVL 7 Black Pt 2_1
+    400050: LVL 7 Black Pt 2_2
+    400052: LVL 7 Black Pt 2_3
+    400054: LVL 7 Black Castle Entrance
+    2300000: Griffin Tower Entrance Ext
+    2300002: Griffin Tower Entrance Int
+    2300004: Griffin Tower Entrance Int Mask
+    2300006: Griffin Tower Pt2_1
+    2300008: Griffin Tower Pt2_2
+    2300010: Griffin Tower Pt2_3
+    2300012: Griffin Tower Pt2_4
+    2300014: Griffin Tower Pt2_5
+    2300016: Griffin Tower Pt2_6
+    2300018: Griffin Tower Pt2_7
+    2300020: Griffin Tower Pt2_8
+    2300022: Griffin Tower Stairs Broken
+    2300024: LVL7 Castle Entrance Mask Ext Mask
+    2300026: Griffin Tower Stairs_1
+    2300028: Griffin Tower Stairs_2
+    2300030: Floor Hole
+    2300032: Griffin Tower BG Pt2_1
+    2300034: Griffin Tower BG Pt2_2
+    2300036: Griffin Tower BG Pt2_3
+    2300038: Griffin Tower BG Pt2_4
+    2300040: Griffin Tower Pt2_009
+    2300042: Griffin Tower Pt2_8 1
+    2300044: Griffin Tower Pt2_9
+    2300046: LVL 7 Black Pt 2_1
+    2300048: LVL 7 Black Pt 2_2
+    2300050: LVL 7 Black Pt 2_3
+    2300052: LVL 7 Black Castle Entrance
+    3300000: Griffin Tower Entrance Ext
+    3300002: Griffin Tower Entrance Int
+    3300004: Griffin Tower Entrance Int Mask
+    3300006: Griffin Tower Pt2_1
+    3300008: Griffin Tower Pt2_2
+    3300010: Griffin Tower Pt2_3
+    3300012: Griffin Tower Pt2_4
+    3300014: Griffin Tower Pt2_5
+    3300016: Griffin Tower Pt2_6
+    3300018: Griffin Tower Pt2_7
+    3300020: Griffin Tower Pt2_8
+    3300022: Griffin Tower Stairs Broken
+    3300024: LVL7 Castle Entrance Mask Ext Mask
+    3300026: Griffin Tower Stairs_1
+    3300028: Griffin Tower Stairs_2
+    3300030: Floor Hole
+    3300032: Griffin Tower BG Pt2_1
+    3300034: Griffin Tower BG Pt2_2
+    3300036: Griffin Tower BG Pt2_3
+    3300038: Griffin Tower BG Pt2_4
+    3300040: Griffin Tower Pt2_009
+    3300042: Griffin Tower Pt2_8 1
+    3300044: Griffin Tower Pt2_9
+    3300046: LVL 7 Black Pt 2_1
+    3300048: LVL 7 Black Pt 2_2
+    3300050: LVL 7 Black Pt 2_3
+    3300052: LVL 7 Black Castle Entrance
+    4300000: Griffin Tower Entrance Ext
+    4300002: LVL7 Castle Entrance Mask Ext Mask
+    4300004: Griffin Tower Entrance Int
+    4300006: Griffin Tower Pt2_1
+    4300008: Griffin Tower Stairs Broken
+    4300010: Griffin Tower Entrance Int Mask
+    4300012: Griffin Tower Pt2_2
+    4300014: Griffin Tower Pt2_3
+    4300016: Griffin Tower Pt2_4
+    4300018: Griffin Tower Pt2_5
+    4300020: Griffin Tower Pt2_6
+    4300022: Griffin Tower Pt2_7
+    4300024: Griffin Tower Pt2_8
+    4300026: Griffin Tower Stairs_1
+    4300028: Griffin Tower Stairs_2
+    4300030: Floor Hole
+    4300032: Griffin Tower BG Pt2_1
+    4300034: Griffin Tower BG Pt2_2
+    4300036: Griffin Tower BG Pt2_4
+    4300038: Griffin Tower BG Pt2_3
+    4300040: Griffin Tower Pt2_009
+    4300042: Griffin Tower Pt2_8
+    4300044: Griffin Tower Pt2_9
+    4300046: LVL 7 Black Pt 2_1
+    4300048: LVL 7 Black Pt 2_2
+    4300050: LVL 7 Black Pt 2_3
+    4300052: LVL 7 Black Castle Entrance
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

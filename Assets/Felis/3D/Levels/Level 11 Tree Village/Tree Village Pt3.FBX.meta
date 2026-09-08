@@ -1,0 +1,274 @@
+fileFormatVersion: 2
+guid: 4c120ed6e89c6744baac83b5a7fa127c
+timeCreated: 1458064177
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Btree Branch FG Pt3_1
+    100002: Btree Branch Pt3_004
+    100004: Btree Branch Pt3_005
+    100006: Btree Branch Pt3_1
+    100008: Btree Branch Pt3_2
+    100010: Btree Branch Pt3_3
+    100012: LVL 11 Col Pt3
+    100014: LVL 11 Wood Platform Pt3_1
+    100016: LVL 11 Wood Platform Pt3_2
+    100018: LVL 11 Wood Platform Pt3_3
+    100020: LVL 11 Wood Platform Pt3_4
+    100022: LVL11 Big Tree Bark Pt3_1
+    100024: LVL11 Big Tree Bark Pt3_2
+    100026: LVL11 Big Tree Bark Root Pt3
+    100028: LVL11 Hut Ext Mask Pt3
+    100030: LVL11 Hut Ext Pt3
+    100032: LVL11 Hut Int Pt3_1
+    100034: LVL11 Hut Int Pt3_2
+    100036: LVL11_Land Pt3_1
+    100038: LVL11_Land Pt3_2
+    100040: //RootNode
+    100042: LVL11 Hut Ext Mask Pt3_2
+    100044: VL11 Hut Ext Mask Pt3_1
+    100046: Btree Branch FG Pt3_2
+    100048: LVL11 Hut Ext Pt3_1
+    100050: LVL11 Hut Ext Pt3_2
+    100052: LVL11 Hut Ext Pt3_3
+    100054: LVL 11 Rustic DoorPt3
+    100056: VL11 Hut Int Mask Pt3_1
+    100058: VL11 Hut Int Mask Pt3_2
+    100060: LVL Fall Pt004
+    100062: LVL11 Tree BG Pt3
+    100064: LVL11 Trees Horizon Pt3
+    100066: LVL11 Trees Pt3_1
+    100068: LVL11 Trees Pt3_2
+    100070: LVL11_Land Pt3 BG
+    100072: LVL11_Land Pt3 FG
+    100074: LVL Fall Pt3
+    100076: LVL 11 Black Pt3_1
+    100078: LVL 11 Black Pt3_2
+    100080: LVL 11 Black Pt3_3
+    400000: Btree Branch FG Pt3_1
+    400002: Btree Branch Pt3_004
+    400004: Btree Branch Pt3_005
+    400006: Btree Branch Pt3_1
+    400008: Btree Branch Pt3_2
+    400010: Btree Branch Pt3_3
+    400012: LVL 11 Col Pt3
+    400014: LVL 11 Wood Platform Pt3_1
+    400016: LVL 11 Wood Platform Pt3_2
+    400018: LVL 11 Wood Platform Pt3_3
+    400020: LVL 11 Wood Platform Pt3_4
+    400022: LVL11 Big Tree Bark Pt3_1
+    400024: LVL11 Big Tree Bark Pt3_2
+    400026: LVL11 Big Tree Bark Root Pt3
+    400028: LVL11 Hut Ext Mask Pt3
+    400030: LVL11 Hut Ext Pt3
+    400032: LVL11 Hut Int Pt3_1
+    400034: LVL11 Hut Int Pt3_2
+    400036: LVL11_Land Pt3_1
+    400038: LVL11_Land Pt3_2
+    400040: //RootNode
+    400042: LVL11 Hut Ext Mask Pt3_2
+    400044: VL11 Hut Ext Mask Pt3_1
+    400046: Btree Branch FG Pt3_2
+    400048: LVL11 Hut Ext Pt3_1
+    400050: LVL11 Hut Ext Pt3_2
+    400052: LVL11 Hut Ext Pt3_3
+    400054: LVL 11 Rustic DoorPt3
+    400056: VL11 Hut Int Mask Pt3_1
+    400058: VL11 Hut Int Mask Pt3_2
+    400060: LVL Fall Pt004
+    400062: LVL11 Tree BG Pt3
+    400064: LVL11 Trees Horizon Pt3
+    400066: LVL11 Trees Pt3_1
+    400068: LVL11 Trees Pt3_2
+    400070: LVL11_Land Pt3 BG
+    400072: LVL11_Land Pt3 FG
+    400074: LVL Fall Pt3
+    400076: LVL 11 Black Pt3_1
+    400078: LVL 11 Black Pt3_2
+    400080: LVL 11 Black Pt3_3
+    2300000: Btree Branch FG Pt3_1
+    2300002: Btree Branch Pt3_004
+    2300004: Btree Branch Pt3_005
+    2300006: Btree Branch Pt3_1
+    2300008: Btree Branch Pt3_2
+    2300010: Btree Branch Pt3_3
+    2300012: LVL 11 Col Pt3
+    2300014: LVL 11 Wood Platform Pt3_1
+    2300016: LVL 11 Wood Platform Pt3_2
+    2300018: LVL 11 Wood Platform Pt3_3
+    2300020: LVL 11 Wood Platform Pt3_4
+    2300022: LVL11 Big Tree Bark Pt3_1
+    2300024: LVL11 Big Tree Bark Pt3_2
+    2300026: LVL11 Big Tree Bark Root Pt3
+    2300028: LVL11 Hut Ext Mask Pt3
+    2300030: LVL11 Hut Ext Pt3
+    2300032: LVL11 Hut Int Pt3_1
+    2300034: LVL11 Hut Int Pt3_2
+    2300036: LVL11_Land Pt3_1
+    2300038: LVL11_Land Pt3_2
+    2300040: LVL11 Hut Ext Mask Pt3_2
+    2300042: VL11 Hut Ext Mask Pt3_1
+    2300044: Btree Branch FG Pt3_2
+    2300046: LVL11 Hut Ext Pt3_1
+    2300048: LVL11 Hut Ext Pt3_2
+    2300050: LVL11 Hut Ext Pt3_3
+    2300052: LVL 11 Rustic DoorPt3
+    2300054: VL11 Hut Int Mask Pt3_1
+    2300056: VL11 Hut Int Mask Pt3_2
+    2300058: LVL Fall Pt004
+    2300060: LVL11 Tree BG Pt3
+    2300062: LVL11 Trees Horizon Pt3
+    2300064: LVL11 Trees Pt3_1
+    2300066: LVL11 Trees Pt3_2
+    2300068: LVL11_Land Pt3 BG
+    2300070: LVL11_Land Pt3 FG
+    2300072: LVL Fall Pt3
+    2300074: LVL 11 Black Pt3_1
+    2300076: LVL 11 Black Pt3_2
+    2300078: LVL 11 Black Pt3_3
+    3300000: Btree Branch FG Pt3_1
+    3300002: Btree Branch Pt3_004
+    3300004: Btree Branch Pt3_005
+    3300006: Btree Branch Pt3_1
+    3300008: Btree Branch Pt3_2
+    3300010: Btree Branch Pt3_3
+    3300012: LVL 11 Col Pt3
+    3300014: LVL 11 Wood Platform Pt3_1
+    3300016: LVL 11 Wood Platform Pt3_2
+    3300018: LVL 11 Wood Platform Pt3_3
+    3300020: LVL 11 Wood Platform Pt3_4
+    3300022: LVL11 Big Tree Bark Pt3_1
+    3300024: LVL11 Big Tree Bark Pt3_2
+    3300026: LVL11 Big Tree Bark Root Pt3
+    3300028: LVL11 Hut Ext Mask Pt3
+    3300030: LVL11 Hut Ext Pt3
+    3300032: LVL11 Hut Int Pt3_1
+    3300034: LVL11 Hut Int Pt3_2
+    3300036: LVL11_Land Pt3_1
+    3300038: LVL11_Land Pt3_2
+    3300040: LVL11 Hut Ext Mask Pt3_2
+    3300042: VL11 Hut Ext Mask Pt3_1
+    3300044: Btree Branch FG Pt3_2
+    3300046: LVL11 Hut Ext Pt3_1
+    3300048: LVL11 Hut Ext Pt3_2
+    3300050: LVL11 Hut Ext Pt3_3
+    3300052: LVL 11 Rustic DoorPt3
+    3300054: VL11 Hut Int Mask Pt3_1
+    3300056: VL11 Hut Int Mask Pt3_2
+    3300058: LVL Fall Pt004
+    3300060: LVL11 Tree BG Pt3
+    3300062: LVL11 Trees Horizon Pt3
+    3300064: LVL11 Trees Pt3_1
+    3300066: LVL11 Trees Pt3_2
+    3300068: LVL11_Land Pt3 BG
+    3300070: LVL11_Land Pt3 FG
+    3300072: LVL Fall Pt3
+    3300074: LVL 11 Black Pt3_1
+    3300076: LVL 11 Black Pt3_2
+    3300078: LVL 11 Black Pt3_3
+    4300000: LVL11_Land Pt3_1
+    4300002: LVL11 Big Tree Bark Root Pt3
+    4300004: LVL11 Hut Int Pt3_1
+    4300006: LVL11 Hut Ext Mask Pt3
+    4300008: LVL11 Big Tree Bark Pt3_1
+    4300010: LVL 11 Wood Platform Pt3_1
+    4300012: LVL11 Hut Ext Pt3
+    4300014: Btree Branch Pt3_1
+    4300016: Btree Branch FG Pt3_1
+    4300018: LVL 11 Col Pt3
+    4300020: LVL11_Land Pt3_2
+    4300022: LVL11 Big Tree Bark Pt3_2
+    4300024: LVL 11 Wood Platform Pt3_2
+    4300026: LVL 11 Wood Platform Pt3_3
+    4300028: LVL 11 Wood Platform Pt3_4
+    4300030: LVL11 Hut Int Pt3_2
+    4300032: Btree Branch Pt3_2
+    4300034: Btree Branch Pt3_3
+    4300036: Btree Branch Pt3_004
+    4300038: Btree Branch Pt3_005
+    4300040: VL11 Hut Ext Mask Pt3_1
+    4300042: LVL11 Hut Ext Mask Pt3_2
+    4300044: LVL11 Hut Ext Pt3_1
+    4300046: Btree Branch FG Pt3_2
+    4300048: LVL11 Hut Ext Pt3_2
+    4300050: LVL11 Hut Ext Pt3_3
+    4300052: LVL 11 Rustic DoorPt3
+    4300054: VL11 Hut Int Mask Pt3_1
+    4300056: VL11 Hut Int Mask Pt3_2
+    4300058: LVL11 Trees Pt3_1
+    4300060: LVL11 Trees Pt3_2
+    4300062: LVL11 Trees Horizon Pt3
+    4300064: LVL11_Land Pt3 FG
+    4300066: LVL11_Land Pt3 BG
+    4300068: LVL11 Tree BG Pt3
+    4300070: LVL Fall Pt004
+    4300072: LVL Fall Pt3
+    4300074: LVL 11 Black Pt3_1
+    4300076: LVL 11 Black Pt3_2
+    4300078: LVL 11 Black Pt3_3
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

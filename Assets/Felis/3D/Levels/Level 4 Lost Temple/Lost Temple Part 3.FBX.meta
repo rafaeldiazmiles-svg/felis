@@ -1,0 +1,172 @@
+fileFormatVersion: 2
+guid: 8d92f7c58f2d7f544a67288c85071681
+timeCreated: 1441288317
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Floor
+    100002: Floor Fall001
+    100004: //RootNode
+    100006: Plane002
+    100008: Temple Exit Exterior
+    100010: Line002
+    100012: Temple Exit Exterior 2
+    100014: Temple Exit Exterior Hide
+    100016: Collision Part 3
+    100018: Tall Rocks Pt3
+    100020: Floor FG Pt 3
+    100022: Floor Fall Pt 3
+    100024: Floor PT 3
+    100026: Jungle Rock BG Pt 3
+    100028: Fall Pt 3
+    100030: Floor BG0 Pt 3
+    100032: Forest Fog Pt 3
+    100034: Floor BG Pt 3 _ 2
+    100036: Floor FG Pt3 _2
+    100038: Floor Pt 3 _2
+    100040: Floor Fall Pt 3 _2
+    400000: Floor
+    400002: Floor Fall001
+    400004: //RootNode
+    400006: Plane002
+    400008: Temple Exit Exterior
+    400010: Line002
+    400012: Temple Exit Exterior 2
+    400014: Temple Exit Exterior Hide
+    400016: Collision Part 3
+    400018: Tall Rocks Pt3
+    400020: Floor FG Pt 3
+    400022: Floor Fall Pt 3
+    400024: Floor PT 3
+    400026: Jungle Rock BG Pt 3
+    400028: Fall Pt 3
+    400030: Floor BG0 Pt 3
+    400032: Forest Fog Pt 3
+    400034: Floor BG Pt 3 _ 2
+    400036: Floor FG Pt3 _2
+    400038: Floor Pt 3 _2
+    400040: Floor Fall Pt 3 _2
+    2300000: Floor
+    2300002: Floor Fall001
+    2300004: Plane002
+    2300006: Temple Exit Exterior
+    2300008: Line002
+    2300010: Temple Exit Exterior 2
+    2300012: Temple Exit Exterior Hide
+    2300014: Collision Part 3
+    2300016: Tall Rocks Pt3
+    2300018: Floor FG Pt 3
+    2300020: Floor Fall Pt 3
+    2300022: Floor PT 3
+    2300024: Jungle Rock BG Pt 3
+    2300026: Fall Pt 3
+    2300028: Floor BG0 Pt 3
+    2300030: Forest Fog Pt 3
+    2300032: Floor BG Pt 3 _ 2
+    2300034: Floor FG Pt3 _2
+    2300036: Floor Pt 3 _2
+    2300038: Floor Fall Pt 3 _2
+    3300000: Floor
+    3300002: Floor Fall001
+    3300004: Plane002
+    3300006: Temple Exit Exterior
+    3300008: Line002
+    3300010: Temple Exit Exterior 2
+    3300012: Temple Exit Exterior Hide
+    3300014: Collision Part 3
+    3300016: Tall Rocks Pt3
+    3300018: Floor FG Pt 3
+    3300020: Floor Fall Pt 3
+    3300022: Floor PT 3
+    3300024: Jungle Rock BG Pt 3
+    3300026: Fall Pt 3
+    3300028: Floor BG0 Pt 3
+    3300030: Forest Fog Pt 3
+    3300032: Floor BG Pt 3 _ 2
+    3300034: Floor FG Pt3 _2
+    3300036: Floor Pt 3 _2
+    3300038: Floor Fall Pt 3 _2
+    4300000: Floor
+    4300002: Floor Fall001
+    4300004: Plane002
+    4300006: Temple Exit Exterior
+    4300008: Temple Exit Exterior 2
+    4300010: Line002
+    4300012: Temple Exit Exterior Hide
+    4300014: Collision Part 3
+    4300016: Tall Rocks Pt3
+    4300018: Floor FG Pt 3
+    4300020: Floor PT 3
+    4300022: Floor Fall Pt 3
+    4300024: Jungle Rock BG Pt 3
+    4300026: Floor BG0 Pt 3
+    4300028: Fall Pt 3
+    4300030: Forest Fog Pt 3
+    4300032: Floor FG Pt3 _2
+    4300034: Floor Pt 3 _2
+    4300036: Floor BG Pt 3 _ 2
+    4300038: Floor Fall Pt 3 _2
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,149 @@
+fileFormatVersion: 2
+guid: d4ea29cb46b894745b72c0b0dfe5616c
+timeCreated: 1458747010
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: LVL12 Col
+    100002: LVL12 GrassToRock
+    100004: LVL12 RockToSand
+    100006: Palm Tree
+    100008: Palm Tree Leaf L
+    100010: Palm Tree Leaf R
+    100012: Pirate Ship Ext
+    100014: Pirate Ship Interior
+    100016: //RootNode
+    100018: Bowstrip
+    100020: Pirate Ship Deck
+    100022: Pirate Ship Deck 2
+    100024: Pirate Ship Deck Wood Cover
+    100026: Pirate Ship Mast
+    100028: LVL12 Grass2
+    100030: LVL12 Sand
+    400000: LVL12 Col
+    400002: LVL12 GrassToRock
+    400004: LVL12 RockToSand
+    400006: Palm Tree
+    400008: Palm Tree Leaf L
+    400010: Palm Tree Leaf R
+    400012: Pirate Ship Ext
+    400014: Pirate Ship Interior
+    400016: //RootNode
+    400018: Bowstrip
+    400020: Pirate Ship Deck
+    400022: Pirate Ship Deck 2
+    400024: Pirate Ship Deck Wood Cover
+    400026: Pirate Ship Mast
+    400028: LVL12 Grass2
+    400030: LVL12 Sand
+    2300000: LVL12 Col
+    2300002: LVL12 GrassToRock
+    2300004: LVL12 RockToSand
+    2300006: Palm Tree
+    2300008: Palm Tree Leaf L
+    2300010: Palm Tree Leaf R
+    2300012: Pirate Ship Ext
+    2300014: Pirate Ship Interior
+    2300016: Bowstrip
+    2300018: Pirate Ship Deck
+    2300020: Pirate Ship Deck 2
+    2300022: Pirate Ship Deck Wood Cover
+    2300024: Pirate Ship Mast
+    2300026: LVL12 Grass2
+    2300028: LVL12 Sand
+    3300000: LVL12 Col
+    3300002: LVL12 GrassToRock
+    3300004: LVL12 RockToSand
+    3300006: Palm Tree
+    3300008: Palm Tree Leaf L
+    3300010: Palm Tree Leaf R
+    3300012: Pirate Ship Ext
+    3300014: Pirate Ship Interior
+    3300016: Bowstrip
+    3300018: Pirate Ship Deck
+    3300020: Pirate Ship Deck 2
+    3300022: Pirate Ship Deck Wood Cover
+    3300024: Pirate Ship Mast
+    3300026: LVL12 Grass2
+    3300028: LVL12 Sand
+    4300000: LVL12 RockToSand
+    4300002: LVL12 GrassToRock
+    4300004: Pirate Ship Ext
+    4300006: LVL12 Col
+    4300008: Palm Tree
+    4300010: Palm Tree Leaf L
+    4300012: Palm Tree Leaf R
+    4300014: Pirate Ship Interior
+    4300016: Pirate Ship Deck
+    4300018: Pirate Ship Deck 2
+    4300020: Bowstrip
+    4300022: Pirate Ship Deck Wood Cover
+    4300024: Pirate Ship Mast
+    4300026: LVL12 Sand
+    4300028: LVL12 Grass2
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

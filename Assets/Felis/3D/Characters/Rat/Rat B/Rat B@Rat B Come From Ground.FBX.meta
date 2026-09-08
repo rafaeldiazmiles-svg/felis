@@ -1,0 +1,130 @@
+fileFormatVersion: 2
+guid: d8662966c66d7f44387084ffb76600a5
+timeCreated: 1431474419
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Rat Head
+    100004: Rat Left Calf
+    100006: Rat Left Foot
+    100008: Rat Left Forearm
+    100010: Rat Left Hand
+    100012: Rat Left Thigh
+    100014: Rat Left Toe
+    100016: Rat Left Upper Arm
+    100018: Rat Nose
+    100020: Rat Right Calf
+    100022: Rat Right Foot
+    100024: Rat Right Forearm
+    100026: Rat Right Hand
+    100028: Rat Right Thigh
+    100030: Rat Right Toe
+    100032: Rat Right Upper Arm
+    100034: Rat Spine 1
+    100036: Rat Spine 2
+    100038: Rat Tail 1
+    100040: Rat Tail 2
+    100042: Rat Tail 3
+    100044: Rat Tail 4
+    100046: IK Chain002
+    100048: IK Chain003
+    100050: IK Chain004
+    100052: IK Chain005
+    100054: IK Chain006
+    100056: Rat B
+    100058: Rat Root
+    400000: //RootNode
+    400002: Rat Head
+    400004: Rat Left Calf
+    400006: Rat Left Foot
+    400008: Rat Left Forearm
+    400010: Rat Left Hand
+    400012: Rat Left Thigh
+    400014: Rat Left Toe
+    400016: Rat Left Upper Arm
+    400018: Rat Nose
+    400020: Rat Right Calf
+    400022: Rat Right Foot
+    400024: Rat Right Forearm
+    400026: Rat Right Hand
+    400028: Rat Right Thigh
+    400030: Rat Right Toe
+    400032: Rat Right Upper Arm
+    400034: Rat Spine 1
+    400036: Rat Spine 2
+    400038: Rat Tail 1
+    400040: Rat Tail 2
+    400042: Rat Tail 3
+    400044: Rat Tail 4
+    400046: IK Chain002
+    400048: IK Chain003
+    400050: IK Chain004
+    400052: IK Chain005
+    400054: IK Chain006
+    400056: Rat B
+    400058: Rat Root
+    4300000: Rat B
+    7400000: Take 001
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: Rat B
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

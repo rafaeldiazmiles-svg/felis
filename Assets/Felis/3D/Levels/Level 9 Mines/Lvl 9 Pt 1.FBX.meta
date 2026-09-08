@@ -1,0 +1,213 @@
+fileFormatVersion: 2
+guid: 0b46fda11843b554fb7a5ecf0b77a660
+timeCreated: 1454156452
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Cat 1 Cave Pt 1
+    100002: Land Pt 1_2
+    100004: Land Pt 1_3
+    100006: Lvl 9 Col Pt 1
+    100008: //RootNode
+    100010: Rock Pt 1_1
+    100012: Camera
+    100014: Cube
+    100016: Lamp
+    100018: Rock Pt 1_1 FG
+    100020: Rock Pt 1_1 BG
+    100022: Cat 1 Cave Pt 1 BG
+    100024: Cat 1 Cave Pt 1 FG
+    100026: Land Pt 1_2 BG
+    100028: Land Pt 1_2 FG
+    100030: Cave 1 BG
+    100032: Land Pt 1_3 BG
+    100034: Land Pt 1_3 FG
+    100036: Black LVL pt 1 Cave
+    100038: Black LVL pt 1_1
+    100040: Black LVL pt 1_2
+    100042: Black LVL pt 1_3
+    100044: LVL 9 Trees pt 1_1
+    100046: Stalagmites Pt 1
+    100048: LVL 9 Trees pt 1_2
+    100050: LVL 9 Trees pt 1_3
+    100052: LVL 9 Trees pt 1_4
+    100054: LVL 9 Trees pt 1_1 FG
+    100056: LVL 9 Trees pt 1_2 FG
+    100058: LVL 9 Mushrooms Pt 1
+    400000: Cat 1 Cave Pt 1
+    400002: Land Pt 1_2
+    400004: Land Pt 1_3
+    400006: Lvl 9 Col Pt 1
+    400008: //RootNode
+    400010: Rock Pt 1_1
+    400012: Camera
+    400014: Cube
+    400016: Lamp
+    400018: Rock Pt 1_1 FG
+    400020: Rock Pt 1_1 BG
+    400022: Cat 1 Cave Pt 1 BG
+    400024: Cat 1 Cave Pt 1 FG
+    400026: Land Pt 1_2 BG
+    400028: Land Pt 1_2 FG
+    400030: Cave 1 BG
+    400032: Land Pt 1_3 BG
+    400034: Land Pt 1_3 FG
+    400036: Black LVL pt 1 Cave
+    400038: Black LVL pt 1_1
+    400040: Black LVL pt 1_2
+    400042: Black LVL pt 1_3
+    400044: LVL 9 Trees pt 1_1
+    400046: Stalagmites Pt 1
+    400048: LVL 9 Trees pt 1_2
+    400050: LVL 9 Trees pt 1_3
+    400052: LVL 9 Trees pt 1_4
+    400054: LVL 9 Trees pt 1_1 FG
+    400056: LVL 9 Trees pt 1_2 FG
+    400058: LVL 9 Mushrooms Pt 1
+    2300000: Cat 1 Cave Pt 1
+    2300002: Land Pt 1_2
+    2300004: Land Pt 1_3
+    2300006: Lvl 9 Col Pt 1
+    2300008: Rock Pt 1_1
+    2300010: Cube
+    2300012: Rock Pt 1_1 FG
+    2300014: Rock Pt 1_1 BG
+    2300016: Cat 1 Cave Pt 1 BG
+    2300018: Cat 1 Cave Pt 1 FG
+    2300020: Land Pt 1_2 BG
+    2300022: Land Pt 1_2 FG
+    2300024: Cave 1 BG
+    2300026: Land Pt 1_3 BG
+    2300028: Land Pt 1_3 FG
+    2300030: Black LVL pt 1 Cave
+    2300032: Black LVL pt 1_1
+    2300034: Black LVL pt 1_2
+    2300036: Black LVL pt 1_3
+    2300038: LVL 9 Trees pt 1_1
+    2300040: Stalagmites Pt 1
+    2300042: LVL 9 Trees pt 1_2
+    2300044: LVL 9 Trees pt 1_3
+    2300046: LVL 9 Trees pt 1_4
+    2300048: LVL 9 Trees pt 1_1 FG
+    2300050: LVL 9 Trees pt 1_2 FG
+    2300052: LVL 9 Mushrooms Pt 1
+    3300000: Cat 1 Cave Pt 1
+    3300002: Land Pt 1_2
+    3300004: Land Pt 1_3
+    3300006: Lvl 9 Col Pt 1
+    3300008: Rock Pt 1_1
+    3300010: Cube
+    3300012: Rock Pt 1_1 FG
+    3300014: Rock Pt 1_1 BG
+    3300016: Cat 1 Cave Pt 1 BG
+    3300018: Cat 1 Cave Pt 1 FG
+    3300020: Land Pt 1_2 BG
+    3300022: Land Pt 1_2 FG
+    3300024: Cave 1 BG
+    3300026: Land Pt 1_3 BG
+    3300028: Land Pt 1_3 FG
+    3300030: Black LVL pt 1 Cave
+    3300032: Black LVL pt 1_1
+    3300034: Black LVL pt 1_2
+    3300036: Black LVL pt 1_3
+    3300038: LVL 9 Trees pt 1_1
+    3300040: Stalagmites Pt 1
+    3300042: LVL 9 Trees pt 1_2
+    3300044: LVL 9 Trees pt 1_3
+    3300046: LVL 9 Trees pt 1_4
+    3300048: LVL 9 Trees pt 1_1 FG
+    3300050: LVL 9 Trees pt 1_2 FG
+    3300052: LVL 9 Mushrooms Pt 1
+    4300000: Rock Pt 1_1
+    4300002: Cat 1 Cave Pt 1
+    4300004: Land Pt 1_2
+    4300006: Land Pt 1_3
+    4300008: Lvl 9 Col Pt 1
+    4300010: Cube
+    4300012: Rock Pt 1_1 FG
+    4300014: Rock Pt 1_1 BG
+    4300016: Land Pt 1_2 FG
+    4300018: Land Pt 1_2 BG
+    4300020: Cat 1 Cave Pt 1 FG
+    4300022: Cat 1 Cave Pt 1 BG
+    4300024: Cave 1 BG
+    4300026: Land Pt 1_3 FG
+    4300028: Land Pt 1_3 BG
+    4300030: Black LVL pt 1_1
+    4300032: Black LVL pt 1 Cave
+    4300034: Black LVL pt 1_2
+    4300036: Black LVL pt 1_3
+    4300038: Stalagmites Pt 1
+    4300040: LVL 9 Trees pt 1_1
+    4300042: LVL 9 Trees pt 1_2
+    4300044: LVL 9 Trees pt 1_3
+    4300046: LVL 9 Trees pt 1_4
+    4300048: LVL 9 Trees pt 1_1 FG
+    4300050: LVL 9 Trees pt 1_2 FG
+    4300052: LVL 9 Mushrooms Pt 1
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

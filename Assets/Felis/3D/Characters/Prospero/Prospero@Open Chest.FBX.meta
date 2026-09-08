@@ -1,0 +1,158 @@
+fileFormatVersion: 2
+guid: b48c45b1a96028a4b8a4b76ce49a9e35
+timeCreated: 1474399797
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Hair Lock Back
+    100002: Hair Lock Front
+    100004: Hair Lock Front 2
+    100006: Hair Lock Left
+    100008: Hair Lock Right
+    100010: Hair Lock Top Left
+    100012: Hair Lock Top Right
+    100014: Head
+    100016: IK Chain001
+    100018: IK Chain002
+    100020: Left Calf
+    100022: Left Clavicle
+    100024: Left Coat
+    100026: Left Foot
+    100028: Left Foot End
+    100030: Left Foot IK
+    100032: Left Forearm
+    100034: Left Hand
+    100036: Left Leg IK
+    100038: Left Thigh
+    100040: Left Toe
+    100042: Left Upper Arm
+    100044: Neck
+    100046: Prospero
+    100048: //RootNode
+    100050: Right Calf
+    100052: Right Clavicle
+    100054: Right Coat
+    100056: Right Foot
+    100058: Right Foot End
+    100060: Right Foot IK
+    100062: Right Forearm
+    100064: Right Hand
+    100066: Right Leg IK
+    100068: Right Thigh
+    100070: Right Toe
+    100072: Right Upper Arm
+    100074: Root
+    100076: Scarf
+    100078: Spine 1
+    100080: Spine 2
+    400000: Hair Lock Back
+    400002: Hair Lock Front
+    400004: Hair Lock Front 2
+    400006: Hair Lock Left
+    400008: Hair Lock Right
+    400010: Hair Lock Top Left
+    400012: Hair Lock Top Right
+    400014: Head
+    400016: IK Chain001
+    400018: IK Chain002
+    400020: Left Calf
+    400022: Left Clavicle
+    400024: Left Coat
+    400026: Left Foot
+    400028: Left Foot End
+    400030: Left Foot IK
+    400032: Left Forearm
+    400034: Left Hand
+    400036: Left Leg IK
+    400038: Left Thigh
+    400040: Left Toe
+    400042: Left Upper Arm
+    400044: Neck
+    400046: Prospero
+    400048: //RootNode
+    400050: Right Calf
+    400052: Right Clavicle
+    400054: Right Coat
+    400056: Right Foot
+    400058: Right Foot End
+    400060: Right Foot IK
+    400062: Right Forearm
+    400064: Right Hand
+    400066: Right Leg IK
+    400068: Right Thigh
+    400070: Right Toe
+    400072: Right Upper Arm
+    400074: Root
+    400076: Scarf
+    400078: Spine 1
+    400080: Spine 2
+    4300000: Prospero
+    7400000: Take 001
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: Prospero
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,227 @@
+fileFormatVersion: 2
+guid: 44000671a85800545adf6b968a41c33a
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Broken Bridge
+    100004: Grass BG
+    100006: Grass BG2
+    100008: Grass FG
+    100010: Grass Landscape
+    100012: Grass Landscape Collision
+    100014: Horizon Forest
+    100016: House Exterior
+    100018: Object001
+    100020: Plant A
+    100022: Plant B
+    100024: Plant C
+    100026: Plant D
+    100028: Plant E
+    100030: Plant F
+    100032: Plant G
+    100034: Plant H
+    100036: Rolling Boulder
+    100038: Single Tree A
+    100040: Single Tree B
+    100042: Tree Group
+    100044: Tree Group BG A
+    100046: Tree Group BG B
+    100048: Tree Group BG C
+    100050: Trees
+    100052: Trees BG
+    100054: LVL 1 Grass Landscape 1
+    100056: LVL 1 Grass Landscape 2
+    100058: LVL 1 Grass Landscape 3
+    100060: LVL 1 Grass Landscape 4
+    100062: LVL 1 Grass Landscape 5
+    400000: //RootNode
+    400002: Broken Bridge
+    400004: Grass BG
+    400006: Grass BG2
+    400008: Grass FG
+    400010: Grass Landscape
+    400012: Grass Landscape Collision
+    400014: Horizon Forest
+    400016: House Exterior
+    400018: Object001
+    400020: Plant A
+    400022: Plant B
+    400024: Plant C
+    400026: Plant D
+    400028: Plant E
+    400030: Plant F
+    400032: Plant G
+    400034: Plant H
+    400036: Rolling Boulder
+    400038: Single Tree A
+    400040: Single Tree B
+    400042: Tree Group
+    400044: Tree Group BG A
+    400046: Tree Group BG B
+    400048: Tree Group BG C
+    400050: Trees
+    400052: Trees BG
+    400054: LVL 1 Grass Landscape 1
+    400056: LVL 1 Grass Landscape 2
+    400058: LVL 1 Grass Landscape 3
+    400060: LVL 1 Grass Landscape 4
+    400062: LVL 1 Grass Landscape 5
+    2300000: //RootNode
+    2300002: Broken Bridge
+    2300004: Grass BG
+    2300006: Grass BG2
+    2300008: Grass FG
+    2300010: Grass Landscape
+    2300012: Grass Landscape Collision
+    2300014: Horizon Forest
+    2300016: House Exterior
+    2300018: Plant A
+    2300020: Plant B
+    2300022: Plant C
+    2300024: Plant D
+    2300026: Plant E
+    2300028: Plant F
+    2300030: Plant G
+    2300032: Plant H
+    2300034: Rolling Boulder
+    2300036: Single Tree A
+    2300038: Single Tree B
+    2300040: Tree Group
+    2300042: Tree Group BG A
+    2300044: Tree Group BG B
+    2300046: Tree Group BG C
+    2300048: Trees
+    2300050: Trees BG
+    2300052: LVL 1 Grass Landscape 1
+    2300054: LVL 1 Grass Landscape 2
+    2300056: LVL 1 Grass Landscape 3
+    2300058: LVL 1 Grass Landscape 4
+    2300060: LVL 1 Grass Landscape 5
+    3300000: //RootNode
+    3300002: Broken Bridge
+    3300004: Grass BG
+    3300006: Grass BG2
+    3300008: Grass FG
+    3300010: Grass Landscape
+    3300012: Grass Landscape Collision
+    3300014: Horizon Forest
+    3300016: House Exterior
+    3300018: Plant A
+    3300020: Plant B
+    3300022: Plant C
+    3300024: Plant D
+    3300026: Plant E
+    3300028: Plant F
+    3300030: Plant G
+    3300032: Plant H
+    3300034: Rolling Boulder
+    3300036: Single Tree A
+    3300038: Single Tree B
+    3300040: Tree Group
+    3300042: Tree Group BG A
+    3300044: Tree Group BG B
+    3300046: Tree Group BG C
+    3300048: Trees
+    3300050: Trees BG
+    3300052: LVL 1 Grass Landscape 1
+    3300054: LVL 1 Grass Landscape 2
+    3300056: LVL 1 Grass Landscape 3
+    3300058: LVL 1 Grass Landscape 4
+    3300060: LVL 1 Grass Landscape 5
+    4300000: Grass
+    4300002: Grass Landscape
+    4300004: Grass Landscape Collision
+    4300006: Trees
+    4300008: Rolling Boulder
+    4300010: House Exterior
+    4300012: Grass FG
+    4300014: Grass BG
+    4300016: Trees BG
+    4300018: Tree Group
+    4300020: Grass BG2
+    4300022: Tree Group BG A
+    4300024: Tree Group BG B
+    4300026: Tree Group BG C
+    4300028: Single Tree A
+    4300030: Single Tree B
+    4300032: Horizon Forest
+    4300034: Plant G
+    4300036: Plant A
+    4300038: Plant D
+    4300040: Plant H
+    4300042: Plant F
+    4300044: Plant E
+    4300046: Plant C
+    4300048: Plant B
+    4300050: Broken Bridge
+    4300052: LVL 1 Grass Landscape 1
+    4300054: LVL 1 Grass Landscape 2
+    4300056: LVL 1 Grass Landscape 3
+    4300058: LVL 1 Grass Landscape 4
+    4300060: LVL 1 Grass Landscape 5
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.01
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

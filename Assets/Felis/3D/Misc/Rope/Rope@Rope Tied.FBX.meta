@@ -1,0 +1,170 @@
+fileFormatVersion: 2
+guid: 256d414c9e2a13446b9a4d55d57ed392
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: Rope 001
+    100002: Rope 002
+    100004: Rope 003
+    100006: Rope 004
+    100008: Rope 005
+    100010: Rope End
+    100012: Rope End 2
+    100014: Rope Left 001
+    100016: Rope Left 002
+    100018: Rope Left 003
+    100020: Rope Left 004
+    100022: Rope Left 005
+    100024: Rope Mesh
+    100026: Rope Right 001
+    100028: Rope Right 002
+    100030: Rope Right 003
+    100032: Rope Right 004
+    100034: Rope Right 005
+    100036: Rope Root
+    100038: //RootNode
+    400000: Rope 001
+    400002: Rope 002
+    400004: Rope 003
+    400006: Rope 004
+    400008: Rope 005
+    400010: Rope End
+    400012: Rope End 2
+    400014: Rope Left 001
+    400016: Rope Left 002
+    400018: Rope Left 003
+    400020: Rope Left 004
+    400022: Rope Left 005
+    400024: Rope Mesh
+    400026: Rope Right 001
+    400028: Rope Right 002
+    400030: Rope Right 003
+    400032: Rope Right 004
+    400034: Rope Right 005
+    400036: Rope Root
+    400038: //RootNode
+    4300000: Rope Mesh
+    7400000: Rope Tied
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: Rope Mesh
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Rope Tied
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 30
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Rope Mesh
+        weight: 1
+      - path: Rope Root
+        weight: 1
+      - path: Rope Root/Rope 001
+        weight: 1
+      - path: Rope Root/Rope 001/Rope Left 001
+        weight: 1
+      - path: Rope Root/Rope 001/Rope Right 001
+        weight: 1
+      - path: Rope Root/Rope 002
+        weight: 1
+      - path: Rope Root/Rope 002/Rope Left 002
+        weight: 1
+      - path: Rope Root/Rope 002/Rope Right 002
+        weight: 1
+      - path: Rope Root/Rope 003
+        weight: 1
+      - path: Rope Root/Rope 003/Rope Left 003
+        weight: 1
+      - path: Rope Root/Rope 003/Rope Right 003
+        weight: 1
+      - path: Rope Root/Rope 004
+        weight: 1
+      - path: Rope Root/Rope 004/Rope Left 004
+        weight: 1
+      - path: Rope Root/Rope 004/Rope Right 004
+        weight: 1
+      - path: Rope Root/Rope 005
+        weight: 1
+      - path: Rope Root/Rope 005/Rope Left 005
+        weight: 1
+      - path: Rope Root/Rope 005/Rope Right 005
+        weight: 1
+      - path: Rope Root/Rope End
+        weight: 1
+      - path: Rope Root/Rope End/Rope End 2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  additionalBone: 0
+  userData: 

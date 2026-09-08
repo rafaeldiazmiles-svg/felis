@@ -67,6 +67,9 @@ var jumpedUntilLand : boolean;
 var airJumpsUsed : int;
 var maxAirJumps : int = 1;
 var minTimeBetweenJumps : float = .3;
+var airJumpPower : float = 0.6;
+var groundJumpPower : float = 0.8;
+private var currentJumpForceMul : float = 1.0;
 @Space(30)
 var isUnderwater : boolean;
 var swimTime : float = .3;
@@ -327,7 +330,7 @@ function FixedUpdate(){
 		var jumpForceVelocityAdjust : float = 1 - Mathf.Max(0,characterRigidbody.velocity.y) / currentJumpTargetSpeed;
 		jumpForceVelocityAdjust = Mathf.Clamp01(jumpForceVelocityAdjust);
 		
-		var jumpForce : float = maxJumpForce * jumpForceVelocityAdjust;
+		var jumpForce : float = maxJumpForce * jumpForceVelocityAdjust * currentJumpForceMul;
 		
 		var jumpVector : Vector3;
 		if(!wallJump){
@@ -393,7 +396,8 @@ function FixedUpdate(){
 
 function ApplyJump(){
 	disableJumpUntil = Time.time + .1;
-	if(!isUnderwater && jumpedUntilLand){
+	var isAirJump : boolean = !isUnderwater && jumpedUntilLand;
+	if(isAirJump){
 		airJumpsUsed++;
 	}
 	jumpedUntilLand = true;
@@ -403,7 +407,9 @@ function ApplyJump(){
 
 	var jumpMultiplier : float = 1.0 + (longJumpMultiplier-1) * (jumpButtonTime / maxJumpTime);
 
-	currentJumpTargetSpeed = maxJumpSpeed * jumpMultiplier;
+	//The air jump stays at airJumpPower of the ground jump, so it scales with it.
+	currentJumpForceMul = isAirJump ? airJumpPower * groundJumpPower : groundJumpPower;
+	currentJumpTargetSpeed = maxJumpSpeed * jumpMultiplier * currentJumpForceMul;
 
 	lastJumpTime = Time.time;
 	

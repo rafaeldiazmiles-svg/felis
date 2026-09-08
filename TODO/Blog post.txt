@@ -1,0 +1,6 @@
+*show all enemies
+
+*show all cats
+
+*show player mechanics
+

@@ -1,0 +1,129 @@
+fileFormatVersion: 2
+guid: f73703eb4fb69ed47807dc03800630d3
+timeCreated: 1458064177
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Btree Branch Pt5
+    100002: LVL 11 Col Pt5
+    100004: LVL 11 Wood Platform Pt5
+    100006: LVL11 Big Tree Bark Pt5
+    100008: LVL11 Big Tree Entrance Pt5
+    100010: LVL11 Big Tree Exit P5
+    100012: LVL11 Big Tree Interior Pt5
+    100014: //RootNode
+    100016: LVL 11 Tree Int Mask Pt5
+    100018: LVL11 BTree Mask Ext Pt5
+    100020: LVL11 Hole Mask Pt5
+    100022: LVL11 Hole Pt5
+    400000: Btree Branch Pt5
+    400002: LVL 11 Col Pt5
+    400004: LVL 11 Wood Platform Pt5
+    400006: LVL11 Big Tree Bark Pt5
+    400008: LVL11 Big Tree Entrance Pt5
+    400010: LVL11 Big Tree Exit P5
+    400012: LVL11 Big Tree Interior Pt5
+    400014: //RootNode
+    400016: LVL 11 Tree Int Mask Pt5
+    400018: LVL11 BTree Mask Ext Pt5
+    400020: LVL11 Hole Mask Pt5
+    400022: LVL11 Hole Pt5
+    2300000: Btree Branch Pt5
+    2300002: LVL 11 Col Pt5
+    2300004: LVL 11 Wood Platform Pt5
+    2300006: LVL11 Big Tree Bark Pt5
+    2300008: LVL11 Big Tree Entrance Pt5
+    2300010: LVL11 Big Tree Exit P5
+    2300012: LVL11 Big Tree Interior Pt5
+    2300014: LVL 11 Tree Int Mask Pt5
+    2300016: LVL11 BTree Mask Ext Pt5
+    2300018: LVL11 Hole Mask Pt5
+    2300020: LVL11 Hole Pt5
+    3300000: Btree Branch Pt5
+    3300002: LVL 11 Col Pt5
+    3300004: LVL 11 Wood Platform Pt5
+    3300006: LVL11 Big Tree Bark Pt5
+    3300008: LVL11 Big Tree Entrance Pt5
+    3300010: LVL11 Big Tree Exit P5
+    3300012: LVL11 Big Tree Interior Pt5
+    3300014: LVL 11 Tree Int Mask Pt5
+    3300016: LVL11 BTree Mask Ext Pt5
+    3300018: LVL11 Hole Mask Pt5
+    3300020: LVL11 Hole Pt5
+    4300000: LVL11 Big Tree Interior Pt5
+    4300002: Btree Branch Pt5
+    4300004: LVL 11 Col Pt5
+    4300006: LVL 11 Wood Platform Pt5
+    4300008: LVL11 Big Tree Entrance Pt5
+    4300010: LVL11 Big Tree Exit P5
+    4300012: LVL11 Big Tree Bark Pt5
+    4300014: LVL11 BTree Mask Ext Pt5
+    4300016: LVL 11 Tree Int Mask Pt5
+    4300018: LVL11 Hole Mask Pt5
+    4300020: LVL11 Hole Pt5
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

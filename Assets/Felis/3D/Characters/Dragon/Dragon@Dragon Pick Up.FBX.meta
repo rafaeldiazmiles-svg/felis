@@ -1,0 +1,247 @@
+fileFormatVersion: 2
+guid: 17ae4174bd225664db1523fddfb6af9a
+timeCreated: 1465650702
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Beard
+    100002: Belly
+    100004: Dragon
+    100006: //RootNode
+    100008: Head
+    100010: Jaw
+    100012: Left Forearm
+    100014: Left Hand
+    100016: Left Leg 1
+    100018: Left Leg 2
+    100020: Left Upper Arm
+    100022: Left Wing 1
+    100024: Left Wing 2
+    100026: Neck
+    100028: Nose
+    100030: Right Forearm
+    100032: Right Hand
+    100034: Right Leg 1
+    100036: Right Leg 2
+    100038: Right Upper Arm
+    100040: Right Wing 1
+    100042: Right Wing 2
+    100044: Root
+    100046: Tail 1
+    100048: Tail 2
+    100050: Tail 3
+    100052: Tail 4
+    100054: Tail 5
+    100056: Tail 6
+    100058: Tail 7
+    100060: Tongue 1
+    100062: Tongue 2
+    100064: Tongue 3
+    100066: Tongue 4
+    100068: Torso
+    400000: Beard
+    400002: Belly
+    400004: Dragon
+    400006: //RootNode
+    400008: Head
+    400010: Jaw
+    400012: Left Forearm
+    400014: Left Hand
+    400016: Left Leg 1
+    400018: Left Leg 2
+    400020: Left Upper Arm
+    400022: Left Wing 1
+    400024: Left Wing 2
+    400026: Neck
+    400028: Nose
+    400030: Right Forearm
+    400032: Right Hand
+    400034: Right Leg 1
+    400036: Right Leg 2
+    400038: Right Upper Arm
+    400040: Right Wing 1
+    400042: Right Wing 2
+    400044: Root
+    400046: Tail 1
+    400048: Tail 2
+    400050: Tail 3
+    400052: Tail 4
+    400054: Tail 5
+    400056: Tail 6
+    400058: Tail 7
+    400060: Tongue 1
+    400062: Tongue 2
+    400064: Tongue 3
+    400066: Tongue 4
+    400068: Torso
+    2300000: Neck
+    3300000: Neck
+    4300000: Dragon
+    4300002: Neck
+    7400000: Dragon Pick Up
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: Dragon
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Dragon Pick Up
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 35
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Dragon
+        weight: 1
+      - path: Root
+        weight: 1
+      - path: Root/Belly
+        weight: 1
+      - path: Root/Belly/Left Leg 1
+        weight: 1
+      - path: Root/Belly/Left Leg 1/Left Leg 2
+        weight: 1
+      - path: Root/Belly/Right Leg 1
+        weight: 1
+      - path: Root/Belly/Right Leg 1/Right Leg 2
+        weight: 1
+      - path: Root/Belly/Tail 1
+        weight: 1
+      - path: Root/Belly/Tail 1/Tail 2
+        weight: 1
+      - path: Root/Belly/Tail 1/Tail 2/Tail 3
+        weight: 1
+      - path: Root/Belly/Tail 1/Tail 2/Tail 3/Tail 4
+        weight: 1
+      - path: Root/Belly/Tail 1/Tail 2/Tail 3/Tail 4/Tail 5
+        weight: 1
+      - path: Root/Belly/Tail 1/Tail 2/Tail 3/Tail 4/Tail 5/Tail 6
+        weight: 1
+      - path: Root/Belly/Tail 1/Tail 2/Tail 3/Tail 4/Tail 5/Tail 6/Tail 7
+        weight: 1
+      - path: Root/Torso
+        weight: 1
+      - path: Root/Torso/Left Upper Arm
+        weight: 1
+      - path: Root/Torso/Left Upper Arm/Left Forearm
+        weight: 1
+      - path: Root/Torso/Left Upper Arm/Left Forearm/Left Hand
+        weight: 1
+      - path: Root/Torso/Left Wing 1
+        weight: 1
+      - path: Root/Torso/Left Wing 1/Left Wing 2
+        weight: 1
+      - path: Root/Torso/Neck
+        weight: 1
+      - path: Root/Torso/Neck/Head
+        weight: 1
+      - path: Root/Torso/Neck/Head/Jaw
+        weight: 1
+      - path: Root/Torso/Neck/Head/Jaw/Beard
+        weight: 1
+      - path: Root/Torso/Neck/Head/Nose
+        weight: 1
+      - path: Root/Torso/Neck/Head/Tongue 1
+        weight: 1
+      - path: Root/Torso/Neck/Head/Tongue 1/Tongue 2
+        weight: 1
+      - path: Root/Torso/Neck/Head/Tongue 1/Tongue 2/Tongue 3
+        weight: 1
+      - path: Root/Torso/Neck/Head/Tongue 1/Tongue 2/Tongue 3/Tongue 4
+        weight: 1
+      - path: Root/Torso/Right Upper Arm
+        weight: 1
+      - path: Root/Torso/Right Upper Arm/Right Forearm
+        weight: 1
+      - path: Root/Torso/Right Upper Arm/Right Forearm/Right Hand
+        weight: 1
+      - path: Root/Torso/Right Wing 1
+        weight: 1
+      - path: Root/Torso/Right Wing 1/Right Wing 2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

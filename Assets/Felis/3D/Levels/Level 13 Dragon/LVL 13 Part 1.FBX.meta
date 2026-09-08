@@ -1,0 +1,259 @@
+fileFormatVersion: 2
+guid: 5ba4af7ca713271488e18fba64a2ac6f
+timeCreated: 1466950253
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: LVL 13 Cliff Rocks
+    100002: Lvl 13 Collision
+    100004: LVL 13 Land
+    100006: //RootNode
+    100008: LVL 13 Cave Ground
+    100010: Cave Int
+    100012: LVL 13 Cave Ext
+    100014: LVL 13 Cave Int
+    100016: LVL 13 Cave 2 Ground
+    100018: Dragon Cave Ext BG
+    100020: Dragon Cave Ext FG
+    100022: Dragon Cave Int BG
+    100024: Dragon Cave Int FG
+    100026: Teeth Cave
+    100028: Falling Stalagmite
+    100030: Falling Stalagmite Bases
+    100032: Stalagmite
+    100034: Stalagmite 1
+    100036: Stalagmite 2
+    100038: Stalagmite 3
+    100040: Stalagmite 4
+    100042: LVL 13 Cave 2 BG
+    100044: LVL 13 Falling Stalagmite Bases
+    100046: LVL 13 Trees pt 1
+    100048: LVL 13 Mountain BG Pt 1
+    100050: Lvl 13 Clouds Pt 1
+    100052: Lvl 13 Cave 1 Ext
+    100054: Lvl 13 Cave 1 Int Mask
+    100056: Lvl 13 Cave 1 Ext Mask
+    100058: LVL 13 Black Pt1
+    100060: LVL 13 Black_Pt1  Cave 1
+    100062: LVL 13 Black_Pt1  Cave 2
+    100064: LVL 13 Skulls Pt 1
+    100066: LVL 13 Black Pt1 _2
+    100068: Lvl 13 Clouds Pt 1 _2
+    100070: LVL 13 Land _2
+    100072: LVL 13 Mountain BG Pt 1 _2
+    100074: LVL 13 Trees pt 1_2
+    400000: LVL 13 Cliff Rocks
+    400002: Lvl 13 Collision
+    400004: LVL 13 Land
+    400006: //RootNode
+    400008: LVL 13 Cave Ground
+    400010: Cave Int
+    400012: LVL 13 Cave Ext
+    400014: LVL 13 Cave Int
+    400016: LVL 13 Cave 2 Ground
+    400018: Dragon Cave Ext BG
+    400020: Dragon Cave Ext FG
+    400022: Dragon Cave Int BG
+    400024: Dragon Cave Int FG
+    400026: Teeth Cave
+    400028: Falling Stalagmite
+    400030: Falling Stalagmite Bases
+    400032: Stalagmite
+    400034: Stalagmite 1
+    400036: Stalagmite 2
+    400038: Stalagmite 3
+    400040: Stalagmite 4
+    400042: LVL 13 Cave 2 BG
+    400044: LVL 13 Falling Stalagmite Bases
+    400046: LVL 13 Trees pt 1
+    400048: LVL 13 Mountain BG Pt 1
+    400050: Lvl 13 Clouds Pt 1
+    400052: Lvl 13 Cave 1 Ext
+    400054: Lvl 13 Cave 1 Int Mask
+    400056: Lvl 13 Cave 1 Ext Mask
+    400058: LVL 13 Black Pt1
+    400060: LVL 13 Black_Pt1  Cave 1
+    400062: LVL 13 Black_Pt1  Cave 2
+    400064: LVL 13 Skulls Pt 1
+    400066: LVL 13 Black Pt1 _2
+    400068: Lvl 13 Clouds Pt 1 _2
+    400070: LVL 13 Land _2
+    400072: LVL 13 Mountain BG Pt 1 _2
+    400074: LVL 13 Trees pt 1_2
+    2300000: LVL 13 Cliff Rocks
+    2300002: Lvl 13 Collision
+    2300004: LVL 13 Land
+    2300006: LVL 13 Cave Ground
+    2300008: Cave Int
+    2300010: LVL 13 Cave Ext
+    2300012: LVL 13 Cave Int
+    2300014: LVL 13 Cave 2 Ground
+    2300016: Dragon Cave Ext BG
+    2300018: Dragon Cave Ext FG
+    2300020: Dragon Cave Int BG
+    2300022: Dragon Cave Int FG
+    2300024: Teeth Cave
+    2300026: Falling Stalagmite
+    2300028: Falling Stalagmite Bases
+    2300030: Stalagmite
+    2300032: Stalagmite 1
+    2300034: Stalagmite 2
+    2300036: Stalagmite 3
+    2300038: Stalagmite 4
+    2300040: LVL 13 Cave 2 BG
+    2300042: LVL 13 Falling Stalagmite Bases
+    2300044: LVL 13 Trees pt 1
+    2300046: LVL 13 Mountain BG Pt 1
+    2300048: Lvl 13 Clouds Pt 1
+    2300050: Lvl 13 Cave 1 Ext
+    2300052: Lvl 13 Cave 1 Int Mask
+    2300054: Lvl 13 Cave 1 Ext Mask
+    2300056: LVL 13 Black Pt1
+    2300058: LVL 13 Black_Pt1  Cave 1
+    2300060: LVL 13 Black_Pt1  Cave 2
+    2300062: LVL 13 Skulls Pt 1
+    2300064: LVL 13 Black Pt1 _2
+    2300066: Lvl 13 Clouds Pt 1 _2
+    2300068: LVL 13 Land _2
+    2300070: LVL 13 Mountain BG Pt 1 _2
+    2300072: LVL 13 Trees pt 1_2
+    3300000: LVL 13 Cliff Rocks
+    3300002: Lvl 13 Collision
+    3300004: LVL 13 Land
+    3300006: LVL 13 Cave Ground
+    3300008: Cave Int
+    3300010: LVL 13 Cave Ext
+    3300012: LVL 13 Cave Int
+    3300014: LVL 13 Cave 2 Ground
+    3300016: Dragon Cave Ext BG
+    3300018: Dragon Cave Ext FG
+    3300020: Dragon Cave Int BG
+    3300022: Dragon Cave Int FG
+    3300024: Teeth Cave
+    3300026: Falling Stalagmite
+    3300028: Falling Stalagmite Bases
+    3300030: Stalagmite
+    3300032: Stalagmite 1
+    3300034: Stalagmite 2
+    3300036: Stalagmite 3
+    3300038: Stalagmite 4
+    3300040: LVL 13 Cave 2 BG
+    3300042: LVL 13 Falling Stalagmite Bases
+    3300044: LVL 13 Trees pt 1
+    3300046: LVL 13 Mountain BG Pt 1
+    3300048: Lvl 13 Clouds Pt 1
+    3300050: Lvl 13 Cave 1 Ext
+    3300052: Lvl 13 Cave 1 Int Mask
+    3300054: Lvl 13 Cave 1 Ext Mask
+    3300056: LVL 13 Black Pt1
+    3300058: LVL 13 Black_Pt1  Cave 1
+    3300060: LVL 13 Black_Pt1  Cave 2
+    3300062: LVL 13 Skulls Pt 1
+    3300064: LVL 13 Black Pt1 _2
+    3300066: Lvl 13 Clouds Pt 1 _2
+    3300068: LVL 13 Land _2
+    3300070: LVL 13 Mountain BG Pt 1 _2
+    3300072: LVL 13 Trees pt 1_2
+    4300000: LVL 13 Land
+    4300002: LVL 13 Cliff Rocks
+    4300004: Lvl 13 Collision
+    4300006: LVL 13 Cave Ground
+    4300008: Cave Int
+    4300010: LVL 13 Cave Int
+    4300012: LVL 13 Cave Ext
+    4300014: LVL 13 Cave 2 Ground
+    4300016: Dragon Cave Ext FG
+    4300018: Dragon Cave Ext BG
+    4300020: Dragon Cave Int BG
+    4300022: Dragon Cave Int FG
+    4300024: Teeth Cave
+    4300026: Falling Stalagmite
+    4300028: Falling Stalagmite Bases
+    4300030: Stalagmite
+    4300032: Stalagmite
+    4300034: Stalagmite
+    4300036: Stalagmite
+    4300038: Stalagmite
+    4300040: LVL 13 Cave 2 BG
+    4300042: LVL 13 Falling Stalagmite Bases
+    4300044: LVL 13 Trees pt 1
+    4300046: LVL 13 Mountain BG Pt 1
+    4300048: Lvl 13 Clouds Pt 1
+    4300050: Lvl 13 Cave 1 Ext
+    4300052: Lvl 13 Cave 1 Int Mask
+    4300054: Lvl 13 Cave 1 Ext Mask
+    4300056: LVL 13 Black Pt1
+    4300058: LVL 13 Black_Pt1  Cave 1
+    4300060: LVL 13 Black_Pt1  Cave 2
+    4300062: LVL 13 Skulls Pt 1
+    4300064: LVL 13 Black Pt1 _2
+    4300066: LVL 13 Mountain BG Pt 1 _2
+    4300068: LVL 13 Land _2
+    4300070: Lvl 13 Clouds Pt 1 _2
+    4300072: LVL 13 Trees pt 1_2
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

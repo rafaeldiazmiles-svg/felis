@@ -1,0 +1,212 @@
+fileFormatVersion: 2
+guid: d556e839625ecf44aa01e0debff9c319
+timeCreated: 1444250526
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Collision Pt 1
+    100002: Ground Pt 1 _1
+    100004: Ground Pt 1 _2
+    100006: //RootNode
+    100008: Cave 1 Exit
+    100010: Cave 1 Exit Mask
+    100012: Cave 1 Entrance
+    100014: Cave 1 Entrance Mask
+    100016: Cave 2 Entrance
+    100018: Cave 2 Entrance Mask
+    100020: Cave 2 Exit
+    100022: Cave 2 Exit Mask
+    100024: Black Cave Pt 1 Level 6
+    100026: Black Cave2 Pt 1 Level 6
+    100028: Black Pt 1 Level 6
+    100030: Dirt BG Pt 1 _2 Level 6
+    100032: Dirt BG Pt 1 Level 6
+    100034: Ground Pt 1 _1  FG
+    100036: Ground Pt 1 _1  FG Cave
+    100038: Ground Pt 1 _1 BG
+    100040: Ground Pt 1 _2 BG
+    100042: Ground Pt 1 _2 BG 1
+    100044: Ground Pt 1 _2 FG
+    100046: Pine Tree Group Pt 1_Level 6
+    100048: Trees pt 1 FG_Level 6
+    100050: Trees pt 1_Level 6
+    100052: Stalagmites Pt 1_Level 5
+    100054: Stalagmites Pt 1_Level 6
+    100056: Mushrooms Pt 1_Level 6
+    400000: Collision Pt 1
+    400002: Ground Pt 1 _1
+    400004: Ground Pt 1 _2
+    400006: //RootNode
+    400008: Cave 1 Exit
+    400010: Cave 1 Exit Mask
+    400012: Cave 1 Entrance
+    400014: Cave 1 Entrance Mask
+    400016: Cave 2 Entrance
+    400018: Cave 2 Entrance Mask
+    400020: Cave 2 Exit
+    400022: Cave 2 Exit Mask
+    400024: Black Cave Pt 1 Level 6
+    400026: Black Cave2 Pt 1 Level 6
+    400028: Black Pt 1 Level 6
+    400030: Dirt BG Pt 1 _2 Level 6
+    400032: Dirt BG Pt 1 Level 6
+    400034: Ground Pt 1 _1  FG
+    400036: Ground Pt 1 _1  FG Cave
+    400038: Ground Pt 1 _1 BG
+    400040: Ground Pt 1 _2 BG
+    400042: Ground Pt 1 _2 BG 1
+    400044: Ground Pt 1 _2 FG
+    400046: Pine Tree Group Pt 1_Level 6
+    400048: Trees pt 1 FG_Level 6
+    400050: Trees pt 1_Level 6
+    400052: Stalagmites Pt 1_Level 5
+    400054: Stalagmites Pt 1_Level 6
+    400056: Mushrooms Pt 1_Level 6
+    2300000: Collision Pt 1
+    2300002: Ground Pt 1 _1
+    2300004: Ground Pt 1 _2
+    2300006: Cave 1 Exit
+    2300008: Cave 1 Exit Mask
+    2300010: Cave 1 Entrance
+    2300012: Cave 1 Entrance Mask
+    2300014: Cave 2 Entrance
+    2300016: Cave 2 Entrance Mask
+    2300018: Cave 2 Exit
+    2300020: Cave 2 Exit Mask
+    2300022: Black Cave Pt 1 Level 6
+    2300024: Black Cave2 Pt 1 Level 6
+    2300026: Black Pt 1 Level 6
+    2300028: Dirt BG Pt 1 _2 Level 6
+    2300030: Dirt BG Pt 1 Level 6
+    2300032: Ground Pt 1 _1  FG
+    2300034: Ground Pt 1 _1  FG Cave
+    2300036: Ground Pt 1 _1 BG
+    2300038: Ground Pt 1 _2 BG
+    2300040: Ground Pt 1 _2 BG 1
+    2300042: Ground Pt 1 _2 FG
+    2300044: Pine Tree Group Pt 1_Level 6
+    2300046: Trees pt 1 FG_Level 6
+    2300048: Trees pt 1_Level 6
+    2300050: Stalagmites Pt 1_Level 5
+    2300052: Stalagmites Pt 1_Level 6
+    2300054: Mushrooms Pt 1_Level 6
+    3300000: Collision Pt 1
+    3300002: Ground Pt 1 _1
+    3300004: Ground Pt 1 _2
+    3300006: Cave 1 Exit
+    3300008: Cave 1 Exit Mask
+    3300010: Cave 1 Entrance
+    3300012: Cave 1 Entrance Mask
+    3300014: Cave 2 Entrance
+    3300016: Cave 2 Entrance Mask
+    3300018: Cave 2 Exit
+    3300020: Cave 2 Exit Mask
+    3300022: Black Cave Pt 1 Level 6
+    3300024: Black Cave2 Pt 1 Level 6
+    3300026: Black Pt 1 Level 6
+    3300028: Dirt BG Pt 1 _2 Level 6
+    3300030: Dirt BG Pt 1 Level 6
+    3300032: Ground Pt 1 _1  FG
+    3300034: Ground Pt 1 _1  FG Cave
+    3300036: Ground Pt 1 _1 BG
+    3300038: Ground Pt 1 _2 BG
+    3300040: Ground Pt 1 _2 BG 1
+    3300042: Ground Pt 1 _2 FG
+    3300044: Pine Tree Group Pt 1_Level 6
+    3300046: Trees pt 1 FG_Level 6
+    3300048: Trees pt 1_Level 6
+    3300050: Stalagmites Pt 1_Level 5
+    3300052: Stalagmites Pt 1_Level 6
+    3300054: Mushrooms Pt 1_Level 6
+    4300000: Ground Pt 1 _1
+    4300002: Ground Pt 1 _2
+    4300004: Collision Pt 1
+    4300006: Cave 1 Exit
+    4300008: Cave 1 Exit Mask
+    4300010: Cave 1 Entrance
+    4300012: Cave 1 Entrance Mask
+    4300014: Cave 2 Entrance Mask
+    4300016: Cave 2 Exit Mask
+    4300018: Cave 2 Entrance
+    4300020: Cave 2 Exit
+    4300022: Dirt BG Pt 1 Level 6
+    4300024: Black Cave Pt 1 Level 6
+    4300026: Ground Pt 1 _1 BG
+    4300028: Dirt BG Pt 1 _2 Level 6
+    4300030: Ground Pt 1 _1  FG
+    4300032: Ground Pt 1 _1  FG Cave
+    4300034: Ground Pt 1 _2 BG
+    4300036: Ground Pt 1 _2 FG
+    4300038: Ground Pt 1 _2 BG
+    4300040: Black Cave2 Pt 1 Level 6
+    4300042: Black Pt 1 Level 6
+    4300044: Trees pt 1_Level 6
+    4300046: Trees pt 1 FG_Level 6
+    4300048: Pine Tree Group Pt 1_Level 6
+    4300050: Stalagmites Pt 1_Level 5
+    4300052: Stalagmites Pt 1_Level 6
+    4300054: Mushrooms Pt 1_Level 6
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
