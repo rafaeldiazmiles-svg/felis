@@ -10,6 +10,9 @@ var configurableJoint : ConfigurableJoint;
 var health : Health;
 var healthDropPoint : float = 1800;
 
+var dropHealthItem : boolean = true;
+var healthItemResource : String = "Prefabs/Animals/Fruits/Fruit A";
+
 var isGrounded : IsGrounded;
 var breakNest : boolean;
 var breakAnimationClip : AnimationClip;
@@ -68,6 +71,17 @@ function Start () {
 		health.health *= 0.5;
 		health.maxHealth *= 0.5;
 		healthDropPoint *= 0.5;
+
+		//Smashing the hive gives a heart back, through the existing drop-on-death plumbing.
+		if(dropHealthItem && health.transform.parent != null){
+			var dropper : DropCollectibles = health.transform.parent.GetComponentInChildren(DropCollectibles);
+			if(dropper == null){
+				dropper = health.transform.parent.gameObject.AddComponent(DropCollectibles);
+			}
+			if(dropper.dropPrefab == null){
+				dropper.dropPrefab = Resources.Load(healthItemResource, GameObject);
+			}
+		}
 	}
 	actManager  = GameObject.FindObjectOfType.<SetActiveManager>(); 
 

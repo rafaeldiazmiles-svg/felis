@@ -17,6 +17,8 @@ var maxStamina : float;
 var lowStaPct : float = .5;
 
 var rechargeRate : float = 20.0;
+private var rechargeRateMul : float = 1.35; //2.25 dialled back to 0.6 of that.
+private var maxWaitBeforeRecharge : float = 0.25; //Regen is blocked while stamina is dropping, so this gap is what fighting feels.
 var breatheRecharge : FloatLerp;
 var breatheRecharge_Amount : float = 50;
 var holdBreathRate : float = 5.0;
@@ -54,8 +56,12 @@ function Start () {
 	if(storemaxStamina){
 		maxStamina = stamina;
 	}
-	stamina += maxStamina * 0.25;
-	maxStamina = stamina;
+
+	rechargeRate *= rechargeRateMul;
+
+	if(waitBeforeRechargeDuration > maxWaitBeforeRecharge){
+		waitBeforeRechargeDuration = maxWaitBeforeRecharge;
+	}
 
 	meleeAttack = transform.parent.GetComponentInChildren(MeleeAttack);
 	meleeAttackS = transform.parent.GetComponentInChildren(MeleeAttackSimple);

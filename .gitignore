@@ -25,6 +25,9 @@
 *.opendb
 *.VC.db
 
+# Local script backups for quick rollback
+.rollback/
+
 # OS generated
 .DS_Store
 Thumbs.db

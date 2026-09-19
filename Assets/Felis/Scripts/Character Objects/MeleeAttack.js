@@ -22,6 +22,9 @@ var importantEnemy : boolean;
 var importantID : Array;
 var attackRange : float;
 var velocityIncreaseRange : float = .2;
+var verticalReachUp : float = 1.4;
+var verticalReachDown : float = 1.2;
+var pushMul : float = 1.4;
 
 var performAttack : boolean;
 var attacking : ToggleBoolean;
@@ -35,6 +38,10 @@ var applyForceTimeUppercut : float = 0.15;
 var applyForceTimePunchRun : float = .15;
 
 var lastAttackDuration : float;
+private var comboStep : int;
+private var comboSpeedStep : float = 0.88;
+private var comboFloorMul : float = 0.65;
+private var comboHitMargin : float = 0.08;
 var punchDuration : float = .3;
 var kickDuration : float = .3;
 var upperCutDuration : float = .4;
@@ -328,12 +335,20 @@ function LateUpdate () {
 			upperCutBar += upperCutBarAdd;
 		}
 		
+		//Each hit of a chain resolves sooner than the last, but never before this swing's force lands.
+		var comboMul : float = Mathf.Pow(comboSpeedStep, comboStep);
+		if(comboMul < comboFloorMul) comboMul = comboFloorMul;
+		lastAttackDuration *= comboMul;
+		if(lastAttackDuration < applyForceTime + comboHitMargin) lastAttackDuration = applyForceTime + comboHitMargin;
+		comboStep++;
+		
 		//performAttack = false;
 		lastAttackTime = Time.time;
 	}
 
 	if(Time.time > lastAttackTime + secondaryAttackDuration){
 		kick = false;
+		comboStep = 0;
 	}
 
 	if(Time.time > lastAttackTime + lastAttackDuration){;
@@ -422,9 +437,9 @@ function LateUpdate () {
 						//Two rounds of +25%, so 1.25 * 1.25.
 						applySpeed.x *= 1.5625;
 					}
-					else if(IsRatTarget(attackTargets[enemyID])){
-						//30% of the +25% the bees get.
-						applySpeed.x *= 1.075;
+					else{
+						//Shove everything else aside so fighting does not block movement.
+						applySpeed.x *= pushMul;
 					}
 
 					PhysicsUtility.ApplyForceForVelocity(tgtRB, applySpeed, pushForce);
@@ -536,12 +551,20 @@ function FindNearestEnemyInFront(){
 			
 			var enemyCenter : EnemyCenter = allEnemies[i].GetComponentInChildren(EnemyCenter);
 
+			var targetPosition : Vector3;
 			if(enemyCenter != null){
-				targetDistance = Vector3.Distance(playerCenter, enemyCenter.targetBone.position);
+				targetPosition = enemyCenter.targetBone.position;
 			}
 			else{
-				targetDistance = Vector3.Distance(playerCenter, allEnemies[i].transform.position);
+				targetPosition = allEnemies[i].transform.position;
 			}
+
+			//Count vertical distance as less than it is, so the hit box reaches further up than down.
+			var toTarget : Vector3 = targetPosition - playerCenter;
+			if(toTarget.y > 0) toTarget.y /= verticalReachUp;
+			else toTarget.y /= verticalReachDown;
+
+			targetDistance = toTarget.magnitude;
 
 			//Add if in range
 			if(targetDistance < attackRange + rb.velocity.magnitude * velocityIncreaseRange){
@@ -612,18 +635,6 @@ function IsBeeTarget(t : Transform) : boolean {
 	var p : Transform = t;
 	while(p != null){
 		if(p.tag == "Bee"){
-			return true;
-		}
-		p = p.parent;
-	}
-	return false;
-}
-
-//Rats share the Enemy tag, so they are matched by name like Health.js does.
-function IsRatTarget(t : Transform) : boolean {
-	var p : Transform = t;
-	while(p != null){
-		if(p.name.Contains("Rat")){
 			return true;
 		}
 		p = p.parent;

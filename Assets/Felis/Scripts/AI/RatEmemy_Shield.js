@@ -43,6 +43,11 @@ var playerDistance : float;
 var attackRange : float = 1.5;
 var attackTimer : Timer;
 var minAttackVelocity : float = 1.0;
+private var attackRateMul : float = 0.24;
+private var minAttackEvery : float = 0.25;
+private var attackVelocityMul : float = 1.6; //Lets the shield rat swing while still closing in.
+private var holdPosInsideRangeMul : float = 0.7; //Parks inside striking distance instead of right on its edge.
+private var attackQueued : boolean;
 
 function Start () {
 	if(getPlayerByTag){
@@ -67,6 +72,17 @@ function Start () {
 	
 	holdPositionLocationWPos = holdPositionLocation.GetComponent(IsWorldPosition);
 	holdPositionDefaultLocation = holdPositionLocation.position;
+
+	if(attackTimer.every > 0.0){
+		attackTimer.every *= attackRateMul;
+		if(attackTimer.every < minAttackEvery) attackTimer.every = minAttackEvery;
+	}
+
+	minAttackVelocity *= attackVelocityMul;
+
+	if(adjustHoldPosDistance > attackRange * holdPosInsideRangeMul){
+		adjustHoldPosDistance = attackRange * holdPosInsideRangeMul;
+	}
 }
 
 function GetPlayer(){
@@ -95,6 +111,9 @@ function Update () {
 	jumpTimer.Update();
 	goBack.Update();
 	attackTimer.Update();
+
+	//Hold the tick until the rat is actually in a position to swing, instead of losing it.
+	if(attackTimer.current) attackQueued = true;
 	
 	switch (currentStage){
 		case RatShield_Stages.HoldPosition:
@@ -137,8 +156,9 @@ function Update () {
 			
 			if(playerDistance < attackRange && ratRigidbody.velocity.magnitude < minAttackVelocity){
 				sideMovement.currentSide = playerSide;
-				if(playerIsGrounded != null && playerSide == sideMovement.currentSide && attackTimer.current && playerIsGrounded.isGrounded){
+				if(playerIsGrounded != null && attackQueued && playerIsGrounded.isGrounded){
 					controller.inputButtonA.pressed = true;
+					attackQueued = false;
 				}
 			}
 

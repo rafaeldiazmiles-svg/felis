@@ -40,6 +40,7 @@ var punchHitEffectPrefab : Transform;
 var punchHitEffectPosition : Vector3;
 
 var attackPower : float;
+private var attackPowerMul : float = 1.3;
 var staminaFactor : float;
 var minStaminaFactor : float = .3;
 
@@ -86,6 +87,11 @@ function LoadResources(){
 
 function Start () {
 	LoadResources();
+
+	//Enemy strikes hit harder. The player swings through MeleeAttack.js, so it is left alone.
+	if(transform.root.tag != "Player"){
+		attackPower *= attackPowerMul;
+	}
 
 		if(animComp == null) animComp = transform.parent.GetComponentInChildren(Animation);
 		if(isGrounded == null) isGrounded = transform.parent.GetComponentInChildren(IsGrounded);

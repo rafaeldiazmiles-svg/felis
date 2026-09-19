@@ -145,22 +145,6 @@ function Start () {
 	GetPlayer();
 
 	delayedMsg = new Array();
-
-	BlockRespawns();
-}
-
-//Objects that must not come back once they are gone for the rest of the level.
-function BlockRespawns(){
-	for(var i = 0; i < prefabBoundsList.Length; i++){
-		if(prefabBoundsList[i].prefab == null) continue;
-		for(var n = 0; n < prefabBoundsList[i].prefab.Length; n++){
-			if(prefabBoundsList[i].prefab[n] == null) continue;
-			var prefabName : String = prefabBoundsList[i].prefab[n].name;
-			if(prefabName.Contains("Bee Nest") || prefabName.Contains("Thorn Plant")){
-				prefabBoundsList[i].loadBackIfDestroyed = false;
-			}
-		}
-	}
 }
 
 function ApplyChanges(ID : int, newPrefab : GameObject, prefabID : int){

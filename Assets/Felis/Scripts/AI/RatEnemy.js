@@ -29,8 +29,10 @@ var detectRange : float = 5.0;
 @Space(10)
 var delayAttack : float;
 var attackTimeLeft : float;
-var attackDelayMul : float = 0.7;
-var extraStrikeDelay : float = 0.45;
+private var attackDelayMul : float = 0.24;
+private var minAttackDelay : float = 0.25;
+private var attackVelocityMul : float = 1.6; //Lets the rat swing while still closing in, instead of only once it has stopped.
+private var extraStrikeDelay : float = 0.27;
 private var extraStrikeReady : boolean = true;
 
 @Header("Player related values: ")
@@ -240,7 +242,10 @@ function Start () {
 
 	if(delayAttack > 0.0){
 		delayAttack *= attackDelayMul;
+		if(delayAttack < minAttackDelay) delayAttack = minAttackDelay;
 	}
+
+	minAttackVelocity *= attackVelocityMul;
 }
 
 
@@ -482,8 +487,8 @@ function Update () {
 				movementAI.targetPosition = player.position + Vector3(playerSide * attackDistance,0,0);
 			}
 			
-			//Look at prospero when standing still.
-			if(movementAI.onTarget.current && velMagnitude < stopVelocity){
+			//Look at prospero when standing still, or as soon as he is within striking distance.
+			if(playerDistance < playerAttackRange || (movementAI.onTarget.current && velMagnitude < stopVelocity)){
 				sideMovement.currentSide = playerSide;
 			}
 								

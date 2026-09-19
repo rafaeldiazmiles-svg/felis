@@ -29,6 +29,8 @@ var rightWingSwing : ToggleBoolean;
 
 var attackOffetHeight : float = .2;
 var attackTimer : Timer;
+private var attackRateMul : float = 0.48;
+private var minAttackEvery : float = 0.3;
 
 var groundTag : String = "Ground Collider";
 
@@ -53,6 +55,11 @@ function Start () {
 
 	beeBody = transform.parent.GetComponentInChildren(Rigidbody);
 	player = GameObject.FindGameObjectWithTag(playerTag);
+
+	if(attackTimer.every > 0.0){
+		attackTimer.every *= attackRateMul;
+		if(attackTimer.every < minAttackEvery) attackTimer.every = minAttackEvery;
+	}
 	
 	GetTargets();
 	/*var targetsArray = new Array();

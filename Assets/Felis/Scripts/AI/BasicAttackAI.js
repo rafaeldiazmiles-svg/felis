@@ -44,28 +44,31 @@ var disableUntil : float; //disable attack until specified time.
 
 var disableTimeAfterHit : float = 2.0;
 
-var attackDelayMul : float = 0.7;
-var attackDisableMul : float = 0.6;
-var minAttackGap : float = 0.4;
-private var frequentAttacker : boolean; //Rats and bears attack more often and follow up with an extra strike.
+//Kept private so the values below always win over anything baked into a prefab.
+private var attackDelayMul : float = 0.34; //Bears and rats, compounded with the earlier passes.
+private var attackDelayMul_Other : float = 0.48; //Every other enemy using this script.
+private var attackDisableMul : float = 0.29;
+private var minAttackGap : float = 0.2;
 private var usedExtraStrike : boolean;
+private var attackEnabledDefault : boolean;
 
 function Start () {
+	attackEnabledDefault = enableAttack;
+
 	attackAnimationWeightControl = new FloatLerp();
 	//attackAnimationWeightControl.speed = animationBlendSpeed;
 
 	var rootName : String = transform.root.name;
-	frequentAttacker = rootName.Contains("Bear") || rootName.Contains("Rat");
-	if(frequentAttacker){
-		maxTolerance *= attackDelayMul;
-		maxToleranceVariation *= attackDelayMul;
-		disableTimeAfterHit *= attackDisableMul;
+	var delayMul : float = (rootName.Contains("Bear") || rootName.Contains("Rat")) ? attackDelayMul : attackDelayMul_Other;
 
-		//Never let the gap collapse to zero, or the attack would retrigger every frame.
-		if(maxToleranceVariation.x < minAttackGap) maxToleranceVariation.x = minAttackGap;
-		if(maxToleranceVariation.y < maxToleranceVariation.x) maxToleranceVariation.y = maxToleranceVariation.x;
-		if(maxTolerance < minAttackGap) maxTolerance = minAttackGap;
-	}
+	maxTolerance *= delayMul;
+	maxToleranceVariation *= delayMul;
+	disableTimeAfterHit *= attackDisableMul;
+
+	//Never let the gap collapse to zero, or the attack would retrigger every frame.
+	if(maxToleranceVariation.x < minAttackGap) maxToleranceVariation.x = minAttackGap;
+	if(maxToleranceVariation.y < maxToleranceVariation.x) maxToleranceVariation.y = maxToleranceVariation.x;
+	if(maxTolerance < minAttackGap) maxTolerance = minAttackGap;
 
 	tolerance = maxTolerance;
 
@@ -88,7 +91,7 @@ function Update () {
 	
 	//Disable until.
 	if(Time.time < disableUntil) enableAttack = false;
-	else if(frequentAttacker) enableAttack = true;
+	else enableAttack = attackEnabledDefault;
 	
 	//Attack when boolean is true.
 	if(attack && !isGrounded.isGrounded) attack = false;
@@ -97,7 +100,7 @@ function Update () {
 	//End attack.
 	var attackEndTime : float = lastAttackTime + GetComponent.<Animation>()[attackClip.name].length;
 	if(Time.time > attackEndTime){
-		if(isAttacking && frequentAttacker && !usedExtraStrike && characterInRange && Time.time > disableUntil){
+		if(isAttacking && !usedExtraStrike && characterInRange && Time.time > disableUntil){
 			usedExtraStrike = true;
 			attack = true;
 		}

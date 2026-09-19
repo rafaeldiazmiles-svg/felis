@@ -29,6 +29,8 @@ var stopVelocity : float = .1;
 
 var defaultSide : float = -1;
 var delayAttack : float;
+private var attackDelayMul : float = 0.48;
+private var minAttackDelay : float = 0.3;
 var attackTimeLeft : float;
 var playerInFront : boolean;
 var playerDistance : float;
@@ -99,6 +101,11 @@ function GetCats(){
 function Start () {
 	if(getTimer.every == 0.0){
 		getTimer.every = 2.0;
+	}
+
+	if(delayAttack > 0.0){
+		delayAttack *= attackDelayMul;
+		if(delayAttack < minAttackDelay) delayAttack = minAttackDelay;
 	}
 
 	if(getPlayerByTag){

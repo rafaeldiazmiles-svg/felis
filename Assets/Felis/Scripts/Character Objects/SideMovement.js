@@ -43,6 +43,10 @@ var currentHorizontalScale : float;
 @Space(30)
 var airMul : float = .4;
 var airRunAccelMul : float = 1.5;
+var runSpeedMul : float = 1.1;
+var runForceMul : float = 1.15;
+var startBoostAccelMul : float = 2.2;
+var startBoostUpTo : float = 0.7;
 var waterMultiplier : float = .3;
 static var maxFlipSpeed : float = 1.0;
 @Space(30)
@@ -128,6 +132,9 @@ function Start () {
 	if(isPlayer){
 		if(skidRunForceMultiplier >= 0.18 && skidRunForceMultiplier <= 0.22) skidRunForceMultiplier = 0.35;
 		if(skidFriction >= 2.8 && skidFriction <= 3.2) skidFriction = 2.2;
+
+		targetRunSpeed *= runSpeedMul;
+		maxRunForce *= runForceMul;
 	}
 
 	runForceSlopeCurve = new AnimationCurve(Keyframe(0,horizontalRunForce) , Keyframe(lowSlope,lowSlopeRunForce), Keyframe(highSlope,highSlopeRunForce));
@@ -264,6 +271,11 @@ function FixedUpdate(){
 	//A standstill jump starts the ramp at minRunSpeed, which made air steering feel rigid.
 	if(isPlayer && !isGrounded.isGrounded){
 		smoothRunSpeed.speed *= airRunAccelMul;
+	}
+
+	//A cat leaves from a standstill in one burst, so the low end of the ramp climbs harder.
+	if(isPlayer && isRunning && smoothRunSpeed.current < targetRunSpeed * startBoostUpTo){
+		smoothRunSpeed.speed *= startBoostAccelMul;
 	}
 
 	smoothRunSpeed.Lerp();

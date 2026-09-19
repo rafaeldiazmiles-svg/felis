@@ -281,12 +281,16 @@ function Start (){
 	}
 
 	var sceneName : String = UnityEngine.SceneManagement.SceneManager.GetActiveScene().name;
-	if(sceneName.Contains("Level 2") || sceneName.Contains("Castle Tower")){
-		var hpRoot : String = (transform.parent != null) ? transform.parent.name : gameObject.name;
-		if(hpRoot.Contains("Barricade") || hpRoot.Contains("Spikes")){
-			health *= 0.75 * 0.75;
-			maxHealth *= 0.75 * 0.75;
-		}
+	var easedLevel : boolean = sceneName.Contains("Level 2") || sceneName.Contains("Castle Tower");
+	var hpRoot : String = (transform.parent != null) ? transform.parent.name : gameObject.name;
+
+	if(hpRoot.Contains("Barricade") || hpRoot.Contains("Spikes")){
+		var barricadeMul : float = (easedLevel) ? 0.75 * 0.75 : 0.65;
+		health *= barricadeMul;
+		maxHealth *= barricadeMul;
+	}
+
+	if(easedLevel){
 		if((hpRoot.Contains("Bee") && !hpRoot.Contains("Nest")) || hpRoot.Contains("Rat")){
 			health *= 0.75;
 			maxHealth *= 0.75;
