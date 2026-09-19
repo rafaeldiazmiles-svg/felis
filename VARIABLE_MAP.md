@@ -51,7 +51,7 @@ Stock = original game. Current = live value in the `.js` file.
 | Other melee brains | `AI/BasicAttackAI.js` | `attackDelayMul` / `_Other` | **0.34** bear-or-rat name, **0.48** else | `minAttackGap` **0.2s** | Also `attackDisableMul` **0.29** after you punch them. |
 | All enemy melee damage | `Character Objects/MeleeAttackSimple.js` | `attackPowerMul` | **1.3** | — | `attackPower *=` 1.3 if root is not tagged Player. |
 | Rat punch connect area | same | `ratPunchRangeMul` | 1 | **1.4** | Their `attackRange` ×1.4. Not bees, not the eye. |
-| Bear punch connect area | same | `bearPunchRangeMul` | 1 | **2.88** | Was 1.6, then ×1.8 of that. Bear first so Rat-named bones do not steal the rat mul. |
+| Bear punch connect area | same | `bearPunchRangeMul` | 1 | **1.6** | Back from 2.88. Bear first so Rat-named bones do not steal the rat mul. |
 
 ---
 
