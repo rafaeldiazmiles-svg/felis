@@ -25,8 +25,6 @@ var velocityIncreaseRange : float = .2;
 var verticalReachUp : float = 1.4;
 var verticalReachDown : float = 1.2;
 var pushMul : float = 1.4;
-private var ratHitboxMul : float = 1.4; //Punch range vs anything named Rat.
-private var bearHitboxMul : float = 1.6; //Punch range vs the bear (prefab name Bear).
 
 var performAttack : boolean;
 var attacking : ToggleBoolean;
@@ -568,16 +566,8 @@ function FindNearestEnemyInFront(){
 
 			targetDistance = toTarget.magnitude;
 
-			//Add if in range. Rats count as a bigger target so the punch does not have to land on a point.
-			var hitRange : float = attackRange + rb.velocity.magnitude * velocityIncreaseRange;
-			if(IsBearTarget(allEnemies[i].transform)){
-				hitRange *= bearHitboxMul;
-			}
-			else if(IsRatTarget(allEnemies[i].transform)){
-				hitRange *= ratHitboxMul;
-			}
-
-			if(targetDistance < hitRange){
+			//Add if in range
+			if(targetDistance < attackRange + rb.velocity.magnitude * velocityIncreaseRange){
 				attackTargetArray.Add(allEnemies[i].transform);
 				attackTargetArray_Dist.Add(targetDistance);
 				enemyCount ++;
@@ -639,30 +629,6 @@ function GetAllEnemies(){
 
 		allEnemies[i] = allEnemies[i].transform.parent.gameObject;
 	}
-}
-
-function NameChainHas(t : Transform, needle : String) : boolean {
-	if(t == null) return false;
-	var n : String = needle.ToLower();
-	var p : Transform = t;
-	while(p != null){
-		if(p.name.ToLower().Contains(n)) return true;
-		p = p.parent;
-	}
-	//GetAllEnemies jumps to the tagged object's parent, so "Bear" can sit on this object or a child, not only above.
-	var kids : Component[] = t.GetComponentsInChildren(Transform);
-	for(var i = 0; i < kids.Length; i++){
-		if(kids[i].name.ToLower().Contains(n)) return true;
-	}
-	return false;
-}
-
-function IsBearTarget(t : Transform) : boolean {
-	return NameChainHas(t, "bear");
-}
-
-function IsRatTarget(t : Transform) : boolean {
-	return NameChainHas(t, "rat");
 }
 
 function IsBeeTarget(t : Transform) : boolean {

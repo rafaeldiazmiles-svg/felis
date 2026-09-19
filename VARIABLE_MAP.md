@@ -19,8 +19,6 @@ Stock = original game. Current = live value in the `.js` file.
 | Combo cannot get faster than this | same | `comboFloorMul` | — | **0.65** | Floor on that multiply. |
 | Combo cannot cut the hit | same | `comboHitMargin` | — | **0.08** | Duration never below `applyForceTime + 0.08`. |
 | Punch reach up / down | same | `verticalReachUp` / `Down` | stock | **1.4 / 1.2** | Who counts as in range vertically. |
-| Rat hitbox (you hitting them) | same | `ratHitboxMul` | 1 | **1.4** | If any parent name contains "rat", punch range ×1.4. Shield / helmet / big / zombie / Rat Boss. Not bees or the eye. |
-| Bear hitbox (you hitting it) | same | `bearHitboxMul` | 1 | **1.6** | Name contains "bear" on this object, parents, or children. The bear prefab also has bones named Rat, so bear is checked first. |
 | Knockback | same | `pushMul` | 1 | **1.4** (bees 1.5625) | Extra shove on hit. |
 | Attack power | same | *(×0.99)* | stock | almost stock | Tiny tick down. |
 | Air steer | `Character Objects/SideMovement.js` | `airMul` | 0.4 | **0.7** | Player only. If prefab is still ~0.4, Start sets 0.7. |
