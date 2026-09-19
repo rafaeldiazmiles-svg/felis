@@ -31,6 +31,7 @@ var defaultSide : float = -1;
 var delayAttack : float;
 private var attackDelayMul : float = 0.48;
 private var minAttackDelay : float = 0.3;
+private var ratAttackSpeedMul : float = 1.2; //Rat Boss only. The Level 2 bear keeps 0.48.
 var attackTimeLeft : float;
 var playerInFront : boolean;
 var playerDistance : float;
@@ -105,7 +106,12 @@ function Start () {
 
 	if(delayAttack > 0.0){
 		delayAttack *= attackDelayMul;
-		if(delayAttack < minAttackDelay) delayAttack = minAttackDelay;
+		var attackFloor : float = minAttackDelay;
+		if(!LooksLikeBear()){
+			delayAttack /= ratAttackSpeedMul;
+			attackFloor /= ratAttackSpeedMul;
+		}
+		if(delayAttack < attackFloor) delayAttack = attackFloor;
 	}
 
 	if(getPlayerByTag){
@@ -400,6 +406,20 @@ function PressButton(button : Button, cycle : float, range : float){
 		button.pressed = false;
 		//Debug.DrawRay(transform.position, Vector3.down * 2, Color.yellow);
 	}
+}
+
+function LooksLikeBear() : boolean {
+	var start : Transform = (transform.parent != null) ? transform.parent : transform;
+	var p : Transform = start;
+	while(p != null){
+		if(p.name.ToLower().Contains("bear")) return true;
+		p = p.parent;
+	}
+	var kids : Component[] = start.GetComponentsInChildren(Transform);
+	for(var i = 0; i < kids.Length; i++){
+		if(kids[i].name.ToLower().Contains("bear")) return true;
+	}
+	return false;
 }
 
 function ChangeDetectRange(newVal : float){

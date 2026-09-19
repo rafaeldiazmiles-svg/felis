@@ -20,7 +20,7 @@ Stock = original game. Current = live value in the `.js` file.
 | Combo cannot cut the hit | same | `comboHitMargin` | — | **0.08** | Duration never below `applyForceTime + 0.08`. |
 | Punch reach up / down | same | `verticalReachUp` / `Down` | stock | **1.4 / 1.2** | Who counts as in range vertically. |
 | Rat hitbox (you hitting them) | same | `ratHitboxMul` | 1 | **1.4** | If any parent name contains "rat", punch range ×1.4. Shield / helmet / big / zombie / Rat Boss. Not bees or the eye. |
-| Bear hitbox (you hitting it) | same | `bearHitboxMul` | 1 | **1.6** | Same idea, name contains "bear". |
+| Bear hitbox (you hitting it) | same | `bearHitboxMul` | 1 | **1.6** | Name contains "bear" on this object, parents, or children. The bear prefab also has bones named Rat, so bear is checked first. |
 | Knockback | same | `pushMul` | 1 | **1.4** (bees 1.5625) | Extra shove on hit. |
 | Attack power | same | *(×0.99)* | stock | almost stock | Tiny tick down. |
 | Air steer | `Character Objects/SideMovement.js` | `airMul` | 0.4 | **0.7** | Player only. If prefab is still ~0.4, Start sets 0.7. |
@@ -41,13 +41,13 @@ Stock = original game. Current = live value in the `.js` file.
 
 | Who | File | Variable | Current | Floor | What the code does |
 |---|---|---|---|---|---|
-| Rat no shield | `AI/RatEnemy.js` | `attackDelayMul` | **0.24** | `minAttackDelay` **0.25s** | `delayAttack *=` mul, then clamp. |
+| Rat no shield | `AI/RatEnemy.js` | `attackDelayMul` | **0.2** | `minAttackDelay` **0.208s** | Was 0.24 / 0.25, then ×1.2 quicker (÷1.2). |
 | Rat no shield | same | `attackVelocityMul` | **1.6** | — | Can swing while still walking in. |
-| Rat no shield | same | `extraStrikeDelay` | **0.27s** | — | Extra strike on the way in. Also turns to face you once in range (stall fix). |
-| Rat shield | `AI/RatEmemy_Shield.js` | `attackRateMul` | **0.24** | `minAttackEvery` **0.25s** | `attackTimer.every *=` mul. |
+| Rat no shield | same | `extraStrikeDelay` | **0.225s** | — | Was 0.27, ÷1.2. |
+| Rat shield | `AI/RatEmemy_Shield.js` | `attackRateMul` | **0.2** | `minAttackEvery` **0.208s** | Was 0.24 / 0.25, ÷1.2. |
 | Rat shield | same | `attackVelocityMul` | **1.6** | — | Same: swing while closing. |
 | Rat shield | same | `holdPosInsideRangeMul` | **0.7** | — | Parks at 70% of range, not on the edge. Tick saved in `attackQueued`. |
-| Bear (uses RatBoss, not BasicAttackAI) | `AI/RatBoss.js` | `attackDelayMul` | **0.48** | `minAttackDelay` **0.3s** | `delayAttack *=` mul. |
+| Bear (uses RatBoss, not BasicAttackAI) | `AI/RatBoss.js` | `attackDelayMul` | **0.48** | `minAttackDelay` **0.3s** | Bear keeps this. `Rat Boss` prefab gets ÷1.2 via `ratAttackSpeedMul`. |
 | Bees | `AI/BeeAI.js` | `attackRateMul` | **0.48** | `minAttackEvery` **0.3s** | Dive cadence. Also player-bump knockback. |
 | Eye | `AI/RangedAirAI.js` | `shootDelayMul` | **0.48** | `minShootDelay` **0.5s** | `shootDelay *=` mul. |
 | Other melee brains | `AI/BasicAttackAI.js` | `attackDelayMul` / `_Other` | **0.34** bear-or-rat name, **0.48** else | `minAttackGap` **0.2s** | Also `attackDisableMul` **0.29** after you punch them. |

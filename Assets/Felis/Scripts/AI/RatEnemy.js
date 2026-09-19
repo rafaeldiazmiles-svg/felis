@@ -29,10 +29,10 @@ var detectRange : float = 5.0;
 @Space(10)
 var delayAttack : float;
 var attackTimeLeft : float;
-private var attackDelayMul : float = 0.24;
-private var minAttackDelay : float = 0.25;
+private var attackDelayMul : float = 0.2; //0.24 / 1.2
+private var minAttackDelay : float = 0.208; //0.25 / 1.2
 private var attackVelocityMul : float = 1.6; //Lets the rat swing while still closing in, instead of only once it has stopped.
-private var extraStrikeDelay : float = 0.27;
+private var extraStrikeDelay : float = 0.225; //0.27 / 1.2
 private var extraStrikeReady : boolean = true;
 
 @Header("Player related values: ")

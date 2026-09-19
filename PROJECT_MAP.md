@@ -65,16 +65,16 @@ Since the current project is now committed in git, `git diff`/`git log` covers e
 | `Character Objects/JumpSwim.js` | Air double-jump added (`maxAirJumps`, `minTimeBetweenJumps`, `airJumpsUsed`, `jumpedUntilLand`); ground jump scaled to 80% via `groundJumpPower`; air jump at 60% of that via `airJumpPower`; jump goes straight up on slopes >12°; `maxSlopeAngle` forced to 70 |
 | `Character Objects/SideMovement.js` | Air steering `airMul` 0.4→0.7 (player only); new `airRunAccelMul` 1.5; mid-air turns keep the speed ramp; skid friction softened; wall/slope stall softened (`blockMultiplier`, `slopeMultiplier`, `highSlopeRunForce`); cat-like launch — `targetRunSpeed` ×1.1, `maxRunForce` ×1.15 and a ×2.2 acceleration burst below 70% of top speed, all player only |
 | `Character Objects/SideDetection.js` | `sideDetectionRange` 0.4→0.32 so the player snags less on walls |
-| `Character Objects/MeleeAttack.js` | Attack power ×0.99; vertical hit reach (`verticalReachUp` 1.4, `verticalReachDown` 1.2); knockback `pushMul` 1.4 for non-bee targets, bees ×1.5625; `IsBeeTarget()` helper added. **Combo ramp:** each chained hit shortens `lastAttackDuration` by ×0.88 (floor ×0.65, and never below `applyForceTime + 0.08` or the hit would not register), reset via the existing `secondaryAttackDuration` chain window. **Rat hitbox:** `ratHitboxMul` 1.4 if the name chain contains "rat". **Bear hitbox:** `bearHitboxMul` 1.6 if it contains "bear" |
+| `Character Objects/MeleeAttack.js` | Attack power ×0.99; vertical hit reach (`verticalReachUp` 1.4, `verticalReachDown` 1.2); knockback `pushMul` 1.4 for non-bee targets, bees ×1.5625; `IsBeeTarget()` helper added. **Combo ramp:** each chained hit shortens `lastAttackDuration` by ×0.88 (floor ×0.65, and never below `applyForceTime + 0.08` or the hit would not register), reset via the existing `secondaryAttackDuration` chain window. **Rat hitbox:** `ratHitboxMul` 1.4 if the name chain contains "rat". **Bear hitbox:** `bearHitboxMul` 1.6 if it contains "bear" (searches children too; the bear prefab has bones named Rat) |
 | `Character Objects/Health.js` | Scene-gated HP scaling: barricades/spikes ×0.5625 on Level 2 & Castle Tower, ×0.65 elsewhere; bees and rats ×0.75 on those two levels |
 | `Character Objects/Stamina.js` | `rechargeRate` ×0.945 (was ×1.35, then ×0.7 of that) and `waitBeforeRechargeDuration` clamped to 0.25s. Regen is blocked while stamina is still dropping, so that gap — not the rate — is what a fight actually feels. The earlier +25% to starting/max stamina was removed |
 | `Misc Objects/BeeNest.js` | Hive HP and `healthDropPoint` halved; `beeArray` null-safety; loop variable renamed to avoid a redeclaration. **Heart drop:** attaches a `DropCollectibles` at startup (if absent) pointing at `healthItemResource`, so the hive drops a collectible when its `Health` reaches 0 via the stock death path |
 | `AI/BeeAI.js` | Bee is knocked back horizontally when it collides with the player, with a stun window and cooldown (`playerBumpRange/Speed/Force/Stun`, `bumpCooldown`); dive cadence `attackTimer.every` ×0.48 (floor 0.3s) |
 | `AI/WingedFlightAI.js` | `disableUntil` gate so bee flight AI pauses during that knockback |
 | `AI/BasicAttackAI.js` | Restores `enableAttack` after the post-hit disable window — it was latching off forever after the player's first punch. Now applies to **every** enemy on this script: attack gap ×0.34 (bear/rat) or ×0.48 (others), post-hit disable ×0.29, one follow-up strike per approach, `minAttackGap` floor 0.2 |
-| `AI/RatEnemy.js` | `delayAttack` ×0.24 (floor 0.25s), `minAttackVelocity` ×1.6 so the rat swings while still closing in, alternating extra strike at `extraStrikeDelay` 0.27s. In the `AttackingPlayer` stage it now turns to face the player as soon as `playerDistance < playerAttackRange`, instead of only once `onTarget` **and** velocity < `stopVelocity` 0.1 — that pair of conditions was what made it shuffle without swinging |
-| `AI/RatEmemy_Shield.js` | Shield rat's `attackTimer.every` ×0.24 (floor 0.25s) and `minAttackVelocity` ×1.6. Anti-stall: the attack tick is latched in `attackQueued` so it is spent on the first frame the rat can actually swing rather than lost, and `adjustHoldPosDistance` is clamped to 70% of `attackRange` so it parks inside striking distance instead of on its edge |
-| `AI/RatBoss.js` | Boss `delayAttack` ×0.48 (floor 0.3s) |
+| `AI/RatEnemy.js` | `delayAttack` ×0.2 (floor 0.208s), `minAttackVelocity` ×1.6 so the rat swings while still closing in, alternating extra strike at `extraStrikeDelay` 0.225s (those three were ÷1.2 from 0.24 / 0.25 / 0.27). In the `AttackingPlayer` stage it now turns to face the player as soon as `playerDistance < playerAttackRange`, instead of only once `onTarget` **and** velocity < `stopVelocity` 0.1 — that pair of conditions was what made it shuffle without swinging |
+| `AI/RatEmemy_Shield.js` | Shield rat's `attackTimer.every` ×0.2 (floor 0.208s) and `minAttackVelocity` ×1.6. Anti-stall: the attack tick is latched in `attackQueued` so it is spent on the first frame the rat can actually swing rather than lost, and `adjustHoldPosDistance` is clamped to 70% of `attackRange` so it parks inside striking distance instead of on its edge |
+| `AI/RatBoss.js` | Boss `delayAttack` ×0.48 (floor 0.3s). If the instance is not a bear, also ÷1.2 (`ratAttackSpeedMul`) so `Rat Boss` keeps up with the other rats |
 | `AI/RangedAirAI.js` | Evil Eye `shootDelay` ×0.48 (floor 0.5s) |
 | `Character Objects/MeleeAttackSimple.js` | Enemy melee `attackPower` ×1.3 (skipped when the root is tagged `Player`) |
 | `Misc/LoadPrefabByBounds.js` | Only the `delayedMsg` null-safety guards from the crash pass. **The `BlockRespawns()` experiment was removed — it never stopped the barricades from coming back.** Respawn behaviour is back to stock: it is driven by the `Load Back If Destroyed` checkbox on each entry of `Prefab Bounds List` in the Inspector |
@@ -327,13 +327,13 @@ These guarded overrides in `Start()` exist because serialized values win over co
 | `SideDetection` | `sideDetectionRange` 0.38 – 0.42 | 0.38 – 0.42 | 0.32 |
 | `MeleeAttack` | unconditional | `attackPower*` | ×0.99 |
 | `Health` | name + scene match | barricade/spike, bee, rat HP | ×0.5625 / ×0.65 / ×0.75 |
-| `Stamina` | unconditional | `rechargeRate` | ×1.5 |
+| `Stamina` | unconditional | `rechargeRate` | ×0.945 |
 | `BeeNest` | unconditional | hive HP, `healthDropPoint` | ×0.5 |
 | `SideMovement` | player only, unconditional | `targetRunSpeed`, `maxRunForce` | ×1.1, ×1.15 |
-| `RatEnemy` | `delayAttack > 0` | `delayAttack`, `minAttackVelocity` | ×0.24 (min 0.25s), ×1.6 |
-| `RatEmemy_Shield` | `attackTimer.every > 0` | `attackTimer.every`, `minAttackVelocity` | ×0.24 (min 0.25s), ×1.6 |
+| `RatEnemy` | `delayAttack > 0` | `delayAttack`, `minAttackVelocity` | ×0.2 (min 0.208s), ×1.6 |
+| `RatEmemy_Shield` | `attackTimer.every > 0` | `attackTimer.every`, `minAttackVelocity` | ×0.2 (min 0.208s), ×1.6 |
 | `BasicAttackAI` | all enemies; Bear/Rat get the stronger multiplier | `maxTolerance`, `maxToleranceVariation`, `disableTimeAfterHit` | ×0.34 or ×0.48 / same / ×0.29 |
-| `RatBoss` | `delayAttack > 0` | `delayAttack` | ×0.48 (min 0.3s) |
+| `RatBoss` | `delayAttack > 0` | `delayAttack` | ×0.48 (min 0.3s); non-bear also ÷1.2 |
 | `BeeAI` | `attackTimer.every > 0` | `attackTimer.every` | ×0.48 (min 0.3s) |
 | `RangedAirAI` | unconditional | `shootDelay` | ×0.48 (min 0.5s) |
 | `MeleeAttackSimple` | root not tagged `Player` | `attackPower` | ×1.3 |
