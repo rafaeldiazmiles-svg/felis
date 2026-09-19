@@ -45,7 +45,7 @@ Stock = original game. Current = live value in the `.js` file.
 | Rat shield | `AI/RatEmemy_Shield.js` | `attackRateMul` | **0.2** | `minAttackEvery` **0.208s** | Was 0.24 / 0.25, ÷1.2. |
 | Rat shield | same | `attackVelocityMul` | **1.6** | — | Same: swing while closing. |
 | Rat shield | same | `holdPosInsideRangeMul` | **0.7** | — | Parks at 70% of range, not on the edge. Tick saved in `attackQueued`. |
-| Bear (uses RatBoss, not BasicAttackAI) | `AI/RatBoss.js` | `attackDelayMul` + `bearAttackSpeedMul` | **0.48 then ÷1.6** | floor also ÷1.6 | Bear attacks 1.6× more often. `Rat Boss` still uses `ratAttackSpeedMul` 1.2. |
+| Bear (uses RatBoss, not BasicAttackAI) | `AI/RatBoss.js` | `attackDelayMul` + `bearAttackSpeedMul` | **0.48 then ÷1.28** | floor also ÷1.28 | Was ÷1.6, then ×0.8 speed. `Rat Boss` still uses `ratAttackSpeedMul` 1.2. |
 | Bees | `AI/BeeAI.js` | `attackRateMul` | **0.48** | `minAttackEvery` **0.3s** | Dive cadence. Also player-bump knockback. |
 | Eye | `AI/RangedAirAI.js` | `shootDelayMul` | **0.48** | `minShootDelay` **0.5s** | `shootDelay *=` mul. |
 | Other melee brains | `AI/BasicAttackAI.js` | `attackDelayMul` / `_Other` | **0.34** bear-or-rat name, **0.48** else | `minAttackGap` **0.2s** | Also `attackDisableMul` **0.29** after you punch them. |

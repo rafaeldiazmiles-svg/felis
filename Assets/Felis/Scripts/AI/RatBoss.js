@@ -32,7 +32,7 @@ var delayAttack : float;
 private var attackDelayMul : float = 0.48;
 private var minAttackDelay : float = 0.3;
 private var ratAttackSpeedMul : float = 1.2; //Rat Boss only.
-private var bearAttackSpeedMul : float = 1.6; //Level 2 bear: same idea, punchier cadence.
+private var bearAttackSpeedMul : float = 1.28; //1.6 * 0.8. Slower than the last pass, still quicker than stock.
 var attackTimeLeft : float;
 var playerInFront : boolean;
 var playerDistance : float;

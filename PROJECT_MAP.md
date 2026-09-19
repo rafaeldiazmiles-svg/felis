@@ -74,7 +74,7 @@ Since the current project is now committed in git, `git diff`/`git log` covers e
 | `AI/BasicAttackAI.js` | Restores `enableAttack` after the post-hit disable window — it was latching off forever after the player's first punch. Now applies to **every** enemy on this script: attack gap ×0.34 (bear/rat) or ×0.48 (others), post-hit disable ×0.29, one follow-up strike per approach, `minAttackGap` floor 0.2 |
 | `AI/RatEnemy.js` | `delayAttack` ×0.2 (floor 0.208s), `minAttackVelocity` ×1.6 so the rat swings while still closing in, alternating extra strike at `extraStrikeDelay` 0.225s (those three were ÷1.2 from 0.24 / 0.25 / 0.27). In the `AttackingPlayer` stage it now turns to face the player as soon as `playerDistance < playerAttackRange`, instead of only once `onTarget` **and** velocity < `stopVelocity` 0.1 — that pair of conditions was what made it shuffle without swinging |
 | `AI/RatEmemy_Shield.js` | Shield rat's `attackTimer.every` ×0.2 (floor 0.208s) and `minAttackVelocity` ×1.6. Anti-stall: the attack tick is latched in `attackQueued` so it is spent on the first frame the rat can actually swing rather than lost, and `adjustHoldPosDistance` is clamped to 70% of `attackRange` so it parks inside striking distance instead of on its edge |
-| `AI/RatBoss.js` | Boss `delayAttack` ×0.48 (floor 0.3s). Bear then ÷1.6 (`bearAttackSpeedMul`). `Rat Boss` ÷1.2 (`ratAttackSpeedMul`) |
+| `AI/RatBoss.js` | Boss `delayAttack` ×0.48 (floor 0.3s). Bear then ÷1.28 (`bearAttackSpeedMul`, 80% of the 1.6 pass). `Rat Boss` ÷1.2 (`ratAttackSpeedMul`) |
 | `AI/RangedAirAI.js` | Evil Eye `shootDelay` ×0.48 (floor 0.5s) |
 | `Character Objects/MeleeAttackSimple.js` | Enemy melee `attackPower` ×1.3 (skipped when the root is tagged `Player`). Punch connect range: rats ×1.4, bear ×1.6 (`attackRange`) |
 | `Misc/LoadPrefabByBounds.js` | Only the `delayedMsg` null-safety guards from the crash pass. **The `BlockRespawns()` experiment was removed — it never stopped the barricades from coming back.** Respawn behaviour is back to stock: it is driven by the `Load Back If Destroyed` checkbox on each entry of `Prefab Bounds List` in the Inspector |
@@ -333,7 +333,7 @@ These guarded overrides in `Start()` exist because serialized values win over co
 | `RatEnemy` | `delayAttack > 0` | `delayAttack`, `minAttackVelocity` | ×0.2 (min 0.208s), ×1.6 |
 | `RatEmemy_Shield` | `attackTimer.every > 0` | `attackTimer.every`, `minAttackVelocity` | ×0.2 (min 0.208s), ×1.6 |
 | `BasicAttackAI` | all enemies; Bear/Rat get the stronger multiplier | `maxTolerance`, `maxToleranceVariation`, `disableTimeAfterHit` | ×0.34 or ×0.48 / same / ×0.29 |
-| `RatBoss` | `delayAttack > 0` | `delayAttack` | ×0.48 then bear ÷1.6 / Rat Boss ÷1.2 |
+| `RatBoss` | `delayAttack > 0` | `delayAttack` | ×0.48 then bear ÷1.28 / Rat Boss ÷1.2 |
 | `BeeAI` | `attackTimer.every > 0` | `attackTimer.every` | ×0.48 (min 0.3s) |
 | `RangedAirAI` | unconditional | `shootDelay` | ×0.48 (min 0.5s) |
 | `MeleeAttackSimple` | root not tagged `Player` | `attackPower`, `attackRange` | ×1.3; rats ×1.4 range, bear ×1.6 |
