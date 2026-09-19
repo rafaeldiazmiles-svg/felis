@@ -31,7 +31,8 @@ var defaultSide : float = -1;
 var delayAttack : float;
 private var attackDelayMul : float = 0.48;
 private var minAttackDelay : float = 0.3;
-private var ratAttackSpeedMul : float = 1.2; //Rat Boss only. The Level 2 bear keeps 0.48.
+private var ratAttackSpeedMul : float = 1.2; //Rat Boss only.
+private var bearAttackSpeedMul : float = 1.6; //Level 2 bear: same idea, punchier cadence.
 var attackTimeLeft : float;
 var playerInFront : boolean;
 var playerDistance : float;
@@ -107,7 +108,11 @@ function Start () {
 	if(delayAttack > 0.0){
 		delayAttack *= attackDelayMul;
 		var attackFloor : float = minAttackDelay;
-		if(!LooksLikeBear()){
+		if(LooksLikeBear()){
+			delayAttack /= bearAttackSpeedMul;
+			attackFloor /= bearAttackSpeedMul;
+		}
+		else{
 			delayAttack /= ratAttackSpeedMul;
 			attackFloor /= ratAttackSpeedMul;
 		}
