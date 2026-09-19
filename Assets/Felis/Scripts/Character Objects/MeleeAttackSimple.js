@@ -42,7 +42,6 @@ var punchHitEffectPosition : Vector3;
 var attackPower : float;
 private var attackPowerMul : float = 1.3;
 private var ratPunchRangeMul : float = 1.4; //How far a rat punch can still connect.
-private var shieldPunchRangeMul : float = 2.1; //1.4 * 1.5. Shield rats swing from farther, so the connect box matches.
 private var bearPunchRangeMul : float = 1.6; //Rolled back from 2.88.
 var staminaFactor : float;
 var minStaminaFactor : float = .3;
@@ -389,14 +388,8 @@ function GetAllEnemies(){
 
 function EnemyPunchRangeMul() : float {
 	if(EnemyNameHas("bear")) return bearPunchRangeMul;
-	if(HasShieldAI()) return shieldPunchRangeMul;
 	if(EnemyNameHas("rat")) return ratPunchRangeMul;
 	return 1.0;
-}
-
-function HasShieldAI() : boolean {
-	var start : Transform = (transform.parent != null) ? transform.parent : transform;
-	return start.GetComponentInChildren(RatEmemy_Shield) != null;
 }
 
 function EnemyNameHas(needle : String) : boolean {
