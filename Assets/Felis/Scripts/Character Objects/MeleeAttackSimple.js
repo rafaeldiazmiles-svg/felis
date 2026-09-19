@@ -41,6 +41,8 @@ var punchHitEffectPosition : Vector3;
 
 var attackPower : float;
 private var attackPowerMul : float = 1.3;
+private var ratPunchRangeMul : float = 1.4; //How far a rat punch can still connect.
+private var bearPunchRangeMul : float = 1.6; //Same for the bear. Bear is checked first; its bones are named Rat.
 var staminaFactor : float;
 var minStaminaFactor : float = .3;
 
@@ -91,6 +93,7 @@ function Start () {
 	//Enemy strikes hit harder. The player swings through MeleeAttack.js, so it is left alone.
 	if(transform.root.tag != "Player"){
 		attackPower *= attackPowerMul;
+		attackRange *= EnemyPunchRangeMul();
 	}
 
 		if(animComp == null) animComp = transform.parent.GetComponentInChildren(Animation);
@@ -381,4 +384,25 @@ function GetAllEnemies(){
 	}
 
 	allEnemies = enemyArray.ToBuiltin(GameObject) as GameObject[];
+}
+
+function EnemyPunchRangeMul() : float {
+	if(EnemyNameHas("bear")) return bearPunchRangeMul;
+	if(EnemyNameHas("rat")) return ratPunchRangeMul;
+	return 1.0;
+}
+
+function EnemyNameHas(needle : String) : boolean {
+	var n : String = needle.ToLower();
+	var p : Transform = transform;
+	while(p != null){
+		if(p.name.ToLower().Contains(n)) return true;
+		p = p.parent;
+	}
+	var start : Transform = (transform.parent != null) ? transform.parent : transform;
+	var kids : Component[] = start.GetComponentsInChildren(Transform);
+	for(var i = 0; i < kids.Length; i++){
+		if(kids[i].name.ToLower().Contains(n)) return true;
+	}
+	return false;
 }

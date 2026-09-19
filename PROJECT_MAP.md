@@ -76,7 +76,7 @@ Since the current project is now committed in git, `git diff`/`git log` covers e
 | `AI/RatEmemy_Shield.js` | Shield rat's `attackTimer.every` ×0.2 (floor 0.208s) and `minAttackVelocity` ×1.6. Anti-stall: the attack tick is latched in `attackQueued` so it is spent on the first frame the rat can actually swing rather than lost, and `adjustHoldPosDistance` is clamped to 70% of `attackRange` so it parks inside striking distance instead of on its edge |
 | `AI/RatBoss.js` | Boss `delayAttack` ×0.48 (floor 0.3s). If the instance is not a bear, also ÷1.2 (`ratAttackSpeedMul`) so `Rat Boss` keeps up with the other rats |
 | `AI/RangedAirAI.js` | Evil Eye `shootDelay` ×0.48 (floor 0.5s) |
-| `Character Objects/MeleeAttackSimple.js` | Enemy melee `attackPower` ×1.3 (skipped when the root is tagged `Player`) |
+| `Character Objects/MeleeAttackSimple.js` | Enemy melee `attackPower` ×1.3 (skipped when the root is tagged `Player`). Punch connect range: rats ×1.4, bear ×1.6 (`attackRange`) |
 | `Misc/LoadPrefabByBounds.js` | Only the `delayedMsg` null-safety guards from the crash pass. **The `BlockRespawns()` experiment was removed — it never stopped the barricades from coming back.** Respawn behaviour is back to stock: it is driven by the `Load Back If Destroyed` checkbox on each entry of `Prefab Bounds List` in the Inspector |
 | `Animation/PlayLoopAnimation.js` | `GetLoopState()` guard — reading an `AnimationState` while the `Animation` component is disabled returned a dangling pointer and crashed the editor |
 | `DestroyAfterAnimation.js` | Same class of crash guard before touching `normalizedTime` |
@@ -336,7 +336,7 @@ These guarded overrides in `Start()` exist because serialized values win over co
 | `RatBoss` | `delayAttack > 0` | `delayAttack` | ×0.48 (min 0.3s); non-bear also ÷1.2 |
 | `BeeAI` | `attackTimer.every > 0` | `attackTimer.every` | ×0.48 (min 0.3s) |
 | `RangedAirAI` | unconditional | `shootDelay` | ×0.48 (min 0.5s) |
-| `MeleeAttackSimple` | root not tagged `Player` | `attackPower` | ×1.3 |
+| `MeleeAttackSimple` | root not tagged `Player` | `attackPower`, `attackRange` | ×1.3; rats ×1.4 range, bear ×1.6 |
 
 **Rule of thumb:** to tune one of the guarded values from the Inspector, pick a number *outside* the guarded range (e.g. set `airMul` to 0.65 rather than 0.40) and it will be respected. Anything not in this table behaves normally.
 
