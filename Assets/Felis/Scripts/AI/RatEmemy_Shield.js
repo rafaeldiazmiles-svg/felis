@@ -45,6 +45,7 @@ var attackTimer : Timer;
 var minAttackVelocity : float = 1.0;
 private var attackRateMul : float = 0.2; //0.24 / 1.2
 private var minAttackEvery : float = 0.208; //0.25 / 1.2
+private var attackRangeMul : float = 1.5; //Start the swing from farther away.
 private var attackVelocityMul : float = 1.6; //Lets the shield rat swing while still closing in.
 private var holdPosInsideRangeMul : float = 0.7; //Parks inside striking distance instead of right on its edge.
 private var attackQueued : boolean;
@@ -79,6 +80,7 @@ function Start () {
 	}
 
 	minAttackVelocity *= attackVelocityMul;
+	attackRange *= attackRangeMul;
 
 	if(adjustHoldPosDistance > attackRange * holdPosInsideRangeMul){
 		adjustHoldPosDistance = attackRange * holdPosInsideRangeMul;
