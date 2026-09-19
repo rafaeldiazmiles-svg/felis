@@ -641,26 +641,28 @@ function GetAllEnemies(){
 	}
 }
 
-function IsBearTarget(t : Transform) : boolean {
+function NameChainHas(t : Transform, needle : String) : boolean {
+	if(t == null) return false;
+	var n : String = needle.ToLower();
 	var p : Transform = t;
 	while(p != null){
-		if(p.name.ToLower().Contains("bear")){
-			return true;
-		}
+		if(p.name.ToLower().Contains(n)) return true;
 		p = p.parent;
+	}
+	//GetAllEnemies jumps to the tagged object's parent, so "Bear" can sit on this object or a child, not only above.
+	var kids : Component[] = t.GetComponentsInChildren(Transform);
+	for(var i = 0; i < kids.Length; i++){
+		if(kids[i].name.ToLower().Contains(n)) return true;
 	}
 	return false;
 }
 
+function IsBearTarget(t : Transform) : boolean {
+	return NameChainHas(t, "bear");
+}
+
 function IsRatTarget(t : Transform) : boolean {
-	var p : Transform = t;
-	while(p != null){
-		if(p.name.ToLower().Contains("rat")){
-			return true;
-		}
-		p = p.parent;
-	}
-	return false;
+	return NameChainHas(t, "rat");
 }
 
 function IsBeeTarget(t : Transform) : boolean {
