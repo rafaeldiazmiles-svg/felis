@@ -42,7 +42,7 @@ var punchHitEffectPosition : Vector3;
 var attackPower : float;
 private var attackPowerMul : float = 1.3;
 private var ratPunchRangeMul : float = 1.4; //How far a rat punch can still connect.
-private var bearPunchRangeMul : float = 1.6; //Same for the bear. Bear is checked first; its bones are named Rat.
+private var bearPunchRangeMul : float = 2.88; //1.6 * 1.8 of the previous connect range.
 var staminaFactor : float;
 var minStaminaFactor : float = .3;
 
