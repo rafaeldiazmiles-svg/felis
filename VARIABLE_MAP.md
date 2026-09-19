@@ -12,7 +12,7 @@ Stock = original game. Current = live value in the `.js` file.
 
 | Feeling | File | Variable | Stock | Current | What the code does |
 |---|---|---|---|---|---|
-| Stamina refill speed | `Character Objects/Stamina.js` | `rechargeRateMul` | 1 (none) | **1.35** | `rechargeRate *= rechargeRateMul`. Was 2.25, then ×0.6 → 1.35. Next ask: ×0.7 of this. |
+| Stamina refill speed | `Character Objects/Stamina.js` | `rechargeRateMul` | 1 (none) | **0.945** | `rechargeRate *= rechargeRateMul`. Path: 2.25 → 1.35 (×0.6) → 0.945 (×0.7). |
 | Pause before stamina starts filling | same | `maxWaitBeforeRecharge` | prefab (~0.5) | **0.25** | Caps `waitBeforeRechargeDuration`. Regen is blocked while stamina is still dropping. |
 | Extra stamina pool | same | *(removed)* | +25% | **off** | Those two lines are gone. |
 | Combo hits faster each swing | `Character Objects/MeleeAttack.js` | `comboSpeedStep` | 1 | **0.88** | Each chained hit: `lastAttackDuration *= 0.88`. |

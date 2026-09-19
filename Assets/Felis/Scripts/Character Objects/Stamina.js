@@ -17,7 +17,7 @@ var maxStamina : float;
 var lowStaPct : float = .5;
 
 var rechargeRate : float = 20.0;
-private var rechargeRateMul : float = 1.35; //2.25 dialled back to 0.6 of that.
+private var rechargeRateMul : float = 0.945; //1.35 * 0.7. Still a bit faster than stock.
 private var maxWaitBeforeRecharge : float = 0.25; //Regen is blocked while stamina is dropping, so this gap is what fighting feels.
 var breatheRecharge : FloatLerp;
 var breatheRecharge_Amount : float = 50;
