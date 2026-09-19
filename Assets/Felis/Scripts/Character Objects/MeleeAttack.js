@@ -25,6 +25,7 @@ var velocityIncreaseRange : float = .2;
 var verticalReachUp : float = 1.4;
 var verticalReachDown : float = 1.2;
 var pushMul : float = 1.4;
+private var ratHitboxMul : float = 1.4; //Rats only. Punch range vs anything named Rat. Not bees, not the eye, not the bear.
 
 var performAttack : boolean;
 var attacking : ToggleBoolean;
@@ -566,8 +567,13 @@ function FindNearestEnemyInFront(){
 
 			targetDistance = toTarget.magnitude;
 
-			//Add if in range
-			if(targetDistance < attackRange + rb.velocity.magnitude * velocityIncreaseRange){
+			//Add if in range. Rats count as a bigger target so the punch does not have to land on a point.
+			var hitRange : float = attackRange + rb.velocity.magnitude * velocityIncreaseRange;
+			if(IsRatTarget(allEnemies[i].transform)){
+				hitRange *= ratHitboxMul;
+			}
+
+			if(targetDistance < hitRange){
 				attackTargetArray.Add(allEnemies[i].transform);
 				attackTargetArray_Dist.Add(targetDistance);
 				enemyCount ++;
@@ -629,6 +635,17 @@ function GetAllEnemies(){
 
 		allEnemies[i] = allEnemies[i].transform.parent.gameObject;
 	}
+}
+
+function IsRatTarget(t : Transform) : boolean {
+	var p : Transform = t;
+	while(p != null){
+		if(p.name.ToLower().Contains("rat")){
+			return true;
+		}
+		p = p.parent;
+	}
+	return false;
 }
 
 function IsBeeTarget(t : Transform) : boolean {
