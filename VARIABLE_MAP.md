@@ -43,14 +43,17 @@ Stock = original game. Current = live value in the `.js` file.
 | Rat no shield | same | `attackVelocityMul` | **1.6** | — | Can swing while still walking in. |
 | Rat no shield | same | `extraStrikeDelay` | **0.225s** | — | Was 0.27, ÷1.2. |
 | Rat shield | `AI/RatEmemy_Shield.js` | `attackRateMul` | **0.2** | `minAttackEvery` **0.208s** | Was 0.24 / 0.25, ÷1.2. |
+| Rat shield start-swing distance | same | `attackRangeMul` | 1 | **1.5** | `attackRange *=` 1.5 so they react from farther. |
 | Rat shield | same | `attackVelocityMul` | **1.6** | — | Same: swing while closing. |
 | Rat shield | same | `holdPosInsideRangeMul` | **0.7** | — | Parks at 70% of range, not on the edge. Tick saved in `attackQueued`. |
-| Bear (uses RatBoss, not BasicAttackAI) | `AI/RatBoss.js` | `attackDelayMul` + `bearAttackSpeedMul` | **0.48 then ÷1.28** | floor also ÷1.28 | Was ÷1.6, then ×0.8 speed. `Rat Boss` still uses `ratAttackSpeedMul` 1.2. |
+| Bear (uses RatBoss, not BasicAttackAI) | `AI/RatBoss.js` | `attackDelayMul` + `bearAttackSpeedMul` | **0.48 then ÷1.28** | floor also ÷1.28 | Was ÷1.6, then ×0.8 speed. |
+| Rat King (same script, not a bear) | same | `ratAttackSpeedMul` | **1.92** | floor also ÷1.92 | Was 1.2, then ×1.6. Also turns to face you in range so it does not walk up and freeze. |
 | Bees | `AI/BeeAI.js` | `attackRateMul` | **0.48** | `minAttackEvery` **0.3s** | Dive cadence. Also player-bump knockback. |
 | Eye | `AI/RangedAirAI.js` | `shootDelayMul` | **0.48** | `minShootDelay` **0.5s** | `shootDelay *=` mul. |
 | Other melee brains | `AI/BasicAttackAI.js` | `attackDelayMul` / `_Other` | **0.34** bear-or-rat name, **0.48** else | `minAttackGap` **0.2s** | Also `attackDisableMul` **0.29** after you punch them. |
 | All enemy melee damage | `Character Objects/MeleeAttackSimple.js` | `attackPowerMul` | **1.3** | — | `attackPower *=` 1.3 if root is not tagged Player. |
 | Rat punch connect area | same | `ratPunchRangeMul` | 1 | **1.4** | Their `attackRange` ×1.4. Not bees, not the eye. |
+| Shield punch connect area | same | `shieldPunchRangeMul` | 1 | **2.1** | 1.4 × 1.5 so the swing they start farther away still connects. |
 | Bear punch connect area | same | `bearPunchRangeMul` | 1 | **1.6** | Back from 2.88. Bear first so Rat-named bones do not steal the rat mul. |
 
 ---

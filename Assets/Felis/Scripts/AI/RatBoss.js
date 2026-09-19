@@ -31,7 +31,7 @@ var defaultSide : float = -1;
 var delayAttack : float;
 private var attackDelayMul : float = 0.48;
 private var minAttackDelay : float = 0.3;
-private var ratAttackSpeedMul : float = 1.2; //Rat Boss only.
+private var ratAttackSpeedMul : float = 1.92; //1.2 * 1.6. Rat King only; the bear uses bearAttackSpeedMul.
 private var bearAttackSpeedMul : float = 1.28; //1.6 * 0.8. Slower than the last pass, still quicker than stock.
 var attackTimeLeft : float;
 var playerInFront : boolean;
@@ -240,8 +240,8 @@ function Update () {
 				movementAI.targetPosition = player.position + Vector3(playerSide * attackDistance,0,0);
 			}
 			
-			//Look at prospero when standing still.
-			if(movementAI.onTarget.current && ratRigidbody.velocity.magnitude < stopVelocity){
+			//Look at prospero when standing still, or as soon as he is within striking distance.
+			if(playerDistance < playerAttackRange || (movementAI.onTarget.current && ratRigidbody.velocity.magnitude < stopVelocity)){
 				sideMovement.currentSide = playerSide;
 			}
 								
