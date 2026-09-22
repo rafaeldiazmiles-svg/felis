@@ -1,0 +1,1633 @@
+// COPIA PARA LEER Y BORRAR. No es el script real. Unity no lo ejecuta.
+// Cada línea del original + qué hace. "Unity" = el motor. "Hermano" = lógica/datos de este juego.
+
+// #pragma strict
+// Unity: UnityScript estricto (tipos). No es una decisión de gameplay.
+
+// @Header("-----------------Input------------------")
+// Unity: título en el Inspector. El hermano eligió el texto.
+
+// var player : GameObject;
+// Unity muestra el campo. El hermano puede arrastrar un objeto; si está vacío, GetPlayer() lo busca por tag.
+
+// var playerTag : String = "Player";
+// String que Unity usa en FindGameObjectWithTag. El hermano eligió el tag "Player".
+
+// var freeMem : boolean = true;
+// Si true, tras Destroy llama Resources.UnloadUnusedAssets (API Unity). Eso puede vaciar meshes de chunks vecinos.
+
+// var loadEverythingOnStart : boolean;
+// Si true, instancia todo y no destruye. Debug / desactivar streaming.
+
+// var setActiveManager : boolean;
+// Tras spawn, registra el objeto en SetActiveManager (otro script del hermano).
+
+// var removeInactive : boolean = true;
+// Se pasa a SetActiveManager: si puede borrar inactivos o no.
+
+// @Space(30)
+// Unity: espacio vacío en el Inspector.
+
+// var prefabBoundsList : PrefabBounds[];
+// LA LISTA. Cada fila = un chunk. El array lo llena el hermano en Inspector; Unity lo serializa en .prefab/.unity.
+
+// @Space(30)
+
+// var removeCloneWord : boolean;
+// Instantiate pone "(Clone)" en el nombre. Si true, lo saca.
+
+// var addNumber : boolean;
+// Concatena el índice de la fila al nombre.
+
+// @Space(30)
+
+// var delayedMsg : Array = new Array();
+// Cola casera (no List de C#). Mensajes cuyo destino aún no existe.
+
+// @Space(30)
+
+// var newObjThisFrame : boolean;
+// Flag: alguien de la escena acaba de spawnear. Sirve para reintentar Find.
+
+// @Space(30)
+
+// var debug : boolean;
+// Dibuja gizmos de esta instancia.
+
+// (línea vacía)
+
+// function GetPlayer(){
+// Busca al jugador. Unity: FindGameObjectWithTag.
+
+// 	player = GameObject.FindGameObjectWithTag(playerTag);
+// Recorre la escena. Caro si se llama mucho.
+
+// }
+// Fin GetPlayer.
+
+// (línea vacía)
+
+// function NewObj(){
+// Lo llama otro LoadPrefabByBounds vía SendMessage. No es Unity “mágico”: es un string.
+
+// 	newObjThisFrame = true;
+// Marca “hubo spawn este frame”.
+
+// }
+// Fin NewObj.
+
+// (línea vacía)
+
+// class PrefabBounds{
+// Bolsa de datos de UNA fila. ~70 campos. Clean Code: esto es un god-struct.
+
+// 	var prefab : GameObject[];
+// Prefabs a instanciar (varios por fila). Referencias que el hermano arrastró.
+
+// 	var playerInLoadBounds : boolean;
+// Runtime: ¿el player está dentro de alguna caja verde? No se edita a mano.
+
+// 	var loadBounds : Bounds[];
+// Cajas de CARGA. Bounds = tipo Unity (centro + tamaño). Valores = hermano.
+
+// 	var forceLoad : boolean;
+// Fuerza “como si el player estuviera dentro”. ForceLoadID lo prende.
+
+// 	var forceLoadTime : float;
+// No carga forzada hasta que Time.time pase este valor.
+
+// 	@Space(10)
+
+// 	var leavePrefabDefaultPosition : boolean;
+// Si true, no mueve el clone; deja la posición del prefab.
+
+// 	var useThisAsTransformPos : boolean;
+// Lo usa el Register (otro script), no este archivo.
+
+// 	var useTransformPosition : Transform;
+// Transform de referencia: posición/rot/escala y a veces centro de las cajas.
+
+// 	var useTransformRotation : boolean;
+// Copia rotation de ese Transform.
+
+// 	var useTransformScale : boolean;
+// Copia localScale.
+
+// 	var useTransformAsBoundsCenter : boolean;
+// Suma la posición del Transform al centro de las Bounds (cajas se mueven con un objeto).
+
+// 	@Space(10)
+
+// 	var usePrefabObjList : boolean;
+// En vez de prefab[], usa hijos con PrefabObjs.js.
+
+// 	@Space(30)
+
+// 	var setName : String;
+// Renombra el clone si no está vacío.
+
+// 	@Space(30)
+
+// 	var destroyIfOutside : Bounds[];
+// Cajas ROJAS: zona de VIDA. Fuera de TODAS → Destroy.
+
+// 	var loadBackIfDestroyed : boolean;
+// Si false y ya cargó una vez, no vuelve a instanciar.
+
+// 	var useTimedDestroy : boolean;
+// Destroy diferido (componente TimedDestroy).
+
+// 	var usingTimedDestroy : boolean;
+// Runtime: ya le puse TimedDestroy, no dupliques.
+
+// 	var timedDestroyDelay : float;
+// Segundos del delay.
+
+// 	@Space(30)
+
+// 	var changeScale : boolean;
+// ¿Pisotear localScale al spawn?
+
+// 	var scale : Vector3;
+// Escala si changeScale.
+
+// 	@Space(10)
+
+// 	var bodyParts : BodyPartProportion[];
+// Proporciones de huesos (otro sistema del hermano).
+
+// 	@Space(10)
+
+// 	var useChildren : boolean;
+// escape/patrol = hijos de useTransformPosition.
+
+// 	var setEscapeLocation : boolean;
+// Escribe puntos de escape en el enemigo spawneado.
+
+// 	var escapeLocation : Transform[];
+// Esos puntos.
+
+// 	var setPatrolPoints : boolean;
+// Idem para PatrolAI.
+
+// 	var patrolPoints : Transform[];
+
+// 	@Space(10)
+
+// 	var changeMaterial : Material;
+// Un material para (casi) todos los Renderer.
+
+// 	var changeMaterial_IgnoreString : String[];
+// Nombres de objetos a no retocar.
+
+// 	var changeMaterialByID : ChangeMaterialID[];
+// Material distinto según índice del prefab en la fila.
+
+// 	@Space(10)
+
+// 	var sendMsgFloat : SendMsgFloat[];
+// BroadcastMessage con float.
+
+// 	var sendMsgSimple : SendMsgSimple[];
+// BroadcastMessage sin argumento.
+
+// 	var sendMsgVector3 : SendMsgVector3[];
+
+// 	var sendMsgColor : SendMsgColor[];
+
+// 	@Space(30)
+
+// 	var ApplyLevelVColorShade : boolean;
+// Aplica VertexColorShade del nivel a las meshes.
+
+// 	var dynamicShade : boolean;
+// Registra meshes para shade dinámico.
+
+// 	@Space(30)
+
+// 	var connectAnchor : boolean;
+// Configura ConfigurableJoint (física Unity).
+
+// 	var connectAnchorOffset : Vector3;
+// Offset del ancla.
+
+// 	@Space(30)
+
+// 	var skipActiveMng : boolean;
+// No registrar en SetActiveManager.
+
+// 	var doNotRemove : boolean;
+// Registrar pero que no lo borren.
+
+// 	@Space(30)
+
+// 	var renderQueue : boolean;
+// Forzar orden de render (shader queue).
+
+// 	var renderQueue_Val : float;
+// Valor de esa queue.
+
+// 	@Space(30)
+
+// 	var disable : boolean;
+// Saltea esta fila por completo.
+
+// 	var debug : boolean;
+// Gizmos solo de esta fila.
+
+// 	@Space(30)
+
+// 	var loaded : boolean;
+// Runtime: hay instancias vivas (o se considera cargado).
+
+// 	var loadedOnce : boolean;
+// Runtime: alguna vez cargó.
+
+// 	var firstFrame : boolean;
+// Runtime: ya pasó un Update de esta fila. Evita destroy el primer frame.
+
+// 	@Space(30)
+
+// 	var instances : GameObject[];
+// Clones vivos de esta fila.
+
+// 	@Space(30)
+
+// 	var ID : int;
+// ID lógico. ForceLoadID busca ESTE número, no el índice del array.
+
+// 	var sendMessageTo : Prefab_SendMsgObj[];
+// Mensajes a OTROS objetos (no al clone).
+
+// 	@Space(30)
+
+// 	var requireObjPresent : boolean;
+// No procesar hasta que exista un objeto en escena.
+
+// 	var requireObjP_obj : GameObject;
+// Ese objeto (o se busca por nombre).
+
+// 	var requireObjP_FindName : String;
+// Nombre para GameObject.Find.
+
+// (línea vacía)
+
+// 	@Space(30)
+
+// 	var requireGameVal : boolean;
+// Condición por PlayerPrefs (progreso).
+
+// 	var addGameLevelString : int;
+// Prefijo "Game X - Level N - " si > 0.
+
+// 	var requireGameVal_Name : String;
+// Clave final del pref.
+
+// 	var requireGameVal_Value : int;
+// Valor que debe coincidir.
+
+// 	var gotGameVal : boolean;
+// Ya leí el pref (una vez).
+
+// 	var gameVal : int;
+// Valor leído.
+
+// }
+// Fin PrefabBounds.
+
+// (línea vacía)
+
+// class Prefab_SendMsgObj{
+// Destino + mensaje para BroadcastMessage.
+
+// 	var message : String;
+// Nombre de función en el destino. Acoplamiento por string.
+
+// 	var obj : GameObject;
+// Destino, o se busca.
+
+// 	var valIsNewPrefab : boolean;
+// Si true, el argumento del mensaje es el clone nuevo.
+
+// (línea vacía)
+
+// 	@Space(30)
+
+// 	var search : boolean;
+// Buscar por nombre.
+
+// 	var searchString : String;
+// Nombre para Find.
+
+// }
+// Fin Prefab_SendMsgObj.
+
+// (línea vacía)
+
+// class ChangeMaterialID{
+// Material por índice de prefab.
+
+// 	var newMaterial : Material;
+
+// 	var prefabID : int;
+// Índice m en prefab[].
+
+// }
+// Fin ChangeMaterialID.
+
+// (línea vacía)
+
+// function ForceLoadID(ID :int){
+// API pública. JarParticle llama esto.
+
+// 	for(var i = 0; i < prefabBoundsList.Length; i++){
+// Recorre TODAS las filas.
+
+// 		if(prefabBoundsList[i].ID == ID){
+// Match por campo ID, no por i.
+
+// 			prefabBoundsList[i].forceLoad = true;
+// Próximo Update trata la fila como “player adentro”.
+
+// 			prefabBoundsList[i].forceLoadTime = 0.0;
+// Efecto inmediato (Time.time > 0).
+
+// 		}
+
+// 	}
+
+// }
+// Fin ForceLoadID.
+
+// (línea vacía)
+
+// function SetPosID(ID : int, pos : Vector3){
+// Mueve el Transform de referencia de esa fila.
+
+// 	for(var i = 0; i < prefabBoundsList.Length; i++){
+
+// 		if(prefabBoundsList[i].ID == ID){
+
+// 			prefabBoundsList[i].useTransformPosition.position = pos;
+// NPE si useTransformPosition es null. Nadie en los .js abiertos llama esto.
+
+// 		}
+
+// 	}	
+
+// }
+// Fin SetPosID.
+
+// (línea vacía)
+// (línea vacía)
+
+// function Start () {
+// Unity llama una vez al activar el componente.
+
+// 	GetPlayer();
+// Cachea el player.
+
+// (línea vacía)
+
+// 	delayedMsg = new Array();
+// Reinicia la cola (el default del campo se pierde al serializar a veces).
+
+// }
+// Fin Start.
+
+// (línea vacía)
+
+// function ApplyChanges(ID : int, newPrefab : GameObject, prefabID : int){
+// Post-spawn. ID = índice de fila. prefabID = cuál prefab[] se usó.
+// Clean Code: ~250 líneas, muchas razones para cambiar. Debería ser N funciones.
+
+// 	var charChildren : Transform[] = newPrefab.GetComponentsInChildren.<Transform>();
+// Todos los transforms del clone (huesos incluidos). Caro.
+
+// 	//Change Scale.
+// Comentario original del hermano.
+
+// 	if(prefabBoundsList[ID].changeScale){
+
+// 		newPrefab.transform.localScale = prefabBoundsList[ID].scale;
+
+// 	}
+
+// 	//Change Proportions.
+// (línea vacía)
+
+// 	if(prefabBoundsList[ID].bodyParts != null){
+
+// 		var charChangeProp : ChangeProportions = newPrefab.GetComponentInChildren.<ChangeProportions>();
+// Otro script del hermano.
+
+// 		if(charChangeProp != null){
+
+// 			charChangeProp.bodyParts = prefabBoundsList[ID].bodyParts;
+// Pisa el array del componente.
+
+// 			for(var i = 0; i < charChangeProp.bodyParts.Length; i++){
+
+// 				var thisChangePropName : String =  charChangeProp.bodyParts[i].transformName.ToLower(); //The name to look for in the bones.
+
+// 				for(var n = 0; n < charChildren.Length; n++){
+// Nested loop nombre×hueso.
+
+// 					if(charChildren[n].name.ToLower().Contains(thisChangePropName)){
+
+// 						charChangeProp.bodyParts[i].transform = charChildren[n];
+
+// 						break;
+
+// 					}
+
+// 				}
+
+// 			}
+
+// 		}
+
+// 	}
+
+// 	(línea vacía)
+
+// 	//Escape Location
+
+// 	var children : Transform[];
+// Hijos del Transform de referencia (puntos).
+
+// 	if(prefabBoundsList[ID].useChildren){
+
+// 		var childrenArray : Array = new Array();
+
+// 		for(i = 0; i < prefabBoundsList[ID].useTransformPosition.childCount; i++){
+// NPE si useTransformPosition es null.
+
+// 			childrenArray.Push(prefabBoundsList[ID].useTransformPosition.GetChild(i));
+
+// 		}
+
+// 		children = childrenArray.ToBuiltin(Transform) as Transform[];
+// Array de UnityScript → array tipado.
+
+// 		prefabBoundsList[ID].escapeLocation = children;
+// PISA el array del Inspector en runtime.
+
+// 	}
+
+// 	(línea vacía)
+// 	(línea vacía)
+
+// 	if(prefabBoundsList[ID].setEscapeLocation){
+
+// 		if(prefabBoundsList[ID].useChildren){
+
+// 			prefabBoundsList[ID].escapeLocation = children;
+// Duplicado del bloque de arriba.
+
+// 		}
+
+// 		var wPosArray : Array = new Array();
+
+// 		for(i = 0; i < charChildren.Length; i++){
+
+// 			 if(charChildren[i].name.ToLower().Contains("escape location")){
+// Magic string. Typo en un hueso = no encuentra.
+
+// 			 	var isWPos : IsWorldPosition = charChildren[i].GetComponent.<IsWorldPosition>();
+
+// 			 	if(isWPos != null){
+
+// 			 		wPosArray.Push(isWPos);
+
+// 			 	}
+
+// 			 }
+
+// 		}
+
+// 		for(i = 0; i < wPosArray.length; i++){
+
+// 			if(i < prefabBoundsList[ID].escapeLocation.Length){
+
+// 				var thisWPos : IsWorldPosition = wPosArray[i];
+
+// 				thisWPos.worldPosition = prefabBoundsList[ID].escapeLocation[i].position;
+
+// 				thisWPos.setExternally = true;
+
+// 			}
+
+// 			else{
+
+// 				break;
+
+// 			}
+
+// 		}
+
+// 	}
+
+// 	(línea vacía)
+
+// 	//Patrol
+
+// 	if(prefabBoundsList[ID].setPatrolPoints){
+
+// 		if(prefabBoundsList[ID].useChildren){
+
+// 			prefabBoundsList[ID].patrolPoints = children;
+
+// 		}	
+
+// 		var patrolAI : PatrolAI = newPrefab.GetComponentInChildren.<PatrolAI>();
+
+// 		if(patrolAI != null){
+
+// 			patrolAI.points = new Vector3[prefabBoundsList[ID].patrolPoints.Length];
+
+// 			for(i = 0; i < patrolAI.points.Length; i++){
+
+// 				patrolAI.points[i] = prefabBoundsList[ID].patrolPoints[i].position;
+
+// 			}
+
+// 		}
+
+// 	}
+
+// 	(línea vacía)
+
+// 	//Change Material
+
+// 	var rends : Renderer[] = newPrefab.GetComponentsInChildren.<Renderer>();
+
+// 	for(i = 0; i < rends.Length; i++){
+
+// 		if(rends[i].gameObject.name == "Shadow"
+// Magic string.
+
+// 		|| rends[i].gameObject.name.Contains("Baloon"))
+// Typo: Balloon. Si el mesh se llama bien, este skip no corre.
+
+// 		{
+
+// 			continue;
+
+// 		}
+
+// (línea vacía)
+
+// 		var cont : boolean;
+// Flag “saltar”. Nombre pobre (continue).
+
+// 		for(n = 0; n < prefabBoundsList[ID].changeMaterial_IgnoreString.Length; n++){
+// NPE si el array ignore es null.
+
+// 			if(rends[i].gameObject.name.Contains(prefabBoundsList[ID].changeMaterial_IgnoreString[n])){
+
+// 				cont = true;
+
+// 			}
+
+// 		}
+
+// 		if(cont){
+
+// 			continue;
+
+// 		}
+
+// (línea vacía)
+
+// 		if(prefabBoundsList[ID].changeMaterial != null){
+
+// 			rends[i].material = prefabBoundsList[ID].changeMaterial;
+// .material instancia el mat (copia). Memoria.
+
+// 		}
+
+// 		(línea vacía)
+
+// 		if(prefabBoundsList[ID].changeMaterialByID != null){
+
+// 			for(n = 0; n < prefabBoundsList[ID].changeMaterialByID.Length; n++){
+
+// 				if(prefabID == prefabBoundsList[ID].changeMaterialByID[n].prefabID){
+
+// 					rends[i].material = prefabBoundsList[ID].changeMaterialByID[n].newMaterial;
+
+// 				}
+
+// 			}
+
+// 		}
+
+// 	}
+
+// 	(línea vacía)
+
+// 	//BroadCast Message with float value.
+
+// 	if(prefabBoundsList[ID].sendMsgFloat != null){
+
+// 		for(i = 0; i < prefabBoundsList[ID].sendMsgFloat.Length; i++){
+
+// 			newPrefab.BroadcastMessage(prefabBoundsList[ID].sendMsgFloat[i].methodName, prefabBoundsList[ID].sendMsgFloat[i].methodValue, SendMessageOptions.DontRequireReceiver);
+// Unity recorre hijos buscando UNA función por nombre. Silencioso si no existe.
+
+// 		}
+
+// 	}
+
+// 	(línea vacía)
+
+// 	//BroadCast Message
+
+// 	if(prefabBoundsList[ID].sendMsgSimple != null){
+
+// 		for(i = 0; i < prefabBoundsList[ID].sendMsgSimple.Length; i++){
+
+// 			newPrefab.BroadcastMessage(prefabBoundsList[ID].sendMsgSimple[i].methodName, SendMessageOptions.DontRequireReceiver);
+
+// 		}
+
+// 	}
+
+// (línea vacía)
+
+// 	//BroadCast Message with float value.
+// Comentario mentiroso: es Vector3, no float.
+
+// 	if(prefabBoundsList[ID].sendMsgVector3 != null){
+
+// 		for(i = 0; i < prefabBoundsList[ID].sendMsgVector3.Length; i++){
+
+// 			newPrefab.BroadcastMessage(prefabBoundsList[ID].sendMsgVector3[i].methodName, prefabBoundsList[ID].sendMsgVector3[i].methodValue, SendMessageOptions.DontRequireReceiver);
+
+// 		}
+
+// 	}
+
+// 	(línea vacía)
+
+// 	//BroadCast Message with Color
+
+// 	if(prefabBoundsList[ID].sendMsgColor != null){
+
+// 		for(i = 0; i < prefabBoundsList[ID].sendMsgColor.Length; i++){
+
+// 			newPrefab.BroadcastMessage(prefabBoundsList[ID].sendMsgColor[i].methodName, prefabBoundsList[ID].sendMsgColor[i].methodValue, SendMessageOptions.DontRequireReceiver);
+
+// 		}
+
+// 	}
+
+// 	(línea vacía)
+
+// 	//Set Name.
+
+// 	if(prefabBoundsList[ID].setName != ""){
+
+// 		newPrefab.name = prefabBoundsList[ID].setName;
+
+// 	}
+
+// (línea vacía)
+
+// 	var vCShade : VertexColorShade = GameObject.FindObjectOfType.<VertexColorShade>();
+// Busca en TODA la escena, cada spawn.
+
+// 	if(vCShade != null){
+
+// 		//Vertex Color Shade
+
+// 		if( prefabBoundsList[ID].ApplyLevelVColorShade){
+
+// 			var meshF : MeshFilter[] = newPrefab.GetComponentsInChildren.<MeshFilter>();
+
+// 			if(meshF != null){
+
+// 				for(i = 0; i < meshF.Length; i++){
+
+// 					vCShade.ApplyColsToMesh(meshF[i]);
+
+// 				}
+
+// 			}
+
+// 			(línea vacía)
+
+// 			var skinnedMesh : SkinnedMeshRenderer = newPrefab.GetComponentInChildren.<SkinnedMeshRenderer>();
+// Solo el primero.
+
+// 			if(skinnedMesh != null){
+
+// 				vCShade.ApplyColsToMesh(skinnedMesh);
+
+// 			}
+
+// 		}
+
+// (línea vacía)
+
+// 		if(prefabBoundsList[ID].dynamicShade){
+
+// 			meshF = newPrefab.GetComponentsInChildren.<MeshFilter>();
+// Segunda pasada sobre las mismas meshes.
+
+// 			if(meshF != null){
+
+// 				for(i = 0; i < meshF.Length; i++){
+
+// 					vCShade.AddDynamic(meshF[i]);
+
+// 				}
+
+// 			}
+
+// 			(línea vacía)
+
+// 			skinnedMesh = newPrefab.GetComponentInChildren.<SkinnedMeshRenderer>();
+
+// 			if(skinnedMesh != null){
+
+// 				vCShade.AddDynamic(skinnedMesh);
+
+// 			}
+
+// 		}
+
+// 	}
+
+// 	(línea vacía)
+
+// 	//Register on Set Active Manager
+
+// 	if(setActiveManager){
+
+// 		if(!prefabBoundsList[ID].skipActiveMng){
+
+// 			var actManager : SetActiveManager = GameObject.FindObjectOfType.<SetActiveManager>();
+// Otra búsqueda global por spawn.
+
+// 			if(actManager != null){
+
+// 				if(prefabBoundsList[ID].doNotRemove){
+
+// 					actManager.RegisterObj(newPrefab, false);
+
+// 				}
+
+// 				else{
+
+// 					actManager.RegisterObj(newPrefab, removeInactive);
+
+// 				}
+
+// 			}
+
+// 		}
+
+// 	}
+
+// (línea vacía)
+
+// 	//Connect Anchor
+
+// 	if(prefabBoundsList[ID].connectAnchor){
+
+// 		var cJ : ConfigurableJoint = newPrefab.GetComponent.<ConfigurableJoint>();
+// Física Unity. Solo el joint en la raíz.
+
+// 		if(cJ != null){
+
+// 			cJ.autoConfigureConnectedAnchor = false;
+
+// 			cJ.connectedAnchor = newPrefab.transform.position + prefabBoundsList[ID].connectAnchorOffset;
+
+// 		}
+
+// 	}
+
+// (línea vacía)
+
+// 	//Send A Message
+
+// 	if(prefabBoundsList[ID].sendMessageTo != null){
+
+// 		for(i = 0; i < prefabBoundsList[ID].sendMessageTo.Length; i++){
+
+// 			if(prefabBoundsList[ID].sendMessageTo[i].search){
+
+// 				prefabBoundsList[ID].sendMessageTo[i].obj = GameObject.Find(prefabBoundsList[ID].sendMessageTo[i].searchString);
+// Find por nombre exacto. Falla si el destino aún no spawneó.
+
+// 			}
+
+// (línea vacía)
+
+// 			if(prefabBoundsList[ID].sendMessageTo[i].obj != null){
+
+// 				if(prefabBoundsList[ID].sendMessageTo[i].valIsNewPrefab){
+
+// 					prefabBoundsList[ID].sendMessageTo[i].obj.BroadcastMessage(prefabBoundsList[ID].sendMessageTo[i].message, newPrefab);
+
+// 				}
+
+// 				else{
+
+// 					prefabBoundsList[ID].sendMessageTo[i].obj.BroadcastMessage(prefabBoundsList[ID].sendMessageTo[i].message);
+
+// 				}
+
+// 			}
+
+// 			else{
+
+// 				var newMsg : Obj_SendMsg_Delay = new Obj_SendMsg_Delay();
+// Reintento el próximo frame.
+
+// 				newMsg.message = prefabBoundsList[ID].sendMessageTo[i].message;
+
+// 				newMsg.searchString = prefabBoundsList[ID].sendMessageTo[i].searchString;
+
+// 				newMsg.valIsNewPrefab = prefabBoundsList[ID].sendMessageTo[i].valIsNewPrefab;
+
+// 				newMsg.newPrefab = newPrefab;
+
+// 				delayedMsg.Add(newMsg);
+
+// 				Debug.Log(prefabBoundsList[ID].prefab[0].name + " tried to send message to target obj but it is null. Waiting frame...");
+// NPE si prefab[0] no existe.
+
+// 			}
+
+// 		}
+
+// 	}
+
+// (línea vacía)
+
+// 	//Render Queue
+
+// 	if(prefabBoundsList[ID].renderQueue){
+
+// 		var rendQ : RenderQueue;
+
+// 		if(meshF == null){
+// Reusa meshF si shade ya lo llenó. Si shade no corrió, meshF puede estar indefinido.
+
+// 			meshF = newPrefab.GetComponentsInChildren.<MeshFilter>();
+
+// 		}
+
+// 		if(meshF != null){
+
+// 			for(i = 0; i < meshF.Length; i++){
+
+// 				rendQ = meshF[i].GetComponent.<RenderQueue>();
+
+// 				if(rendQ == null){
+
+// 					rendQ = meshF[i].gameObject.AddComponent.<RenderQueue>();
+
+// 				}
+
+// 					rendQ.queue = prefabBoundsList[ID].renderQueue_Val;
+// Indent raro; no cambia el efecto.
+
+// 			}
+
+// 		}
+
+// (línea vacía)
+
+// 		if(skinnedMesh == null){
+
+// 			skinnedMesh = newPrefab.GetComponentInChildren.<SkinnedMeshRenderer>();
+
+// 		}
+
+// 		if(skinnedMesh != null){
+
+// 			rendQ = skinnedMesh.GetComponent.<RenderQueue>();
+
+// 			if(rendQ == null){
+
+// 				rendQ = skinnedMesh.gameObject.AddComponent.<RenderQueue>();
+
+// 			}
+
+// 			rendQ.queue = prefabBoundsList[ID].renderQueue_Val;
+
+// 		}
+
+// 	}
+
+// }
+// Fin ApplyChanges.
+
+// (línea vacía)
+
+// class Obj_SendMsg_Delay{
+// Un mensaje en espera.
+
+// 	var searchString : String;
+
+// 	var waitedFrame : boolean;
+// El primer Update solo marca true; el segundo intenta Find.
+
+// 	@Space(30)
+
+// 	var message : String;
+
+// 	var valIsNewPrefab : boolean;
+
+// 	var newPrefab : GameObject;
+
+// }
+// Fin Obj_SendMsg_Delay.
+
+// (línea vacía)
+
+// class SendMsgVector3{
+
+// 	var methodName : String;
+
+// 	var methodValue : Vector3;	
+
+// }
+
+// (línea vacía)
+
+// class SendMsgFloat{
+
+// 	var methodName : String;
+
+// 	var methodValue : float;	
+
+// }
+
+// (línea vacía)
+
+// class SendMsgColor{
+
+// 	var methodName : String;
+
+// 	var methodValue : Color;	
+
+// }
+
+// (línea vacía)
+// (línea vacía)
+
+// class SendMsgSimple{
+
+// 	var methodName : String;
+
+// }
+// Cuatro clases casi iguales. Clean Code: un solo tipo o genéricos (UnityScript no ayuda).
+
+// (línea vacía)
+
+// function Update () {
+// Unity llama CADA frame. Acá vive el streaming. ~210 líneas, anidamiento profundo.
+
+// 	if(delayedMsg == null) delayedMsg = new Array();
+
+// 	for(var i = delayedMsg.length-1; i >= 0; i--){
+// Al revés para poder RemoveAt.
+
+// 		var thisMsg : Obj_SendMsg_Delay = delayedMsg[i];
+
+// 		if(thisMsg == null) continue;
+
+// 		if(thisMsg.waitedFrame){
+
+// 			var obj : GameObject = GameObject.Find(thisMsg.searchString);
+
+// 			if(obj != null){
+
+// 				if(thisMsg.valIsNewPrefab){
+
+// 					obj.BroadcastMessage(thisMsg.message, thisMsg.newPrefab);
+
+// 				}
+
+// 				else{
+
+// 					obj.BroadcastMessage(thisMsg.message);
+
+// 				}
+
+// 				delayedMsg.RemoveAt(i);
+
+// 			}
+
+// 			else{
+
+// 				if(thisMsg.newPrefab != null){
+
+// 					Debug.Log("Frame Wait failed. " + thisMsg.newPrefab.name + " tried to send message to target obj but it is null.");
+// Un solo reintento. Después log y se queda en la cola (waitedFrame ya true, spamea log).
+
+// 				}
+
+// 			}
+
+// 		}
+
+// 		else{
+
+// 			thisMsg.waitedFrame = true;
+// “Esperá un frame”.
+
+// 		}
+
+// 	}
+
+// (línea vacía)
+
+// 	if(player == null) GetPlayer();
+// Rebusca si murió / escena.
+
+// 	//if(player == null) return;
+// Early-out comentado. Sigue el loop sin player.
+
+// 	(línea vacía)
+
+// 	var center : Vector3;
+// Backup del centro de una Bounds (las mutan y restauran).
+
+// 	for(i = 0; i < prefabBoundsList.Length; i++){
+// Una pasada por fila, cada frame.
+
+// 		if(prefabBoundsList[i].requireObjPresent){
+
+// 			if(prefabBoundsList[i].requireObjP_obj == null){
+
+// 				if(newObjThisFrame){
+
+// 					prefabBoundsList[i].requireObjP_obj = GameObject.Find(prefabBoundsList[i].requireObjP_FindName);
+
+// 				}
+
+// 				continue;
+// Sin ese objeto, no carga NI descarga esta fila.
+
+// 			}
+
+// 		}
+
+// (línea vacía)
+
+// 		if(prefabBoundsList[i].disable) continue;
+
+// (línea vacía)
+
+// 		prefabBoundsList[i].playerInLoadBounds = false;
+// Reset. Luego las cajas verdes pueden ponerlo true.
+
+// 		if(player != null){
+
+// 			for(var n = 0; n < prefabBoundsList[i].loadBounds.Length; n++){
+// NPE si loadBounds es null.
+
+// 				center = prefabBoundsList[i].loadBounds[n].center;
+// Guarda centro original.
+
+// (línea vacía)
+
+// 				if(prefabBoundsList[i].useTransformAsBoundsCenter && prefabBoundsList[i].useTransformPosition != null){
+
+// 					prefabBoundsList[i].loadBounds[n].center += prefabBoundsList[i].useTransformPosition.position;
+// Mutación temporal. Bounds es struct; acá se escribe en el array (UnityScript/Unity lo permite).
+
+// 				}
+
+// (línea vacía)
+
+// 				if(prefabBoundsList[i].loadBounds[n].Contains(player.transform.position)){
+// Unity: punto dentro del AABB. Eje Z cuenta. 2D “parece 2D” pero es 3D.
+
+// 					prefabBoundsList[i].playerInLoadBounds = true;
+
+// 				}
+
+// (línea vacía)
+
+// 				prefabBoundsList[i].loadBounds[n].center = center;
+// Restaura. Si hay exception en el medio, la caja queda corrida.
+
+// (línea vacía)
+
+// 				if(prefabBoundsList[i].playerInLoadBounds){
+
+// 					break;
+
+// 				}
+
+// 			}		
+
+// 		}
+
+// 		(línea vacía)
+
+// 		if(prefabBoundsList[i].forceLoad && Time.time > prefabBoundsList[i].forceLoadTime){
+
+// 			prefabBoundsList[i].playerInLoadBounds = true;
+// Mentira útil: force = “adentro”.
+
+// 		}
+
+// 		(línea vacía)
+
+// 		if(!prefabBoundsList[i].loaded){
+// Rama CREAR.
+
+// 			//Require game value
+
+// 			if(prefabBoundsList[i].requireGameVal){
+
+// (línea vacía)
+
+// 				if(!prefabBoundsList[i].gotGameVal){
+
+// 					prefabBoundsList[i].gotGameVal = true;
+// Lee PlayerPrefs una vez. Si el save cambia in-game, no se entera.
+
+// (línea vacía)
+
+// 					var gameValString : String = "";
+
+// 					if(prefabBoundsList[i].addGameLevelString > 0){
+
+// 						var game : String = "0";
+
+// (línea vacía)
+
+// 						var global : HoldGlobalValues = GameObject.FindObjectOfType.<HoldGlobalValues>();
+
+// 						if(global != null){
+
+// 							game = global.currentGame.ToString();;
+
+// 						}
+
+// (línea vacía)
+
+// 						gameValString += "Game " + game + " - Level " + prefabBoundsList[i].addGameLevelString.ToString() + " - ";				
+
+// 					}
+
+// (línea vacía)
+
+// 					gameValString +=  prefabBoundsList[i].requireGameVal_Name;
+
+// (línea vacía)
+
+// 					prefabBoundsList[i].gameVal = PlayerPrefs.GetInt(gameValString);
+// Disco / registro. API Unity.
+
+// 				}
+
+// (línea vacía)
+
+// 				if( prefabBoundsList[i].gameVal != prefabBoundsList[i].requireGameVal_Value ){
+
+// 					continue;
+// No spawn. Tampoco entra a destroy (está en !loaded).
+
+// 				}
+
+// 			}
+
+// (línea vacía)
+
+// 			if(!(prefabBoundsList[i].loadedOnce && !prefabBoundsList[i].loadBackIfDestroyed)){
+// Bloquea respawn si ya cargó y loadBackIfDestroyed es false.
+
+// 				//Create
+
+// 				if(prefabBoundsList[i].playerInLoadBounds || loadEverythingOnStart){
+
+// 					var newInstanceArray : Array = new Array();
+
+// 					(línea vacía)
+
+// 					if(prefabBoundsList[i].usePrefabObjList){
+
+// 						SpawnUsingPrefabObjList(i, newInstanceArray);
+
+// 					}
+
+// 					else{
+
+// 						if(prefabBoundsList[i].prefab != null && prefabBoundsList[i].prefab.Length > 0){
+
+// 							for(var m = 0 ; m < prefabBoundsList[i].prefab.Length; m++){
+
+// 								var newPrefab : GameObject;
+
+// 								newPrefab = Instantiate(prefabBoundsList[i].prefab[m]);
+// Unity: copia el prefab a la escena. El pico de costo.
+
+// 								if(removeCloneWord){
+
+// 									newPrefab.name = newPrefab.name.Replace("(Clone)","");
+
+// 								}
+
+// 								if(addNumber){
+
+// 									newPrefab.name = newPrefab.name + " " + i.ToString();
+
+// 								}
+
+// 								if(prefabBoundsList[i].useTransformPosition != null && !prefabBoundsList[i].leavePrefabDefaultPosition){
+
+// 									newPrefab.transform.position = prefabBoundsList[i].useTransformPosition.position;
+
+// 									if(prefabBoundsList[i].useTransformRotation){
+
+// 										newPrefab.transform.rotation = prefabBoundsList[i].useTransformPosition.rotation;
+
+// 									}
+
+// 									if(prefabBoundsList[i].useTransformScale){
+
+// 										newPrefab.transform.localScale = prefabBoundsList[i].useTransformPosition.localScale;
+
+// 									}
+
+// 								}
+
+// 								ApplyChanges(i, newPrefab, m);
+
+// 								newInstanceArray.Push(newPrefab);
+
+// 							}
+
+// 						}
+
+// 					}
+
+// 				(línea vacía)
+
+// 					//Set loaded instances on array.
+
+// 					prefabBoundsList[i].instances = new GameObject[newInstanceArray.length];
+// Alloca y… 
+
+// 					prefabBoundsList[i].instances = newInstanceArray.ToBuiltin(GameObject) as GameObject[];	
+// …pisa al toque. La primera línea no sirve.
+
+// 				(línea vacía)
+
+// 					prefabBoundsList[i].loaded = true;
+
+// 					prefabBoundsList[i].loadedOnce = true;
+
+// (línea vacía)
+
+// 					//Let other LoadPrefabBounds.js know that object has been created
+
+// 					var allLPB : LoadPrefabByBounds[] = GameObject.FindObjectsOfType.<LoadPrefabByBounds>();
+// Todos los managers de la escena, cada spawn.
+
+// 					for(var w = 0; w < allLPB.Length; w++){
+
+// 						allLPB[w].gameObject.SendMessage("NewObj");
+// Incluye a sí mismo.
+
+// 					}
+
+// (línea vacía)
+
+// 					//Revert timed destroy
+
+// 					if(prefabBoundsList[i].useTimedDestroy){
+
+// 						if(prefabBoundsList[i].usingTimedDestroy){
+
+// 							prefabBoundsList[i].usingTimedDestroy = false;
+
+// 							for(var z = 0; z < prefabBoundsList[i].instances.Length; z++){
+
+// 								var td : TimedDestroy = prefabBoundsList[i].instances[z].GetComponent.<TimedDestroy>();
+
+// 								if(td != null){
+
+// 									Destroy(td);
+// Saca el timer si reentró a zona de carga.
+
+// 								}
+
+// 							}
+
+// 						}
+
+// 					}
+
+// 				}
+
+// 			}
+
+// 		}
+
+// 		else{
+// Rama DESTRUIR (loaded == true).
+
+// 			//Destroy
+
+// 			if(!loadEverythingOnStart && prefabBoundsList[i].instances != null && !prefabBoundsList[i].playerInLoadBounds && player != null){
+// No destroys si no hay player (early-out de arriba está comentado).
+
+// 				if(prefabBoundsList[i].destroyIfOutside != null && prefabBoundsList[i].destroyIfOutside.Length != 0){
+// SIN cajas rojas: NUNCA destruye. Chunk huérfano o “siempre vivo”.
+
+// 					var playerOutSideDestroyBounds : boolean = true;
+
+// 					for(n = 0; n < prefabBoundsList[i].destroyIfOutside.Length; n++){
+
+// 						center = prefabBoundsList[i].destroyIfOutside[n].center;
+
+// 						if(prefabBoundsList[i].useTransformAsBoundsCenter && prefabBoundsList[i].useTransformPosition != null){
+
+// 							prefabBoundsList[i].destroyIfOutside[n].center += prefabBoundsList[i].useTransformPosition.position;
+
+// 						}
+
+// 						if(prefabBoundsList[i].destroyIfOutside[n].Contains(player.transform.position)){
+
+// 							playerOutSideDestroyBounds = false;
+// Adentro de UNA roja = no destruir.
+
+// 						}
+
+// 						prefabBoundsList[i].destroyIfOutside[n].center = center;
+
+// 						if(!playerOutSideDestroyBounds) break;
+
+// 					}
+
+// 					(línea vacía)
+
+// 					if(playerOutSideDestroyBounds){
+
+// 						if(prefabBoundsList[i].instances != null){
+
+// 							var usedTimedDestroy : boolean;
+
+// 							for(z = 0; z < prefabBoundsList[i].instances.Length; z++){
+
+// 								if(!prefabBoundsList[i].useTimedDestroy){
+
+// 									Destroy(prefabBoundsList[i].instances[z]);
+// Unity: el objeto muere al final del frame.
+
+// 								}
+
+// 								else{
+
+// 									if(!prefabBoundsList[i].usingTimedDestroy){
+
+// 										usedTimedDestroy = true;
+
+// 										td = prefabBoundsList[i].instances[z].AddComponent.<TimedDestroy>();
+
+// 										td.destroyTriggerTime = prefabBoundsList[i].timedDestroyDelay;
+
+// 									}
+
+// 								}
+
+// 							}
+
+// (línea vacía)
+
+// 							if(usedTimedDestroy){
+
+// 								prefabBoundsList[i].usingTimedDestroy = true;
+
+// 							}
+
+// (línea vacía)
+
+// 							if(!prefabBoundsList[i].firstFrame){
+
+// 								prefabBoundsList[i].loaded = false;
+// Primer frame de la fila: no marca descargado (anti-flicker).
+
+// 							}
+
+// 						}
+
+// 						if(freeMem){
+
+// 							Resources.UnloadUnusedAssets();
+// Unity: barre assets sin referencia. Global. Puede tumbar meshes de OTRO chunk si ya no hay ref.
+
+// 						}
+
+// 						prefabBoundsList[i].loaded = false;
+// Siempre false acá. El if de firstFrame arriba queda anulado.
+
+// 					}
+
+// 				}
+
+// 			}	
+
+// 		}
+
+// 		(línea vacía)
+
+// 		prefabBoundsList[i].firstFrame = true;
+// Después del primer Update de esta fila, siempre true.
+
+// 	}
+
+// (línea vacía)
+
+// 	newObjThisFrame = false;
+// Consume el flag.
+
+// }
+// Fin Update.
+
+// (línea vacía)
+// (línea vacía)
+
+// function SpawnUsingPrefabObjList(ID : int, addToArray : Array){
+// Variante: hijos del Transform tienen PrefabObjs (lista de prefabs).
+
+// 	var newPrefab : GameObject;
+
+// (línea vacía)
+
+// 	if(prefabBoundsList[ID].useTransformPosition == null 
+// 	|| prefabBoundsList[ID].useTransformPosition != null && prefabBoundsList[ID].useTransformPosition.childCount == 0){
+
+// 		Debug.Log(transform.name + ": Can't use prefab obj list without asigning a parent to the prefab objs. ID: " + ID);
+// Log y no return explícito: el else evita el loop.
+
+// 	}
+
+// 	else{
+
+// 		for(var q = 0; q < prefabBoundsList[ID].useTransformPosition.childCount; q++){
+
+// 			var child : Transform = prefabBoundsList[ID].useTransformPosition.GetChild(q);
+
+// 			var prefabObjs : PrefabObjs = child.GetComponent.<PrefabObjs>();
+// PrefabObjs.js = array de 2 líneas.
+
+// 			if(prefabObjs != null){
+
+// 				var prefabObjsList : GameObject[] = prefabObjs.prefabObjs;
+
+// 				if(prefabObjsList != null){
+
+// 					for(var w = 0; w < prefabObjsList.Length; w++){
+
+// 						newPrefab = Instantiate(prefabObjsList[w]);
+
+// 						if(removeCloneWord) newPrefab.name = newPrefab.name.Replace("(Clone)","");
+
+// 						(línea vacía)
+
+// 						newPrefab.transform.position = child.position;
+// Posición del HIJO, no del padre.
+
+// 						if(prefabBoundsList[ID].useTransformRotation){
+
+// 							newPrefab.transform.rotation = child.rotation;
+
+// 						}
+
+// 						if(prefabBoundsList[ID].useTransformScale){
+
+// 							newPrefab.transform.localScale = child.localScale;
+
+// 						}
+
+// 						ApplyChanges(ID, newPrefab, q);
+// Pasa q (índice de hijo), no w (índice de prefab). changeMaterialByID puede no matchear.
+
+// 						addToArray.Push(newPrefab);
+
+// 					}
+
+// 					//prefabBoundsList[ID].instances = new GameObject[newInstanceArray.length];
+// Muerto. instances se setea en Update.
+
+// 					//prefabBoundsList[ID].instances = newInstanceArray.ToBuiltin(GameObject) as GameObject[];
+
+// 					(línea vacía)
+
+// 				}
+
+// 				else{
+
+// 					Debug.Log(child.name + " has a prefabObj, but the script has no prefabs defined.");
+
+// 				}
+
+// 			}
+
+// 			else{
+
+// 				Debug.Log(child.name + " should have a prefabObj script attached.");
+
+// 			}
+
+// 		}
+
+// 	}
+
+// 	(línea vacía)
+
+// }
+// Fin SpawnUsingPrefabObjList.
+
+// (línea vacía)
+
+// function OnDrawGizmosSelected(){
+// Unity Editor: solo si el objeto está seleccionado.
+
+// 	#if UNITY_EDITOR
+// No entra en el build.
+
+// 	if(debug){
+
+// 		var center : Vector3;
+
+// 		for(var i = 0; i < prefabBoundsList.Length; i++){
+
+// 			if(prefabBoundsList[i].debug){
+
+// 				if(prefabBoundsList[i].loadBounds != null){
+
+// 					for(var n = 0; n < prefabBoundsList[i].loadBounds.Length; n++){
+
+// 						center = prefabBoundsList[i].loadBounds[n].center;
+
+// 						if(prefabBoundsList[i].useTransformAsBoundsCenter && prefabBoundsList[i].useTransformPosition != null){
+
+// 							prefabBoundsList[i].loadBounds[n].center += prefabBoundsList[i].useTransformPosition.position;
+
+// 						}
+
+// ;
+// Statement vacío. Basura.
+
+// 						Gizmos.color = Color(0,.3 + i * .1,0);
+// Verde; cambia un poco por índice.
+
+// 						Gizmos.DrawWireCube(prefabBoundsList[i].loadBounds[n].center, prefabBoundsList[i].loadBounds[n].size);
+
+// 						prefabBoundsList[i].loadBounds[n].center = center;
+
+// 					}
+
+// 				}
+
+// 				(línea vacía)
+
+// 				if(prefabBoundsList[i].destroyIfOutside != null){
+
+// 					for(n = 0; n < prefabBoundsList[i].destroyIfOutside.Length; n++){
+
+// 						center = prefabBoundsList[i].destroyIfOutside[n].center;
+
+// 						if(prefabBoundsList[i].useTransformAsBoundsCenter && prefabBoundsList[i].useTransformPosition != null){
+
+// 							prefabBoundsList[i].destroyIfOutside[n].center += prefabBoundsList[i].useTransformPosition.position;
+
+// 						}
+
+// (línea vacía)
+
+// 						Gizmos.color = Color(.3 + i * .1,0,0);
+// Rojo.
+
+// 						Gizmos.DrawWireCube(prefabBoundsList[i].destroyIfOutside[n].center, prefabBoundsList[i].destroyIfOutside[n].size);
+
+// 						prefabBoundsList[i].destroyIfOutside[n].center = center;
+
+// 					}
+
+// 				}
+
+// 			}
+
+// 		}
+
+// 	}
+
+// 	#endif
+
+// }
+// Fin. El original no toca más.

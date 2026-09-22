@@ -1,0 +1,18 @@
+Tema: streaming / LoadPrefabByBounds.js
+No tocar código hasta que yo diga.
+Unity 2017 + UnityScript. Inspector = datos del hermano; el .js es la lógica.
+Hecho: inventario + COMMENTED.txt + MAL.txt + este handoff. Sacado de Scripts/Misc.
+Problemas: UnloadUnusedAssets global; sin cajas rojas no destruye; firstFrame muerto.
+Pendiente: (una sola cosa).
+No inferir el siguiente paso. Queries solo si autorizo.
+No crear nada sin decir primero QUÉ se crea y DÓNDE. Precisión granular (frontend/archivos).
+Análisis NUNCA en Assets. Van a TODO/notasRafa/ (apuntes del hermano = TODO/).
+
+Código real: Assets/Felis/Scripts/Misc/LoadPrefabByBounds.js
+Apuntes Rafa: TODO/notasRafa/
+- LoadPrefabByBounds.COMMENTED.txt
+- LoadPrefabByBounds.MAL.txt
+- LoadPrefabByBounds.HANDOFF.txt  (este bloque; pegar en chat nuevo)
+- PROJECT_MAP.md
+
+Al ~80% de contexto: New Chat, pegá este bloque, @LoadPrefabByBounds.js
