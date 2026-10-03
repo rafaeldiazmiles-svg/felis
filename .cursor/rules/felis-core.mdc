@@ -1,0 +1,15 @@
+---
+description: Constraints for every Felis chat. UnityScript game, no edits until asked, notes stay out of Assets.
+alwaysApply: true
+---
+
+# Felis
+
+- Unity 2017.4. Gameplay is UnityScript (`.js`). Prospero is the protagonist. Felis is the game.
+- Do not edit, create, or move a file until the user names what and where. Analysis notes go in `TODO/notasRafa/`, never in `Assets/`.
+- Do not change `.js` until the user asks for that change. One logical tweak per commit. Do not commit or push unless asked.
+- Prefabs and scenes override script defaults. New knobs are `private var` multipliers so the Inspector cannot shadow them.
+- Do not search the repo or run commands unless the user authorizes that query.
+- Do not infer the next task. Ask before assuming words like hitbox, range, or collision.
+- `TODO/` is the brother's notes. `TODO/notasRafa/` is Rafael's. Live knobs: `VARIABLE_MAP.md` at the repo root.
+- If a skill, a rule, and the latest user message disagree, the latest user message wins. Subagents do not edit files.

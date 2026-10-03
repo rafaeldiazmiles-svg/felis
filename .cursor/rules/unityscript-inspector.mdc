@@ -1,0 +1,21 @@
+---
+description: UnityScript Inspector rules. Serialized vars on prefabs override code defaults.
+globs: Assets/Felis/Scripts/**/*.js
+alwaysApply: false
+---
+
+# Inspector vs code
+
+A class-scope `var` is serialized. Unity writes the prefab value over the script default.
+
+```javascript
+// BAD: existing prefabs keep the old number
+var rechargeRate : float = 0.737;
+
+// GOOD: new private multiplier, applied in Start, Inspector cannot shadow it
+private var rechargeRateMul : float = 0.737;
+```
+
+- `private var`, `static var`, and locals are not in the Inspector.
+- Do not retune by editing a default that prefabs already store.
+- Binary `.prefab` and `.unity` files are not readable as text. Confirm component lists in the Unity Editor.

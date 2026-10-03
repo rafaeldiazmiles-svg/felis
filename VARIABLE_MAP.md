@@ -1,6 +1,6 @@
 # VARIABLE_MAP — knobs we actually touched
 
-Easy sheet. Open this first. Numbers are **what the code has right now** (2026-09-19), not Unity Inspector.
+Easy sheet. Open this first. Numbers are **what the code has right now** (2026-09-28), not Unity Inspector.
 
 How it works: most of these are `private var` multipliers. Prefabs keep the original numbers. On `Start()`, the script multiplies them. Change the private number here → next Play uses it. Do not look for these in the Inspector; they will not show up.
 
@@ -20,11 +20,14 @@ Stock = original game. Current = live value in the `.js` file.
 | Combo cannot cut the hit | same | `comboHitMargin` | — | **0.08** | Duration never below `applyForceTime + 0.08`. |
 | Punch reach up / down | same | `verticalReachUp` / `Down` | stock | **1.4 / 1.2** | Who counts as in range vertically. |
 | Knockback | same | `pushMul` | 1 | **1.4** (bees 1.5625) | Extra shove on hit. |
+| Kick launch distance | same | `kickPushMul` | 1 | **3** | Was 2, then ×1.5. Ground kick and air kick. `pushSpeed.x *=` this after `pushSpeed_Kick`. |
+| Uppercut launch | same | `uppercutPushMul` | 1 | **1.5** | Uppercut only. `pushSpeed.x` and `pushSpeed.y *=` this, so the shove is horizontal and upward. |
 | Attack power | same | *(×0.99)* | stock | almost stock | Tiny tick down. |
 | Air steer | `Character Objects/SideMovement.js` | `airMul` | 0.4 | **0.7** | Player only. If prefab is still ~0.4, Start sets 0.7. |
 | Air accel | same | `airRunAccelMul` | 1 | **1.5** | Player only, in the air. |
-| Top run speed | same | `runSpeedMul` | 1 | **1.1** | `targetRunSpeed *=` this, player only. |
+| Top run speed | same | `runSpeedMul` then `topSpeedMul` | 1 | **1.1 × 1.2 = 1.32** | Player only. `topSpeedMul` is 1.2 on the speed it already had. |
 | Run force | same | `runForceMul` | 1 | **1.15** | `maxRunForce *=` this, player only. |
+| Crowd weight | same | `moveWeightMul` | 1 | **1.1** | Player only. `mass *=` this and `maxRunForce *=` this again, so he shoves bodies harder without accelerating slower. |
 | Launch from standstill | same | `startBoostAccelMul` | 1 | **2.2** | Extra accel until 70% of top speed (`startBoostUpTo` 0.7). |
 | Wall / slope stall | same | `blockMultiplier` / `slopeMultiplier` / `highSlopeRunForce` | 0.1 / 0.7 / 0.1 | **0.22 / 0.85 / 0.22** | Soften getting stuck. |
 | Skid | same | `skidRunForceMultiplier` / `skidFriction` | 0.2 / 3.0 | **0.35 / 2.2** | Player only, less sticky turnaround. |
@@ -78,7 +81,7 @@ Stock = original game. Current = live value in the `.js` file.
 | `Animation/PlayLoopAnimation.js` | Do not read AnimationState if disabled. |
 | `DestroyAfterAnimation.js` | Same. |
 | `Game/Pause.js` | Null checks so Island pause works. Audio pause still original. |
-| `Misc/LoadPrefabByBounds.js` | Only null-safety. Barricade respawn experiment **removed**. |
+| `Misc/LoadPrefabByBounds.js` | Restored to original. The null-safety on `delayedMsg` was reverted (2026-09-29) because temple screen 4 loads in the original and that was the only streaming delta. |
 
 ---
 

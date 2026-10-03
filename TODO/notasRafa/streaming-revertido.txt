@@ -1,0 +1,14 @@
+Streaming puesto igual que la original. Nada más de streaming se tocó.
+
+Archivo: Assets/Felis/Scripts/Misc/LoadPrefabByBounds.js
+
+Se removió, porque Felis_actual (el build) lo tenía y Felis_original no:
+
+1. `var delayedMsg : Array = new Array();` volvió a `var delayedMsg : Array;`
+2. Al inicio de Update, el `if (delayedMsg == null) delayedMsg = new Array();`
+3. En el loop de mensajes, el `if (thisMsg == null) continue;`
+4. El `if (thisMsg.newPrefab != null)` alrededor del Debug.Log. El log queda como en la original.
+
+SetActiveManager, FadeByBounds y el register no tenían diferencia.
+
+El build del Escritorio no se recompiló. Para probar: salir de Play, dejar que Unity recompile, entrar al nivel 4.

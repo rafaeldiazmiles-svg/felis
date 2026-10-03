@@ -77,7 +77,7 @@ Since the current project is now committed in git, `git diff`/`git log` covers e
 | `AI/RatBoss.js` | Boss `delayAttack` ×0.48 (floor 0.3s). Bear then ÷1.28 (`bearAttackSpeedMul`). Rat King then ÷1.92 (`ratAttackSpeedMul`, 1.2×1.6). Turns to face you once in `playerAttackRange` so it does not walk up and stall |
 | `AI/RangedAirAI.js` | Evil Eye `shootDelay` ×0.48 (floor 0.5s) |
 | `Character Objects/MeleeAttackSimple.js` | Enemy melee `attackPower` ×1.3 (skipped when the root is tagged `Player`). Punch connect range: rats ×1.4, bear ×1.6 (`attackRange`) |
-| `Misc/LoadPrefabByBounds.js` | Only the `delayedMsg` null-safety guards from the crash pass. **The `BlockRespawns()` experiment was removed — it never stopped the barricades from coming back.** Respawn behaviour is back to stock: it is driven by the `Load Back If Destroyed` checkbox on each entry of `Prefab Bounds List` in the Inspector |
+| `Misc/LoadPrefabByBounds.js` | Restored byte-for-byte to the original on 2026-09-29. The `delayedMsg` null-safety was the only delta and was reverted. **The `BlockRespawns()` experiment was removed — it never stopped the barricades from coming back.** Respawn behaviour is stock: `Load Back If Destroyed` on each `Prefab Bounds List` entry in the Inspector |
 | `Animation/PlayLoopAnimation.js` | `GetLoopState()` guard — reading an `AnimationState` while the `Animation` component is disabled returned a dangling pointer and crashed the editor |
 | `DestroyAfterAnimation.js` | Same class of crash guard before touching `normalizedTime` |
 | `Audio/VelocityVolume.js` | Pitch clamped to 0.05–3.0 with a NaN check (negative/NaN pitch crashed the FMOD resampler) |

@@ -44,6 +44,8 @@ var currentHorizontalScale : float;
 var airMul : float = .4;
 var airRunAccelMul : float = 1.5;
 var runSpeedMul : float = 1.1;
+private var topSpeedMul : float = 1.2;
+private var moveWeightMul : float = 1.1;
 var runForceMul : float = 1.15;
 var startBoostAccelMul : float = 2.2;
 var startBoostUpTo : float = 0.7;
@@ -134,7 +136,21 @@ function Start () {
 		if(skidFriction >= 2.8 && skidFriction <= 3.2) skidFriction = 2.2;
 
 		targetRunSpeed *= runSpeedMul;
+		targetRunSpeed *= topSpeedMul;
 		maxRunForce *= runForceMul;
+		maxRunForce *= moveWeightMul;
+
+		if(characterRigidbody != null){
+			var massBefore : float = characterRigidbody.mass;
+			characterRigidbody.mass *= moveWeightMul;
+			var pickMass : PickUpRigidbody = null;
+			if(transform.parent != null){
+				pickMass = transform.parent.GetComponentInChildren.<PickUpRigidbody>();
+			}
+			if(pickMass != null && pickMass.defaultMass == massBefore){
+				pickMass.defaultMass *= moveWeightMul;
+			}
+		}
 	}
 
 	runForceSlopeCurve = new AnimationCurve(Keyframe(0,horizontalRunForce) , Keyframe(lowSlope,lowSlopeRunForce), Keyframe(highSlope,highSlopeRunForce));

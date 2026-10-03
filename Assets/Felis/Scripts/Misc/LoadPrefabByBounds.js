@@ -13,7 +13,7 @@ var prefabBoundsList : PrefabBounds[];
 var removeCloneWord : boolean;
 var addNumber : boolean;
 @Space(30)
-var delayedMsg : Array = new Array();
+var delayedMsg : Array;
 @Space(30)
 var newObjThisFrame : boolean;
 @Space(30)
@@ -429,10 +429,8 @@ class SendMsgSimple{
 }
 
 function Update () {
-	if(delayedMsg == null) delayedMsg = new Array();
 	for(var i = delayedMsg.length-1; i >= 0; i--){
 		var thisMsg : Obj_SendMsg_Delay = delayedMsg[i];
-		if(thisMsg == null) continue;
 		if(thisMsg.waitedFrame){
 			var obj : GameObject = GameObject.Find(thisMsg.searchString);
 			if(obj != null){
@@ -445,9 +443,7 @@ function Update () {
 				delayedMsg.RemoveAt(i);
 			}
 			else{
-				if(thisMsg.newPrefab != null){
-					Debug.Log("Frame Wait failed. " + thisMsg.newPrefab.name + " tried to send message to target obj but it is null.");
-				}
+				Debug.Log("Frame Wait failed. " + thisMsg.newPrefab.name + " tried to send message to target obj but it is null.");
 			}
 		}
 		else{

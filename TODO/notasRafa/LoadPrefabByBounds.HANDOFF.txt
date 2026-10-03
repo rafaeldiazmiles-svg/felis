@@ -16,3 +16,5 @@ Apuntes Rafa: TODO/notasRafa/
 - PROJECT_MAP.md
 
 Al ~80% de contexto: New Chat, pegá este bloque, @LoadPrefabByBounds.js
+Mapa de agentes: TODO/notasRafa/ARQUITECTURA-AGENTES.md
+Cursor: .cursor/rules/ .cursor/skills/ .cursor/agents/

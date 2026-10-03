@@ -42,6 +42,8 @@ private var comboStep : int;
 private var comboSpeedStep : float = 0.88;
 private var comboFloorMul : float = 0.65;
 private var comboHitMargin : float = 0.08;
+private var kickPushMul : float = 3.0;
+private var uppercutPushMul : float = 1.5;
 var punchDuration : float = .3;
 var kickDuration : float = .3;
 var upperCutDuration : float = .4;
@@ -285,11 +287,14 @@ function LateUpdate () {
 		if(upperCut){
 			attackPower = attackPowerUppercut;
 			pushSpeed = pushSpeed_Uppercut;
+			pushSpeed.x *= uppercutPushMul;
+			pushSpeed.y *= uppercutPushMul;
 		}
 		else{
 			if(kick){
 				attackPower = attackPowerKick;
 				pushSpeed = pushSpeed_Kick;
+				pushSpeed.x *= kickPushMul;
 			}
 			else{
 				if(punchRun){
