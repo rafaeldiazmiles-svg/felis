@@ -65,6 +65,7 @@ var buttonLock : boolean;
 var jumpedThisFrame : boolean;
 private var jumpedUntilLand : boolean;
 private var airJumpsUsed : int;
+private var wallJumpsUsed : int;
 private var maxAirJumps : int = 1;
 private var minTimeBetweenJumps : float = 0.3;
 private var airJumpPower : float = 0.533333;
@@ -210,6 +211,7 @@ function Update(){
 		if(jumpedUntilLand && Time.time > lastJumpTime + 0.1){
 			jumpedUntilLand = false;
 			airJumpsUsed = 0;
+			wallJumpsUsed = 0;
 		}
 		if(!jumpedUntilLand){
 			lastTouchGroundTime = Time.time;
@@ -310,7 +312,7 @@ function FixedUpdate(){
 	        if(enableWallJump){
 	            if(!isUnderwater && !isGrounded && !edgeJump){
                     if(isPlayer){
-                    	if(Time.time <= wallContactUntil && Time.time <= wallJumpPressUntil && airJumpsUsed < maxAirJumps){
+                    	if(Time.time <= wallContactUntil && Time.time <= wallJumpPressUntil && wallJumpsUsed < 2){
                             jumpButtonTime = maxJumpTime;
 							
                             sideMovementScript.disableMovementUntil = Time.time + .4;
@@ -324,6 +326,8 @@ function FixedUpdate(){
                             ApplyJump();
                             wallJumpRise = true;
                             didWallJump = true;
+                            wallJumpsUsed++;
+                            currentJumpTargetSpeed = maxJumpSpeed * longJumpMultiplier * wallJumpForceMul;
                         }
                     }
                     else if(sideDetection.IsLeftSideBlocked() || sideDetection.IsRightSideBlocked()){
