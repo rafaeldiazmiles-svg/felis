@@ -1,4 +1,4 @@
-﻿#pragma strict
+#pragma strict
 
 var animComp : Animation;
 var isGrounded : IsGrounded;
@@ -22,9 +22,17 @@ var importantEnemy : boolean;
 var importantID : Array;
 var attackRange : float;
 var velocityIncreaseRange : float = .2;
-var verticalReachUp : float = 1.4;
-var verticalReachDown : float = 1.2;
-var pushMul : float = 1.4;
+private var verticalReachUp : float = 1.4;
+private var verticalReachDown : float = 1.2;
+private var pushMul : float = 1.4;
+private var beePushMul : float = 1.5625;
+private var comboStep : int;
+private var comboSpeedStep : float = 0.88;
+private var comboFloorMul : float = 0.65;
+private var comboHitMargin : float = 0.08;
+private var kickPushMul : float = 3.0;
+private var uppercutPushMul : float = 2.5;
+private var uppercutDamageMul : float = 2.0;
 
 var performAttack : boolean;
 var attacking : ToggleBoolean;
@@ -38,12 +46,6 @@ var applyForceTimeUppercut : float = 0.15;
 var applyForceTimePunchRun : float = .15;
 
 var lastAttackDuration : float;
-private var comboStep : int;
-private var comboSpeedStep : float = 0.88;
-private var comboFloorMul : float = 0.65;
-private var comboHitMargin : float = 0.08;
-private var kickPushMul : float = 3.0;
-private var uppercutPushMul : float = 1.5;
 var punchDuration : float = .3;
 var kickDuration : float = .3;
 var upperCutDuration : float = .4;
@@ -152,13 +154,6 @@ function Start () {
 	if(pickRB == null) 			pickRB = transform.parent.gameObject.GetComponentInChildren(PickUpRigidbody);
 	if(animComp == null) 		animComp = transform.parent.gameObject.GetComponentInChildren(Animation);
 	if(stamina == null) 		stamina = transform.parent.gameObject.GetComponentInChildren(Stamina);
-
-	// attackPower is overwritten from these on every swing, so scale the sources.
-	// Was 1.1, now taken to 90% of that.
-	attackPowerPunch *= 0.99;
-	attackPowerKick *= 0.99;
-	attackPowerUppercut *= 0.99;
-	attackPowerPunchRun *= 0.99;
 
 	importantID = new Array();
 	GetAllEnemies();
@@ -285,7 +280,7 @@ function LateUpdate () {
 		
 		//AttackPower
 		if(upperCut){
-			attackPower = attackPowerUppercut;
+			attackPower = attackPowerUppercut * uppercutDamageMul;
 			pushSpeed = pushSpeed_Uppercut;
 			pushSpeed.x *= uppercutPushMul;
 			pushSpeed.y *= uppercutPushMul;
@@ -339,8 +334,7 @@ function LateUpdate () {
 			
 			upperCutBar += upperCutBarAdd;
 		}
-		
-		//Each hit of a chain resolves sooner than the last, but never before this swing's force lands.
+
 		var comboMul : float = Mathf.Pow(comboSpeedStep, comboStep);
 		if(comboMul < comboFloorMul) comboMul = comboFloorMul;
 		lastAttackDuration *= comboMul;
@@ -439,11 +433,9 @@ function LateUpdate () {
 					
 					applySpeed = Vector3(pushSpeed.x * -sideMovement.currentSide, pushSpeed.y,0);
 					if(IsBeeTarget(attackTargets[enemyID])){
-						//Two rounds of +25%, so 1.25 * 1.25.
-						applySpeed.x *= 1.5625;
+						applySpeed.x *= beePushMul;
 					}
 					else{
-						//Shove everything else aside so fighting does not block movement.
 						applySpeed.x *= pushMul;
 					}
 
@@ -564,11 +556,9 @@ function FindNearestEnemyInFront(){
 				targetPosition = allEnemies[i].transform.position;
 			}
 
-			//Count vertical distance as less than it is, so the hit box reaches further up than down.
 			var toTarget : Vector3 = targetPosition - playerCenter;
 			if(toTarget.y > 0) toTarget.y /= verticalReachUp;
 			else toTarget.y /= verticalReachDown;
-
 			targetDistance = toTarget.magnitude;
 
 			//Add if in range
@@ -646,3 +636,4 @@ function IsBeeTarget(t : Transform) : boolean {
 	}
 	return false;
 }
+// compile

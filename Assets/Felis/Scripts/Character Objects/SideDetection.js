@@ -1,4 +1,4 @@
-﻿#pragma strict
+#pragma strict
 
 var useParent : boolean = true;
 var characterCollider : Collider;
@@ -71,12 +71,27 @@ function IgnoreOwn(){
 	ignoreColliders = ignoreCollidersArray.ToBuiltin(Collider);*/
 }
 
+function IsPlayerCharacter() : boolean {
+	var t : Transform = transform;
+	while(t != null){
+		if(t.tag == "Player"){
+			return true;
+		}
+		t = t.parent;
+	}
+	return false;
+}
+
 function Start () {
 	if(useParent){
 		characterCollider = transform.parent.GetComponent(Collider);
 	}
 
 	pickRB = transform.parent.GetComponentInChildren.<PickUpRigidbody>();
+
+	if(IsPlayerCharacter() && sideDetectionRange >= 0.38 && sideDetectionRange <= 0.42){
+		sideDetectionRange = 0.32;
+	}
 
 	//guiStyle = new GUIStyle();
 	
@@ -86,8 +101,6 @@ function Start () {
 	else{
 		characterCollider = GetComponent.<Collider>();
 	}
-
-	if(sideDetectionRange >= 0.38 && sideDetectionRange <= 0.42) sideDetectionRange = 0.32;
 }
 
 function LateUpdate () {
@@ -389,3 +402,4 @@ function AreRightFeetBlocked() : boolean{
 	return areBlocked;
 }
 
+// compile

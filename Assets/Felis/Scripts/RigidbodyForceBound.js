@@ -1,4 +1,4 @@
-﻿#pragma strict
+#pragma strict
 
 var bounds : Bounds;
 var centerBounds : boolean;
@@ -46,9 +46,13 @@ var ignoreTags : String[];
 var onlyTags : String[];
 @Space(40)
 var DebugLineLenght : float = .1;
+private var boulderSpeedMul : float = 2.0;
+private var speedThisBoulder : boolean;
 
 
 function Start () {
+	var sceneName : String = UnityEngine.SceneManagement.SceneManager.GetActiveScene().name;
+	speedThisBoulder = gameObject.name.IndexOf("Boulder") >= 0 && (sceneName.Contains("Level 4") || sceneName.Contains("Lost Temple"));
 	GetRBs();
 	
 	if(getRBsTimer.every == 0.0){
@@ -134,6 +138,11 @@ function FixedUpdate () {
 				if(!dontLock) lockRB = rigidbodies[i];
 
 				var useForce : Vector3 = force;
+				var chaseMul : float = speedForceMul;
+				if(speedThisBoulder){
+					useForce *= boulderSpeedMul;
+					chaseMul *= boulderSpeedMul;
+				}
 
 				if(springAddForce){
 					accel[i] = (rigidbodies[i].velocity - prevVel[i]) / Time.deltaTime;
@@ -144,7 +153,7 @@ function FixedUpdate () {
 				}
 
 				if(forceAsSpeedTarget){
-					PhysicsUtility.ApplyForceForVelocity(rigidbodies[i], useForce, rigidbodies[i].mass * speedForceMul);
+					PhysicsUtility.ApplyForceForVelocity(rigidbodies[i], useForce, rigidbodies[i].mass * chaseMul);
 				}
 				else{
 					rigidbodies[i].AddForce(useForce);

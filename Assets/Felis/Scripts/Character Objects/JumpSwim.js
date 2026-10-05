@@ -1,4 +1,4 @@
-﻿#pragma strict
+#pragma strict
 
 var autoFindComponents : boolean = true;
 
@@ -63,13 +63,22 @@ var wallJumpAnim : PlayStillAnimation;
 var firstJump :boolean;
 var buttonLock : boolean;
 var jumpedThisFrame : boolean;
-var jumpedUntilLand : boolean;
-var airJumpsUsed : int;
-var maxAirJumps : int = 1;
-var minTimeBetweenJumps : float = .3;
-var airJumpPower : float = 0.6;
-var groundJumpPower : float = 0.8;
+private var jumpedUntilLand : boolean;
+private var airJumpsUsed : int;
+private var maxAirJumps : int = 1;
+private var minTimeBetweenJumps : float = 0.3;
+private var airJumpPower : float = 0.533333;
+private var groundJumpPower : float = 0.72;
 private var currentJumpForceMul : float = 1.0;
+private var isPlayer : boolean;
+private var wallJumpForceMul : float = 1.1;
+private var wallJumpRange : float = 0.6;
+private var wallJumpBuffer : float = 0.2;
+private var wallContactGrace : float = 0.12;
+private var wallJumpPressUntil : float;
+private var wallContactUntil : float;
+private var wallJumpSide : int;
+private var wallJumpRise : boolean;
 @Space(30)
 var isUnderwater : boolean;
 var swimTime : float = .3;
@@ -108,6 +117,17 @@ var verticalUntil : float;
 
 
 
+function IsPlayerCharacter() : boolean {
+	var t : Transform = transform;
+	while(t != null){
+		if(t.tag == "Player"){
+			return true;
+		}
+		t = t.parent;
+	}
+	return false;
+}
+
 function Start () {
 	if(smokeHandTimer.every == 0.0){
 		smokeHandTimer.every = .2;
@@ -123,7 +143,8 @@ function Start () {
 	if(input == null) input = transform.parent.gameObject.GetComponentInChildren(ControllerInput);
 	if(characterRigidbody == null) characterRigidbody = transform.parent.gameObject.GetComponentInChildren(Rigidbody);
 
-	if(maxSlopeAngle <= 61.0) maxSlopeAngle = 70.0;
+	isPlayer = IsPlayerCharacter();
+	if(isPlayer && maxSlopeAngle <= 61.0) maxSlopeAngle = 70.0;
 
 	feetPart = transform.parent.GetComponentInChildren.<FeetParticle>();
 
@@ -239,6 +260,21 @@ function Update(){
 }
 
 function FixedUpdate(){
+    var didWallJump : boolean = false;
+
+    if(isPlayer && !isUnderwater && !isGrounded && input.inputButtonB.down){
+    	wallJumpPressUntil = Time.time + wallJumpBuffer;
+    }
+    if(isPlayer){
+    	var leftDist : float = sideDetection.GetLeftDistance();
+    	var rightDist : float = sideDetection.GetRightDistance();
+    	if(leftDist < wallJumpRange || rightDist < wallJumpRange){
+    		wallContactUntil = Time.time + wallContactGrace;
+    		if(rightDist <= leftDist) wallJumpSide = 1;
+    		else wallJumpSide = -1;
+    	}
+    }
+
     if(Time.time > disableJumpUntil){
         if(!buttonLock){
         	var edgeJump : boolean;
@@ -273,7 +309,24 @@ function FixedUpdate(){
 	        //Wall Jump
 	        if(enableWallJump){
 	            if(!isUnderwater && !isGrounded && !edgeJump){
-                    if(sideDetection.IsLeftSideBlocked() || sideDetection.IsRightSideBlocked()){
+                    if(isPlayer){
+                    	if(Time.time <= wallContactUntil && Time.time <= wallJumpPressUntil && airJumpsUsed < maxAirJumps){
+                            jumpButtonTime = maxJumpTime;
+							
+                            sideMovementScript.disableMovementUntil = Time.time + .4;
+							
+                            if(wallJumpAnim != null){
+                                wallJumpAnim.animationPlay.current = true;
+                            }
+													
+                            wallJump = true;
+                            useSpringVector = false;
+                            ApplyJump();
+                            wallJumpRise = true;
+                            didWallJump = true;
+                        }
+                    }
+                    else if(sideDetection.IsLeftSideBlocked() || sideDetection.IsRightSideBlocked()){
                     	if(input.inputButtonB.down){
                             jumpButtonTime = maxJumpTime;
 							
@@ -291,10 +344,9 @@ function FixedUpdate(){
 				}
 			}
 
-
-
-            var canGroundJump : boolean = !jumpedUntilLand && groundedTime > requiredGroundTime;
-            var canAirJump : boolean = !isUnderwater && jumpedUntilLand && airJumpsUsed < maxAirJumps && Time.time >= lastJumpTime + minTimeBetweenJumps;
+            if(!didWallJump){
+            var canGroundJump : boolean = (!isPlayer || !jumpedUntilLand) && groundedTime > requiredGroundTime;
+            var canAirJump : boolean = isPlayer && !isUnderwater && jumpedUntilLand && airJumpsUsed < maxAirJumps && Time.time >= lastJumpTime + minTimeBetweenJumps;
             if(canGroundJump || canAirJump || isUnderwater){
                 if(input.inputButtonB.pressed){
                     if(!isUnderwater || Time.time > lastJumpTime + swimTime){
@@ -308,13 +360,18 @@ function FixedUpdate(){
                     ApplyJump();
                 }
             }
+            }
         }
 		
         //Jump if pressing button, and suddenly character is not grounded.
-        if(!isUnderwater && jumpButtonTime > 0 && !isGrounded){
+        if(!didWallJump && !isUnderwater && jumpButtonTime > 0 && !isGrounded){
             ApplyJump();
         }
 	}
+
+    if(wallJumpRise && Time.time >= lastJumpTime + jumpForceTime + jumpForceTimeAdd){
+    	wallJumpRise = false;
+    }
 
     if(!input.inputButtonB.pressed){ 
         if(!isUnderwater || Time.time > lastJumpTime + swimTime){
@@ -330,11 +387,13 @@ function FixedUpdate(){
 		var jumpForceVelocityAdjust : float = 1 - Mathf.Max(0,characterRigidbody.velocity.y) / currentJumpTargetSpeed;
 		jumpForceVelocityAdjust = Mathf.Clamp01(jumpForceVelocityAdjust);
 		
-		var jumpForce : float = maxJumpForce * jumpForceVelocityAdjust * currentJumpForceMul;
+		var useJumpMul : float = currentJumpForceMul;
+		if(wallJump || wallJumpRise) useJumpMul = wallJumpForceMul;
+		var jumpForce : float = maxJumpForce * jumpForceVelocityAdjust * useJumpMul;
 		
 		var jumpVector : Vector3;
 		if(!wallJump){
-			if(Mathf.Abs(slopeAngle) > 12.0){
+			if(isPlayer && Mathf.Abs(slopeAngle) > 12.0){
 				jumpVector = Vector3.up * jumpForce;
 			}
 			else{
@@ -347,7 +406,9 @@ function FixedUpdate(){
 		else{
 			//Debug.Log("wall jump @" + Time.time);
 			wallJump = false;
-			if(sideDetection.IsRightSideBlocked()){
+			var rightWall : boolean = sideDetection.IsRightSideBlocked();
+			if(isPlayer) rightWall = wallJumpSide == 1;
+			if(rightWall){
 				jumpVector = Vector3.right * jumpForce * wallJumpMultiplier;
 				sideMovementScript.currentSide = -1.0;
 				sideMovementScript.currentHorizontalScale =  Mathf.Sign(-1.0);
@@ -395,20 +456,23 @@ function FixedUpdate(){
 }
 
 function ApplyJump(){
+	wallJumpRise = false;
+	wallJumpPressUntil = 0;
 	disableJumpUntil = Time.time + .1;
-	var isAirJump : boolean = !isUnderwater && jumpedUntilLand;
-	if(isAirJump){
-		airJumpsUsed++;
+
+	var isAirJump : boolean = isPlayer && !isUnderwater && jumpedUntilLand;
+	if(isPlayer){
+		if(isAirJump){
+			airJumpsUsed++;
+		}
+		jumpedUntilLand = true;
+		groundedTime = 0;
+		isGrounded = false;
 	}
-	jumpedUntilLand = true;
-	groundedTime = 0;
-	isGrounded = false;
-	lastTouchGroundTime = Time.time - extendGroundedTime - 1.0;
 
 	var jumpMultiplier : float = 1.0 + (longJumpMultiplier-1) * (jumpButtonTime / maxJumpTime);
 
-	//The air jump stays at airJumpPower of the ground jump, so it scales with it.
-	currentJumpForceMul = isAirJump ? airJumpPower * groundJumpPower : groundJumpPower;
+	currentJumpForceMul = isPlayer ? (isAirJump ? airJumpPower * groundJumpPower : groundJumpPower) : 1.0;
 	currentJumpTargetSpeed = maxJumpSpeed * jumpMultiplier * currentJumpForceMul;
 
 	lastJumpTime = Time.time;
@@ -471,3 +535,4 @@ function GetJumpButtonTime() : float{
 function JumpedThisFrame() : boolean{
 	return jumpedThisFrame;
 }
+// compile

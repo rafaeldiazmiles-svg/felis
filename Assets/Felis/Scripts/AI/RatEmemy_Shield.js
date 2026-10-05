@@ -1,4 +1,4 @@
-﻿#pragma strict
+#pragma strict
 
 var getPlayerByTag : boolean = true;
 var playerTag : String = "Player";

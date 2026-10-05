@@ -1,4 +1,4 @@
-﻿#pragma strict
+#pragma strict
 
 var animationComponent : Animation;
 var animationPlay: ToggleBoolean;

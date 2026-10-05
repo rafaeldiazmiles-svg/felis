@@ -1,4 +1,4 @@
-﻿#pragma strict
+#pragma strict
 
 var isGrounded : IsGrounded;
 var input : ControllerInput;
@@ -49,6 +49,37 @@ var disableUntil : float;
 @Space(30)
 var debug : boolean;
 var debugArrowSize : float = .2;
+private var levelBoulder : boolean;
+private var boulderCruise : float = 11.0;
+private var stumbleEvery : float = 2.5;
+private var stumbleHop : float = 2.3;
+private var nextStumble : float;
+
+function IsLevelBoulder() : boolean {
+	var sceneName : String = UnityEngine.SceneManagement.SceneManager.GetActiveScene().name;
+	if(!(sceneName.Contains("Level 4") || sceneName.Contains("Lost Temple"))) return false;
+	var t : Transform = transform;
+	while(t != null){
+		if(t.name.IndexOf("Boulder") >= 0 && t.name.IndexOf("Drag") < 0 && t.name.IndexOf("Sound") < 0) return true;
+		t = t.parent;
+	}
+	return false;
+}
+
+function MakeBoulderBounce(){
+	var cols : Collider[];
+	if(transform.parent != null) cols = transform.parent.GetComponentsInChildren.<Collider>();
+	else cols = GetComponentsInChildren.<Collider>();
+	var mat : PhysicMaterial = new PhysicMaterial("BoulderBounce");
+	mat.bounciness = 0.2;
+	mat.bounceCombine = PhysicMaterialCombine.Average;
+	mat.dynamicFriction = 0.05;
+	mat.staticFriction = 0.05;
+	mat.frictionCombine = PhysicMaterialCombine.Minimum;
+	for(var i = 0; i < cols.Length; i++){
+		if(cols[i] != null) cols[i].material = mat;
+	}
+}
 
 function MultiplyWeight(mulValue : float){
 	if(rb == null && transform.parent != null){
@@ -68,6 +99,14 @@ function MultiplyWeightOnly(mulValue : float){
 }
 
 function Start () {
+	if(IsLevelBoulder()){
+		levelBoulder = true;
+		lowSpeed = boulderCruise;
+		overSpeed = boulderCruise + 1.0;
+		MakeBoulderBounce();
+		nextStumble = Time.time + stumbleEvery;
+	}
+
 	if(transform.parent != null){
 		if(isGrounded == null) isGrounded = transform.parent.GetComponentInChildren.<IsGrounded>();
 		if(input == null) input = transform.parent.GetComponentInChildren(ControllerInput);
@@ -171,6 +210,11 @@ function FixedUpdate(){
 				}
 			 }
 		}
+	}
+
+	if(levelBoulder && isGrounded != null && isGrounded.isGrounded && rb != null && Time.time >= nextStumble && Mathf.Abs(rb.velocity.x) > 1.5){
+		nextStumble = Time.time + stumbleEvery;
+		if(rb.velocity.y < stumbleHop) rb.velocity.y = stumbleHop;
 	}
 
 }

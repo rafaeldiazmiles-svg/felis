@@ -1,4 +1,4 @@
-﻿#pragma strict
+#pragma strict
 
 var autoFindComponents : boolean = true;
 var sweatDrops : SweatDropsParticles;
@@ -17,8 +17,6 @@ var maxStamina : float;
 var lowStaPct : float = .5;
 
 var rechargeRate : float = 20.0;
-private var rechargeRateMul : float = 0.945; //1.35 * 0.7. Still a bit faster than stock.
-private var maxWaitBeforeRecharge : float = 0.25; //Regen is blocked while stamina is dropping, so this gap is what fighting feels.
 var breatheRecharge : FloatLerp;
 var breatheRecharge_Amount : float = 50;
 var holdBreathRate : float = 5.0;
@@ -55,12 +53,6 @@ function Start () {
 	
 	if(storemaxStamina){
 		maxStamina = stamina;
-	}
-
-	rechargeRate *= rechargeRateMul;
-
-	if(waitBeforeRechargeDuration > maxWaitBeforeRecharge){
-		waitBeforeRechargeDuration = maxWaitBeforeRecharge;
 	}
 
 	meleeAttack = transform.parent.GetComponentInChildren(MeleeAttack);
@@ -181,3 +173,4 @@ function Update () {
 function RestoreStamina(){
 	stamina = maxStamina;
 }
+// compile

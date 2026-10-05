@@ -11,8 +11,6 @@ var eyeGlow : GlowItem;
 var detectRange : float = 7;
 var ignoreIfDead : boolean;
 var shootDelay : float = 2.0;
-private var shootDelayMul : float = 0.48;
-private var minShootDelay : float = 0.5;
 var shootBone : Transform;
 var ammoPrefab : GameObject;
 var shootForceMultiplier : float = 100;
@@ -53,9 +51,7 @@ function Start () {
 	}
 
 	GetTargets();
-
-	shootDelay *= shootDelayMul;
-	if(shootDelay < minShootDelay) shootDelay = minShootDelay;
+	
 	shootTimeLeft = shootDelay;
 	
 	

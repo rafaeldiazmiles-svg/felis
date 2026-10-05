@@ -1,4 +1,4 @@
-﻿#pragma strict
+#pragma strict
 
 var loadFromResources : boolean = true;
 @Space(20)
@@ -296,6 +296,13 @@ function Start (){
 			maxHealth *= 0.75;
 		}
 	}
+
+	var level4 : boolean = sceneName.Contains("Level 4") || sceneName.Contains("Lost Temple");
+	if(level4 && (hpRoot.Contains("Barrel") || hpRoot.Contains("Barril") || hpRoot.Contains("Wood Crush"))){
+		health *= 0.6;
+		maxHealth *= 0.6;
+	}
+
 	
 	shadow = transform.parent.GetComponentInChildren(Shadow);
 	

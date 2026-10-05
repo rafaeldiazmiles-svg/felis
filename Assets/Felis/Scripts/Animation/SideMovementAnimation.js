@@ -1,4 +1,4 @@
-﻿#pragma strict
+#pragma strict
 
 var autoFindComponents : boolean = true;
 @Space(30)
@@ -246,7 +246,7 @@ function Update () {
 	else{
 		targetSkidWeight = 0.0;
 	}
-	
+
 	if(skidAnimation != null){
 		currentSkidWeight = Mathf.SmoothDamp(currentSkidWeight, targetSkidWeight, skidWeightVelocity, blendTime);
 		animationComponent[skidAnimation.name].weight = currentSkidWeight;

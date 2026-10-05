@@ -1,4 +1,4 @@
-﻿#pragma strict
+#pragma strict
 
 var getPlayerTag : boolean = true;
 var playerTag : String = "Player";
@@ -49,6 +49,8 @@ private var attackDelayMul : float = 0.34; //Bears and rats, compounded with the
 private var attackDelayMul_Other : float = 0.48; //Every other enemy using this script.
 private var attackDisableMul : float = 0.29;
 private var minAttackGap : float = 0.2;
+private var extraStrikeDelay : float = 0.275;
+private var extraStrikeAt : float;
 private var usedExtraStrike : boolean;
 private var attackEnabledDefault : boolean;
 
@@ -102,10 +104,17 @@ function Update () {
 	if(Time.time > attackEndTime){
 		if(isAttacking && !usedExtraStrike && characterInRange && Time.time > disableUntil){
 			usedExtraStrike = true;
-			attack = true;
+			extraStrikeAt = Time.time + extraStrikeDelay;
 		}
 		isAttacking = false;
 		appliedForce = false;	
+	}
+
+	if(!isAttacking && extraStrikeAt > 0 && Time.time >= extraStrikeAt){
+		extraStrikeAt = 0;
+		if(characterInRange && Time.time > disableUntil){
+			attack = true;
+		}
 	}
 	
 	//Start reducing animation weight.		
@@ -143,6 +152,7 @@ function Update () {
 		if(tolerance < 0){
 			attack = true;
 			usedExtraStrike = false;
+			extraStrikeAt = 0;
 			maxTolerance = Random.Range(maxToleranceVariation.x, maxToleranceVariation.y);
 			tolerance = maxTolerance;
 		}

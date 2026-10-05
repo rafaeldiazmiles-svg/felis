@@ -1,4 +1,4 @@
-﻿#pragma strict
+#pragma strict
 
 var animComp : Animation;
 var isGrounded : IsGrounded;

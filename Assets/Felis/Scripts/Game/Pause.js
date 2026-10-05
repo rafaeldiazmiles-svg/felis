@@ -1,4 +1,4 @@
-﻿#pragma strict
+#pragma strict
 
 var pauseSound : AudioSource;
 var overlay : Renderer;

@@ -1,4 +1,4 @@
-﻿#pragma strict
+#pragma strict
 
 var wingedFlightAI : WingedFlightAI;
 var isGrounded : IsGrounded;

@@ -1,4 +1,4 @@
-﻿#pragma strict
+#pragma strict
 
 var autoFindComponents : boolean = true;
 var characterRigidbody : Rigidbody;
@@ -42,13 +42,13 @@ var flipDelay : float;
 var currentHorizontalScale : float;
 @Space(30)
 var airMul : float = .4;
-var airRunAccelMul : float = 1.5;
-var runSpeedMul : float = 1.1;
+private var runSpeedMul : float = 1.1;
 private var topSpeedMul : float = 1.2;
+private var runForceMul : float = 1.15;
 private var moveWeightMul : float = 1.1;
-var runForceMul : float = 1.15;
-var startBoostAccelMul : float = 2.2;
-var startBoostUpTo : float = 0.7;
+private var startBoostAccelMul : float = 2.2;
+private var startBoostUpTo : float = 0.7;
+private var airRunAccelMul : float = 1.5;
 var waterMultiplier : float = .3;
 static var maxFlipSpeed : float = 1.0;
 @Space(30)
@@ -118,28 +118,17 @@ function Start () {
 		}
 	}
 
-	// Soften wall/slope stall a little without changing run speed or jump force.
-	if(blockMultiplier <= 0.12) blockMultiplier = 0.22;
-	if(slopeMultiplier <= 0.72) slopeMultiplier = 0.85;
-	if(highSlopeRunForce <= 0.12) highSlopeRunForce = 0.22;
-
 	isPlayer = IsPlayerCharacter();
-
-	// Slightly more steering while airborne, player only. Enemies keep their original air control.
 	if(isPlayer && airMul >= 0.38 && airMul <= 0.42){
 		airMul = 0.7;
 	}
-
-	// Turning around used to cut run force to a fifth and spike friction, which felt sticky.
 	if(isPlayer){
 		if(skidRunForceMultiplier >= 0.18 && skidRunForceMultiplier <= 0.22) skidRunForceMultiplier = 0.35;
 		if(skidFriction >= 2.8 && skidFriction <= 3.2) skidFriction = 2.2;
-
 		targetRunSpeed *= runSpeedMul;
 		targetRunSpeed *= topSpeedMul;
 		maxRunForce *= runForceMul;
 		maxRunForce *= moveWeightMul;
-
 		if(characterRigidbody != null){
 			var massBefore : float = characterRigidbody.mass;
 			characterRigidbody.mass *= moveWeightMul;
@@ -151,6 +140,12 @@ function Start () {
 				pickMass.defaultMass *= moveWeightMul;
 			}
 		}
+	}
+
+	if(isPlayer){
+		if(blockMultiplier <= 0.12) blockMultiplier = 0.22;
+		if(slopeMultiplier <= 0.72) slopeMultiplier = 0.85;
+		if(highSlopeRunForce <= 0.12) highSlopeRunForce = 0.22;
 	}
 
 	runForceSlopeCurve = new AnimationCurve(Keyframe(0,horizontalRunForce) , Keyframe(lowSlope,lowSlopeRunForce), Keyframe(highSlope,highSlopeRunForce));
@@ -204,10 +199,7 @@ function FixedUpdate(){
 	if(Mathf.Abs(input.inputAxis.current.x) > 0.1 && Time.time > disableMovementUntil){ //If there is input.
 		if(Mathf.Sign(input.inputAxis.current.x) != currentSide){ //Input towards other side.
 			currentSide *= -1;
-			//Mid-air turns keep the speed ramp, so steering answers at once instead of restarting.
-			if(!isPlayer || isGrounded.isGrounded){
-				smoothRunSpeed.current = minRunSpeed;
-			}
+			smoothRunSpeed.current = minRunSpeed;
 		}
 		else{ //Input towards same side.
 			isRunning = true;
@@ -255,12 +247,10 @@ function FixedUpdate(){
 		isPushing = true;
 	}
 	forcePushThisFrame = false;
-
-	var walkableHill : boolean = isGrounded.isGrounded && Mathf.Abs(isGrounded.slopeAngle) > 8.0 && Mathf.Abs(isGrounded.slopeAngle) < 70.0;
-	var sideBlockedAhead : boolean = (sideDetection.IsLeftSideBlocked() && currentSide == left) || (sideDetection.IsRightSideBlocked() && currentSide == right);
 			
-	if(sideBlockedAhead && !walkableHill){
+	if((sideDetection.IsLeftSideBlocked() && currentSide == left) || (sideDetection.IsRightSideBlocked() && currentSide == right)){
 		runForce *= blockMultiplier;
+		//forceFrictionScript.friction += blockFriction;
 		if(HasInput()){
 			isPushing = true;
 		}
@@ -284,12 +274,9 @@ function FixedUpdate(){
 		smoothRunSpeed.speed = runAcceleration;
 	}
 
-	//A standstill jump starts the ramp at minRunSpeed, which made air steering feel rigid.
 	if(isPlayer && !isGrounded.isGrounded){
 		smoothRunSpeed.speed *= airRunAccelMul;
 	}
-
-	//A cat leaves from a standstill in one burst, so the low end of the ramp climbs harder.
 	if(isPlayer && isRunning && smoothRunSpeed.current < targetRunSpeed * startBoostUpTo){
 		smoothRunSpeed.speed *= startBoostAccelMul;
 	}
@@ -306,10 +293,8 @@ function FixedUpdate(){
 	if(sideDetection.AreLeftFeetBlocked() && runForce > 0.0 || sideDetection.AreRightFeetBlocked() && runForce < 0.0){
 		runForce *= slopeMultiplier;
 	}
-	if(!walkableHill){
-		if(sideDetection.IsLeftSideBlocked() && runForce > 0.0 || sideDetection.IsRightSideBlocked() && runForce < 0.0){
-			runForce *= slopeMultiplier;
-		}
+	if(sideDetection.IsLeftSideBlocked() && runForce > 0.0 || sideDetection.IsRightSideBlocked() && runForce < 0.0){
+		runForce *= slopeMultiplier;
 	}
 
 	//Apply Force.
@@ -376,3 +361,4 @@ function ApplySkid(){
 	runForce *= skidRunForceMultiplier;
 	forceFrictionScript.friction = skidFriction + stairAddFriction;
 }
+// compile
