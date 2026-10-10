@@ -18,6 +18,8 @@ var horizontalBias : float = .5;
 
 var leftDistance : float;
 var rightDistance : float;
+private var leftNormal : Vector3;
+private var rightNormal : Vector3;
 
 
 //Cliff variables.
@@ -174,15 +176,19 @@ function LateUpdate () {
 	
 	leftDistance = Mathf.Infinity;
 	rightDistance = Mathf.Infinity;
+	leftNormal = Vector3.up;
+	rightNormal = Vector3.up;
 
 	for(var leftHit : RaycastHit  in hitsLeft){
 		if(leftHit.distance < leftDistance && leftHit.transform.gameObject.layer != ignoredLayer){
 			leftDistance = leftHit.distance;
+			leftNormal = leftHit.normal;
 		}
 	}
 	for(var rightHit : RaycastHit  in hitsRight){
 		if(rightHit.distance < rightDistance && rightHit.transform.gameObject.layer != ignoredLayer ){
 			rightDistance = rightHit.distance;
+			rightNormal = rightHit.normal;
 		}
 	}
 	if(detectRigidbody){
@@ -342,6 +348,12 @@ function GetLeftDistance() : float{
 }
 function GetRightDistance() : float{
 	return rightDistance;
+}
+function GetLeftNormal() : Vector3{
+	return leftNormal;
+}
+function GetRightNormal() : Vector3{
+	return rightNormal;
 }
 
 function IsLeftSideBlocked() : boolean{

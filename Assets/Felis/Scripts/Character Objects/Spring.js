@@ -1,4 +1,4 @@
-﻿#pragma strict
+#pragma strict
 
 var jumpSound : AudioSource;
 
@@ -13,6 +13,7 @@ var forceJump : boolean = true; //When coming from too high, it will bounce no m
 var col : Collider;
 
 var verticalDuration : float;
+private var actionHitMul : float = 1.5;
 
 class JumpSpringChar{
 	var jumpSwim : JumpSwim;
@@ -64,6 +65,20 @@ function Start () {
 
 	if(col == null){
 		col = GetComponent.<Collider>();
+	}
+
+	var spheres : SphereCollider[] = GetComponents.<SphereCollider>();
+	for(var si : int = 0; si < spheres.Length; si++){
+		spheres[si].radius *= actionHitMul;
+	}
+	var capsules : CapsuleCollider[] = GetComponents.<CapsuleCollider>();
+	for(var ci : int = 0; ci < capsules.Length; ci++){
+		capsules[ci].radius *= actionHitMul;
+		capsules[ci].height *= actionHitMul;
+	}
+	var boxes : BoxCollider[] = GetComponents.<BoxCollider>();
+	for(var bi : int = 0; bi < boxes.Length; bi++){
+		boxes[bi].size *= actionHitMul;
 	}
 }
 

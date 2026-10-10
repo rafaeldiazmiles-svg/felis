@@ -66,14 +66,17 @@ var jumpedThisFrame : boolean;
 private var jumpedUntilLand : boolean;
 private var airJumpsUsed : int;
 private var wallJumpsUsed : int;
+private var lastWallJumpSide : int;
 private var maxAirJumps : int = 1;
 private var minTimeBetweenJumps : float = 0.3;
-private var airJumpPower : float = 0.533333;
-private var groundJumpPower : float = 0.72;
+private var airJumpPower : float = 0.3333334;
+private var groundJumpPower : float = 1.0;
 private var currentJumpForceMul : float = 1.0;
+private var jumpWeightCompensation : float = 1.1;
 private var isPlayer : boolean;
 private var wallJumpForceMul : float = 1.1;
 private var wallJumpRange : float = 0.6;
+private var wallJumpMinAngle : float = 75;
 private var wallJumpBuffer : float = 0.2;
 private var wallContactGrace : float = 0.12;
 private var wallJumpPressUntil : float;
@@ -115,6 +118,9 @@ var useSpringVector : boolean;
 var springVector : Vector3;
 var springAir : boolean;
 var verticalUntil : float;
+private var springActionWindow : float = 0.25;
+private var springContact : Spring;
+private var springContactUntil : float;
 
 
 
@@ -212,6 +218,7 @@ function Update(){
 			jumpedUntilLand = false;
 			airJumpsUsed = 0;
 			wallJumpsUsed = 0;
+			lastWallJumpSide = 0;
 		}
 		if(!jumpedUntilLand){
 			lastTouchGroundTime = Time.time;
@@ -236,6 +243,16 @@ function Update(){
 	leftDistance = sideDetection.GetLeftDistance();
 	rightDistance = sideDetection.GetRightDistance();
 	
+	for(var springHit : int = 0; springHit < 2; springHit++){
+		if(isGroundedScript.currentGroundCollider[springHit] == null) continue;
+		var touchedSpring : Spring = isGroundedScript.currentGroundCollider[springHit].GetComponentInChildren.<Spring>();
+		if(touchedSpring != null){
+			springContact = touchedSpring;
+			springContactUntil = Time.time + springActionWindow;
+			break;
+		}
+	}
+
 	if(isGrounded){
 		groundedTime += Time.deltaTime;
 
@@ -270,9 +287,15 @@ function FixedUpdate(){
     if(isPlayer){
     	var leftDist : float = sideDetection.GetLeftDistance();
     	var rightDist : float = sideDetection.GetRightDistance();
-    	if(leftDist < wallJumpRange || rightDist < wallJumpRange){
+    	var leftNormal : Vector3 = sideDetection.GetLeftNormal();
+    	var rightNormal : Vector3 = sideDetection.GetRightNormal();
+    	var leftAngle : float = Mathf.Atan2(leftNormal.x, leftNormal.y) * Mathf.Rad2Deg;
+    	var rightAngle : float = Mathf.Atan2(rightNormal.x, rightNormal.y) * Mathf.Rad2Deg;
+    	var leftSideWall : boolean = leftDist < wallJumpRange && Mathf.Abs(leftAngle) >= wallJumpMinAngle;
+    	var rightSideWall : boolean = rightDist < wallJumpRange && Mathf.Abs(rightAngle) >= wallJumpMinAngle;
+    	if(leftSideWall || rightSideWall){
     		wallContactUntil = Time.time + wallContactGrace;
-    		if(rightDist <= leftDist) wallJumpSide = 1;
+    		if(rightSideWall && (!leftSideWall || rightDist <= leftDist)) wallJumpSide = 1;
     		else wallJumpSide = -1;
     	}
     }
@@ -312,6 +335,9 @@ function FixedUpdate(){
 	        if(enableWallJump){
 	            if(!isUnderwater && !isGrounded && !edgeJump){
                     if(isPlayer){
+                    	if(wallJumpSide != lastWallJumpSide){
+                    		wallJumpsUsed = 0;
+                    	}
                     	if(Time.time <= wallContactUntil && Time.time <= wallJumpPressUntil && wallJumpsUsed < 2){
                             jumpButtonTime = maxJumpTime;
 							
@@ -327,6 +353,7 @@ function FixedUpdate(){
                             wallJumpRise = true;
                             didWallJump = true;
                             wallJumpsUsed++;
+                            lastWallJumpSide = wallJumpSide;
                             currentJumpTargetSpeed = maxJumpSpeed * longJumpMultiplier * wallJumpForceMul;
                         }
                     }
@@ -393,6 +420,7 @@ function FixedUpdate(){
 		
 		var useJumpMul : float = currentJumpForceMul;
 		if(wallJump || wallJumpRise) useJumpMul = wallJumpForceMul;
+		else if(isPlayer) useJumpMul *= jumpWeightCompensation;
 		var jumpForce : float = maxJumpForce * jumpForceVelocityAdjust * useJumpMul;
 		
 		var jumpVector : Vector3;
@@ -511,9 +539,29 @@ function ApplyJump(){
 					springVector = spring.transform.up;
 
 					verticalUntil = spring.verticalDuration;
+					springContact = null;
+					springContactUntil = 0;
 
 					break;
 				}
+			}
+
+			if(!useSpringVector && Time.time <= springContactUntil && springContact != null){
+				useSound = springContact.jumpSound;
+
+				springVal = springContact.GetSpringVal(this);
+
+				currentJumpTargetSpeed *= springVal * 5.0;
+				jumpForceTimeAdd = (springVal-1.0) * springMul;
+
+				jumpForceTimeAdd = Mathf.Clamp(jumpForceTimeAdd,0,maxJumpForceTimeAdd);
+
+				useSpringVector = true;
+				springVector = springContact.transform.up;
+
+				verticalUntil = springContact.verticalDuration;
+				springContact = null;
+				springContactUntil = 0;
 			}
 
 			useSound.pitch = Random.Range(jumpSoundPitchRange.x, jumpSoundPitchRange.y);
