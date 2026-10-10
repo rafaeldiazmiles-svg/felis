@@ -49,6 +49,8 @@ private var moveWeightMul : float = 1.1;
 private var startBoostAccelMul : float = 2.2;
 private var startBoostUpTo : float = 0.7;
 private var airRunAccelMul : float = 1.5;
+private var catRunSpeedMul : float = 1.32;
+private var catRunForceMul : float = 1.15;
 var waterMultiplier : float = .3;
 static var maxFlipSpeed : float = 1.0;
 @Space(30)
@@ -99,6 +101,17 @@ function IsPlayerCharacter() : boolean {
 	return false;
 }
 
+function IsCatCharacter() : boolean {
+	var t : Transform = transform;
+	while(t != null){
+		if(t.tag == "Cat"){
+			return true;
+		}
+		t = t.parent;
+	}
+	return false;
+}
+
 function DisableMovementFor(duration : float){
 	disableMovementUntil = Time.time + duration;
 }
@@ -140,6 +153,11 @@ function Start () {
 				pickMass.defaultMass *= moveWeightMul;
 			}
 		}
+	}
+
+	if(!isPlayer && IsCatCharacter()){
+		targetRunSpeed *= catRunSpeedMul;
+		maxRunForce *= catRunForceMul;
 	}
 
 	if(isPlayer){
