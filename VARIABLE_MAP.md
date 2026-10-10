@@ -1,6 +1,6 @@
 # VARIABLE_MAP — knobs we actually touched
 
-Easy sheet. Open this first. Numbers are **what the code has right now** (2026-09-28), not Unity Inspector.
+Easy sheet. Open this first. Numbers are **what the code has right now** (2026-10-10), not Unity Inspector.
 
 How it works: most of these are `private var` multipliers. Prefabs keep the original numbers. On `Start()`, the script multiplies them. Change the private number here → next Play uses it. Do not look for these in the Inspector; they will not show up.
 
@@ -32,9 +32,20 @@ Stock = original game. Current = live value in the `.js` file.
 | Wall / slope stall | same | `blockMultiplier` / `slopeMultiplier` / `highSlopeRunForce` | 0.1 / 0.7 / 0.1 | **0.22 / 0.85 / 0.22** | Soften getting stuck. |
 | Skid | same | `skidRunForceMultiplier` / `skidFriction` | 0.2 / 3.0 | **0.35 / 2.2** | Player only, less sticky turnaround. |
 | Snag on walls | `Character Objects/SideDetection.js` | `sideDetectionRange` | 0.4 | **0.32** | If prefab is still ~0.4, Start sets 0.32. |
-| Ground jump | `Character Objects/JumpSwim.js` | `groundJumpPower` | 1 | **0.8** | 80% of stock jump. |
-| Air double jump | same | `airJumpPower` + `maxAirJumps` | none | **0.6 × ground, 1 extra jump** | Air jump = 0.6 × 0.8 of stock. Gap `minTimeBetweenJumps` 0.3s. |
+| Ground jump | `Character Objects/JumpSwim.js` | `groundJumpPower` + `jumpWeightCompensation` | 1 | **1 × 1.1 force** | Stock target speed; force compensates Prospero's ×1.1 mass. Player only. |
+| Air double jump | same | `airJumpPower` + `maxAirJumps` | none | **0.3333334 × ground, 1 extra jump** | Was 0.4166667, then ×0.8. Air = `airJumpPower * groundJumpPower` (ground is 1). Gap `minTimeBetweenJumps` 0.3s. |
 | Jump on slopes | same | `maxSlopeAngle` | 60 | **70** | If prefab ≤ 61, Start sets 70. Jumps go straight up on steep ground. |
+
+---
+
+## Kittens
+
+Same `SideMovement.js` as Prospero. These run only when a parent is tagged `Cat`, and never when it is tagged `Player`. Mass is unchanged.
+
+| Feeling | File | Variable | Stock | Current | What the code does |
+|---|---|---|---|---|---|
+| Top run speed | `Character Objects/SideMovement.js` | `catRunSpeedMul` | 1 | **1.32** | `targetRunSpeed *=` this. Same ratio as Prospero’s 1.1 × 1.2. |
+| Run force | same | `catRunForceMul` | 1 | **1.15** | `maxRunForce *=` this. Same as Prospero’s `runForceMul`. No `moveWeightMul`. |
 
 ---
 
