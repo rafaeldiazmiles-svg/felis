@@ -243,13 +243,17 @@ function Update(){
 	leftDistance = sideDetection.GetLeftDistance();
 	rightDistance = sideDetection.GetRightDistance();
 	
-	for(var springHit : int = 0; springHit < 2; springHit++){
-		if(isGroundedScript.currentGroundCollider[springHit] == null) continue;
-		var touchedSpring : Spring = isGroundedScript.currentGroundCollider[springHit].GetComponentInChildren.<Spring>();
-		if(touchedSpring != null){
-			springContact = touchedSpring;
-			springContactUntil = Time.time + springActionWindow;
-			break;
+	//currentGroundCollider is sized by IsGrounded.rays (1 with useSingleRay), never assume two slots.
+	var groundCols : Collider[] = isGroundedScript.currentGroundCollider;
+	if(groundCols != null){
+		for(var springHit : int = 0; springHit < groundCols.Length; springHit++){
+			if(groundCols[springHit] == null) continue;
+			var touchedSpring : Spring = groundCols[springHit].GetComponentInChildren.<Spring>();
+			if(touchedSpring != null){
+				springContact = touchedSpring;
+				springContactUntil = Time.time + springActionWindow;
+				break;
+			}
 		}
 	}
 
