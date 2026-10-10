@@ -1,4 +1,4 @@
-﻿#pragma strict
+#pragma strict
 
 var player : GameObject;
 var playerTag : String = "Player";
@@ -53,7 +53,7 @@ function ResetOthers(){
 				continue;
 			}
 
-			var saveString : String = "Game " + gVals.currentGame.ToString() + " - Level " + gVals.currentLevel.ToString() + " - ID " + checkpoints[i].ID.ToString();
+			var saveString : String = "Game " + gVals.currentGame.ToString() + " - Level " + gameObject.scene.name + " - ID " + checkpoints[i].ID.ToString();
 			PlayerPrefs.SetInt(saveString, 0);
 			Debug.Log("Reseted by having pressed other checkpoint's button: " + saveString);
 
@@ -61,7 +61,7 @@ function ResetOthers(){
 			var cats_Script : Cats = GameObject.FindObjectOfType.<Cats>();
 			if(cats_Script != null){
 				for(var n = 0; n < cats_Script.catIcons.Length; n++){
-					saveString = "Game " + gVals.currentGame.ToString() + " - Level " + gVals.currentLevel.ToString() + " - ID " + checkpoints[i].ID.ToString() + " - Cat " + n.ToString();
+					saveString = "Game " + gVals.currentGame.ToString() + " - Level " + gameObject.scene.name + " - ID " + checkpoints[i].ID.ToString() + " - Cat " + n.ToString();
 					PlayerPrefs.SetInt(saveString, 0);
 					Debug.Log("Reseted by having pressed other checkpoint's button: " + saveString);
 				}
@@ -139,7 +139,7 @@ function Load(){
 		if(gVals != null){
 			
 			var loadValue : int;
-			var loadString : String = "Game " + gVals.currentGame.ToString() + " - Level " + gVals.currentLevel.ToString() + " - ID " + ID.ToString();
+			var loadString : String = "Game " + gVals.currentGame.ToString() + " - Level " + gameObject.scene.name + " - ID " + ID.ToString();
 	
 			loadValue = PlayerPrefs.GetInt(loadString);
 			Debug.Log("Loaded int: " + loadValue + "- From: " + loadString);
@@ -185,7 +185,7 @@ function Load(){
 
 					for(var i = 0; i < cats_Script.catIcons.Length; i++){
 						var loadValue_cat : int;
-						loadString = "Game " + gVals.currentGame.ToString() + " - Level " + gVals.currentLevel.ToString() + " - ID " + ID.ToString() + " - Cat " + i.ToString();
+						loadString = "Game " + gVals.currentGame.ToString() + " - Level " + gameObject.scene.name + " - ID " + ID.ToString() + " - Cat " + i.ToString();
 
 						loadValue_cat = PlayerPrefs.GetInt(loadString);
 						Debug.Log("Loaded int: " + loadValue_cat + "- From: " + loadString);
@@ -277,7 +277,7 @@ function Save(){
 		else{
 			saveValue = 0;
 		}
-		var saveString : String = "Game " + gVals.currentGame.ToString() + " - Level " + gVals.currentLevel.ToString() + " - ID " + ID.ToString();
+		var saveString : String = "Game " + gVals.currentGame.ToString() + " - Level " + gameObject.scene.name + " - ID " + ID.ToString();
 		PlayerPrefs.SetInt(saveString, saveValue);
 
 		Debug.Log("Saved int: " + saveValue + "- On: " + saveString);
@@ -299,7 +299,7 @@ function Save(){
 					}
 				}
 
-				saveString = "Game " + gVals.currentGame.ToString() + " - Level " + gVals.currentLevel.ToString() + " - ID " + ID.ToString() + " - Cat " + i.ToString();
+				saveString = "Game " + gVals.currentGame.ToString() + " - Level " + gameObject.scene.name + " - ID " + ID.ToString() + " - Cat " + i.ToString();
 				PlayerPrefs.SetInt(saveString, saveValue_cat);
 				Debug.Log("Saved int: " + saveValue_cat + "- On: " + saveString);
 			}
